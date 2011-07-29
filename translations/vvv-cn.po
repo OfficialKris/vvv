@@ -1,0 +1,1509 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VVV 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-20 23:23+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: 不知道不知道 <billeccentrec@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: E:\\C_Prg\\vvv (virtual volumes view)\\src\n"
+"X-Poedit-Language: Chinese Traditional (Taiwan)\n"
+"X-Poedit-Country: TAIWAN\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: E:\\C_Prg\\vvv (virtual volumes view)\\src\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:174
+msgid "Enter or select the volume to catalog"
+msgstr "輸入或選擇路徑來建立索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:183
+#: view)\src/exportdata.cpp:223
+#: view)\src/opencatalog.cpp:174
+#: view)\src/restore.cpp:168
+#: view)\src/restore.cpp:180
+#: view)\src/update_volume.cpp:197
+msgid "..."
+msgstr "..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:186
+msgid "Volume name"
+msgstr "索引名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:196
+msgid "Get volume name"
+msgstr "擷取路徑名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:204
+#: view)\src/exportdata.cpp:230
+#: view)\src/exportdata.cpp:248
+#: view)\src/mainframe.cpp:854
+#: view)\src/restore.cpp:187
+#: view)\src/restore.cpp:205
+#: view)\src/update_volume.cpp:203
+msgid "&Help"
+msgstr "幫助(&H)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:209
+#: view)\src/mainframe.cpp:867
+#: view)\src/mainframe.cpp:4034
+msgid "Catalog"
+msgstr "建立索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:212
+#: view)\src/update_volume.cpp:211
+msgid "&Close"
+msgstr "關閉(&C)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:215
+#: view)\src/update_volume.cpp:214
+msgid "Current folder"
+msgstr "目前目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:218
+msgid "Previously cataloged volumes"
+msgstr "先前已建立的索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:288
+#: view)\src/update_volume.cpp:269
+msgid "The volume path is missing"
+msgstr "錯誤：沒有選擇路徑"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:293
+msgid "The volume name is missing"
+msgstr "錯誤：沒有索引名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:310
+msgid "This volume name is already present in the database"
+msgstr "錯誤：已有相同的索引名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume.cpp:357
+#: view)\src/update_volume.cpp:296
+msgid "Select the volume to catalog"
+msgstr "選擇路徑來建立索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:328
+msgid "Number of added files: "
+msgstr "會增加的檔案數："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:329
+msgid "Number of updated files: "
+msgstr "會更新的檔案數："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:330
+msgid "Number of deleted files (not counting those in deleted folders): "
+msgstr "會刪除的檔案數（不包含會被刪除資料夾中的檔案）："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:331
+msgid "Number of deleted folders: "
+msgstr "會刪除的資料夾："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:332
+msgid "Number of unchanged files: "
+msgstr "不會更動的檔案數："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/catalog_volume_functions.cpp:333
+msgid "Do you really want to update the volume?"
+msgstr "你確定要更新索引嗎？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:77
+#, c-format
+msgid "Uknown locale code '%s' in registry."
+msgstr "語言列表中沒有 %s 的語言。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:94
+msgid "(Use default language)"
+msgstr "（使用預設的語言）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:96
+#: view)\src/mainframe.cpp:2364
+msgid "Croatian"
+msgstr "Croatian（克羅埃西亞語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:97
+#: view)\src/mainframe.cpp:2361
+msgid "Czech"
+msgstr "Czech（捷克語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:98
+#: view)\src/mainframe.cpp:2368
+msgid "Dutch"
+msgstr "Dutch（荷蘭語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:99
+msgid "English"
+msgstr "English（英文）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:100
+#: view)\src/mainframe.cpp:2359
+msgid "French"
+msgstr "French（法語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:101
+#: view)\src/mainframe.cpp:2360
+msgid "German"
+msgstr "German（德文）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:102
+#: view)\src/mainframe.cpp:2366
+msgid "Italian"
+msgstr "Italian（義大利文）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:103
+#: view)\src/mainframe.cpp:2362
+msgid "Polish"
+msgstr "Polish（波蘭語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:104
+#: view)\src/mainframe.cpp:2357
+msgid "Portuguese"
+msgstr "Portuguese（葡萄牙語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:105
+#: view)\src/mainframe.cpp:2367
+msgid "Romanian"
+msgstr "Romanian（羅馬尼亞）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:106
+#: view)\src/mainframe.cpp:2363
+msgid "Russian"
+msgstr "Russian（俄文）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:107
+msgid "Serbian (cyrillic)"
+msgstr "Serbian (cyrillic)（塞爾維亞語（西里爾文））"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:108
+msgid "Serbian (latin)"
+msgstr "Serbian (latin)（塞爾維亞語（拉丁文））"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:109
+#: view)\src/mainframe.cpp:2358
+msgid "Spanish"
+msgstr "Spanish（西班牙文）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:110
+#: view)\src/mainframe.cpp:2363
+msgid "Ukrainian"
+msgstr "Ukrainian（烏克蘭語）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:119
+msgid "Select your preferred language"
+msgstr "選擇語言"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:120
+msgid "Language selection"
+msgstr "語言選擇"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:134
+msgid "You must restart the program for this change to take effect."
+msgstr "您必須重新啟動程式以更改語言。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/choose_virtual_folder.cpp:157
+msgid "Please select the virtual folder that will receive the selected files and/or folders:"
+msgstr "請選擇欲對映的虛擬目錄："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/choose_virtual_folder.cpp:169
+#: view)\src/choose_virtual_folder.cpp:187
+#: view)\src/exportdata.cpp:235
+#: view)\src/exportdata.cpp:256
+#: view)\src/object_description.cpp:158
+#: view)\src/object_description.cpp:174
+#: view)\src/opencatalog.cpp:181
+#: view)\src/opencatalog.cpp:197
+#: view)\src/restore.cpp:192
+#: view)\src/restore.cpp:213
+msgid "&OK"
+msgstr "確定(&O)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/choose_virtual_folder.cpp:173
+#: view)\src/choose_virtual_folder.cpp:184
+#: view)\src/exportdata.cpp:239
+#: view)\src/exportdata.cpp:253
+#: view)\src/object_description.cpp:162
+#: view)\src/object_description.cpp:171
+#: view)\src/opencatalog.cpp:185
+#: view)\src/opencatalog.cpp:194
+#: view)\src/restore.cpp:196
+#: view)\src/restore.cpp:210
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/convert_db_unicode.cpp:520
+msgid "Conversion is about to start: a message will tell you when it will be completed."
+msgstr "轉換即將開始，轉換結束時會有訊息通知。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/convert_db_unicode.cpp:546
+msgid "Conversion completed"
+msgstr "轉換結束"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:191
+msgid "Use this window to export data to a CSV file"
+msgstr "將資料輸出成 CSV 格式"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:195
+msgid "Comma"
+msgstr "逗號(,)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:196
+msgid "TAB"
+msgstr "跳格(TAB)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:197
+msgid "Pipe"
+msgstr "管線(|)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:198
+msgid "Separator"
+msgstr "分隔符號"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:202
+msgid "Include headers"
+msgstr "包含標頭(header)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:207
+#: view)\src/mainframe.cpp:966
+msgid "All physical volumes"
+msgstr "所有實體索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:208
+msgid "Selected physical volume/folder"
+msgstr "已選擇的實體索引或目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:209
+#: view)\src/mainframe.cpp:968
+msgid "Selected virtual folder"
+msgstr "已選擇的虛擬目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:210
+msgid "Export"
+msgstr "輸出範圍"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:214
+msgid "File name:"
+msgstr "儲存位置："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:309
+msgid "CSV files (*.csv;*.txt)|*.csv;*.txt|All files (*.*)|*.*"
+msgstr "CSV (*.csv;*.txt)|*.csv;*.txt|所有檔案(*.*)|*.*"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:336
+msgid "Please enter a file name"
+msgstr "錯誤：請輸入儲存位置"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:341
+msgid "The output file already exists: do you want to overwrite it?"
+msgstr "檔案已存在，是否複寫？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:344
+#: view)\src/exportdata.cpp:358
+msgid "Unable to create the file."
+msgstr "錯誤：沒有辦法儲存檔案。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:1295
+msgid "Name"
+msgstr "檔案"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:1300
+msgid "Size"
+msgstr "大小"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:1304
+msgid "Ext"
+msgstr "副檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:1308
+msgid "Last modified"
+msgstr "最後編輯"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+msgid "PhysicalPath"
+msgstr "實際路徑"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:956
+#: view)\src/mainframe.cpp:1316
+#: view)\src/mainframe.cpp:1321
+msgid "Description"
+msgstr "註解"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:526
+msgid "Volume"
+msgstr "索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.cpp:526
+msgid "Path"
+msgstr "路徑"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:736
+msgid ""
+"This catalog file does not exist:\n"
+"\n"
+msgstr ""
+"錯誤：下列的索引檔無法讀取：\n"
+"\n"
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:798
+msgid "&New..."
+msgstr "新增(&N)..."
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:799
+msgid "&Open..."
+msgstr "開啟(&O)..."
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:800
+msgid "&Export..."
+msgstr "輸出(&E)..."
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:802
+msgid "&Backup..."
+msgstr "備份(&B)..."
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:803
+msgid "&Restore..."
+msgstr "還原(&R)..."
+
+# Part of the File menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:805
+msgid "E&xit"
+msgstr "離開(&X)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:806
+msgid "&File"
+msgstr "檔案(&F)"
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:808
+msgid "&Add To Virtual Folder..."
+msgstr "新增至虛擬目錄(&A)..."
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:810
+msgid "&Rename...\tF2"
+msgstr "更名(&R)..."
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:811
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:813
+msgid "&Object Description..."
+msgstr "物件註解(&O)..."
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:815
+msgid "&New Virtual Root Folder..."
+msgstr "新增虛擬根目錄(&N)..."
+
+# Part of the Edit menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:816
+msgid "New Virtual &Subfolder..."
+msgstr "新增虛擬子目錄(&S)..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:818
+#: view)\src/mainframe.cpp:844
+msgid "&Options..."
+msgstr "選項(O)..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:820
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+# Part of the Volumes menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:822
+msgid "&Catalog Volume..."
+msgstr "建立索引(&C)..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:823
+msgid "&Update Volume..."
+msgstr "更新索引(&U)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:824
+msgid "&Volumes"
+msgstr "索引(&V)"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:826
+msgid "&Physical View"
+msgstr "實體模式(&P)"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:828
+msgid "&Virtual View"
+msgstr "虛擬模式(&V)"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:829
+msgid "&Search View"
+msgstr "搜尋模式(S&)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:831
+#: view)\src/mainframe.cpp:3150
+msgid "Show in physical view"
+msgstr "在實體模式中檢視"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:832
+msgid "Go &Up One Level"
+msgstr "到上層目錄(&U)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:833
+#: view)\src/mainframe.cpp:2561
+#: view)\src/mainframe.cpp:2598
+msgid "Expand"
+msgstr "展開"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:834
+#: view)\src/mainframe.cpp:2562
+#: view)\src/mainframe.cpp:2599
+msgid "Collapse"
+msgstr "收合"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:836
+msgid "&Toolbar"
+msgstr "工具列(&T)"
+
+# Part of the View menu
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:838
+msgid "Status &Bar"
+msgstr "狀態列(&B)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:840
+msgid "Vie&w"
+msgstr "檢視(&W)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:846
+msgid "&Tools"
+msgstr "工具(&T)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:849
+msgid "Help &Contents"
+msgstr "幫助(&C)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:853
+msgid "&About VVV..."
+msgstr "關於 VVV(&A)"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:861
+#: view)\src/mainframe.cpp:4028
+msgid "New"
+msgstr "新增"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:861
+#: view)\src/mainframe.cpp:4028
+msgid "Create a new catalog"
+msgstr "新增一個索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:864
+#: view)\src/mainframe.cpp:4031
+msgid "Open"
+msgstr "開啟"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:864
+#: view)\src/mainframe.cpp:4031
+msgid "Open an existing catalog"
+msgstr "開啟一個索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:867
+#: view)\src/mainframe.cpp:4034
+msgid "Catalog a new volume"
+msgstr "建立索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:870
+#: view)\src/mainframe.cpp:4037
+msgid "Up"
+msgstr "上層"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:870
+#: view)\src/mainframe.cpp:4037
+msgid "Move up one level"
+msgstr "向上一層"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:874
+#: view)\src/mainframe.cpp:4041
+msgid "Physical"
+msgstr "實體"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:874
+#: view)\src/mainframe.cpp:4041
+msgid "Show the physical view"
+msgstr "檢視實體模式"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:877
+#: view)\src/mainframe.cpp:4044
+msgid "Virtual"
+msgstr "虛擬"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:877
+#: view)\src/mainframe.cpp:4044
+msgid "Show the virtual view"
+msgstr "檢視虛擬模式"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:880
+#: view)\src/mainframe.cpp:969
+#: view)\src/mainframe.cpp:975
+#: view)\src/mainframe.cpp:4047
+msgid "Search"
+msgstr "搜尋"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:880
+#: view)\src/mainframe.cpp:4047
+msgid "Show the search view"
+msgstr "檢視搜尋模式"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:932
+#: view)\src/mainframe.cpp:953
+msgid "Is equal to:"
+msgstr "完全相符："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:933
+#: view)\src/mainframe.cpp:954
+msgid "Starts with:"
+msgstr "開頭文字："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:934
+#: view)\src/mainframe.cpp:955
+msgid "Contains:"
+msgstr "內容包含："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:935
+msgid "File name"
+msgstr "檔名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:944
+msgid "Extension:"
+msgstr "副檔名："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:967
+msgid "Selected physical folder"
+msgstr "已選取的實體目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1071
+msgid "Catalog volume"
+msgstr "建立索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1313
+msgid "Physical path"
+msgstr "實體位置"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1363
+#: view)\src/settings.cpp:209
+msgid "Artist"
+msgstr "演出"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1368
+#: view)\src/settings.cpp:213
+msgid "Album"
+msgstr "專輯"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1373
+#: view)\src/settings.cpp:217
+msgid "Title"
+msgstr "標題"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1378
+#: view)\src/settings.cpp:221
+msgid "Year"
+msgstr "年份"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1383
+#: view)\src/settings.cpp:225
+msgid "Comment"
+msgstr "註解"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1388
+msgid "Number"
+msgstr "編號"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1393
+#: view)\src/settings.cpp:233
+msgid "Genre"
+msgstr "類別"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1398
+#: view)\src/settings.cpp:237
+msgid "Length"
+msgstr "長度"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1403
+#: view)\src/settings.cpp:241
+msgid "Bitrate"
+msgstr "位元率"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1408
+#: view)\src/settings.cpp:245
+msgid "Sample rate"
+msgstr "取樣頻率"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1413
+#: view)\src/settings.cpp:249
+msgid "Channels"
+msgstr "聲道"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1442
+msgid "Open catalog"
+msgstr "開啟索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1446
+#: view)\src/mainframe.cpp:3622
+msgid "VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*"
+msgstr "VVV (*.vvv)|*.vvv|所有檔案 (*.*)|*.*"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1891
+msgid "Choose virtual folder"
+msgstr "選取虛擬目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:1977
+msgid "New virtual root folder"
+msgstr "新增虛擬根目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2005
+msgid "New virtual subfolder"
+msgstr "新增虛擬子目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2023
+#: view)\src/mainframe.cpp:3385
+msgid "Enter the new folder name"
+msgstr "輸入新的目錄名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2038
+#: view)\src/mainframe.cpp:3396
+msgid "The new folder name is already present in the database"
+msgstr "錯誤：新的目錄名稱已經在索引中"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2091
+msgid "This catalog file does not exist any more"
+msgstr "錯誤：這個索引檔已不存在"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2121
+msgid ""
+"Catalog not found:\n"
+"\n"
+msgstr ""
+"錯誤：沒有找到索引檔\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2125
+msgid ""
+"Incorrect username or password for the following database:\n"
+"\n"
+msgstr ""
+"錯誤：因為帳號或密碼錯誤，所以無法開啟下面的索引檔：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2130
+msgid ""
+"Unable to connect to the following server:\n"
+"\n"
+msgstr ""
+"錯誤：無法與下面的伺服器連接：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2132
+msgid ""
+"Unable to open the catalog.\n"
+"Please note that you are not connected to a database server so you cannot open a catalog located on another computer in the network.\n"
+"If you want to open a catalog on another computer you must connect to the database server (Tools/Options menu)."
+msgstr ""
+"錯誤：無法打開索引檔。\n"
+"請注意若沒有連接到資料庫伺服器，是不可以開啟網路中別台電腦中的索引檔。\n"
+"如果想開啟網路中別台電腦中的索引檔的話，您必須連上在與資料庫伺服器（工具/選項）。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2154
+msgid ""
+"This catalog has been created with a previous version of the program and it needs to be upgraded, but the file containing the upgrades list is missing.\n"
+"\n"
+"You can try reinstalling the program to solve this problem."
+msgstr ""
+"此索引檔是由較舊的版本建立的，而且需要升級，但升級方法的清單已遺失。\n"
+"\n"
+"您可以試著重新安裝程式來解決這個問題。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2158
+msgid "Upgrading the catalog, please wait..."
+msgstr "升級索引檔中，請稍後..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2170
+msgid ""
+"This catalog has been created with an older version of VVV so you need to convert it to a newer format.\n"
+"\n"
+msgstr ""
+"此索引檔案是由舊版本的VVV所建立的，所以需要升級為較新的格式。\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2171
+msgid ""
+"The conversion will create a new catalog with the same data as the older one, then you will use this new catalog with VVV. You will not use the older catalog any more.\n"
+"\n"
+msgstr ""
+"升級將依照舊的資料新增一個新的索引檔，升級完後會得到新的VVV索引檔。請不要繼續使用舊的索引檔。\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2172
+msgid "Do you want to convert the catatalog creating a new one?"
+msgstr "您確定要升級成新的索引檔？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2176
+#: view)\src/mainframe.cpp:2380
+msgid ""
+"Unable to create a new catalog.\n"
+"\n"
+"You are connecting to a database server on another computer. You must execute this program on the server to be able to create a new catalog."
+msgstr ""
+"錯誤：無法新增新的索引檔。\n"
+"\n"
+"目前是連接到別台電腦上的資料庫。您必須在伺服器上執行此程式才可以新增一個新索引檔。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2180
+msgid "Convert to a new catalog"
+msgstr "升級成新的索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2188
+#: view)\src/mainframe.cpp:2392
+msgid ""
+"Unable to find the database backup to restore.\n"
+"\n"
+"You can try reinstalling the program to solve this problem."
+msgstr ""
+"錯誤：無法找到備份的資料庫來還原。\n"
+"\n"
+"您可以試著重新安裝程式來解決這個問題。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2351
+msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
+msgstr "VVV（虛擬索引檢視）：一個為卸除式裝置，如CD和DVD建立索引的程式"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2352
+msgid "Copyright (C) 2007-2010 The VVV Team"
+msgstr "版權所有 (C) 2007-2010 VVV 團隊"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2353
+msgid "Fulvio Senore: main developer"
+msgstr "主開發者：Fulvio Senore"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2354
+msgid ""
+"\n"
+"Jan Albartus: worked at the portable version and designed the application's icon"
+msgstr ""
+"\n"
+"Jan Albartus：製成行動軟體和設計軟體圖示"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2355
+msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
+msgstr "此程式的圖示使用Gnome、Ubuntu和水晶樣式圖片素材"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2356
+msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
+msgstr "此程式是開源程式，在GNU通用公共許可證下發佈"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2365
+msgid "Serbian"
+msgstr "Serbian（塞爾維亞）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2384
+msgid "New catalog"
+msgstr "新增索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2417
+msgid "Multiple items"
+msgstr "多個項目"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2426
+#: view)\src/mainframe.cpp:2460
+msgid "Object description"
+msgstr "檔案註解"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2559
+#: view)\src/mainframe.cpp:3156
+msgid "Add To Virtual Folder"
+msgstr "新增到虛擬目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2564
+#: view)\src/mainframe.cpp:3159
+msgid "Edit Description..."
+msgstr "編輯註解..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2567
+msgid "Rename..."
+msgstr "更名..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2568
+#: view)\src/mainframe.cpp:2603
+#: view)\src/mainframe.cpp:3152
+msgid "Delete"
+msgstr "刪除"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2569
+msgid "Update Volume..."
+msgstr "更新目錄..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2593
+msgid "New Root Folder"
+msgstr "新增根目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2596
+msgid "New Subfolder"
+msgstr "新增子目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2602
+msgid "Rename"
+msgstr "更名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2743
+msgid "Please enter some search data"
+msgstr "錯誤：請輸入搜尋資料"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2762
+msgid "Incorrect file name search data"
+msgstr "錯誤：請輸入正確的檔名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2773
+msgid "Incorrect extension search data"
+msgstr "錯誤：請輸入正確的副檔名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2785
+msgid "Incorrect description search data"
+msgstr "錯誤：請輸入正確的註解"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2890
+msgid "The search did not find anything"
+msgstr "沒有搜尋到任何資料"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3039
+msgid "Objects: "
+msgstr "檔案："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3046
+msgid "Total size: "
+msgstr "大小："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3205
+msgid "Settings"
+msgstr "設定"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3295
+msgid ""
+"This command will delete the selected virtual folder, but it will not change the folders in the physical view.\n"
+"\n"
+"Do you really want to delete the selected virtual folder?"
+msgstr ""
+"接下來會刪除已選取的虛擬目錄，但是不會刪除實體模式下的資料。\n"
+"\n"
+"確定要刪除虛擬目錄？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3320
+msgid ""
+"This command will delete this volume:\n"
+"\n"
+msgstr ""
+"接下來會刪除下列的索引：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3320
+msgid ""
+"\n"
+"\n"
+"from the VVV catalog. It will not delete any file from your disk.\n"
+"\n"
+"Do you really want to delete this volume?"
+msgstr ""
+"\n"
+"\n"
+"從 VVV 的索引檔。並不會刪除實際硬碟中的檔案。\n"
+"\n"
+"確定要刪除以下的索引？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3330
+msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
+msgstr "錯誤：無法刪除索引，裡面至少有一個檔案在虛擬目錄中"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3351
+msgid "Enter the new volume name"
+msgstr "輸入新的索引名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3351
+msgid "Rename volume"
+msgstr "更名索引"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3364
+msgid "The new volume name is already present in the database"
+msgstr "錯誤：所輸入新的索引名稱已經在索引檔中"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3385
+msgid "Rename virtual folder"
+msgstr "更名虛擬目錄"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3503
+msgid ""
+"This command will delete the selected virtual files, but it will not change the files in the physical view.\n"
+"\n"
+"Do you really want to delete the selected virtual files?"
+msgstr ""
+"接下來會刪除已選取的虛擬目錄，但是不會刪除實體模式下的資料。\n"
+"\n"
+"確定要刪除虛擬目錄？"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3645
+#: view)\src/mainframe.cpp:3722
+msgid ""
+"Unable to continue. You have choosen an existing file:\n"
+"\n"
+msgstr ""
+"錯誤：無法繼續。您選擇的檔案：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3645
+#: view)\src/mainframe.cpp:3722
+#: view)\src/mainframe.cpp:3804
+msgid ""
+"\n"
+"\n"
+"You must type the name of a non-existing file."
+msgstr ""
+"\n"
+"\n"
+"您必須輸入現在沒有使用的檔名。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3654
+#: view)\src/mainframe.cpp:3731
+#: view)\src/mainframe.cpp:3813
+msgid "Unable to continue: you have choosen a folder where you do not have the right to create a file."
+msgstr "錯誤：無法繼續，您沒有權利在選取的資料夾中新增檔案。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3699
+#: view)\src/opencatalog.cpp:255
+#: view)\src/restore.cpp:287
+msgid "VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*"
+msgstr "VVV 備份檔 (*.vvvbk)|*.vvvbk|所有檔案 (*.*)|*.*"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3700
+msgid "Backup catalog"
+msgstr "備份索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3745
+msgid "Backup completed"
+msgstr "備份完成"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3768
+msgid ""
+"Unable to restore.\n"
+"\n"
+"You are connecting to a database server on another computer. You must execute this command on the server to be able to restore a catalog."
+msgstr ""
+"無法回復。\n"
+"\n"
+"您目前是連線到伺服器中的資料庫。您必須在伺服器上才可以回復索引檔。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3782
+msgid "The catalog name is missing"
+msgstr "錯誤：沒有索引檔名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3786
+msgid "The backup name is missing"
+msgstr "錯誤：沒有備份檔名"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3804
+msgid ""
+"Unable to continue. You have choosen an existing catalog:\n"
+"\n"
+msgstr ""
+"錯誤：無法繼續，您選擇的索引檔：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3841
+msgid "Restore completed"
+msgstr "回復完成"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3858
+msgid "Update Volume"
+msgstr "更新索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/object_description.cpp:145
+msgid "Please enter the description for the following object:"
+msgstr "請輸入下列檔案的註解："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/object_description.cpp:148
+msgid "OBJECT NAME"
+msgstr "物件名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/opencatalog.cpp:163
+msgid ""
+"You are about to open a catalog located on the server.\n"
+"\n"
+"Enter the alias or the complete path to the catalog file.\n"
+"Remember that the path must be relative to the server, not to the client."
+msgstr ""
+"您試著要開啟伺服器上的索引檔。\n"
+"\n"
+"請輸入索引檔的完整路徑。\n"
+"請注意輸入的路徑必須是相對於伺服器的路徑，而不是使用者的路徑。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/opencatalog.cpp:257
+#: view)\src/restore.cpp:305
+msgid "VVV files (*.vvv)|*.vvv|All files (*.*)|*.*"
+msgstr "VVV (*.vvv)|*.vvv|所有檔案 (*.*)|*.*"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/opencatalog.cpp:277
+msgid "Open Catalog"
+msgstr "開啟索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/opencatalog.cpp:281
+msgid "New Catalog"
+msgstr "新增索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/opencatalog.cpp:285
+msgid "Backup"
+msgstr "備份"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.cpp:154
+msgid ""
+"You are about to create a new catalog from a backup file.\n"
+"\n"
+"Enter the complete path to the backup file and to the catalog file that will be created.\n"
+"You cannot enter the name of an existing catalog."
+msgstr ""
+"您試著要在備份檔中還原出索引檔。\n"
+"\n"
+"請輸入備份檔的完整路徑，還原後索引檔會出現在同一個目錄下。\n"
+"請注意目錄下不可以有相同的索引檔名。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.cpp:159
+msgid "Backup file:"
+msgstr "備份檔："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.cpp:171
+msgid "New catalog:"
+msgstr "索引檔："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.cpp:286
+msgid "Select backup file"
+msgstr "選擇備份檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.cpp:304
+msgid "Catalog file"
+msgstr "選擇索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:179
+msgid "Reopen the last used catalog at startup"
+msgstr "開啟上次關閉前的索引檔"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:185
+msgid "Beep for tasks longer than (seconds):"
+msgstr "在幾秒後發出警告聲："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:193
+msgid "Change language"
+msgstr "更改語言（Change Language）"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:196
+msgid "General"
+msgstr "一般"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:204
+msgid "Show the following data for MP3 files:"
+msgstr "顯示 MP3 的後設資料："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:229
+msgid "Track number"
+msgstr "曲目"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:255
+msgid "MP3"
+msgstr "MP3"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:263
+msgid ""
+"Check the checkbox below if you want to access catalogs stored\n"
+"in a network server. Each computer in the network will be able to\n"
+"access the same catalogs stored in the server.\n"
+"DO NOT check the checkbox if you only want to access catalogs\n"
+"stored in this computer and you do not want to share them\n"
+"with other computers."
+msgstr ""
+"若要連接伺服器的話請勾選核取方塊。\n"
+"網路上的所有電腦都可以連到伺服器中同一個索引檔。\n"
+"注意：若沒有需要連接伺服器的話請不要勾選核取方塊，\n"
+"也不要跟其他電腦分享。"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:268
+msgid "Connect to a network server"
+msgstr "連接到伺服器"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:275
+#: view)\src/settings.cpp:298
+msgid "Server"
+msgstr "伺服器"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:281
+msgid "Username"
+msgstr "帳號"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:287
+msgid "Password"
+msgstr "密碼"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:295
+msgid "Test server connection"
+msgstr "測試連線"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:385
+msgid "You must enter a server name or address"
+msgstr "錯誤：伺服器名稱或路徑不可為白"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:389
+msgid "You must enter a username"
+msgstr "錯誤：帳號不可為白"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:393
+msgid "You must enter a password"
+msgstr "錯誤：密碼不可為白"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:456
+msgid "You must enter the server name or address"
+msgstr "錯誤：伺服器名稱或路徑不可為白"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:461
+msgid "Unable to connect to the server"
+msgstr "錯誤：無法與伺服器連接"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/settings.cpp:463
+msgid "Server connection successful"
+msgstr "錯誤：伺服器連線成功"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/update_volume.cpp:180
+msgid "You are about to update the following volume:"
+msgstr "您要更新以下的索引："
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/update_volume.cpp:183
+msgid "VOLUME NAME"
+msgstr "索引名稱"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/update_volume.cpp:188
+msgid "Enter or select the path to volume to update"
+msgstr "請輸入要更新的路徑"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/update_volume.cpp:208
+msgid "Update"
+msgstr "更新"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:300
+#: view)\src/vvv.cpp:356
+msgid ""
+"Unable to connect to the server\n"
+"\n"
+msgstr ""
+"錯誤：無法與伺服器連接。\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:302
+#: view)\src/vvv.cpp:308
+#: view)\src/vvv.cpp:358
+#: view)\src/vvv.cpp:364
+msgid ""
+"An unexpected error has occurred. Here is a description of the error:\n"
+"\n"
+msgstr ""
+"一個預料之外的錯誤發生，以下是錯誤資訊：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:314
+#: view)\src/vvv.cpp:370
+msgid "An unexpected error has occurred. This application will be terminated"
+msgstr "一個預料之外的錯誤發生，程式即將結束"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:382
+#: view)\src/vvv.cpp:466
+msgid ""
+"An unexpected error has happened. Here is a description of the error:\n"
+"\n"
+msgstr ""
+"一個預料之外的錯誤發生，以下是錯誤資訊：\n"
+"\n"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:408
+msgid "The volume path does not exists"
+msgstr "錯誤：索引路徑不存在"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/vvv.cpp:449
+msgid "Volume name not found"
+msgstr "錯誤：索引名稱不存在"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/exportdata.h:71
+msgid "Export data"
+msgstr "輸出資料"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.h:111
+msgid "VVV"
+msgstr "VVV"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/object_description.h:54
+msgid "Object Description"
+msgstr "檔案註解"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/restore.h:46
+msgid "Restore"
+msgstr "回復"
+

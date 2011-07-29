@@ -42,6 +42,7 @@ Source: intl\fbintl.conf; DestDir: {app}\intl; Flags: replacesameversion
 Source: ..\vvv-struct-update.fdb; DestDir: {app}; Attribs: readonly; Flags: overwritereadonly uninsremovereadonly
 Source: ..\VVV.fbk; DestDir: {app}
 Source: ..\help\en\vvv.chm; DestDir: {app}
+Source: ..\translations\vvv-cn.mo; DestDir: {app}\languages\cn; DestName: vvv.mo
 Source: ..\translations\vvv-cs.mo; DestDir: {app}\languages\cs; DestName: vvv.mo
 Source: ..\translations\cs\wxstd.mo; DestDir: {app}\languages\cs
 Source: ..\translations\vvv-de.mo; DestDir: {app}\languages\de; DestName: vvv.mo
