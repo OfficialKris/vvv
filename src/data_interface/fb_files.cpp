@@ -199,3 +199,31 @@ std::vector<wxString> CFiles::FB_ListFolderExtensions( long PathID )
 	return extList;
 }
 
+long CFiles::FB_GetPathID( long FileID )
+{
+	wxString sql;
+	bool transAlreadyStarted;
+	
+	sql = wxT("SELECT PATH_ID FROM FILES WHERE FILE_ID = ") + CUtils::long2string( FileID );
+
+	CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+	transAlreadyStarted = db->TransactionIsOpened();
+	if( !transAlreadyStarted )
+		db->TransactionStart( true );
+	IBPP::Statement st = StatementFactory( db->GetIBPPDB(), db->TransactionGetReference() );
+	st->Execute( CUtils::DBwx2std(sql) );
+
+	int64_t tmp;
+	long retVal;
+	st->Fetch();
+	st->Get( "PATH_ID", tmp );
+	retVal = (long) tmp;
+	if( !transAlreadyStarted ) {
+		CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+		db->TransactionCommit();
+	}
+
+	return retVal;
+}
+
+

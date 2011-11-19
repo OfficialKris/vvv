@@ -74,3 +74,16 @@ void CVirtualPaths::AddPhysicalFile( long PhysicalFileID, long VirtualPathID ) {
 	}
 }
 
+wxString CVirtualPaths::GetFullPath( long PathID ) {
+	wxString retVal = wxEmptyString;
+
+	switch( DatabaseType ) {
+		case dbtFirebird:
+			retVal = FB_GetFullPath( PathID );
+			break;
+	}
+
+	return retVal;
+}
+
+

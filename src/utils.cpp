@@ -240,4 +240,30 @@ wxString CUtils::ExpandSingleQuotes( wxString txt ) {
 	return txt;
 }
 
+wxString CUtils::ConvertSecondsToTimeString( int seconds )
+{
+	int h, m, s;
+	h = m = 0;
+	s = seconds;
+	while( s >= 60 ) {
+		s -= 60;
+		m++;
+	}
+	while( m >= 60 ) {
+		m -= 60;
+		h++;
+	}
+	wxDateTime dt( h, m, s );
+	wxString sl = dt.FormatTime();
+	wxString stmp;
+	if( sl.StartsWith(wxT("0.0"), &stmp) )
+		sl = stmp;
+	else {
+		if( sl.StartsWith(wxT("0."), &stmp) )
+			sl = stmp;
+	}
+	return sl;
+}
+
+
 

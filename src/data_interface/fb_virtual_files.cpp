@@ -163,3 +163,34 @@ std::vector<wxString> CVirtualFiles::FB_ListFolderExtensions( long PathID )
 	return extList;
 }
 
+std::vector<long> CVirtualFiles::FB_ListVirtualPathIDs( long FileID )
+{
+	wxString sql;
+	bool transAlreadyStarted;
+	
+	sql = wxT("SELECT VIRTUAL_PATH_ID FROM VIRTUAL_FILES WHERE PHYSICAL_FILE_ID = ") + CUtils::long2string( FileID );;
+
+	CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+	transAlreadyStarted = db->TransactionIsOpened();
+	if( !transAlreadyStarted )
+		db->TransactionStart( true );
+	IBPP::Statement st = StatementFactory( db->GetIBPPDB(), db->TransactionGetReference() );
+	st->Execute( CUtils::DBwx2std(sql) );
+
+	int64_t tmp;
+	std::vector<long> list;
+	while( st->Fetch() ) {
+		st->Get( "VIRTUAL_PATH_ID", tmp );
+		list.push_back( (long) tmp );
+	}
+
+	if( !transAlreadyStarted ) {
+		CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+		db->TransactionCommit();
+	}
+
+	return list;
+}
+
+
+

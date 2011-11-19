@@ -25,6 +25,8 @@
 #include "firebird_db.h"
 #include "ibpp.h"
 
+#include <wx/filename.h>
+
 using namespace IBPP;
 
 void CVirtualPaths::FB_DbInsert(void) {
@@ -298,6 +300,43 @@ void CVirtualPaths::FB_AddPhysicalFile( long PhysicalFileID, long VirtualPathID 
 	}
 }
 
+wxString CVirtualPaths::FB_GetFullPath( long PathID )
+{
+	bool inTransaction;
+	std::string stmp, curPath;
+	wxString sql, retVal, wxstmp;
+
+	CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+	inTransaction = db->TransactionIsOpened();
+	if( !inTransaction ) {
+		db->TransactionStart();
+	}
+	Statement st = StatementFactory( db->GetIBPPDB(), db->TransactionGetReference() );
+
+	sql = wxT("SELECT FATHER_ID, PATH FROM VIRTUAL_PATHS WHERE PATH_ID = ") + CUtils::long2string(PathID);
+	st->Prepare( CUtils::DBwx2std(sql) );
+	st->Execute();
+	st->Fetch();
+
+	st->Get( "PATH", curPath );
+	if( st->IsNull("FATHER_ID") ) {
+		retVal = CUtils::DBstd2wx( curPath );
+	}
+	else {
+		// recursion in the father folder
+		int64_t tmp;
+		st->Get( "FATHER_ID", tmp );
+		long fatherID = (long) tmp;
+		wxstmp = FB_GetFullPath( fatherID );
+		retVal = wxstmp + wxString(wxFileName::GetPathSeparator()) + CUtils::DBstd2wx(curPath);
+	}
+
+	if( !inTransaction ) {
+		db->TransactionCommit();
+	}
+
+	return retVal;
+}
 
 
 

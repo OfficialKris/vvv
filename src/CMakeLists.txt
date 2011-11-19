@@ -58,6 +58,8 @@ set( SRCS
   convert_db_unicode.cpp
   decode_search_string.cpp
   decode_search_string.h
+  dlg_file_information.cpp
+  dlg_file_information.h
   exportdata.cpp
   exportdata.h
   long_task_beep.cpp

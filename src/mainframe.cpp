@@ -76,6 +76,7 @@
 #include "restore.h"
 #include "update_volume.h"
 #include "decode_search_string.h"
+#include "dlg_file_information.h"
 
 ////@begin XPM images
 #include "graphics/vvv32.xpm"
@@ -810,7 +811,7 @@ void CMainFrame::CreateControls()
     itemMenu21->Append(ID_EDIT_RENAME, _("&Rename...\tF2"), wxEmptyString, wxITEM_NORMAL);
     itemMenu21->Append(ID_EDIT_DELETE, _("&Delete"), wxEmptyString, wxITEM_NORMAL);
     itemMenu21->AppendSeparator();
-    itemMenu21->Append(ID_EDIT_OBJECT_DESCRIPTION, _("&Object Description..."), wxEmptyString, wxITEM_NORMAL);
+    itemMenu21->Append(ID_EDIT_OBJECT_DESCRIPTION, _("&Object Information..."), wxEmptyString, wxITEM_NORMAL);
     itemMenu21->AppendSeparator();
     itemMenu21->Append(ID_NEW_VIRTUAL_ROOT_FOLDER, _("&New Virtual Root Folder..."), wxEmptyString, wxITEM_NORMAL);
     itemMenu21->Append(ID_NEW_VIRTUAL_SUBFOLDER, _("New Virtual &Subfolder..."), wxEmptyString, wxITEM_NORMAL);
@@ -1665,32 +1666,7 @@ void CMainFrame::AddAudioMetatataToListControl( CFilesAudioMetadata fam, wxListC
 	if( fam.Number == 0 ) s = wxEmptyString; else s = CUtils::long2string(fam.Number);
 	if( m_amdColumnsToShow[amdNumber] ) lctl->SetItem( itemIndex, k++, s );
 	if( m_amdColumnsToShow[amdGenre] ) lctl->SetItem( itemIndex, k++, fam.Genre );
-
-	if( m_amdColumnsToShow[amdLength] ) {
-		// length
-		int h, m, s;
-		h = m = 0;
-		s = fam.Length;
-		while( s >= 60 ) {
-			s -= 60;
-			m++;
-		}
-		while( m >= 60 ) {
-			m -= 60;
-			h++;
-		}
-		wxDateTime dt( h, m, s );
-		wxString sl = dt.FormatTime();
-		wxString stmp;
-		if( sl.StartsWith(wxT("0.0"), &stmp) )
-			sl = stmp;
-		else {
-			if( sl.StartsWith(wxT("0."), &stmp) )
-				sl = stmp;
-		}
-		lctl->SetItem( itemIndex, k++, sl );
-	}
-
+	if( m_amdColumnsToShow[amdLength] ) lctl->SetItem( itemIndex, k++, CUtils::ConvertSecondsToTimeString(fam.Length) );
 	if( fam.Bitrate == 0 ) s = wxEmptyString; else s = CUtils::long2string(fam.Bitrate);
 	if( m_amdColumnsToShow[amdBitrate] ) lctl->SetItem( itemIndex, k++, s );
 	if( fam.SampleRate == 0 ) s = wxEmptyString; else s = CUtils::long2string(fam.SampleRate);
@@ -2414,24 +2390,45 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 		wxASSERT( nSelectedObjects > 0 );
 		wxString objectName;
 		wxString orgDescr = wxEmptyString;
-		if( nSelectedObjects > 1 )
-			objectName = _("Multiple items") + wxString::Format( wxT(" (%d)"), nSelectedObjects );
-		else {
+		wxString newDescr = wxEmptyString;
+		MyListItemData *itemData = NULL;
+		bool descriptionOnly = true;	// flag to decide which dialog to show
+		if( nSelectedObjects == 1 ) {
 			long item = -1;
 			item = lctl->GetNextItem( item, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
-			objectName = lctl->GetItemText( item );
-			MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( item );
-			orgDescr = itemData->GetObjectDescription();
+			itemData = (MyListItemData *) lctl->GetItemData( item );
+			descriptionOnly = itemData->IsFolder();
 		}
+		if( descriptionOnly ) {
+			if( nSelectedObjects == 1 ) {
+				objectName = itemData->GetName();
+			}
+			else {
+				objectName = _("Multiple items") + wxString::Format( wxT(" (%d)"), nSelectedObjects );
+			}
 
-		CDialogObjectDescription dialog( this, ID_DIALOG_OBJECT_DESCRIPTION, _("Object description") );
-		dialog.SetObjectName( objectName );
-		dialog.SetDescription( orgDescr );
+			CDialogObjectDescription dialog( this, ID_DIALOG_OBJECT_DESCRIPTION, _("Object description") );
+			dialog.SetObjectName( objectName );
+			dialog.SetDescription( orgDescr );
 
-		if( dialog.ShowModal() != wxID_OK ) return;
+			if( dialog.ShowModal() != wxID_OK ) return;
 
-		wxString newDescr = dialog.GetDescription();
-		if( newDescr == orgDescr) return;
+			newDescr = dialog.GetDescription();
+			if( newDescr == orgDescr) return;
+		}
+		else {
+			wxASSERT( itemData != NULL );
+			orgDescr = itemData->GetObjectDescription();
+
+			CFileInformationDialog dialog( this, ID_CFILEINFORMATIONDIALOG, _("File description") );
+			dialog.SetDescription( orgDescr );
+			dialog.SetItemData( itemData );
+
+			if( dialog.ShowModal() != wxID_OK ) return;
+
+			newDescr = dialog.GetDescription();
+			if( newDescr == orgDescr) return;
+		}
 
 		// loops over all the selected items
 		long item = -1;
@@ -2562,7 +2559,7 @@ void CMainFrame::OnTreeControlItemMenu( wxTreeEvent& event )
 	menu.Append( ID_VIEW_EXPAND, _("Expand") );
 	menu.Append( ID_VIEW_COLLAPSE, _("Collapse") );
 	menu.AppendSeparator();
-	menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Edit Description...") );
+	menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Object information...") );
 	if( tctl->GetItemParent(item) == tctl->GetRootItem() ) {
 		// only for voume nodes, not for folders
 		menu.Append( ID_EDIT_RENAME, _("Rename...") );
@@ -3157,7 +3154,7 @@ void CMainFrame::OnListControlContextMenu( wxContextMenuEvent& event )
 		menu.Append( ID_ADD_VIRTUAL_FOLDER, _("Add To Virtual Folder") );
 		if( m_CurrentView != cvSearch ) {
 			menu.AppendSeparator();
-			menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Edit Description...") );
+			menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Object Information...") );
 		}
 	}
 

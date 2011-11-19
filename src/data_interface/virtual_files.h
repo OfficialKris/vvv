@@ -66,6 +66,9 @@ public:
 	// return a vector containing all the extensions found in a folder
 	static std::vector<wxString> ListFolderExtensions( long PathID );
 
+	// return a vector containing all the virtual path IDs for this virtual file
+	static std::vector<long> ListVirtualPathIDs( long FileID );
+
 protected:
 
 	// Firebird implementation of the database methods
@@ -74,6 +77,7 @@ protected:
 	void FB_DbDelete(void);
 	void FB_FetchRow(void);
 	static std::vector<wxString> FB_ListFolderExtensions( long PathID );
+	static std::vector<long> FB_ListVirtualPathIDs( long FileID );
 
 };
 

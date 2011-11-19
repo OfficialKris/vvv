@@ -106,6 +106,9 @@ public:
 	// doubles single-quote characters in a string, used to create SQL statements
 	static wxString ExpandSingleQuotes( wxString txt );
 
+	// convert a time in seconds to a string with hours, minutes and seconds
+	static wxString ConvertSecondsToTimeString( int seconds );
+
 private:
 	// name of the current application
 	static wxString applicationName;

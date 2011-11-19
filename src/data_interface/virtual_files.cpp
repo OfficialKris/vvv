@@ -58,4 +58,14 @@ std::vector<wxString> CVirtualFiles::ListFolderExtensions( long PathID )
 	return retVal;
 }
 
+std::vector<long> CVirtualFiles::ListVirtualPathIDs( long FileID )
+{
+	std::vector<long> retVal;
+	switch( DatabaseType ) {
+		case dbtFirebird:
+			retVal = FB_ListVirtualPathIDs( FileID );
+			break;
+	}
+	return retVal;
+}
 

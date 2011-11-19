@@ -89,3 +89,15 @@ std::vector<wxString> CFiles::ListFolderExtensions( long PathID )
 	return retVal;
 }
 
+long CFiles::GetPathID( long FileID )
+{
+	long retVal = -1;
+	switch( DatabaseType ) {
+		case dbtFirebird:
+			retVal = FB_GetPathID( FileID );
+			break;
+	}
+
+	return retVal;
+}
+

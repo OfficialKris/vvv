@@ -60,6 +60,9 @@ public:
 	// renames a virtual path.
 	static void Rename( long VirtualPathID, wxString newName );
 
+	// returns the full path
+	static wxString GetFullPath( long PathID );
+
 protected:
 
 	// Firebird implementation of the database methods
@@ -76,6 +79,7 @@ protected:
 	static void FB_AppendVolume( long VolumeID, long PhysicalPathID, long VirtualPathID );
 	static void FB_Rename( long VirtualPathID, wxString newName );
 	static void FB_AddPhysicalFile( long PhysicalFileID, long VirtualPathID );
+	static wxString FB_GetFullPath( long PathID );
 
 };
 

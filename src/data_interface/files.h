@@ -77,6 +77,9 @@ public:
 	// updates file date and size
 	static void UpdateDateSize( long FileID, const wxDateTime& fdt, const wxLongLong& fs );
 
+	// return the ID of the path containing the file
+	static long GetPathID( long FileID );
+
 	// return a vector containing all the extensions found in a folder
 	static std::vector<wxString> ListFolderExtensions( long PathID );
 
@@ -90,6 +93,7 @@ protected:
 
 	static void FB_UpdateDescription( long FileID, const wxString& descr );
 	static void FB_UpdateDateSize( long FileID, const wxDateTime& fdt, const wxLongLong& fs );
+	static long FB_GetPathID( long FileID );
 	static std::vector<wxString> FB_ListFolderExtensions( long PathID );
 };
 
