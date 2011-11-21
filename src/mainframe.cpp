@@ -2398,6 +2398,10 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 			item = lctl->GetNextItem( item, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
 			itemData = (MyListItemData *) lctl->GetItemData( item );
 			descriptionOnly = itemData->IsFolder();
+			if( itemData->IsFolder() && m_CurrentView == cvVirtual ) {
+				// at the moment the program does not support description for folders in the virtual view
+				return;
+			}
 		}
 		if( descriptionOnly ) {
 			if( nSelectedObjects == 1 ) {
@@ -2438,7 +2442,10 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 			MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( item );
 			itemData->SetObjectDescription( newDescr );
 			if( itemData->IsFolder() ) {
-				CPaths::UpdateDescription( itemData->GetPathFileID(), newDescr );
+				if( m_CurrentView == cvPhysical ) {
+					// at the moment the program does not support description for folders in the virtual view
+					CPaths::UpdateDescription( itemData->GetPathFileID(), newDescr );
+				}
 			}
 			else {
 				CFiles::UpdateDescription( itemData->GetPhysicalFileID(), newDescr );
@@ -2476,7 +2483,10 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 			tctl->SetItemText( item, CreateVolumeLabel(vol.VolumeName, newDescr) );
 		}
 		else {
-			CPaths::UpdateDescription( itemData->GetPathID(), newDescr );
+			if( m_CurrentView == cvPhysical ) {
+				// at the moment the program does not support description for folders in the virtual view
+				CPaths::UpdateDescription( itemData->GetPathID(), newDescr );
+			}
 		}
 
 		itemData->SetObjectDescription( newDescr );
@@ -2490,7 +2500,12 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 
 void CMainFrame::OnEditObjectDescriptionUpdate( wxUpdateUIEvent& event )
 {
-	if( CBaseDB::GetDatabase() == NULL|| m_CurrentView != cvPhysical ) {
+	if( CBaseDB::GetDatabase() == NULL ) {
+		event.Enable(false);
+		return;
+	}
+
+	if( m_CurrentView != cvPhysical && !m_ListViewHasFocus ) {
 		event.Enable(false);
 		return;
 	}
@@ -3152,11 +3167,9 @@ void CMainFrame::OnListControlContextMenu( wxContextMenuEvent& event )
 	}
 	if( m_CurrentView == cvPhysical || m_CurrentView == cvSearch ) {
 		menu.Append( ID_ADD_VIRTUAL_FOLDER, _("Add To Virtual Folder") );
-		if( m_CurrentView != cvSearch ) {
-			menu.AppendSeparator();
-			menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Object Information...") );
-		}
 	}
+	menu.AppendSeparator();
+	menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Object Information...") );
 
 	m_PoppingUpContextMenu = true;
 	PopupMenu( &menu, point );
