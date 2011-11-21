@@ -81,9 +81,9 @@ void AddFileToDBWindows( WIN32_FIND_DATA &ffd, wxString &path, CNullableLong& Pa
 	file.PathFileID.SetNull(true);
 	file.DbInsert();
 
-	if( file.FileExt == wxT("mp3") ) {
+	if( CAudioMetadata::IsAudioExtension(file.FileExt) ) {
 		CFilesAudioMetadata metaData;
-		if( CAudioMetadata::ReadMP3Metadata( fn.GetFullPath(), metaData ) ) {
+		if( CAudioMetadata::ReadAudioMetadata( fn.GetFullPath(), metaData ) ) {
 			metaData.FileID = file.FileID;
 			metaData.DbInsert();
 		}

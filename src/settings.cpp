@@ -201,7 +201,7 @@ void CDialogSettings::CreateControls()
 
     wxBoxSizer* itemBoxSizer13 = new wxBoxSizer(wxVERTICAL);
     itemBoxSizer12->Add(itemBoxSizer13, 0, wxGROW|wxALL, 5);
-    wxStaticText* itemStaticText14 = new wxStaticText( itemPanel11, wxID_STATIC, _("Show the following data for MP3 files:"), wxDefaultPosition, wxDefaultSize, 0 );
+    wxStaticText* itemStaticText14 = new wxStaticText( itemPanel11, wxID_STATIC, _("Show the following data for audio files:"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer13->Add(itemStaticText14, 0, wxALIGN_LEFT|wxALL, 5);
 
     itemBoxSizer13->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
@@ -252,7 +252,7 @@ void CDialogSettings::CreateControls()
 
     itemBoxSizer13->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
 
-    GetBookCtrl()->AddPage(itemPanel11, _("MP3"));
+    GetBookCtrl()->AddPage(itemPanel11, _("Audio files"));
 
     wxPanel* itemPanel28 = new wxPanel( GetBookCtrl(), ID_DS_SERVER, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
     wxBoxSizer* itemBoxSizer29 = new wxBoxSizer(wxVERTICAL);

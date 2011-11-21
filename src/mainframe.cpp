@@ -77,6 +77,7 @@
 #include "update_volume.h"
 #include "decode_search_string.h"
 #include "dlg_file_information.h"
+#include "audio_metadata.h"
 
 ////@begin XPM images
 #include "graphics/vvv32.xpm"
@@ -1717,7 +1718,7 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 	while( !files.IsEOF() ) {
 
 		bool audioMetadataAvailable = false;
-		if( files.FileExt.Upper() == wxT("MP3") ) {
+		if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 			fam.FileID = files.FileID;
 			audioMetadataAvailable = fam.DBReadMetadata();
 			foundAudioFiles = true;
@@ -1805,7 +1806,7 @@ void CMainFrame::ShowVirtualFolderFiles( wxTreeItemId itemID ) {
 		wxString prevFileName = files.FileName;
 		bool wasFolder = files.IsFolder();
 
-		if( files.FileExt.Upper() == wxT("MP3") ) {
+		if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 			foundAudioFiles = true;
 		}
 
@@ -2835,7 +2836,7 @@ void CMainFrame::OnButtonSearchClick( wxCommandEvent& WXUNUSED(event) ) {
 			while( !files.IsEOF() ) {
 				if( !files.PathID.IsNull() ) {
 					// avoid rows that represent virtual folders created by the user
-					if( files.FileExt.Upper() == wxT("MP3") ) {
+					if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 						foundAudioFiles = true;
 					}
 					AddRowToVirtualListControl( lctl, files.IsFolder(), files.FileName, files.FileSize, files.FileExt, files.DateTime, CPaths::GetFullPath(files.PathID), files.FileID, files.PathFileID.IsNull() ? 0 : (long) files.PathFileID, files.FileDescription, files.FileID );
@@ -2860,7 +2861,7 @@ void CMainFrame::OnButtonSearchClick( wxCommandEvent& WXUNUSED(event) ) {
 				CFiles files;
 				files.DBStartSearchVolumeFilesSQL( itemData->GetVolumeID(), wh );
 				while( !files.IsEOF() ) {
-					if( files.FileExt.Upper() == wxT("MP3") ) {
+					if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 						foundAudioFiles = true;
 					}
 					AddRowToVirtualListControl( lctl, files.IsFolder(), files.FileName, files.FileSize, files.FileExt, files.DateTime, CPaths::GetFullPath(files.PathID), files.FileID, files.PathFileID.IsNull() ? 0 : (long) files.PathFileID, files.FileDescription, files.FileID );
@@ -2912,7 +2913,7 @@ int CMainFrame::AddRowToVirtualListControl( wxListCtrl* lctl, bool isFolder, wxS
 
 	CFilesAudioMetadata fam;
 	bool audioMetadataAvailable = false;
-	if( ext.Upper() == wxT("MP3") ) {
+	if( CAudioMetadata::IsAudioExtension(ext) ) {
 		fam.FileID = physicalFileID;
 		audioMetadataAvailable = fam.DBReadMetadata();
 	}
@@ -2949,7 +2950,7 @@ void CMainFrame::SearchVirtualFolder( long folderID, const wxString& wh ) {
 	bool foundAudioFiles = false;
 	files.DBStartSearchFolderFilesSQL( folderID, wh );
 	while( !files.IsEOF() ) {
-		if( files.FileExt.Upper() == wxT("MP3") ) {
+		if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 			foundAudioFiles = true;
 		}
 		AddRowToVirtualListControl( lctl, files.IsFolder(), files.FileName, files.FileSize, files.FileExt, files.DateTime, files.FullPhysicalPath, files.FileID, files.VirtualPathFileID.IsNull() ? 0 : (long) files.VirtualPathFileID, files.FileDescription, files.PhysicalFileID );
@@ -2978,7 +2979,7 @@ void CMainFrame::SearchPhysicalFolder( long folderID, long volumeID, const wxStr
 	bool foundAudioFiles = false;
 	files.DBStartSearchFolderFilesSQL( folderID, wh );
 	while( !files.IsEOF() ) {
-		if( files.FileExt.Upper() == wxT("MP3") ) {
+		if( CAudioMetadata::IsAudioExtension(files.FileExt) ) {
 			foundAudioFiles = true;
 		}
 		AddRowToVirtualListControl( lctl, files.IsFolder(), files.FileName, files.FileSize, files.FileExt, files.DateTime, CPaths::GetFullPath(files.PathID), files.FileID, files.PathFileID.IsNull() ? 0 : (long) files.PathFileID, files.FileDescription, files.FileID );

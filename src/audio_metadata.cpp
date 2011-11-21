@@ -25,6 +25,9 @@
 #include <fileref.h>
 #include <tag.h>
 
+wxArrayString CAudioMetadata::m_AudioExtensions;
+
+
 static wxString TagLibString2wx( const TagLib::String &ts )
 {
 	std::string s = ts.to8Bit( true );
@@ -33,7 +36,22 @@ static wxString TagLibString2wx( const TagLib::String &ts )
 }
 
 
-bool CAudioMetadata::ReadMP3Metadata( wxString fileName, CFilesAudioMetadata& metaData ) {
+bool CAudioMetadata::IsAudioExtension( const wxString &ext )
+{
+	if( m_AudioExtensions.GetCount() == 0 ) {
+		// list is empty, fill it
+		TagLib::StringList list = TagLib::FileRef::defaultFileExtensions();
+		for( size_t k = 0; k < list.size(); k++ ) {
+			m_AudioExtensions.Add( TagLibString2wx(list[k]) );
+		}
+	}
+
+	int i = m_AudioExtensions.Index( ext );
+	return (i != wxNOT_FOUND);
+}
+
+
+bool CAudioMetadata::ReadAudioMetadata( wxString fileName, CFilesAudioMetadata& metaData ) {
 
 	bool found = false;
 

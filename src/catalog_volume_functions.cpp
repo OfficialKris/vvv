@@ -254,9 +254,9 @@ void CCatalogVolumeFunctions::AddFileToDB( wxString &path, wxString &fileName, C
 	file.DbInsert();
 	nAddedFiles++;
 
-	if( file.FileExt == wxT("mp3") ) {
+	if( CAudioMetadata::IsAudioExtension(file.FileExt) ) {
 		CFilesAudioMetadata metaData;
-		if( CAudioMetadata::ReadMP3Metadata( fn.GetFullPath(), metaData ) ) {
+		if( CAudioMetadata::ReadAudioMetadata( fn.GetFullPath(), metaData ) ) {
 			metaData.FileID = file.FileID;
 			metaData.DbInsert();
 		}

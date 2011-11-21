@@ -42,7 +42,7 @@
 			<param name="Local" value="general_settings.htm">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="MP3 settings">
+			<param name="Name" value="Audio files settings">
 			<param name="Local" value="mp3_settings.htm">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
