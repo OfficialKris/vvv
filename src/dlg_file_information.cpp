@@ -34,6 +34,7 @@
 #include "files.h"
 #include "virtual_files.h"
 #include "virtual_paths.h"
+#include "audio_metadata.h"
 
 #include <vector>
 
@@ -295,24 +296,27 @@ void CFileInformationDialog::ShowFileData()
 	// each row is inserted at the top, so we add them in reverse order
 
 	wxString s;
-	if( m_ItemData->GetChannels() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetChannels());
-	AddLCRow( _("Channels"), s );
-	if( m_ItemData->GetSamplerate() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetSamplerate());
-	AddLCRow( _("Sample rate"), s );
-	if( m_ItemData->GetBitrate() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetBitrate());
-	AddLCRow( _("Bitrate"), s );
-	AddLCRow( _("Length"), CUtils::ConvertSecondsToTimeString(m_ItemData->GetLength()) );
-	AddLCRow( _("Genre"), m_ItemData->GetGenre() );
-	if( m_ItemData->GetNumber() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetNumber());
-	AddLCRow( _("Number"), s );
-	AddLCRow( _("Comment"), m_ItemData->GetComment() );
-	if( m_ItemData->GetYear() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetYear());
-	AddLCRow( _("Year"), s );
-	AddLCRow( _("Title"), m_ItemData->GetTitle() );
-	AddLCRow( _("Album"), m_ItemData->GetAlbum() );
-	AddLCRow( _("Artist"), m_ItemData->GetArtist() );
 
-	AddLCRow( wxEmptyString, wxEmptyString );
+	if( CAudioMetadata::IsAudioExtension(m_ItemData->GetExt()) ) {
+		if( m_ItemData->GetChannels() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetChannels());
+		AddLCRow( _("Channels"), s );
+		if( m_ItemData->GetSamplerate() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetSamplerate());
+		AddLCRow( _("Sample rate"), s );
+		if( m_ItemData->GetBitrate() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetBitrate());
+		AddLCRow( _("Bitrate"), s );
+		AddLCRow( _("Length"), CUtils::ConvertSecondsToTimeString(m_ItemData->GetLength()) );
+		AddLCRow( _("Genre"), m_ItemData->GetGenre() );
+		if( m_ItemData->GetNumber() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetNumber());
+		AddLCRow( _("Number"), s );
+		AddLCRow( _("Comment"), m_ItemData->GetComment() );
+		if( m_ItemData->GetYear() == 0 ) s = wxEmptyString; else s = CUtils::long2string(m_ItemData->GetYear());
+		AddLCRow( _("Year"), s );
+		AddLCRow( _("Title"), m_ItemData->GetTitle() );
+		AddLCRow( _("Album"), m_ItemData->GetAlbum() );
+		AddLCRow( _("Artist"), m_ItemData->GetArtist() );
+
+		AddLCRow( wxEmptyString, wxEmptyString );
+	}
 
 	AddLCRow( _("File date"), m_ItemData->GetDateTime().FormatDate() + wxT(" ") + m_ItemData->GetDateTime().FormatTime() );
 	AddLCRow( _("File size"), CUtils::HumanReadableFileSize(m_ItemData->GetSize()) + wxT(" (") + m_ItemData->GetSize().ToString() + wxT(" ") + _("bytes") + wxT(")") );
