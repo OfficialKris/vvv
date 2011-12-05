@@ -1,4 +1,8 @@
-﻿cz:
+﻿cn:
+bec
+billeccentrec@gmail.com
+
+cs:
 Karel Kozlík
 kozlik@kufr.cz
 
@@ -20,6 +24,14 @@ Frederic.Gacquer@univ-orleans.fr
 hr:
 Hasan Osmanagić
 hasan.osmanagic@zg.t-com.hr
+
+hu:
+Krisztian Mukli
+krisztian.mukli@gmail.com
+
+ja:
+Suguru SASAKI
+sss.sonik@gmail.com
 
 nl:
 Gideon van Melle
