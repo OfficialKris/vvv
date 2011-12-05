@@ -93,6 +93,7 @@ wxLanguage ChooseLanguage()
     {
         { _("(Use default language)"), wxLANGUAGE_DEFAULT },
 
+        { _("Chinese"), wxLANGUAGE_CHINESE },
         { _("Croatian"), wxLANGUAGE_CROATIAN },
         { _("Czech"), wxLANGUAGE_CZECH },
         { _("Dutch"), wxLANGUAGE_DUTCH },
@@ -101,6 +102,7 @@ wxLanguage ChooseLanguage()
         { _("German"), wxLANGUAGE_GERMAN },
         { _("Hungarian"), wxLANGUAGE_HUNGARIAN },
         { _("Italian"), wxLANGUAGE_ITALIAN },
+        { _("Japanese"), wxLANGUAGE_JAPANESE },
         { _("Polish"), wxLANGUAGE_POLISH },
         { _("Portuguese"), wxLANGUAGE_PORTUGUESE },
         { _("Romanian"), wxLANGUAGE_ROMANIAN },
