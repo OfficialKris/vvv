@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VVV 0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-20 23:23+0100\n"
+"POT-Creation-Date: 2011-12-05 09:35+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Fulvio Senore <mailing@fsoft.it>\n"
 "Language-Team: The VVV Team <fsenore@ica-net.it>\n"
@@ -24,7 +24,7 @@ msgstr "Adj meg, vagy válassz ki egy kötetet a katalogizáláshoz"
 #: view)\src/opencatalog.cpp:174
 #: view)\src/restore.cpp:168
 #: view)\src/restore.cpp:180
-#: view)\src/update_volume.cpp:197
+#: view)\src/update_volume.cpp:198
 msgid "..."
 msgstr "..."
 
@@ -40,31 +40,32 @@ msgstr "Kötetnév lekérdezése"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:204
+#: view)\src/dlg_file_information.cpp:170
 #: view)\src/exportdata.cpp:230
 #: view)\src/exportdata.cpp:248
-#: view)\src/mainframe.cpp:854
+#: view)\src/mainframe.cpp:856
 #: view)\src/restore.cpp:187
 #: view)\src/restore.cpp:205
-#: view)\src/update_volume.cpp:203
+#: view)\src/update_volume.cpp:204
 msgid "&Help"
 msgstr "&Súgó"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:209
-#: view)\src/mainframe.cpp:867
-#: view)\src/mainframe.cpp:4034
+#: view)\src/mainframe.cpp:869
+#: view)\src/mainframe.cpp:4054
 msgid "Catalog"
 msgstr "Katalogizálás"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:212
-#: view)\src/update_volume.cpp:211
+#: view)\src/update_volume.cpp:212
 msgid "&Close"
 msgstr "&Bezárás"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:215
-#: view)\src/update_volume.cpp:214
+#: view)\src/update_volume.cpp:215
 msgid "Current folder"
 msgstr "Aktuális mappa"
 
@@ -75,7 +76,7 @@ msgstr "Korábban katalogizált kötetek"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:288
-#: view)\src/update_volume.cpp:269
+#: view)\src/update_volume.cpp:270
 msgid "The volume path is missing"
 msgstr "A kötet útvonala hiányzik"
 
@@ -91,7 +92,7 @@ msgstr "Ez a kötetnév már létezik az adatbázisban"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:357
-#: view)\src/update_volume.cpp:296
+#: view)\src/update_volume.cpp:297
 msgid "Select the volume to catalog"
 msgstr "Válaszd ki a kötetet a katalogizáláshoz"
 
@@ -140,103 +141,123 @@ msgstr "(alapértelmezett nyelv használata)"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
-#: view)\src/mainframe.cpp:2364
+#: view)\src/mainframe.cpp:2334
+#, fuzzy
+msgid "Chinese"
+msgstr "Csatornák"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:97
+#: view)\src/mainframe.cpp:2344
 msgid "Croatian"
 msgstr "horvát"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:97
-#: view)\src/mainframe.cpp:2361
+#: (virtual volumes view)\src/chooselang.cpp:98
+#: view)\src/mainframe.cpp:2340
 msgid "Czech"
 msgstr "cseh"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:98
-#: view)\src/mainframe.cpp:2368
+#: (virtual volumes view)\src/chooselang.cpp:99
+#: view)\src/mainframe.cpp:2349
 msgid "Dutch"
 msgstr "holland"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:99
+#: (virtual volumes view)\src/chooselang.cpp:100
 msgid "English"
 msgstr "angol"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:100
-#: view)\src/mainframe.cpp:2359
+#: (virtual volumes view)\src/chooselang.cpp:101
+#: view)\src/mainframe.cpp:2337
 msgid "French"
 msgstr "francia"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:101
-#: view)\src/mainframe.cpp:2360
+#: (virtual volumes view)\src/chooselang.cpp:102
+#: view)\src/mainframe.cpp:2338
 msgid "German"
 msgstr "német"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:102
-#: view)\src/mainframe.cpp:2366
+#: (virtual volumes view)\src/chooselang.cpp:103
+#: view)\src/mainframe.cpp:2339
+#: view)\src/mainframe.cpp:2342
+msgid "Hungarian"
+msgstr ""
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:104
+#: view)\src/mainframe.cpp:2347
 msgid "Italian"
 msgstr "olasz"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:103
-#: view)\src/mainframe.cpp:2362
+#: (virtual volumes view)\src/chooselang.cpp:105
+#: view)\src/mainframe.cpp:2346
+msgid "Japanese"
+msgstr ""
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/chooselang.cpp:106
+#: view)\src/mainframe.cpp:2341
 msgid "Polish"
 msgstr "lengyel"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:104
-#: view)\src/mainframe.cpp:2357
+#: (virtual volumes view)\src/chooselang.cpp:107
+#: view)\src/mainframe.cpp:2335
 msgid "Portuguese"
 msgstr "portugál"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:105
-#: view)\src/mainframe.cpp:2367
+#: (virtual volumes view)\src/chooselang.cpp:108
+#: view)\src/mainframe.cpp:2348
 msgid "Romanian"
 msgstr "román"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:106
-#: view)\src/mainframe.cpp:2363
+#: (virtual volumes view)\src/chooselang.cpp:109
+#: view)\src/mainframe.cpp:2343
 msgid "Russian"
 msgstr "orosz"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:107
+#: (virtual volumes view)\src/chooselang.cpp:110
 msgid "Serbian (cyrillic)"
 msgstr "szerb (cirill)"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:108
+#: (virtual volumes view)\src/chooselang.cpp:111
 msgid "Serbian (latin)"
 msgstr "szerb (latin)"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:109
-#: view)\src/mainframe.cpp:2358
+#: (virtual volumes view)\src/chooselang.cpp:112
+#: view)\src/mainframe.cpp:2336
 msgid "Spanish"
 msgstr "spanyol"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:110
-#: view)\src/mainframe.cpp:2363
+#: (virtual volumes view)\src/chooselang.cpp:113
+#: view)\src/mainframe.cpp:2343
 msgid "Ukrainian"
 msgstr "ukrán"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:119
+#: (virtual volumes view)\src/chooselang.cpp:122
 msgid "Select your preferred language"
 msgstr "Válaszd ki a használni kívánt nyelvet"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:120
+#: (virtual volumes view)\src/chooselang.cpp:123
 msgid "Language selection"
 msgstr "Nyelvválasztás"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:134
+#: (virtual volumes view)\src/chooselang.cpp:137
 msgid "You must restart the program for this change to take effect."
 msgstr "Ennek a változtatásnak az életbe léptetéséhez újra kell indítani a programot."
 
@@ -248,6 +269,7 @@ msgstr "Válaszd ki a virtuális mappát, amelybe a kiválasztott fájlok és ma
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/choose_virtual_folder.cpp:169
 #: view)\src/choose_virtual_folder.cpp:187
+#: view)\src/dlg_file_information.cpp:164
 #: view)\src/exportdata.cpp:235
 #: view)\src/exportdata.cpp:256
 #: view)\src/object_description.cpp:158
@@ -262,6 +284,7 @@ msgstr "&OK"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/choose_virtual_folder.cpp:173
 #: view)\src/choose_virtual_folder.cpp:184
+#: view)\src/dlg_file_information.cpp:167
 #: view)\src/exportdata.cpp:239
 #: view)\src/exportdata.cpp:253
 #: view)\src/object_description.cpp:162
@@ -282,6 +305,137 @@ msgstr "A konvertálás elindítására készülsz: egy üzenet fog tájékoztat
 #: (virtual volumes view)\src/convert_db_unicode.cpp:546
 msgid "Conversion completed"
 msgstr "Konvertálás befejezve."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:155
+#, fuzzy
+msgid "Description:"
+msgstr "Leírás"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:255
+#: view)\src/exportdata.cpp:524
+#: view)\src/exportdata.cpp:526
+#: view)\src/mainframe.cpp:1297
+msgid "Name"
+msgstr "Név"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:259
+#, fuzzy
+msgid "Value"
+msgstr "Kötet"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:302
+#: view)\src/mainframe.cpp:1415
+#: view)\src/settings.cpp:249
+msgid "Channels"
+msgstr "Csatornák"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:304
+#: view)\src/mainframe.cpp:1410
+#: view)\src/settings.cpp:245
+msgid "Sample rate"
+msgstr "Frekvencia"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:306
+#: view)\src/mainframe.cpp:1405
+#: view)\src/settings.cpp:241
+msgid "Bitrate"
+msgstr "Bitsűrűség"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:307
+#: view)\src/mainframe.cpp:1400
+#: view)\src/settings.cpp:237
+msgid "Length"
+msgstr "Hossz"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:308
+#: view)\src/mainframe.cpp:1395
+#: view)\src/settings.cpp:233
+msgid "Genre"
+msgstr "Műfaj"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:310
+#: view)\src/mainframe.cpp:1390
+msgid "Number"
+msgstr "Szám"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:311
+#: view)\src/mainframe.cpp:1385
+#: view)\src/settings.cpp:225
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:313
+#: view)\src/mainframe.cpp:1380
+#: view)\src/settings.cpp:221
+msgid "Year"
+msgstr "Év"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:314
+#: view)\src/mainframe.cpp:1375
+#: view)\src/settings.cpp:217
+msgid "Title"
+msgstr "Cím"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:315
+#: view)\src/mainframe.cpp:1370
+#: view)\src/settings.cpp:213
+msgid "Album"
+msgstr "Album"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:316
+#: view)\src/mainframe.cpp:1365
+#: view)\src/settings.cpp:209
+msgid "Artist"
+msgstr "Előadó"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:321
+#, fuzzy
+msgid "File date"
+msgstr "Fájlnév"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:322
+#, fuzzy
+msgid "File size"
+msgstr "Fájlnév"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:322
+msgid "bytes"
+msgstr ""
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:323
+#: view)\src/mainframe.cpp:937
+msgid "File name"
+msgstr "Fájlnév"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:331
+#, fuzzy
+msgid "Virtual path"
+msgstr "Virtuális"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.cpp:335
+#: view)\src/mainframe.cpp:1315
+msgid "Physical path"
+msgstr "Fizikai elérési út"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:191
@@ -315,7 +469,7 @@ msgstr "Fejléc belefoglalása"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:207
-#: view)\src/mainframe.cpp:966
+#: view)\src/mainframe.cpp:968
 msgid "All physical volumes"
 msgstr "Minden fizikai kötet"
 
@@ -326,7 +480,7 @@ msgstr "Kiválasztott fizikai kötet/mappa"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:209
-#: view)\src/mainframe.cpp:968
+#: view)\src/mainframe.cpp:970
 msgid "Selected virtual folder"
 msgstr "Kiválasztott virtuális mappa"
 
@@ -364,28 +518,21 @@ msgstr "Nem sikerült létrehozni a fájlt."
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:524
 #: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1295
-msgid "Name"
-msgstr "Név"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1300
+#: view)\src/mainframe.cpp:1302
 msgid "Size"
 msgstr "Méret"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:524
 #: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1304
+#: view)\src/mainframe.cpp:1306
 msgid "Ext"
 msgstr "Kiterjesztés"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:524
 #: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1308
+#: view)\src/mainframe.cpp:1310
 msgid "Last modified"
 msgstr "Utolsó módosítás"
 
@@ -397,9 +544,9 @@ msgstr "Fizikai elérési út"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.cpp:524
 #: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:956
-#: view)\src/mainframe.cpp:1316
-#: view)\src/mainframe.cpp:1321
+#: view)\src/mainframe.cpp:958
+#: view)\src/mainframe.cpp:1318
+#: view)\src/mainframe.cpp:1323
 msgid "Description"
 msgstr "Leírás"
 
@@ -414,7 +561,7 @@ msgid "Path"
 msgstr "Elérési út"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:736
+#: (virtual volumes view)\src/mainframe.cpp:738
 msgid ""
 "This catalog file does not exist:\n"
 "\n"
@@ -424,417 +571,343 @@ msgstr ""
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:798
+#: (virtual volumes view)\src/mainframe.cpp:800
 msgid "&New..."
 msgstr "&Új..."
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:799
+#: (virtual volumes view)\src/mainframe.cpp:801
 msgid "&Open..."
 msgstr "&Megnyitás..."
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:800
+#: (virtual volumes view)\src/mainframe.cpp:802
 msgid "&Export..."
 msgstr "&Exportálás..."
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:802
+#: (virtual volumes view)\src/mainframe.cpp:804
 msgid "&Backup..."
 msgstr "&Biztonsági másolat..."
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:803
+#: (virtual volumes view)\src/mainframe.cpp:805
 msgid "&Restore..."
 msgstr "&Visszaállítás..."
 
 # Part of the File menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:805
+#: (virtual volumes view)\src/mainframe.cpp:807
 msgid "E&xit"
 msgstr "&Kilépés"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:806
+#: (virtual volumes view)\src/mainframe.cpp:808
 msgid "&File"
 msgstr "&Fájl"
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:808
+#: (virtual volumes view)\src/mainframe.cpp:810
 msgid "&Add To Virtual Folder..."
 msgstr "&Hozzáadás virtuális mappához"
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:810
+#: (virtual volumes view)\src/mainframe.cpp:812
 msgid "&Rename...\tF2"
 msgstr "&Átnevezés...\tF2"
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:811
+#: (virtual volumes view)\src/mainframe.cpp:813
 msgid "&Delete"
 msgstr "&Törlés"
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:813
-msgid "&Object Description..."
+#: (virtual volumes view)\src/mainframe.cpp:815
+#, fuzzy
+msgid "&Object Information..."
 msgstr "&Objektum leírása..."
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:815
+#: (virtual volumes view)\src/mainframe.cpp:817
 msgid "&New Virtual Root Folder..."
 msgstr "Új &virtuális gyökérmappa..."
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:816
+#: (virtual volumes view)\src/mainframe.cpp:818
 msgid "New Virtual &Subfolder..."
 msgstr "Új virtuális &almappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:818
-#: view)\src/mainframe.cpp:844
+#: (virtual volumes view)\src/mainframe.cpp:820
+#: view)\src/mainframe.cpp:846
 msgid "&Options..."
 msgstr "&Opciók..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:820
+#: (virtual volumes view)\src/mainframe.cpp:822
 msgid "&Edit"
 msgstr "Sz&erkesztés"
 
 # Part of the Volumes menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:822
+#: (virtual volumes view)\src/mainframe.cpp:824
 msgid "&Catalog Volume..."
 msgstr "&Kötet katalogizálása..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:823
+#: (virtual volumes view)\src/mainframe.cpp:825
 msgid "&Update Volume..."
 msgstr "Kötet &frissítése..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:824
+#: (virtual volumes view)\src/mainframe.cpp:826
 msgid "&Volumes"
 msgstr "&Kötetek"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:826
+#: (virtual volumes view)\src/mainframe.cpp:828
 msgid "&Physical View"
 msgstr "&Fizikai nézet"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:828
+#: (virtual volumes view)\src/mainframe.cpp:830
 msgid "&Virtual View"
 msgstr "&Virtuális nézet"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:829
+#: (virtual volumes view)\src/mainframe.cpp:831
 msgid "&Search View"
 msgstr "&Kereső nézet"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:831
-#: view)\src/mainframe.cpp:3150
+#: (virtual volumes view)\src/mainframe.cpp:833
+#: view)\src/mainframe.cpp:3167
 msgid "Show in physical view"
 msgstr "Mutasd a fizikai nézetben"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:832
+#: (virtual volumes view)\src/mainframe.cpp:834
 msgid "Go &Up One Level"
 msgstr "Egy &szinttel feljebb"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:833
-#: view)\src/mainframe.cpp:2561
-#: view)\src/mainframe.cpp:2598
+#: (virtual volumes view)\src/mainframe.cpp:835
+#: view)\src/mainframe.cpp:2578
+#: view)\src/mainframe.cpp:2615
 msgid "Expand"
 msgstr "Kinyitás"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:834
-#: view)\src/mainframe.cpp:2562
-#: view)\src/mainframe.cpp:2599
+#: (virtual volumes view)\src/mainframe.cpp:836
+#: view)\src/mainframe.cpp:2579
+#: view)\src/mainframe.cpp:2616
 msgid "Collapse"
 msgstr "Becsukás"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:836
+#: (virtual volumes view)\src/mainframe.cpp:838
 msgid "&Toolbar"
 msgstr "&Eszköztár"
 
 # Part of the View menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:838
+#: (virtual volumes view)\src/mainframe.cpp:840
 msgid "Status &Bar"
 msgstr "&Állapotsor"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:840
+#: (virtual volumes view)\src/mainframe.cpp:842
 msgid "Vie&w"
 msgstr "&Nézet"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:846
+#: (virtual volumes view)\src/mainframe.cpp:848
 msgid "&Tools"
 msgstr "Es&zközök"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:849
+#: (virtual volumes view)\src/mainframe.cpp:851
 msgid "Help &Contents"
 msgstr "&Tartalomjegyzék"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:853
+#: (virtual volumes view)\src/mainframe.cpp:855
 msgid "&About VVV..."
 msgstr "&Névjegy"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:861
-#: view)\src/mainframe.cpp:4028
+#: (virtual volumes view)\src/mainframe.cpp:863
+#: view)\src/mainframe.cpp:4048
 msgid "New"
 msgstr "Új"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:861
-#: view)\src/mainframe.cpp:4028
+#: (virtual volumes view)\src/mainframe.cpp:863
+#: view)\src/mainframe.cpp:4048
 msgid "Create a new catalog"
 msgstr "Új katalógus készítése"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:864
-#: view)\src/mainframe.cpp:4031
+#: (virtual volumes view)\src/mainframe.cpp:866
+#: view)\src/mainframe.cpp:4051
 msgid "Open"
 msgstr "Megnyitás"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:864
-#: view)\src/mainframe.cpp:4031
+#: (virtual volumes view)\src/mainframe.cpp:866
+#: view)\src/mainframe.cpp:4051
 msgid "Open an existing catalog"
 msgstr "Létező katalógus megnyitása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:867
-#: view)\src/mainframe.cpp:4034
+#: (virtual volumes view)\src/mainframe.cpp:869
+#: view)\src/mainframe.cpp:4054
 msgid "Catalog a new volume"
 msgstr "Új kötet katalogizálása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:870
-#: view)\src/mainframe.cpp:4037
+#: (virtual volumes view)\src/mainframe.cpp:872
+#: view)\src/mainframe.cpp:4057
 msgid "Up"
 msgstr "Fel"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:870
-#: view)\src/mainframe.cpp:4037
+#: (virtual volumes view)\src/mainframe.cpp:872
+#: view)\src/mainframe.cpp:4057
 msgid "Move up one level"
 msgstr "Lépés egy szinttel feljebb"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:874
-#: view)\src/mainframe.cpp:4041
+#: (virtual volumes view)\src/mainframe.cpp:876
+#: view)\src/mainframe.cpp:4061
 msgid "Physical"
 msgstr "Fizikai"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:874
-#: view)\src/mainframe.cpp:4041
+#: (virtual volumes view)\src/mainframe.cpp:876
+#: view)\src/mainframe.cpp:4061
 msgid "Show the physical view"
 msgstr "Fizikai nézet megjelenítése"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:877
-#: view)\src/mainframe.cpp:4044
+#: (virtual volumes view)\src/mainframe.cpp:879
+#: view)\src/mainframe.cpp:4064
 msgid "Virtual"
 msgstr "Virtuális"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:877
-#: view)\src/mainframe.cpp:4044
+#: (virtual volumes view)\src/mainframe.cpp:879
+#: view)\src/mainframe.cpp:4064
 msgid "Show the virtual view"
 msgstr "Virtuális nézet megjelenítése"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:880
-#: view)\src/mainframe.cpp:969
-#: view)\src/mainframe.cpp:975
-#: view)\src/mainframe.cpp:4047
+#: (virtual volumes view)\src/mainframe.cpp:882
+#: view)\src/mainframe.cpp:971
+#: view)\src/mainframe.cpp:977
+#: view)\src/mainframe.cpp:4067
 msgid "Search"
 msgstr "Keresés"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:880
-#: view)\src/mainframe.cpp:4047
+#: (virtual volumes view)\src/mainframe.cpp:882
+#: view)\src/mainframe.cpp:4067
 msgid "Show the search view"
 msgstr "Kereső nézet megjelenítése"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:932
-#: view)\src/mainframe.cpp:953
+#: (virtual volumes view)\src/mainframe.cpp:934
+#: view)\src/mainframe.cpp:955
 msgid "Is equal to:"
 msgstr "Megegyezik:"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:933
-#: view)\src/mainframe.cpp:954
+#: (virtual volumes view)\src/mainframe.cpp:935
+#: view)\src/mainframe.cpp:956
 msgid "Starts with:"
 msgstr "Kezdődik:"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:934
-#: view)\src/mainframe.cpp:955
+#: (virtual volumes view)\src/mainframe.cpp:936
+#: view)\src/mainframe.cpp:957
 msgid "Contains:"
 msgstr "Tartalmazza:"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:935
-msgid "File name"
-msgstr "Fájlnév"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:944
+#: (virtual volumes view)\src/mainframe.cpp:946
 msgid "Extension:"
 msgstr "Kiterjesztés:"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:967
+#: (virtual volumes view)\src/mainframe.cpp:969
 msgid "Selected physical folder"
 msgstr "Kiválasztott fizikai mappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1071
+#: (virtual volumes view)\src/mainframe.cpp:1073
 msgid "Catalog volume"
 msgstr "Kötet katalogizálása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1313
-msgid "Physical path"
-msgstr "Fizikai elérési út"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1363
-#: view)\src/settings.cpp:209
-msgid "Artist"
-msgstr "Előadó"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1368
-#: view)\src/settings.cpp:213
-msgid "Album"
-msgstr "Album"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1373
-#: view)\src/settings.cpp:217
-msgid "Title"
-msgstr "Cím"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1378
-#: view)\src/settings.cpp:221
-msgid "Year"
-msgstr "Év"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1383
-#: view)\src/settings.cpp:225
-msgid "Comment"
-msgstr "Megjegyzés"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1388
-msgid "Number"
-msgstr "Szám"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1393
-#: view)\src/settings.cpp:233
-msgid "Genre"
-msgstr "Műfaj"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1398
-#: view)\src/settings.cpp:237
-msgid "Length"
-msgstr "Hossz"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1403
-#: view)\src/settings.cpp:241
-msgid "Bitrate"
-msgstr "Bitsűrűség"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1408
-#: view)\src/settings.cpp:245
-msgid "Sample rate"
-msgstr "Frekvencia"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1413
-#: view)\src/settings.cpp:249
-msgid "Channels"
-msgstr "Csatornák"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1442
+#: (virtual volumes view)\src/mainframe.cpp:1444
 msgid "Open catalog"
 msgstr "Katalógus megnyitása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1446
-#: view)\src/mainframe.cpp:3622
+#: (virtual volumes view)\src/mainframe.cpp:1448
+#: view)\src/mainframe.cpp:3642
 msgid "VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*"
 msgstr "VVV  fájlok (*.vvv)|*.vvv|Minden fájl (*.*)|*.*"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1891
+#: (virtual volumes view)\src/mainframe.cpp:1868
 msgid "Choose virtual folder"
 msgstr "Válassz virtuális mappát"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1977
+#: (virtual volumes view)\src/mainframe.cpp:1954
 msgid "New virtual root folder"
 msgstr "Új virtuális gyökérmappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2005
+#: (virtual volumes view)\src/mainframe.cpp:1982
 msgid "New virtual subfolder"
 msgstr "Új virtuális almappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2023
-#: view)\src/mainframe.cpp:3385
+#: (virtual volumes view)\src/mainframe.cpp:2000
+#: view)\src/mainframe.cpp:3400
 msgid "Enter the new folder name"
 msgstr "Add meg az új mappa nevet"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2038
-#: view)\src/mainframe.cpp:3396
+#: (virtual volumes view)\src/mainframe.cpp:2015
+#: view)\src/mainframe.cpp:3411
 msgid "The new folder name is already present in the database"
 msgstr "Az új mappa neve már megtalálható az adatbázisban"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2091
+#: (virtual volumes view)\src/mainframe.cpp:2068
 msgid "This catalog file does not exist any more"
 msgstr "Ez a katalógusfájl nem létezik többé"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2121
+#: (virtual volumes view)\src/mainframe.cpp:2098
 msgid ""
 "Catalog not found:\n"
 "\n"
@@ -843,7 +916,7 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2125
+#: (virtual volumes view)\src/mainframe.cpp:2102
 msgid ""
 "Incorrect username or password for the following database:\n"
 "\n"
@@ -852,7 +925,7 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2130
+#: (virtual volumes view)\src/mainframe.cpp:2107
 msgid ""
 "Unable to connect to the following server:\n"
 "\n"
@@ -861,7 +934,7 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2132
+#: (virtual volumes view)\src/mainframe.cpp:2109
 msgid ""
 "Unable to open the catalog.\n"
 "Please note that you are not connected to a database server so you cannot open a catalog located on another computer in the network.\n"
@@ -872,7 +945,7 @@ msgstr ""
 "Ha egy másik gépen lévő katalógust szeretnél megnyitni, akkor csatlakoznod kell egy adatbázisszerverhez (Eszközök/Opciók menü)"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2154
+#: (virtual volumes view)\src/mainframe.cpp:2131
 msgid ""
 "This catalog has been created with a previous version of the program and it needs to be upgraded, but the file containing the upgrades list is missing.\n"
 "\n"
@@ -883,12 +956,12 @@ msgstr ""
 "A probléma megoldásához próbáld meg újratelepíteni a programot."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2158
+#: (virtual volumes view)\src/mainframe.cpp:2135
 msgid "Upgrading the catalog, please wait..."
 msgstr "Katalógus frissítése, kérlek várj..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2170
+#: (virtual volumes view)\src/mainframe.cpp:2147
 msgid ""
 "This catalog has been created with an older version of VVV so you need to convert it to a newer format.\n"
 "\n"
@@ -897,7 +970,7 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2171
+#: (virtual volumes view)\src/mainframe.cpp:2148
 msgid ""
 "The conversion will create a new catalog with the same data as the older one, then you will use this new catalog with VVV. You will not use the older catalog any more.\n"
 "\n"
@@ -908,13 +981,13 @@ msgstr ""
 # Hibás már az eredeti is:
 # catatalog helyett catalog
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2172
+#: (virtual volumes view)\src/mainframe.cpp:2149
 msgid "Do you want to convert the catalog creating a new one?"
 msgstr "Konvertálni akarod a katalógust egy újat létrehozva?"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2176
-#: view)\src/mainframe.cpp:2380
+#: (virtual volumes view)\src/mainframe.cpp:2153
+#: view)\src/mainframe.cpp:2361
 msgid ""
 "Unable to create a new catalog.\n"
 "\n"
@@ -925,13 +998,13 @@ msgstr ""
 "Egy adatbázisszerverhez csatlakozol. Ezt a programot a szerveren kell futtatni ahhoz, hogy az új katalógust létre lehessen hozni."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2180
+#: (virtual volumes view)\src/mainframe.cpp:2157
 msgid "Convert to a new catalog"
 msgstr "Konvertálás új katalógusba"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2188
-#: view)\src/mainframe.cpp:2392
+#: (virtual volumes view)\src/mainframe.cpp:2165
+#: view)\src/mainframe.cpp:2373
 msgid ""
 "Unable to find the database backup to restore.\n"
 "\n"
@@ -942,22 +1015,22 @@ msgstr ""
 "A probléma megoldásához próbáld meg újratelepíteni a programot."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2351
+#: (virtual volumes view)\src/mainframe.cpp:2328
 msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
 msgstr "VVV (Virtual Volumes View): hordozható eszközök katalogizálására alkalmas program"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2352
+#: (virtual volumes view)\src/mainframe.cpp:2329
 msgid "Copyright (C) 2007-2010 The VVV Team"
 msgstr "Copyright (C) 2007-2010 The VVV Team"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2353
+#: (virtual volumes view)\src/mainframe.cpp:2330
 msgid "Fulvio Senore: main developer"
 msgstr "Fulvio Senore: fő fejlesztő"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2354
+#: (virtual volumes view)\src/mainframe.cpp:2331
 msgid ""
 "\n"
 "Jan Albartus: worked at the portable version and designed the application's icon"
@@ -966,122 +1039,136 @@ msgstr ""
 "Jan Albartus: hordozható változat és alkalmazásikonok"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2355
+#: (virtual volumes view)\src/mainframe.cpp:2332
 msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
 msgstr "A program a Gnome, az Ubuntu és a Crystal ikon projektek ikonjait használja."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2356
+#: (virtual volumes view)\src/mainframe.cpp:2333
 msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
 msgstr "Ez nyílt forráskódú szoftver, a GNU GENERAL PUBLIC LICENSE alatt kiadva"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2365
+#: (virtual volumes view)\src/mainframe.cpp:2345
 msgid "Serbian"
 msgstr "szerb"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2384
+#: (virtual volumes view)\src/mainframe.cpp:2365
 msgid "New catalog"
 msgstr "Új katalógus"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2417
+#: (virtual volumes view)\src/mainframe.cpp:2415
 msgid "Multiple items"
 msgstr "Többszörös elemek"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2426
-#: view)\src/mainframe.cpp:2460
+#: (virtual volumes view)\src/mainframe.cpp:2418
+#: view)\src/mainframe.cpp:2469
 msgid "Object description"
 msgstr "Objektum leírás"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2559
-#: view)\src/mainframe.cpp:3156
+#: (virtual volumes view)\src/mainframe.cpp:2431
+#, fuzzy
+msgid "File description"
+msgstr "Objektum leírás"
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:2576
+#: view)\src/mainframe.cpp:3173
 msgid "Add To Virtual Folder"
 msgstr "Hozzáadás virtuális mappához"
 
+# Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2564
-#: view)\src/mainframe.cpp:3159
-msgid "Edit Description..."
-msgstr "Leírás szerkesztése..."
+#: (virtual volumes view)\src/mainframe.cpp:2581
+#, fuzzy
+msgid "Object information..."
+msgstr "&Objektum leírása..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2567
+#: (virtual volumes view)\src/mainframe.cpp:2584
 msgid "Rename..."
 msgstr "Átnevezés..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2568
-#: view)\src/mainframe.cpp:2603
-#: view)\src/mainframe.cpp:3152
+#: (virtual volumes view)\src/mainframe.cpp:2585
+#: view)\src/mainframe.cpp:2620
+#: view)\src/mainframe.cpp:3169
 msgid "Delete"
 msgstr "Törlés"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2569
+#: (virtual volumes view)\src/mainframe.cpp:2586
 msgid "Update Volume..."
 msgstr "Kötet frissítése..."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2593
+#: (virtual volumes view)\src/mainframe.cpp:2610
 msgid "New Root Folder"
 msgstr "Új gyökérmappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2596
+#: (virtual volumes view)\src/mainframe.cpp:2613
 msgid "New Subfolder"
 msgstr "Új almappa"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2602
+#: (virtual volumes view)\src/mainframe.cpp:2619
 msgid "Rename"
 msgstr "Átnevezés"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2743
+#: (virtual volumes view)\src/mainframe.cpp:2760
 msgid "Please enter some search data"
 msgstr "Add meg a keresendő adatokat"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2762
+#: (virtual volumes view)\src/mainframe.cpp:2779
 msgid "Incorrect file name search data"
 msgstr "Hibás fájlnév keresési adat"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2773
+#: (virtual volumes view)\src/mainframe.cpp:2790
 msgid "Incorrect extension search data"
 msgstr "Hibás kiterjesztés keresési adat"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2785
+#: (virtual volumes view)\src/mainframe.cpp:2802
 msgid "Incorrect description search data"
 msgstr "Hibás leírás keresési adat"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2890
+#: (virtual volumes view)\src/mainframe.cpp:2907
 msgid "The search did not find anything"
 msgstr "A keresés nem talált semmit"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3039
+#: (virtual volumes view)\src/mainframe.cpp:3056
 msgid "Objects: "
 msgstr "Objektumok: "
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3046
+#: (virtual volumes view)\src/mainframe.cpp:3063
 msgid "Total size: "
 msgstr "Teljes méret: "
 
+# Part of the Edit menu
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3205
+#: (virtual volumes view)\src/mainframe.cpp:3176
+#, fuzzy
+msgid "Object Information..."
+msgstr "&Objektum leírása..."
+
+#: E:\C_Prg\vvv
+#: (virtual volumes view)\src/mainframe.cpp:3220
 msgid "Settings"
 msgstr "Beállítások"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3295
+#: (virtual volumes view)\src/mainframe.cpp:3310
 msgid ""
 "This command will delete the selected virtual folder, but it will not change the folders in the physical view.\n"
 "\n"
@@ -1092,7 +1179,7 @@ msgstr ""
 "Biztos, hogy törölni akarod a kiválasztott virtuális mappát?"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3320
+#: (virtual volumes view)\src/mainframe.cpp:3335
 msgid ""
 "This command will delete this volume:\n"
 "\n"
@@ -1101,7 +1188,7 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3320
+#: (virtual volumes view)\src/mainframe.cpp:3335
 msgid ""
 "\n"
 "\n"
@@ -1116,35 +1203,36 @@ msgstr ""
 "Biztos, hogy törölni akarod ezt a kötetet?"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3330
+#: (virtual volumes view)\src/mainframe.cpp:3345
 msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
 msgstr "A kötet törlése nem sikerült: legalább egy fájl a kötetről használatban van a virtuális nézetben"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3351
+#: (virtual volumes view)\src/mainframe.cpp:3366
 msgid "Enter the new volume name"
 msgstr "Új kötetnév megadása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3351
+#: (virtual volumes view)\src/mainframe.cpp:3366
 msgid "Rename volume"
 msgstr "Kötet átnevezése"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3364
+#: (virtual volumes view)\src/mainframe.cpp:3379
 msgid "The new volume name is already present in the database"
 msgstr "Az új kötetnév már megtalálható az adatbázisban"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3385
+#: (virtual volumes view)\src/mainframe.cpp:3400
 msgid "Rename virtual folder"
 msgstr "Virtuális mappa átnevezése"
 
 # A meaning egy kicsit más, ezt el kellene küldeni
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3503
+#: (virtual volumes view)\src/mainframe.cpp:3523
+#, fuzzy
 msgid ""
-"This command will delete the selected virtual files, but it will not change the files in the physical view.\n"
+"This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
@@ -1153,8 +1241,8 @@ msgstr ""
 "Biztos, hogy törölni akarod a kiválasztott fájlokat a virtuális nézetből."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3645
-#: view)\src/mainframe.cpp:3722
+#: (virtual volumes view)\src/mainframe.cpp:3665
+#: view)\src/mainframe.cpp:3742
 msgid ""
 "Unable to continue. You have choosen an existing file:\n"
 "\n"
@@ -1163,9 +1251,9 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3645
-#: view)\src/mainframe.cpp:3722
-#: view)\src/mainframe.cpp:3804
+#: (virtual volumes view)\src/mainframe.cpp:3665
+#: view)\src/mainframe.cpp:3742
+#: view)\src/mainframe.cpp:3824
 msgid ""
 "\n"
 "\n"
@@ -1176,31 +1264,31 @@ msgstr ""
 "Egy még nem létező fájl nevét kell megadnod."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3654
-#: view)\src/mainframe.cpp:3731
-#: view)\src/mainframe.cpp:3813
+#: (virtual volumes view)\src/mainframe.cpp:3674
+#: view)\src/mainframe.cpp:3751
+#: view)\src/mainframe.cpp:3833
 msgid "Unable to continue: you have choosen a folder where you do not have the right to create a file."
 msgstr "Folytatás nem lehetséges: olyan mappát választottál ki, ahol nincs jogosultságod fájl létrehozására."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3699
+#: (virtual volumes view)\src/mainframe.cpp:3719
 #: view)\src/opencatalog.cpp:255
 #: view)\src/restore.cpp:287
 msgid "VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*"
 msgstr "VVV biztonsági másolatok (*.vvvbk)|*.vvvbk|Minden fájl (*.*)|*.*"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3700
+#: (virtual volumes view)\src/mainframe.cpp:3720
 msgid "Backup catalog"
 msgstr "Katalógus biztonsági másolat"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3745
+#: (virtual volumes view)\src/mainframe.cpp:3765
 msgid "Backup completed"
 msgstr "A biztonsági másolat elkészült"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3768
+#: (virtual volumes view)\src/mainframe.cpp:3788
 msgid ""
 "Unable to restore.\n"
 "\n"
@@ -1211,17 +1299,17 @@ msgstr ""
 "Egy adatbázisszerverhez csatlakozol. Ezt a programot a szerveren kell futtatni ahhoz, hogy a visszaállítást végre lehessen hajtani."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3782
+#: (virtual volumes view)\src/mainframe.cpp:3802
 msgid "The catalog name is missing"
 msgstr "A katalógus neve hiányzik"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3786
+#: (virtual volumes view)\src/mainframe.cpp:3806
 msgid "The backup name is missing"
 msgstr "A biztonsági másolat neve hiányzik"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3804
+#: (virtual volumes view)\src/mainframe.cpp:3824
 msgid ""
 "Unable to continue. You have choosen an existing catalog:\n"
 "\n"
@@ -1230,12 +1318,12 @@ msgstr ""
 "\n"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3841
+#: (virtual volumes view)\src/mainframe.cpp:3861
 msgid "Restore completed"
 msgstr "A visszaállítás kész"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3858
+#: (virtual volumes view)\src/mainframe.cpp:3878
 msgid "Update Volume"
 msgstr "Kötet frissítése"
 
@@ -1338,7 +1426,8 @@ msgstr "Általános"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-msgid "Show the following data for MP3 files:"
+#, fuzzy
+msgid "Show the following data for audio files:"
 msgstr "Mutasd a következő adatokat az MP3-fájlokhoz:"
 
 #: E:\C_Prg\vvv
@@ -1348,8 +1437,8 @@ msgstr "Szám"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
-msgid "MP3"
-msgstr "MP3"
+msgid "Audio files"
+msgstr ""
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1425,22 +1514,17 @@ msgid "Server connection successful"
 msgstr "Sikeres kapcsolódás a szerverhez."
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:180
-msgid "You are about to update the following volume:"
-msgstr "A következő kötet frissítésére készülsz:"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:183
+#: (virtual volumes view)\src/update_volume.cpp:184
 msgid "VOLUME NAME"
 msgstr "KÖTET NÉV"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:188
+#: (virtual volumes view)\src/update_volume.cpp:189
 msgid "Enter or select the path to volume to update"
 msgstr "Add meg, vagy válaszd ki a frissítendő kötet elérési útját"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:208
+#: (virtual volumes view)\src/update_volume.cpp:209
 msgid "Update"
 msgstr "Frissítés"
 
@@ -1493,12 +1577,17 @@ msgid "Volume name not found"
 msgstr "Kötetnév nem található"
 
 #: E:\C_Prg\vvv
+#: (virtual volumes view)\src/dlg_file_information.h:47
+msgid "File information"
+msgstr ""
+
+#: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71
 msgid "Export data"
 msgstr "Adatok exportálása"
 
 #: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.h:111
+#: (virtual volumes view)\src/mainframe.h:112
 msgid "VVV"
 msgstr "VVV"
 
@@ -1511,4 +1600,11 @@ msgstr "Objektum leírása"
 #: (virtual volumes view)\src/restore.h:46
 msgid "Restore"
 msgstr "Visszaállítás"
+
+#~ msgid "Edit Description..."
+#~ msgstr "Leírás szerkesztése..."
+#~ msgid "MP3"
+#~ msgstr "MP3"
+#~ msgid "You are about to update the following volume:"
+#~ msgstr "A következő kötet frissítésére készülsz:"
 

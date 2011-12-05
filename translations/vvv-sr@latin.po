@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VVV 0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-20 23:19+0100\n"
-"PO-Revision-Date: 2010-12-01 22:22+0100\n"
+"POT-Creation-Date: 2011-12-05 09:36+0100\n"
+"PO-Revision-Date: 2011-12-05 09:40+0100\n"
 "Last-Translator: Fulvio Senore <mailing@fsoft.it>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Uđi u ovaj disk radi pravljenja kataloga"
 #: ..\src/opencatalog.cpp:174
 #: ..\src/restore.cpp:168
 #: ..\src/restore.cpp:180
-#: ..\src/update_volume.cpp:197
+#: ..\src/update_volume.cpp:198
 msgid "..."
 msgstr "..."
 
@@ -37,28 +37,29 @@ msgid "Get volume name"
 msgstr "Preuzmi naziv diska"
 
 #: ..\src/catalog_volume.cpp:204
+#: ..\src/dlg_file_information.cpp:170
 #: ..\src/exportdata.cpp:230
 #: ..\src/exportdata.cpp:248
-#: ..\src/mainframe.cpp:854
+#: ..\src/mainframe.cpp:856
 #: ..\src/restore.cpp:187
 #: ..\src/restore.cpp:205
-#: ..\src/update_volume.cpp:203
+#: ..\src/update_volume.cpp:204
 msgid "&Help"
 msgstr "&Pomoć"
 
 #: ..\src/catalog_volume.cpp:209
-#: ..\src/mainframe.cpp:867
-#: ..\src/mainframe.cpp:4034
+#: ..\src/mainframe.cpp:869
+#: ..\src/mainframe.cpp:4054
 msgid "Catalog"
 msgstr "Katalog"
 
 #: ..\src/catalog_volume.cpp:212
-#: ..\src/update_volume.cpp:211
+#: ..\src/update_volume.cpp:212
 msgid "&Close"
 msgstr "&Zatvori"
 
 #: ..\src/catalog_volume.cpp:215
-#: ..\src/update_volume.cpp:214
+#: ..\src/update_volume.cpp:215
 msgid "Current folder"
 msgstr "Trenutna fascikla"
 
@@ -67,7 +68,7 @@ msgid "Previously cataloged volumes"
 msgstr "Diskovi dodati u katalog"
 
 #: ..\src/catalog_volume.cpp:288
-#: ..\src/update_volume.cpp:269
+#: ..\src/update_volume.cpp:270
 msgid "The volume path is missing"
 msgstr "Nedostaje putanja do diska"
 
@@ -80,7 +81,7 @@ msgid "This volume name is already present in the database"
 msgstr "Ovo ime diska već postoji u bazi podataka"
 
 #: ..\src/catalog_volume.cpp:357
-#: ..\src/update_volume.cpp:296
+#: ..\src/update_volume.cpp:297
 msgid "Select the volume to catalog"
 msgstr "Izaberite disk za dodavanje u katalog"
 
@@ -118,86 +119,103 @@ msgid "(Use default language)"
 msgstr "(koristi podrazumevani jezik)"
 
 #: ..\src/chooselang.cpp:96
-#: ..\src/mainframe.cpp:2364
+#: ..\src/mainframe.cpp:2334
+#, fuzzy
+msgid "Chinese"
+msgstr "Broj kanala"
+
+#: ..\src/chooselang.cpp:97
+#: ..\src/mainframe.cpp:2344
 msgid "Croatian"
 msgstr "hrvatski"
 
-#: ..\src/chooselang.cpp:97
-#: ..\src/mainframe.cpp:2361
+#: ..\src/chooselang.cpp:98
+#: ..\src/mainframe.cpp:2340
 msgid "Czech"
 msgstr "češki"
 
-#: ..\src/chooselang.cpp:98
-#: ..\src/mainframe.cpp:2368
+#: ..\src/chooselang.cpp:99
+#: ..\src/mainframe.cpp:2349
 msgid "Dutch"
 msgstr "holandski"
 
-#: ..\src/chooselang.cpp:99
+#: ..\src/chooselang.cpp:100
 msgid "English"
 msgstr "engleski"
 
-#: ..\src/chooselang.cpp:100
-#: ..\src/mainframe.cpp:2359
+#: ..\src/chooselang.cpp:101
+#: ..\src/mainframe.cpp:2337
 msgid "French"
 msgstr "francuski"
 
-#: ..\src/chooselang.cpp:101
-#: ..\src/mainframe.cpp:2360
+#: ..\src/chooselang.cpp:102
+#: ..\src/mainframe.cpp:2338
 msgid "German"
 msgstr "nemački"
 
-#: ..\src/chooselang.cpp:102
-#: ..\src/mainframe.cpp:2366
+#: ..\src/chooselang.cpp:103
+#: ..\src/mainframe.cpp:2339
+#: ..\src/mainframe.cpp:2342
+msgid "Hungarian"
+msgstr ""
+
+#: ..\src/chooselang.cpp:104
+#: ..\src/mainframe.cpp:2347
 msgid "Italian"
 msgstr "italijanski"
 
-#: ..\src/chooselang.cpp:103
-#: ..\src/mainframe.cpp:2362
+#: ..\src/chooselang.cpp:105
+#: ..\src/mainframe.cpp:2346
+msgid "Japanese"
+msgstr ""
+
+#: ..\src/chooselang.cpp:106
+#: ..\src/mainframe.cpp:2341
 msgid "Polish"
 msgstr "poljski"
 
-#: ..\src/chooselang.cpp:104
-#: ..\src/mainframe.cpp:2357
+#: ..\src/chooselang.cpp:107
+#: ..\src/mainframe.cpp:2335
 msgid "Portuguese"
 msgstr "portugalski"
 
-#: ..\src/chooselang.cpp:105
-#: ..\src/mainframe.cpp:2367
+#: ..\src/chooselang.cpp:108
+#: ..\src/mainframe.cpp:2348
 msgid "Romanian"
 msgstr "rumunski"
 
-#: ..\src/chooselang.cpp:106
-#: ..\src/mainframe.cpp:2363
+#: ..\src/chooselang.cpp:109
+#: ..\src/mainframe.cpp:2343
 msgid "Russian"
 msgstr "ruski"
 
-#: ..\src/chooselang.cpp:107
+#: ..\src/chooselang.cpp:110
 msgid "Serbian (cyrillic)"
 msgstr "srpski (ćirilica)"
 
-#: ..\src/chooselang.cpp:108
+#: ..\src/chooselang.cpp:111
 msgid "Serbian (latin)"
 msgstr "srpski (latinica)"
 
-#: ..\src/chooselang.cpp:109
-#: ..\src/mainframe.cpp:2358
+#: ..\src/chooselang.cpp:112
+#: ..\src/mainframe.cpp:2336
 msgid "Spanish"
 msgstr "španski"
 
-#: ..\src/chooselang.cpp:110
-#: ..\src/mainframe.cpp:2363
+#: ..\src/chooselang.cpp:113
+#: ..\src/mainframe.cpp:2343
 msgid "Ukrainian"
 msgstr "ukrainski"
 
-#: ..\src/chooselang.cpp:119
+#: ..\src/chooselang.cpp:122
 msgid "Select your preferred language"
 msgstr "Izaberite željeni jezik"
 
-#: ..\src/chooselang.cpp:120
+#: ..\src/chooselang.cpp:123
 msgid "Language selection"
 msgstr "Izbor jezika"
 
-#: ..\src/chooselang.cpp:134
+#: ..\src/chooselang.cpp:137
 msgid "You must restart the program for this change to take effect."
 msgstr "Ova izmena zahteva ponovno pokretanje programa."
 
@@ -207,6 +225,7 @@ msgstr "Izaberite virtualnu fasciklu za smeštanje izabranih datoteka i/ili fasc
 
 #: ..\src/choose_virtual_folder.cpp:169
 #: ..\src/choose_virtual_folder.cpp:187
+#: ..\src/dlg_file_information.cpp:164
 #: ..\src/exportdata.cpp:235
 #: ..\src/exportdata.cpp:256
 #: ..\src/object_description.cpp:158
@@ -220,6 +239,7 @@ msgstr "&U redu"
 
 #: ..\src/choose_virtual_folder.cpp:173
 #: ..\src/choose_virtual_folder.cpp:184
+#: ..\src/dlg_file_information.cpp:167
 #: ..\src/exportdata.cpp:239
 #: ..\src/exportdata.cpp:253
 #: ..\src/object_description.cpp:162
@@ -238,6 +258,117 @@ msgstr "Sada će započeti prevođenje. Bićete obavešteni kada je proces zavr�
 #: ..\src/convert_db_unicode.cpp:546
 msgid "Conversion completed"
 msgstr "Prevođenje je završeno"
+
+#: ..\src/dlg_file_information.cpp:155
+#, fuzzy
+msgid "Description:"
+msgstr "Opis"
+
+#: ..\src/dlg_file_information.cpp:255
+#: ..\src/exportdata.cpp:524
+#: ..\src/exportdata.cpp:526
+#: ..\src/mainframe.cpp:1297
+msgid "Name"
+msgstr "Ime"
+
+#: ..\src/dlg_file_information.cpp:259
+#, fuzzy
+msgid "Value"
+msgstr "Disk"
+
+#: ..\src/dlg_file_information.cpp:302
+#: ..\src/mainframe.cpp:1415
+#: ..\src/settings.cpp:249
+msgid "Channels"
+msgstr "Broj kanala"
+
+#: ..\src/dlg_file_information.cpp:304
+#: ..\src/mainframe.cpp:1410
+#: ..\src/settings.cpp:245
+msgid "Sample rate"
+msgstr "Veličina uzorka"
+
+#: ..\src/dlg_file_information.cpp:306
+#: ..\src/mainframe.cpp:1405
+#: ..\src/settings.cpp:241
+msgid "Bitrate"
+msgstr "Bitski protok"
+
+#: ..\src/dlg_file_information.cpp:307
+#: ..\src/mainframe.cpp:1400
+#: ..\src/settings.cpp:237
+msgid "Length"
+msgstr "Dužina"
+
+#: ..\src/dlg_file_information.cpp:308
+#: ..\src/mainframe.cpp:1395
+#: ..\src/settings.cpp:233
+msgid "Genre"
+msgstr "Žanr"
+
+#: ..\src/dlg_file_information.cpp:310
+#: ..\src/mainframe.cpp:1390
+msgid "Number"
+msgstr "Broj"
+
+#: ..\src/dlg_file_information.cpp:311
+#: ..\src/mainframe.cpp:1385
+#: ..\src/settings.cpp:225
+msgid "Comment"
+msgstr "Primedba"
+
+#: ..\src/dlg_file_information.cpp:313
+#: ..\src/mainframe.cpp:1380
+#: ..\src/settings.cpp:221
+msgid "Year"
+msgstr "Godina"
+
+#: ..\src/dlg_file_information.cpp:314
+#: ..\src/mainframe.cpp:1375
+#: ..\src/settings.cpp:217
+msgid "Title"
+msgstr "Naziv"
+
+#: ..\src/dlg_file_information.cpp:315
+#: ..\src/mainframe.cpp:1370
+#: ..\src/settings.cpp:213
+msgid "Album"
+msgstr "Album"
+
+#: ..\src/dlg_file_information.cpp:316
+#: ..\src/mainframe.cpp:1365
+#: ..\src/settings.cpp:209
+msgid "Artist"
+msgstr "Izvođač"
+
+#: ..\src/dlg_file_information.cpp:321
+#, fuzzy
+msgid "File date"
+msgstr "Ime datoteke"
+
+#: ..\src/dlg_file_information.cpp:322
+#, fuzzy
+msgid "File size"
+msgstr "Ime datoteke"
+
+#: ..\src/dlg_file_information.cpp:322
+msgid "bytes"
+msgstr ""
+
+#: ..\src/dlg_file_information.cpp:323
+#: ..\src/mainframe.cpp:937
+msgid "File name"
+msgstr "Ime datoteke"
+
+#: ..\src/dlg_file_information.cpp:331
+#, fuzzy
+msgid "Virtual path"
+msgstr "Virtuelan"
+
+#: ..\src/dlg_file_information.cpp:335
+#: ..\src/mainframe.cpp:1315
+msgid "Physical path"
+msgstr "Stvarna putanja"
 
 #: ..\src/exportdata.cpp:191
 msgid "Use this window to export data to a CSV file"
@@ -264,7 +395,7 @@ msgid "Include headers"
 msgstr "Uključi zaglavlja"
 
 #: ..\src/exportdata.cpp:207
-#: ..\src/mainframe.cpp:966
+#: ..\src/mainframe.cpp:968
 msgid "All physical volumes"
 msgstr "Svi stvarni diskovi"
 
@@ -273,7 +404,7 @@ msgid "Selected physical volume/folder"
 msgstr "Izabrani stvarni diskovi i fascikle"
 
 #: ..\src/exportdata.cpp:209
-#: ..\src/mainframe.cpp:968
+#: ..\src/mainframe.cpp:970
 msgid "Selected virtual folder"
 msgstr "Izabrana virtuelna fascikla"
 
@@ -304,25 +435,19 @@ msgstr "Ne mogu da napravim datoteku."
 
 #: ..\src/exportdata.cpp:524
 #: ..\src/exportdata.cpp:526
-#: ..\src/mainframe.cpp:1295
-msgid "Name"
-msgstr "Ime"
-
-#: ..\src/exportdata.cpp:524
-#: ..\src/exportdata.cpp:526
-#: ..\src/mainframe.cpp:1300
+#: ..\src/mainframe.cpp:1302
 msgid "Size"
 msgstr "Veličina"
 
 #: ..\src/exportdata.cpp:524
 #: ..\src/exportdata.cpp:526
-#: ..\src/mainframe.cpp:1304
+#: ..\src/mainframe.cpp:1306
 msgid "Ext"
 msgstr "Ekst"
 
 #: ..\src/exportdata.cpp:524
 #: ..\src/exportdata.cpp:526
-#: ..\src/mainframe.cpp:1308
+#: ..\src/mainframe.cpp:1310
 msgid "Last modified"
 msgstr "Izmenjeno"
 
@@ -332,9 +457,9 @@ msgstr "Stvarna putanja"
 
 #: ..\src/exportdata.cpp:524
 #: ..\src/exportdata.cpp:526
-#: ..\src/mainframe.cpp:956
-#: ..\src/mainframe.cpp:1316
-#: ..\src/mainframe.cpp:1321
+#: ..\src/mainframe.cpp:958
+#: ..\src/mainframe.cpp:1318
+#: ..\src/mainframe.cpp:1323
 msgid "Description"
 msgstr "Opis"
 
@@ -346,7 +471,7 @@ msgstr "Disk"
 msgid "Path"
 msgstr "Putanja"
 
-#: ..\src/mainframe.cpp:736
+#: ..\src/mainframe.cpp:738
 msgid ""
 "This catalog file does not exist:\n"
 "\n"
@@ -355,346 +480,285 @@ msgstr ""
 "\n"
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:798
+#: ..\src/mainframe.cpp:800
 msgid "&New..."
 msgstr "&Novi..."
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:799
+#: ..\src/mainframe.cpp:801
 msgid "&Open..."
 msgstr "&Otvori..."
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:800
+#: ..\src/mainframe.cpp:802
 msgid "&Export..."
 msgstr "I&zvezi..."
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:802
+#: ..\src/mainframe.cpp:804
 msgid "&Backup..."
 msgstr "Napravi &rezervnu kopiju..."
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:803
+#: ..\src/mainframe.cpp:805
 msgid "&Restore..."
 msgstr "&Vrati..."
 
 # Part of the File menu
-#: ..\src/mainframe.cpp:805
+#: ..\src/mainframe.cpp:807
 msgid "E&xit"
 msgstr "&Izađi"
 
-#: ..\src/mainframe.cpp:806
+#: ..\src/mainframe.cpp:808
 msgid "&File"
 msgstr "&Datoteka"
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:808
+#: ..\src/mainframe.cpp:810
 msgid "&Add To Virtual Folder..."
 msgstr "&Dodaj u virtuelnu fasciklu..."
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:810
+#: ..\src/mainframe.cpp:812
 msgid "&Rename...\tF2"
 msgstr "&Preimenuj...\tF2"
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:811
+#: ..\src/mainframe.cpp:813
 msgid "&Delete"
 msgstr "&Obriši"
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:813
-msgid "&Object Description..."
+#: ..\src/mainframe.cpp:815
+#, fuzzy
+msgid "&Object Information..."
 msgstr "Opis o&bjekta..."
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:815
+#: ..\src/mainframe.cpp:817
 msgid "&New Virtual Root Folder..."
 msgstr "Novi virtuelna korena &fascikla..."
 
 # Part of the Edit menu
-#: ..\src/mainframe.cpp:816
+#: ..\src/mainframe.cpp:818
 msgid "New Virtual &Subfolder..."
 msgstr "Nova virtuelna podf&ascikla..."
 
-#: ..\src/mainframe.cpp:818
-#: ..\src/mainframe.cpp:844
+#: ..\src/mainframe.cpp:820
+#: ..\src/mainframe.cpp:846
 msgid "&Options..."
 msgstr "&Opcije..."
 
-#: ..\src/mainframe.cpp:820
+#: ..\src/mainframe.cpp:822
 msgid "&Edit"
 msgstr "&Uređivanje"
 
 # Part of the Volumes menu
-#: ..\src/mainframe.cpp:822
+#: ..\src/mainframe.cpp:824
 msgid "&Catalog Volume..."
 msgstr "Dodaj disk u &katalog..."
 
-#: ..\src/mainframe.cpp:823
+#: ..\src/mainframe.cpp:825
 msgid "&Update Volume..."
 msgstr "&Ažuriraj disk..."
 
-#: ..\src/mainframe.cpp:824
+#: ..\src/mainframe.cpp:826
 msgid "&Volumes"
 msgstr "&Diskovi"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:826
+#: ..\src/mainframe.cpp:828
 msgid "&Physical View"
 msgstr "&Stvarni pregled"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:828
+#: ..\src/mainframe.cpp:830
 msgid "&Virtual View"
 msgstr "&Virtuelni pregled"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:829
+#: ..\src/mainframe.cpp:831
 msgid "&Search View"
 msgstr "&Pretraga"
 
-#: ..\src/mainframe.cpp:831
-#: ..\src/mainframe.cpp:3150
+#: ..\src/mainframe.cpp:833
+#: ..\src/mainframe.cpp:3167
 msgid "Show in physical view"
 msgstr "Prikaži stvarne stavke"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:832
+#: ..\src/mainframe.cpp:834
 msgid "Go &Up One Level"
 msgstr "Idi &gore za jedan nivo"
 
-#: ..\src/mainframe.cpp:833
-#: ..\src/mainframe.cpp:2561
-#: ..\src/mainframe.cpp:2598
+#: ..\src/mainframe.cpp:835
+#: ..\src/mainframe.cpp:2578
+#: ..\src/mainframe.cpp:2615
 msgid "Expand"
 msgstr "Raširi"
 
-#: ..\src/mainframe.cpp:834
-#: ..\src/mainframe.cpp:2562
-#: ..\src/mainframe.cpp:2599
+#: ..\src/mainframe.cpp:836
+#: ..\src/mainframe.cpp:2579
+#: ..\src/mainframe.cpp:2616
 msgid "Collapse"
 msgstr "Sakupi"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:836
+#: ..\src/mainframe.cpp:838
 msgid "&Toolbar"
 msgstr "&Alatnica"
 
 # Part of the View menu
-#: ..\src/mainframe.cpp:838
+#: ..\src/mainframe.cpp:840
 msgid "Status &Bar"
 msgstr "Traka sa &stanjem"
 
-#: ..\src/mainframe.cpp:840
+#: ..\src/mainframe.cpp:842
 msgid "Vie&w"
 msgstr "P&regled"
 
-#: ..\src/mainframe.cpp:846
+#: ..\src/mainframe.cpp:848
 msgid "&Tools"
 msgstr "&Alati"
 
-#: ..\src/mainframe.cpp:849
+#: ..\src/mainframe.cpp:851
 msgid "Help &Contents"
 msgstr "Pomoć i &sadržaj"
 
-#: ..\src/mainframe.cpp:853
+#: ..\src/mainframe.cpp:855
 msgid "&About VVV..."
 msgstr "&O programu..."
 
-#: ..\src/mainframe.cpp:861
-#: ..\src/mainframe.cpp:4028
+#: ..\src/mainframe.cpp:863
+#: ..\src/mainframe.cpp:4048
 msgid "New"
 msgstr "Novi"
 
-#: ..\src/mainframe.cpp:861
-#: ..\src/mainframe.cpp:4028
+#: ..\src/mainframe.cpp:863
+#: ..\src/mainframe.cpp:4048
 msgid "Create a new catalog"
 msgstr "Pravi novi katalog"
 
-#: ..\src/mainframe.cpp:864
-#: ..\src/mainframe.cpp:4031
+#: ..\src/mainframe.cpp:866
+#: ..\src/mainframe.cpp:4051
 msgid "Open"
 msgstr "Otvori"
 
-#: ..\src/mainframe.cpp:864
-#: ..\src/mainframe.cpp:4031
+#: ..\src/mainframe.cpp:866
+#: ..\src/mainframe.cpp:4051
 msgid "Open an existing catalog"
 msgstr "Otvara postojeći katalog"
 
-#: ..\src/mainframe.cpp:867
-#: ..\src/mainframe.cpp:4034
+#: ..\src/mainframe.cpp:869
+#: ..\src/mainframe.cpp:4054
 msgid "Catalog a new volume"
 msgstr "Dodaj novi disk u katalog"
 
-#: ..\src/mainframe.cpp:870
-#: ..\src/mainframe.cpp:4037
+#: ..\src/mainframe.cpp:872
+#: ..\src/mainframe.cpp:4057
 msgid "Up"
 msgstr "Gore"
 
-#: ..\src/mainframe.cpp:870
-#: ..\src/mainframe.cpp:4037
+#: ..\src/mainframe.cpp:872
+#: ..\src/mainframe.cpp:4057
 msgid "Move up one level"
 msgstr "Ide za jedan nivo iznad"
 
-#: ..\src/mainframe.cpp:874
-#: ..\src/mainframe.cpp:4041
+#: ..\src/mainframe.cpp:876
+#: ..\src/mainframe.cpp:4061
 msgid "Physical"
 msgstr "Stvarni"
 
-#: ..\src/mainframe.cpp:874
-#: ..\src/mainframe.cpp:4041
+#: ..\src/mainframe.cpp:876
+#: ..\src/mainframe.cpp:4061
 msgid "Show the physical view"
 msgstr "Prikazuje stvarne stavke"
 
-#: ..\src/mainframe.cpp:877
-#: ..\src/mainframe.cpp:4044
+#: ..\src/mainframe.cpp:879
+#: ..\src/mainframe.cpp:4064
 msgid "Virtual"
 msgstr "Virtuelan"
 
-#: ..\src/mainframe.cpp:877
-#: ..\src/mainframe.cpp:4044
+#: ..\src/mainframe.cpp:879
+#: ..\src/mainframe.cpp:4064
 msgid "Show the virtual view"
 msgstr "Prikazuje virtuelne stavke"
 
-#: ..\src/mainframe.cpp:880
-#: ..\src/mainframe.cpp:969
-#: ..\src/mainframe.cpp:975
-#: ..\src/mainframe.cpp:4047
+#: ..\src/mainframe.cpp:882
+#: ..\src/mainframe.cpp:971
+#: ..\src/mainframe.cpp:977
+#: ..\src/mainframe.cpp:4067
 msgid "Search"
 msgstr "Nađi"
 
-#: ..\src/mainframe.cpp:880
-#: ..\src/mainframe.cpp:4047
+#: ..\src/mainframe.cpp:882
+#: ..\src/mainframe.cpp:4067
 msgid "Show the search view"
 msgstr "Otvara prozorče za pretragu"
 
-#: ..\src/mainframe.cpp:932
-#: ..\src/mainframe.cpp:953
+#: ..\src/mainframe.cpp:934
+#: ..\src/mainframe.cpp:955
 msgid "Is equal to:"
 msgstr "Je jednako sa:"
 
-#: ..\src/mainframe.cpp:933
-#: ..\src/mainframe.cpp:954
+#: ..\src/mainframe.cpp:935
+#: ..\src/mainframe.cpp:956
 msgid "Starts with:"
 msgstr "Počinje sa:"
 
-#: ..\src/mainframe.cpp:934
-#: ..\src/mainframe.cpp:955
+#: ..\src/mainframe.cpp:936
+#: ..\src/mainframe.cpp:957
 msgid "Contains:"
 msgstr "Sadrži:"
 
-#: ..\src/mainframe.cpp:935
-msgid "File name"
-msgstr "Ime datoteke"
-
-#: ..\src/mainframe.cpp:944
+#: ..\src/mainframe.cpp:946
 msgid "Extension:"
 msgstr "Ekstenzija:"
 
-#: ..\src/mainframe.cpp:967
+#: ..\src/mainframe.cpp:969
 msgid "Selected physical folder"
 msgstr "Izabrani stvarni diskovi"
 
-#: ..\src/mainframe.cpp:1071
+#: ..\src/mainframe.cpp:1073
 msgid "Catalog volume"
 msgstr "Dodaj disk u katalog"
 
-#: ..\src/mainframe.cpp:1313
-msgid "Physical path"
-msgstr "Stvarna putanja"
-
-#: ..\src/mainframe.cpp:1363
-#: ..\src/settings.cpp:209
-msgid "Artist"
-msgstr "Izvođač"
-
-#: ..\src/mainframe.cpp:1368
-#: ..\src/settings.cpp:213
-msgid "Album"
-msgstr "Album"
-
-#: ..\src/mainframe.cpp:1373
-#: ..\src/settings.cpp:217
-msgid "Title"
-msgstr "Naziv"
-
-#: ..\src/mainframe.cpp:1378
-#: ..\src/settings.cpp:221
-msgid "Year"
-msgstr "Godina"
-
-#: ..\src/mainframe.cpp:1383
-#: ..\src/settings.cpp:225
-msgid "Comment"
-msgstr "Primedba"
-
-#: ..\src/mainframe.cpp:1388
-msgid "Number"
-msgstr "Broj"
-
-#: ..\src/mainframe.cpp:1393
-#: ..\src/settings.cpp:233
-msgid "Genre"
-msgstr "Žanr"
-
-#: ..\src/mainframe.cpp:1398
-#: ..\src/settings.cpp:237
-msgid "Length"
-msgstr "Dužina"
-
-#: ..\src/mainframe.cpp:1403
-#: ..\src/settings.cpp:241
-msgid "Bitrate"
-msgstr "Bitski protok"
-
-#: ..\src/mainframe.cpp:1408
-#: ..\src/settings.cpp:245
-msgid "Sample rate"
-msgstr "Veličina uzorka"
-
-#: ..\src/mainframe.cpp:1413
-#: ..\src/settings.cpp:249
-msgid "Channels"
-msgstr "Broj kanala"
-
-#: ..\src/mainframe.cpp:1442
+#: ..\src/mainframe.cpp:1444
 msgid "Open catalog"
 msgstr "Otvori katalog"
 
-#: ..\src/mainframe.cpp:1446
-#: ..\src/mainframe.cpp:3622
+#: ..\src/mainframe.cpp:1448
+#: ..\src/mainframe.cpp:3642
 msgid "VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*"
 msgstr "VVV datoteke (*.vvv)|*.vvv|Sve datoteke (*.*)|*.*"
 
-#: ..\src/mainframe.cpp:1891
+#: ..\src/mainframe.cpp:1868
 msgid "Choose virtual folder"
 msgstr "Izaberite virtuelnu fasciklu"
 
-#: ..\src/mainframe.cpp:1977
+#: ..\src/mainframe.cpp:1954
 msgid "New virtual root folder"
 msgstr "Nova virtuelna korena fascikla"
 
-#: ..\src/mainframe.cpp:2005
+#: ..\src/mainframe.cpp:1982
 msgid "New virtual subfolder"
 msgstr "Nova virtuelna podfascikla"
 
-#: ..\src/mainframe.cpp:2023
-#: ..\src/mainframe.cpp:3385
+#: ..\src/mainframe.cpp:2000
+#: ..\src/mainframe.cpp:3400
 msgid "Enter the new folder name"
 msgstr "Unesite ime za novu fasciklu"
 
-#: ..\src/mainframe.cpp:2038
-#: ..\src/mainframe.cpp:3396
+#: ..\src/mainframe.cpp:2015
+#: ..\src/mainframe.cpp:3411
 msgid "The new folder name is already present in the database"
 msgstr "Novo ime fascikle već postoji u bazi podataka"
 
-#: ..\src/mainframe.cpp:2091
+#: ..\src/mainframe.cpp:2068
 msgid "This catalog file does not exist any more"
 msgstr "Više ne postoji ova datoteka sa katalogom"
 
-#: ..\src/mainframe.cpp:2121
+#: ..\src/mainframe.cpp:2098
 msgid ""
 "Catalog not found:\n"
 "\n"
@@ -702,7 +766,7 @@ msgstr ""
 "Nije pronađen katalog:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:2125
+#: ..\src/mainframe.cpp:2102
 msgid ""
 "Incorrect username or password for the following database:\n"
 "\n"
@@ -710,7 +774,7 @@ msgstr ""
 "Nije ispravno korisničko ime ili lozinka za ovu bazu podataka:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:2130
+#: ..\src/mainframe.cpp:2107
 msgid ""
 "Unable to connect to the following server:\n"
 "\n"
@@ -718,7 +782,7 @@ msgstr ""
 "Ne mogu da se povežem na ovaj server:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:2132
+#: ..\src/mainframe.cpp:2109
 msgid ""
 "Unable to open the catalog.\n"
 "Please note that you are not connected to a database server so you cannot open a catalog located on another computer in the network.\n"
@@ -728,7 +792,7 @@ msgstr ""
 "Niste povezani sa serverom na kome je baza podataka, pa ne možete da otvorite katalog drugog računara iz mreže.\n"
 "Ukoliko želite da otvorite katalog sa drugog računara, morate se najpre povezati se serverom (iz menija Alati / Podešavanja)."
 
-#: ..\src/mainframe.cpp:2154
+#: ..\src/mainframe.cpp:2131
 msgid ""
 "This catalog has been created with a previous version of the program and it needs to be upgraded, but the file containing the upgrades list is missing.\n"
 "\n"
@@ -738,11 +802,11 @@ msgstr ""
 "\n"
 "Pokušajte da ponovo instalirate program, možda će rešiti problem."
 
-#: ..\src/mainframe.cpp:2158
+#: ..\src/mainframe.cpp:2135
 msgid "Upgrading the catalog, please wait..."
 msgstr "Ažuriram katalog, sačekajte..."
 
-#: ..\src/mainframe.cpp:2170
+#: ..\src/mainframe.cpp:2147
 msgid ""
 "This catalog has been created with an older version of VVV so you need to convert it to a newer format.\n"
 "\n"
@@ -750,7 +814,7 @@ msgstr ""
 "Ovaj katalog je napravljen starijim izdanjem programa, pa ga morate prebaciti u novi format.\n"
 "\n"
 
-#: ..\src/mainframe.cpp:2171
+#: ..\src/mainframe.cpp:2148
 msgid ""
 "The conversion will create a new catalog with the same data as the older one, then you will use this new catalog with VVV. You will not use the older catalog any more.\n"
 "\n"
@@ -758,12 +822,13 @@ msgstr ""
 "Prebacivanjem ćete dobiti novi katalog sa istim podacima koje ste imali u prethodnom. Program će nadalje koristiti samo novi katalog.\n"
 "\n"
 
-#: ..\src/mainframe.cpp:2172
-msgid "Do you want to convert the catatalog creating a new one?"
+#: ..\src/mainframe.cpp:2149
+#, fuzzy
+msgid "Do you want to convert the catalog creating a new one?"
 msgstr "Da li želite da prebacite katalog u novi format?"
 
-#: ..\src/mainframe.cpp:2176
-#: ..\src/mainframe.cpp:2380
+#: ..\src/mainframe.cpp:2153
+#: ..\src/mainframe.cpp:2361
 msgid ""
 "Unable to create a new catalog.\n"
 "\n"
@@ -773,12 +838,12 @@ msgstr ""
 "\n"
 "Povezani ste na server sa bazom podataka, pa morate pokrenuti ovaj program na serveru da bi napravili novi katalog."
 
-#: ..\src/mainframe.cpp:2180
+#: ..\src/mainframe.cpp:2157
 msgid "Convert to a new catalog"
 msgstr "Prebaci katalog u novi format"
 
-#: ..\src/mainframe.cpp:2188
-#: ..\src/mainframe.cpp:2392
+#: ..\src/mainframe.cpp:2165
+#: ..\src/mainframe.cpp:2373
 msgid ""
 "Unable to find the database backup to restore.\n"
 "\n"
@@ -788,19 +853,19 @@ msgstr ""
 "\n"
 "Pokušajte da ponovo instalirate program, možda će rešiti problem."
 
-#: ..\src/mainframe.cpp:2351
+#: ..\src/mainframe.cpp:2328
 msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
 msgstr "VPD (Virtuelni Pregled Diskova) je program za izradu kataloga uklonjivih medijuma, kao što su CD i DVD diskovi"
 
-#: ..\src/mainframe.cpp:2352
+#: ..\src/mainframe.cpp:2329
 msgid "Copyright (C) 2007-2010 The VVV Team"
 msgstr "Sva prava su zadržana, (C) 2007-2010 VPD tim"
 
-#: ..\src/mainframe.cpp:2353
+#: ..\src/mainframe.cpp:2330
 msgid "Fulvio Senore: main developer"
 msgstr "Fulvio Senore: glavni programer"
 
-#: ..\src/mainframe.cpp:2354
+#: ..\src/mainframe.cpp:2331
 msgid ""
 "\n"
 "Jan Albartus: worked at the portable version and designed the application's icon"
@@ -808,100 +873,112 @@ msgstr ""
 "\n"
 "Jan Albartus: razvoj na prenosivom izdanju i tvorac ikonice programa"
 
-#: ..\src/mainframe.cpp:2355
+#: ..\src/mainframe.cpp:2332
 msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
 msgstr "Ovaj program koristi Kistalne ikonice, ikonice iz Gnoma i Ubuntu distribucije."
 
-#: ..\src/mainframe.cpp:2356
+#: ..\src/mainframe.cpp:2333
 msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
 msgstr "Ovo je slobodan program, izdat pod Gnuovom Opštom Javnom Licencom (eng. GPL)"
 
-#: ..\src/mainframe.cpp:2365
+#: ..\src/mainframe.cpp:2345
 msgid "Serbian"
 msgstr "srpski"
 
-#: ..\src/mainframe.cpp:2384
+#: ..\src/mainframe.cpp:2365
 msgid "New catalog"
 msgstr "Novi katalog"
 
-#: ..\src/mainframe.cpp:2417
+#: ..\src/mainframe.cpp:2415
 msgid "Multiple items"
 msgstr "Više stavki"
 
-#: ..\src/mainframe.cpp:2426
-#: ..\src/mainframe.cpp:2460
+#: ..\src/mainframe.cpp:2418
+#: ..\src/mainframe.cpp:2469
 msgid "Object description"
 msgstr "Opis objekta"
 
-#: ..\src/mainframe.cpp:2559
-#: ..\src/mainframe.cpp:3156
+#: ..\src/mainframe.cpp:2431
+#, fuzzy
+msgid "File description"
+msgstr "Opis objekta"
+
+#: ..\src/mainframe.cpp:2576
+#: ..\src/mainframe.cpp:3173
 msgid "Add To Virtual Folder"
 msgstr "Dodaj u virtuelnu fasciklu"
 
-#: ..\src/mainframe.cpp:2564
-#: ..\src/mainframe.cpp:3159
-msgid "Edit Description..."
-msgstr "Izmeni opis..."
+# Part of the Edit menu
+#: ..\src/mainframe.cpp:2581
+#, fuzzy
+msgid "Object information..."
+msgstr "Opis o&bjekta..."
 
-#: ..\src/mainframe.cpp:2567
+#: ..\src/mainframe.cpp:2584
 msgid "Rename..."
 msgstr "Preimenuj..."
 
-#: ..\src/mainframe.cpp:2568
-#: ..\src/mainframe.cpp:2603
-#: ..\src/mainframe.cpp:3152
+#: ..\src/mainframe.cpp:2585
+#: ..\src/mainframe.cpp:2620
+#: ..\src/mainframe.cpp:3169
 msgid "Delete"
 msgstr "Obriši"
 
-#: ..\src/mainframe.cpp:2569
+#: ..\src/mainframe.cpp:2586
 msgid "Update Volume..."
 msgstr "Ažuriraj disk..."
 
-#: ..\src/mainframe.cpp:2593
+#: ..\src/mainframe.cpp:2610
 msgid "New Root Folder"
 msgstr "Novi koreni direktorijum"
 
-#: ..\src/mainframe.cpp:2596
+#: ..\src/mainframe.cpp:2613
 msgid "New Subfolder"
 msgstr "Nova podfascikla"
 
-#: ..\src/mainframe.cpp:2602
+#: ..\src/mainframe.cpp:2619
 msgid "Rename"
 msgstr "Preimenuj"
 
-#: ..\src/mainframe.cpp:2743
+#: ..\src/mainframe.cpp:2760
 msgid "Please enter some search data"
 msgstr "Unesite reči za pretragu"
 
-#: ..\src/mainframe.cpp:2762
+#: ..\src/mainframe.cpp:2779
 msgid "Incorrect file name search data"
 msgstr "Neispravno ime datoteke za pretragu"
 
-#: ..\src/mainframe.cpp:2773
+#: ..\src/mainframe.cpp:2790
 msgid "Incorrect extension search data"
 msgstr "Neispravna ekstenzija za pretragu"
 
-#: ..\src/mainframe.cpp:2785
+#: ..\src/mainframe.cpp:2802
 msgid "Incorrect description search data"
 msgstr "Neispravan opis za pretragu"
 
-#: ..\src/mainframe.cpp:2890
+#: ..\src/mainframe.cpp:2907
 msgid "The search did not find anything"
 msgstr "Nema traženih rezultata pretrage"
 
-#: ..\src/mainframe.cpp:3039
+#: ..\src/mainframe.cpp:3056
 msgid "Objects: "
 msgstr "Objekti:"
 
-#: ..\src/mainframe.cpp:3046
+#: ..\src/mainframe.cpp:3063
 msgid "Total size: "
 msgstr "Ukupna veličina: "
 
-#: ..\src/mainframe.cpp:3205
+# Part of the Edit menu
+#: ..\src/mainframe.cpp:3176
+#, fuzzy
+msgid "Object Information..."
+msgstr "Opis o&bjekta..."
+
+#: ..\src/mainframe.cpp:3220
 msgid "Settings"
 msgstr "Podešavanja"
 
-#: ..\src/mainframe.cpp:3295
+#: ..\src/mainframe.cpp:3310
 msgid ""
 "This command will delete the selected virtual folder, but it will not change the folders in the physical view.\n"
 "\n"
@@ -911,7 +988,7 @@ msgstr ""
 "\n"
 "Da li želite da obrišete fasciklu?"
 
-#: ..\src/mainframe.cpp:3320
+#: ..\src/mainframe.cpp:3335
 msgid ""
 "This command will delete this volume:\n"
 "\n"
@@ -919,7 +996,7 @@ msgstr ""
 "Ova naredva će obrisati disk:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:3320
+#: ..\src/mainframe.cpp:3335
 msgid ""
 "\n"
 "\n"
@@ -933,29 +1010,30 @@ msgstr ""
 "\n"
 "Da li zaista želite da obrišete ovaj disk?"
 
-#: ..\src/mainframe.cpp:3330
+#: ..\src/mainframe.cpp:3345
 msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
 msgstr "Ne mogu da obrišem ovaj disk. Neka od njegovih datoteka se nalazi u virtuelnom prikazu."
 
-#: ..\src/mainframe.cpp:3351
+#: ..\src/mainframe.cpp:3366
 msgid "Enter the new volume name"
 msgstr "Unesite novo ime diska"
 
-#: ..\src/mainframe.cpp:3351
+#: ..\src/mainframe.cpp:3366
 msgid "Rename volume"
 msgstr "Preimenuj disk"
 
-#: ..\src/mainframe.cpp:3364
+#: ..\src/mainframe.cpp:3379
 msgid "The new volume name is already present in the database"
 msgstr "Novi disk već postoji u bazi podataka"
 
-#: ..\src/mainframe.cpp:3385
+#: ..\src/mainframe.cpp:3400
 msgid "Rename virtual folder"
 msgstr "Preimenuj virtuelnu fasciklu"
 
-#: ..\src/mainframe.cpp:3503
+#: ..\src/mainframe.cpp:3523
+#, fuzzy
 msgid ""
-"This command will delete the selected virtual files, but it will not change the files in the physical view.\n"
+"This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
@@ -963,8 +1041,8 @@ msgstr ""
 "\n"
 "Da li želite da obrišete datoteke?"
 
-#: ..\src/mainframe.cpp:3645
-#: ..\src/mainframe.cpp:3722
+#: ..\src/mainframe.cpp:3665
+#: ..\src/mainframe.cpp:3742
 msgid ""
 "Unable to continue. You have choosen an existing file:\n"
 "\n"
@@ -972,9 +1050,9 @@ msgstr ""
 "Ne mogu da nastavim. Izabrali ste stvarnu fasciklu:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:3645
-#: ..\src/mainframe.cpp:3722
-#: ..\src/mainframe.cpp:3804
+#: ..\src/mainframe.cpp:3665
+#: ..\src/mainframe.cpp:3742
+#: ..\src/mainframe.cpp:3824
 msgid ""
 "\n"
 "\n"
@@ -984,27 +1062,27 @@ msgstr ""
 "\n"
 "Morate uneti ime nepostojeće datoteke."
 
-#: ..\src/mainframe.cpp:3654
-#: ..\src/mainframe.cpp:3731
-#: ..\src/mainframe.cpp:3813
+#: ..\src/mainframe.cpp:3674
+#: ..\src/mainframe.cpp:3751
+#: ..\src/mainframe.cpp:3833
 msgid "Unable to continue: you have choosen a folder where you do not have the right to create a file."
 msgstr "Ne mogu da nastavim: izabrali ste fasciklu u kojoj nemate ovlašćenja za pravljenje datoteka."
 
-#: ..\src/mainframe.cpp:3699
+#: ..\src/mainframe.cpp:3719
 #: ..\src/opencatalog.cpp:255
 #: ..\src/restore.cpp:287
 msgid "VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*"
 msgstr "PVD rezervne kopije (*.vvvbk)|*.vvvbk|Sve datoteke (*.*)|*.*"
 
-#: ..\src/mainframe.cpp:3700
+#: ..\src/mainframe.cpp:3720
 msgid "Backup catalog"
 msgstr "Napravi rezervni katalog"
 
-#: ..\src/mainframe.cpp:3745
+#: ..\src/mainframe.cpp:3765
 msgid "Backup completed"
 msgstr "Pravljenje rezervne kopije je završeno"
 
-#: ..\src/mainframe.cpp:3768
+#: ..\src/mainframe.cpp:3788
 msgid ""
 "Unable to restore.\n"
 "\n"
@@ -1014,15 +1092,15 @@ msgstr ""
 "\n"
 "Povezujete se na server sa bazom podataka, pa morate pokrenuti ovu naredbu na serveru kako bi vratili podatke o katalogu."
 
-#: ..\src/mainframe.cpp:3782
+#: ..\src/mainframe.cpp:3802
 msgid "The catalog name is missing"
 msgstr "Nedostaje naziv kataloga"
 
-#: ..\src/mainframe.cpp:3786
+#: ..\src/mainframe.cpp:3806
 msgid "The backup name is missing"
 msgstr "Nedostaje naziv rezervne kopije"
 
-#: ..\src/mainframe.cpp:3804
+#: ..\src/mainframe.cpp:3824
 msgid ""
 "Unable to continue. You have choosen an existing catalog:\n"
 "\n"
@@ -1030,11 +1108,11 @@ msgstr ""
 "Ne mogu da nastavim. Izabrali ste već postojeći katalog:\n"
 "\n"
 
-#: ..\src/mainframe.cpp:3841
+#: ..\src/mainframe.cpp:3861
 msgid "Restore completed"
 msgstr "Vraćanje podataka je završeno"
 
-#: ..\src/mainframe.cpp:3858
+#: ..\src/mainframe.cpp:3878
 msgid "Update Volume"
 msgstr "Ažuriraj disk"
 
@@ -1120,7 +1198,8 @@ msgid "General"
 msgstr "Opšte"
 
 #: ..\src/settings.cpp:204
-msgid "Show the following data for MP3 files:"
+#, fuzzy
+msgid "Show the following data for audio files:"
 msgstr "Prikaži sledeće podatke za MP3 datoteke:"
 
 #: ..\src/settings.cpp:229
@@ -1128,8 +1207,8 @@ msgid "Track number"
 msgstr "Broj pesme"
 
 #: ..\src/settings.cpp:255
-msgid "MP3"
-msgstr "MP3"
+msgid "Audio files"
+msgstr ""
 
 #: ..\src/settings.cpp:263
 msgid ""
@@ -1192,19 +1271,15 @@ msgstr "Ne mogu da se povežem sa serverom"
 msgid "Server connection successful"
 msgstr "Uspešno ste povezani na server"
 
-#: ..\src/update_volume.cpp:180
-msgid "You are about to update the following volume:"
-msgstr "Sada ćete ažurirati sledeći disk:"
-
-#: ..\src/update_volume.cpp:183
+#: ..\src/update_volume.cpp:184
 msgid "VOLUME NAME"
 msgstr "IME DISKA"
 
-#: ..\src/update_volume.cpp:188
+#: ..\src/update_volume.cpp:189
 msgid "Enter or select the path to volume to update"
 msgstr "Unesite ili izaberite putanju do diska za ažuriranje"
 
-#: ..\src/update_volume.cpp:208
+#: ..\src/update_volume.cpp:209
 msgid "Update"
 msgstr "Ažuriraj"
 
@@ -1250,11 +1325,15 @@ msgstr "Ne postoji putanja do diska"
 msgid "Volume name not found"
 msgstr "Ime diska nije pronađeno"
 
+#: ..\src/dlg_file_information.h:47
+msgid "File information"
+msgstr ""
+
 #: ..\src/exportdata.h:71
 msgid "Export data"
 msgstr "Izvezi podatke"
 
-#: ..\src/mainframe.h:111
+#: ..\src/mainframe.h:112
 msgid "VVV"
 msgstr "PVD"
 
@@ -1265,4 +1344,11 @@ msgstr "Opis objekta"
 #: ..\src/restore.h:46
 msgid "Restore"
 msgstr "Vrati"
+
+#~ msgid "Edit Description..."
+#~ msgstr "Izmeni opis..."
+#~ msgid "MP3"
+#~ msgstr "MP3"
+#~ msgid "You are about to update the following volume:"
+#~ msgstr "Sada ćete ažurirati sledeći disk:"
 
