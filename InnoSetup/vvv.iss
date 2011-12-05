@@ -56,6 +56,8 @@ Source: ..\translations\vvv-hu.mo; DestDir: {app}\languages\hu; DestName: vvv.mo
 Source: ..\translations\hu\wxstd.mo; DestDir: {app}\languages\hu
 Source: ..\translations\vvv-it.mo; DestDir: {app}\languages\it; DestName: vvv.mo
 Source: ..\translations\it\wxstd.mo; DestDir: {app}\languages\it
+Source: ..\translations\vvv-ja.mo; DestDir: {app}\languages\ja; DestName: vvv.mo
+Source: ..\translations\ja\wxstd.mo; DestDir: {app}\languages\ja
 Source: ..\translations\vvv-nl.mo; DestDir: {app}\languages\nl; DestName: vvv.mo
 Source: ..\translations\nl\wxstd.mo; DestDir: {app}\languages\nl
 Source: ..\translations\vvv-pl.mo; DestDir: {app}\languages\pl; DestName: vvv.mo
