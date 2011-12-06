@@ -173,6 +173,8 @@ if( UNIX )
   endif( APPLE )
 
   # copy localization files -- vvv files...
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cn.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/cn RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cs.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/cs RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-de.mo 
@@ -183,8 +185,12 @@ if( UNIX )
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/fr RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-hr.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/hr RENAME vvv.mo )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-hu.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/hu RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-it.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/it RENAME vvv.mo )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-ja.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/ja RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-nl.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/nl RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-pl.mo 
@@ -206,7 +212,9 @@ if( UNIX )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/de/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/de )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/es/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/es )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/fr/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/fr )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/hu/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/hu )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/it/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/it )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/ja/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/ja )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/nl/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/nl )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/pl/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/pl )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/pt/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/pt )
