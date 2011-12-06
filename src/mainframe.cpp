@@ -3321,6 +3321,7 @@ void CMainFrame::DeleteSelectedVirtualFolder() {
 
 	// deletes from the tree control
 	tctl->DeleteChildren(item);
+	GetListControl()->DeleteAllItems();
 	tctl->Delete(item);
 
 	CBaseDB::GetDatabase()->UpdateStatistics( CBaseDB::usVirtual );
@@ -3352,6 +3353,7 @@ void CMainFrame::DeleteSelectedVolume() {
 	CBaseDB::GetDatabase()->UpdateStatistics( CBaseDB::usAll );
 
 	// removes the item from the tree control
+	GetListControl()->DeleteAllItems();
 	tctl->Delete(item);
 }
 
