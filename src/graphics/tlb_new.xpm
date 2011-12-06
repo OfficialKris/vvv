@@ -1,5 +1,5 @@
 /* XPM */
-static char *tlb_new_xpm[] = {
+static const char *tlb_new_xpm[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 146 2",
 "G  c #E4DFA2",
