@@ -2326,7 +2326,7 @@ void CMainFrame::OnABOUTClick( wxCommandEvent& WXUNUSED(event) )
 	info.SetVersion( CUtils::GetApplicationVersion() );
 	info.SetWebSite( wxT("http://vvvapp.sourceforge.net/") );
 	info.SetDescription( _("VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs") );
-	info.SetCopyright( _("Copyright (C) 2007-2010 The VVV Team") );
+	info.SetCopyright( _("Copyright (C) 2007-2011 The VVV Team") );
 	info.AddDeveloper( _("Fulvio Senore: main developer") );
 	info.AddDeveloper( _("\nJan Albartus: worked at the portable version and designed the application's icon") );
 	info.AddArtist( _("This program uses icons from the Gnome, Ubuntu and Crystal icons projects") );
@@ -2340,7 +2340,8 @@ void CMainFrame::OnABOUTClick( wxCommandEvent& WXUNUSED(event) )
 	info.AddTranslator( wxString(wxT("Karel Kozl\u00EDk: ")) + _("Czech") );
 	info.AddTranslator( wxString(wxT("Dariusz Liszewski: ")) + _("Polish") );
 	info.AddTranslator( wxString(wxT("Krisztian Mukli: ")) + _("Hungarian") );
-	info.AddTranslator( wxString(wxT("Yaroslav D. Mudryy : ")) + _("Russian") + wxT(" ") + _("Ukrainian") );
+	info.AddTranslator( wxString(wxT("Yaroslav D. Mudryy, Yuriy Karandyshev : ")) + _("Russian") );
+	info.AddTranslator( wxString(wxT("Yaroslav D. Mudryy : ")) + _("Ukrainian") );
 	info.AddTranslator( wxString(wxT("Hasan Osmanagi\u0107: ")) + _("Croatian") );
 	info.AddTranslator( wxString(wxT("Milos Popovic: ")) + _("Serbian") );
 	info.AddTranslator( wxString(wxT("Suguru SASAKI: ")) + _("Japanese") );
