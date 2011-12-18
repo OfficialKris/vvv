@@ -17,7 +17,7 @@ msgstr ""
 
 #: ..\src/catalog_volume.cpp:174
 msgid "Enter or select the volume to catalog"
-msgstr "Introduceţi sau selectaţi calea către volumul pentru catalogare."
+msgstr "Introduceți sau selectați calea către discul pentru catalogare."
 
 #: ..\src/catalog_volume.cpp:183
 #: ..\src/exportdata.cpp:223
@@ -30,11 +30,11 @@ msgstr "..."
 
 #: ..\src/catalog_volume.cpp:186
 msgid "Volume name"
-msgstr "Numele volumului"
+msgstr "Numele discului"
 
 #: ..\src/catalog_volume.cpp:196
 msgid "Get volume name"
-msgstr "Importă numele volumului"
+msgstr "Importă numele discului"
 
 #: ..\src/catalog_volume.cpp:204
 #: ..\src/dlg_file_information.cpp:170
@@ -65,16 +65,16 @@ msgstr "Directorul curent"
 
 #: ..\src/catalog_volume.cpp:218
 msgid "Previously cataloged volumes"
-msgstr "Volum catalogat anterior"
+msgstr "Disc catalogat anterior"
 
 #: ..\src/catalog_volume.cpp:288
 #: ..\src/update_volume.cpp:270
 msgid "The volume path is missing"
-msgstr "Cale către volum lipsă"
+msgstr "Cale către disc lipsă"
 
 #: ..\src/catalog_volume.cpp:293
 msgid "The volume name is missing"
-msgstr "Numele volumului lipsă"
+msgstr "Numele discului lipsă"
 
 #: ..\src/catalog_volume.cpp:310
 msgid "This volume name is already present in the database"
@@ -83,7 +83,7 @@ msgstr "Acest nume este deja prezent în baza de date"
 #: ..\src/catalog_volume.cpp:357
 #: ..\src/update_volume.cpp:297
 msgid "Select the volume to catalog"
-msgstr "Selectează volumul pentru catalogare"
+msgstr "Selectează discul pentru catalogare"
 
 #: ..\src/catalog_volume_functions.cpp:328
 msgid "Number of added files: "
@@ -107,12 +107,12 @@ msgstr "Numărul fișierelor nemodificate:"
 
 #: ..\src/catalog_volume_functions.cpp:333
 msgid "Do you really want to update the volume?"
-msgstr "Confirmi actualizarea volumului?"
+msgstr "Confirmați actualizarea discului?"
 
 #: ..\src/chooselang.cpp:77
 #, c-format
 msgid "Unknown locale code '%s' in registry."
-msgstr "Cod local '%s' necunoscut in registru."
+msgstr "Cod local '%s' necunoscut în registru."
 
 #: ..\src/chooselang.cpp:94
 msgid "(Use default language)"
@@ -120,9 +120,8 @@ msgstr "(Folosește limba prestabilită)"
 
 #: ..\src/chooselang.cpp:96
 #: ..\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Canale"
+msgstr "Chineză"
 
 #: ..\src/chooselang.cpp:97
 #: ..\src/mainframe.cpp:2344
@@ -157,7 +156,7 @@ msgstr "Germană"
 #: ..\src/mainframe.cpp:2339
 #: ..\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Maghiară"
 
 #: ..\src/chooselang.cpp:104
 #: ..\src/mainframe.cpp:2347
@@ -167,7 +166,7 @@ msgstr "Italiană"
 #: ..\src/chooselang.cpp:105
 #: ..\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japoneză"
 
 #: ..\src/chooselang.cpp:106
 #: ..\src/mainframe.cpp:2341
@@ -221,7 +220,7 @@ msgstr "Pentru a efectua schimbările, este necesară restartarea programului."
 
 #: ..\src/choose_virtual_folder.cpp:157
 msgid "Please select the virtual folder that will receive the selected files and/or folders:"
-msgstr "Selectați directorul virtual care va primi fișierele si/sau directoroarele selectate:"
+msgstr "Alegeți selecția personalizată care va primi fișierele și/sau directoarele selectate:"
 
 #: ..\src/choose_virtual_folder.cpp:169
 #: ..\src/choose_virtual_folder.cpp:187
@@ -272,9 +271,8 @@ msgid "Name"
 msgstr "Nume"
 
 #: ..\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Volum"
+msgstr "Valoare"
 
 #: ..\src/dlg_file_information.cpp:302
 #: ..\src/mainframe.cpp:1415
@@ -342,18 +340,16 @@ msgid "Artist"
 msgstr "Artist"
 
 #: ..\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Nume fișier"
+msgstr "Dată fișier"
 
 #: ..\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Nume fișier"
+msgstr "Mărime fișier"
 
 #: ..\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "biți"
 
 #: ..\src/dlg_file_information.cpp:323
 #: ..\src/mainframe.cpp:937
@@ -361,9 +357,8 @@ msgid "File name"
 msgstr "Nume fișier"
 
 #: ..\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtual"
+msgstr "Cale virtuală"
 
 #: ..\src/dlg_file_information.cpp:335
 #: ..\src/mainframe.cpp:1315
@@ -397,11 +392,11 @@ msgstr "Include anteturi"
 #: ..\src/exportdata.cpp:207
 #: ..\src/mainframe.cpp:968
 msgid "All physical volumes"
-msgstr "Toate volumele fizice"
+msgstr "Toate discurile"
 
 #: ..\src/exportdata.cpp:208
 msgid "Selected physical volume/folder"
-msgstr "Directorul / volumul fizic selectat"
+msgstr "Directorul / discul selectat"
 
 #: ..\src/exportdata.cpp:209
 #: ..\src/mainframe.cpp:970
@@ -414,11 +409,11 @@ msgstr "Export"
 
 #: ..\src/exportdata.cpp:214
 msgid "File name:"
-msgstr "Numele fişierului"
+msgstr "Numele fișierului"
 
 #: ..\src/exportdata.cpp:309
 msgid "CSV files (*.csv;*.txt)|*.csv;*.txt|All files (*.*)|*.*"
-msgstr "Fişiere CVS (*.csv;*.txt)|*.csv;*.txt|Toate fişierele (*.*)|*.*"
+msgstr "Fișiere CVS (*.csv;*.txt)|*.csv;*.txt|Toate fișierele (*.*)|*.*"
 
 #: ..\src/exportdata.cpp:336
 msgid "Please enter a file name"
@@ -465,7 +460,7 @@ msgstr "Descriere"
 
 #: ..\src/exportdata.cpp:526
 msgid "Volume"
-msgstr "Volum"
+msgstr "Disc"
 
 #: ..\src/exportdata.cpp:526
 msgid "Path"
@@ -516,12 +511,12 @@ msgstr "&Fişier"
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:810
 msgid "&Add To Virtual Folder..."
-msgstr "&Adaugă în ecranul virtual"
+msgstr "&Adaugă în selecția personalizată"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:812
 msgid "&Rename...\tF2"
-msgstr "&Redenumeşte...\tF2"
+msgstr "&Redenumește...\tF2"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:813
@@ -530,7 +525,6 @@ msgstr "&Şterge"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
 msgstr "&Descriere obiect..."
 
@@ -556,25 +550,25 @@ msgstr "&Editează"
 # Part of the Volumes menu
 #: ..\src/mainframe.cpp:824
 msgid "&Catalog Volume..."
-msgstr "&Catalogare volum..."
+msgstr "&Catalogare disc..."
 
 #: ..\src/mainframe.cpp:825
 msgid "&Update Volume..."
-msgstr "&Actualizează volum..."
+msgstr "&Actualizează disc..."
 
 #: ..\src/mainframe.cpp:826
 msgid "&Volumes"
-msgstr "&Volume"
+msgstr "&Discuri"
 
 # Part of the View menu
 #: ..\src/mainframe.cpp:828
 msgid "&Physical View"
-msgstr "&Ecran fizic"
+msgstr "&Colecție discuri"
 
 # Part of the View menu
 #: ..\src/mainframe.cpp:830
 msgid "&Virtual View"
-msgstr "&Ecran virtual"
+msgstr "&Selecție personalizată"
 
 # Part of the View menu
 #: ..\src/mainframe.cpp:831
@@ -584,7 +578,7 @@ msgstr "&Căutare"
 #: ..\src/mainframe.cpp:833
 #: ..\src/mainframe.cpp:3167
 msgid "Show in physical view"
-msgstr "Afișează în ecranul fizic"
+msgstr "Afișează în colecție"
 
 # Part of the View menu
 #: ..\src/mainframe.cpp:834
@@ -652,7 +646,7 @@ msgstr "Deschide un catalog existent"
 #: ..\src/mainframe.cpp:869
 #: ..\src/mainframe.cpp:4054
 msgid "Catalog a new volume"
-msgstr "Cataloghează un volum nou"
+msgstr "Cataloghează un disc nou"
 
 #: ..\src/mainframe.cpp:872
 #: ..\src/mainframe.cpp:4057
@@ -667,22 +661,22 @@ msgstr "Către nivelul superior"
 #: ..\src/mainframe.cpp:876
 #: ..\src/mainframe.cpp:4061
 msgid "Physical"
-msgstr "Fizic"
+msgstr "Colecție"
 
 #: ..\src/mainframe.cpp:876
 #: ..\src/mainframe.cpp:4061
 msgid "Show the physical view"
-msgstr "Afișează ecranul fizic"
+msgstr "Afișează colecția de discuri"
 
 #: ..\src/mainframe.cpp:879
 #: ..\src/mainframe.cpp:4064
 msgid "Virtual"
-msgstr "Virtual"
+msgstr "Selecție"
 
 #: ..\src/mainframe.cpp:879
 #: ..\src/mainframe.cpp:4064
 msgid "Show the virtual view"
-msgstr "Afișează ecranul virtual"
+msgstr "Afișează selecția personalizată"
 
 #: ..\src/mainframe.cpp:882
 #: ..\src/mainframe.cpp:971
@@ -717,11 +711,11 @@ msgstr "Extensie:"
 
 #: ..\src/mainframe.cpp:969
 msgid "Selected physical folder"
-msgstr "Selectează director fizic"
+msgstr "Directorul fizic selectat"
 
 #: ..\src/mainframe.cpp:1073
 msgid "Catalog volume"
-msgstr "Catalogare volum"
+msgstr "Catalogare disc"
 
 #: ..\src/mainframe.cpp:1444
 msgid "Open catalog"
@@ -734,15 +728,15 @@ msgstr "VVV  fişiere (*.vvv)|*.vvv|Toate fişierele (*.*)|*.*"
 
 #: ..\src/mainframe.cpp:1868
 msgid "Choose virtual folder"
-msgstr "Alege directorul virtual"
+msgstr "Alege selecția personalizată"
 
 #: ..\src/mainframe.cpp:1954
 msgid "New virtual root folder"
-msgstr "Director rădăcină virtual nou"
+msgstr "Selecție personalizată nouă"
 
 #: ..\src/mainframe.cpp:1982
 msgid "New virtual subfolder"
-msgstr "Sub-director virtual nou"
+msgstr "Sub-director nou"
 
 #: ..\src/mainframe.cpp:2000
 #: ..\src/mainframe.cpp:3400
@@ -763,7 +757,7 @@ msgid ""
 "Catalog not found:\n"
 "\n"
 msgstr ""
-"Nu pot gasi catalogul:\n"
+"Nu pot găsi catalogul:\n"
 "\n"
 
 #: ..\src/mainframe.cpp:2102
@@ -798,7 +792,7 @@ msgid ""
 "\n"
 "You can try reinstalling the program to solve this problem."
 msgstr ""
-"Acest catalog a fost generat cu o versiune mai veche a programului, și trebuie reactualizat, insă fișierul care conține datele de actualizare lipsește.\n"
+"Acest catalog a fost generat cu o versiune mai veche a programului, și trebuie reactualizat, însă fișierul care conține datele de actualizare lipsește.\n"
 "\n"
 "Puteți încerca reinstalarea programului pentru a rezolva această problemă"
 
@@ -823,9 +817,8 @@ msgstr ""
 "\n"
 
 #: ..\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "Doriți convertirea calatogului prin generarea unui catalog nou?"
+msgstr "Doriți convertirea catalogului prin generarea unui catalog nou?"
 
 #: ..\src/mainframe.cpp:2153
 #: ..\src/mainframe.cpp:2361
@@ -855,7 +848,7 @@ msgstr ""
 
 #: ..\src/mainframe.cpp:2328
 msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
-msgstr "VVV (Virtual Volumes View): un program pentru catalogarea unităților mobile (exp. CD-uri sau DVD-uri)"
+msgstr "VVV (Virtual Volumes View): un program pentru catalogarea unităților mobile (exemplu. CD-uri sau DVD-uri)"
 
 #: ..\src/mainframe.cpp:2329
 msgid "Copyright (C) 2007-2010 The VVV Team"
@@ -875,11 +868,11 @@ msgstr ""
 
 #: ..\src/mainframe.cpp:2332
 msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
-msgstr "Programul foloseşte pictograme din proiectele Gnome, Ubuntu şi Crystal"
+msgstr "Programul folosește pictograme din proiectele Gnome, Ubuntu şi Crystal"
 
 #: ..\src/mainframe.cpp:2333
 msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
-msgstr "Acest program este open source, distribuit confirm licenţei publice GNU"
+msgstr "Acest program este open source, distribuit confirm licenței publice GNU"
 
 #: ..\src/mainframe.cpp:2345
 msgid "Serbian"
@@ -899,34 +892,32 @@ msgid "Object description"
 msgstr "Descrierea obiectului"
 
 #: ..\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Descrierea obiectului"
+msgstr "Descrierea fișierului"
 
 #: ..\src/mainframe.cpp:2576
 #: ..\src/mainframe.cpp:3173
 msgid "Add To Virtual Folder"
-msgstr "Adaugă la directorul virtual"
+msgstr "Adaugă la selecția personalizată"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "&Descriere obiect..."
+msgstr "Descriere obiect..."
 
 #: ..\src/mainframe.cpp:2584
 msgid "Rename..."
-msgstr "Redenumeşte..."
+msgstr "Redenumește..."
 
 #: ..\src/mainframe.cpp:2585
 #: ..\src/mainframe.cpp:2620
 #: ..\src/mainframe.cpp:3169
 msgid "Delete"
-msgstr "Şterge"
+msgstr "Șterge"
 
 #: ..\src/mainframe.cpp:2586
 msgid "Update Volume..."
-msgstr "Actualizare volum..."
+msgstr "Actualizare disc..."
 
 #: ..\src/mainframe.cpp:2610
 msgid "New Root Folder"
@@ -938,7 +929,7 @@ msgstr "Sub-director nou"
 
 #: ..\src/mainframe.cpp:2619
 msgid "Rename"
-msgstr "Redenumeşte"
+msgstr "Redenumește"
 
 #: ..\src/mainframe.cpp:2760
 msgid "Please enter some search data"
@@ -984,16 +975,16 @@ msgid ""
 "\n"
 "Do you really want to delete the selected virtual folder?"
 msgstr ""
-"Această comandă va șterge directorul virtual ales, dar nu va modifica structura în ecranul fizic.\n"
+"Această comandă va șterge directorul ales, dar nu va modifica structura în colecția de discuri.\n"
 "\n"
-"Doriți ștergerea directorului virtual selectat?"
+"Doriți ștergerea directorului selectat?"
 
 #: ..\src/mainframe.cpp:3335
 msgid ""
 "This command will delete this volume:\n"
 "\n"
 msgstr ""
-"Comanda va șterge acest volum:\n"
+"Comanda va șterge acest disc din colecție:\n"
 "\n"
 
 #: ..\src/mainframe.cpp:3335
@@ -1008,38 +999,37 @@ msgstr ""
 "\n"
 "din catalogul VVV. Nu va fi șters nimic din memoria calculatorului.\n"
 "\n"
-"Confirmați ștergerea acestui volum?"
+"Confirmați ștergerea acestui disc din colecție?"
 
 #: ..\src/mainframe.cpp:3345
 msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
-msgstr "Nu pot șterge acest volum: cel puțin unul din fișiere este folosit în ecranul virtual"
+msgstr "Nu pot șterge acest disc din colecție: cel puțin unul din fișiere este folosit într-o selecție personalizată"
 
 #: ..\src/mainframe.cpp:3366
 msgid "Enter the new volume name"
-msgstr "Introdu numele noului volum"
+msgstr "Introdu numele discului nou"
 
 #: ..\src/mainframe.cpp:3366
 msgid "Rename volume"
-msgstr "Redenumeşte volumul"
+msgstr "Redenumește discul"
 
 #: ..\src/mainframe.cpp:3379
 msgid "The new volume name is already present in the database"
-msgstr "Numele noului volum este deja prezent în baza de date"
+msgstr "Numele noului disc este deja prezent în baza de date"
 
 #: ..\src/mainframe.cpp:3400
 msgid "Rename virtual folder"
-msgstr "Redenumește directorul virtual"
+msgstr "Redenumește selecția personalizată"
 
 #: ..\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Această comandă va șterge fișierele virtuale selectate, dar nu va modifica structura în ecranul fizic.\n"
+"Această comandă va șterge fișierele din selecția personalizată, dar nu va modifica structura colecției.\n"
 "\n"
-"Confirmați ștergerea fișierelor virtuale selectate?"
+"Confirmați ștergerea fișierelor din selecția personalizată?"
 
 #: ..\src/mainframe.cpp:3665
 #: ..\src/mainframe.cpp:3742
@@ -1047,7 +1037,7 @@ msgid ""
 "Unable to continue. You have choosen an existing file:\n"
 "\n"
 msgstr ""
-"Nu pot continua. Fișierul există:\n"
+"Nu pot continua. Fișierul există deja:\n"
 "\n"
 
 #: ..\src/mainframe.cpp:3665
@@ -1114,7 +1104,7 @@ msgstr "Restaurare completă"
 
 #: ..\src/mainframe.cpp:3878
 msgid "Update Volume"
-msgstr "Actualizare volum"
+msgstr "Actualizare disc"
 
 #: ..\src/object_description.cpp:145
 msgid "Please enter the description for the following object:"
@@ -1131,10 +1121,10 @@ msgid ""
 "Enter the alias or the complete path to the catalog file.\n"
 "Remember that the path must be relative to the server, not to the client."
 msgstr ""
-"Suntei gata de a deschide un catalog aflat pe un server.\n"
+"Sunteți gata de a deschide un catalog aflat pe un server.\n"
 "\n"
 "Introduceți pseudonimul sau calea completă către catalog.\n"
-"Calea trebuie să fie relativă către server, si nu către client"
+"Calea trebuie să fie relativă către server, și nu către client"
 
 #: ..\src/opencatalog.cpp:257
 #: ..\src/restore.cpp:305
@@ -1198,9 +1188,8 @@ msgid "General"
 msgstr "General"
 
 #: ..\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Afișează următoarele date pentru fișierele MP3:"
+msgstr "Afișează următoarele date pentru fișierele audio:"
 
 #: ..\src/settings.cpp:229
 msgid "Track number"
@@ -1208,7 +1197,7 @@ msgstr "Numărul piesei"
 
 #: ..\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Fișiere audio"
 
 #: ..\src/settings.cpp:263
 msgid ""
@@ -1270,11 +1259,11 @@ msgstr "Conectare la server posibilă"
 
 #: ..\src/update_volume.cpp:184
 msgid "VOLUME NAME"
-msgstr "NUMELE VOLUMULUI"
+msgstr "NUMELE DISCULUI"
 
 #: ..\src/update_volume.cpp:189
 msgid "Enter or select the path to volume to update"
-msgstr "Introdu sau selectează calea către volumul care trebuie actualizat"
+msgstr "Introdu sau selectează calea către discul care trebuie actualizat"
 
 #: ..\src/update_volume.cpp:209
 msgid "Update"
@@ -1316,15 +1305,15 @@ msgstr ""
 
 #: ..\src/vvv.cpp:408
 msgid "The volume path does not exists"
-msgstr "Calea către volum nu există"
+msgstr "Calea către disc nu există"
 
 #: ..\src/vvv.cpp:449
 msgid "Volume name not found"
-msgstr "Numele volumului nu poate fi găsit"
+msgstr "Numele discului nu poate fi găsit"
 
 #: ..\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Detalii despre fișier"
 
 #: ..\src/exportdata.h:71
 msgid "Export data"

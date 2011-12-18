@@ -142,9 +142,8 @@ msgstr "(Gebruik standaard taal)"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Kanalen"
+msgstr "Chinees"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -186,7 +185,7 @@ msgstr "Duits"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Hongaars"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -198,7 +197,7 @@ msgstr "Italiaans"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japans"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -308,9 +307,8 @@ msgstr "Converteren is gereed"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
-msgstr "Beschrijving"
+msgstr "Beschrijving:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:255
@@ -322,9 +320,8 @@ msgstr "Naam"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Volume"
+msgstr "Waarde"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -404,20 +401,18 @@ msgstr "Artiest"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Bestandsnaam"
+msgstr "Bestandsdatum"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Bestandsnaam"
+msgstr "Bestandsgrootte"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -427,9 +422,8 @@ msgstr "Bestandsnaam"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtueel"
+msgstr "Virtueel pad"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -631,9 +625,8 @@ msgstr "&Verwijderen"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
-msgstr "&Object beschrijving..."
+msgstr "&Objectinformatie..."
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
@@ -981,7 +974,6 @@ msgstr ""
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
 msgstr "Wilt u de catalogus converteren naar een nieuwe versie?"
 
@@ -1071,9 +1063,8 @@ msgstr "Object beschrijving"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Object beschrijving"
+msgstr "Bestandsbeschrijving"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2576
@@ -1084,9 +1075,8 @@ msgstr "Toevoegen aan Virtuele Map"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "&Object beschrijving..."
+msgstr "&Objectinfromatie..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2584
@@ -1159,9 +1149,8 @@ msgstr "Totale grootte:"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
-msgstr "&Object beschrijving..."
+msgstr "&Objectinformatie..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3220
@@ -1230,13 +1219,12 @@ msgstr "wijzig virtuele mapnaam"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Dit commando zal de geselecteerde virtuele bestanden verwijderen, maar zal de bestanden in het fysieke overzicht niet veranderen.\n"
+"Dit commando zal de geselecteerde bestanden uit het virtuele overzicht verwijderen, maar zal de bestanden in het fysieke overzicht niet veranderen.\n"
 "\n"
 "Wilt u werkelijk de geselecteerde virtuele bestanden verwijderen?"
 
@@ -1426,9 +1414,8 @@ msgstr "Algemeen"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Toon de volgende gegevens voor MP3 bestanden:"
+msgstr "Toon de volgende gegevens voor audiobestanden:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1438,7 +1425,7 @@ msgstr "track nummer"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Audio bestanden"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1580,7 +1567,7 @@ msgstr "Volumenaam niet gevonden"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Bestandsinformatie"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71

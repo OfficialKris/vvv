@@ -126,8 +126,6 @@ msgstr "Változatlan fájlok száma: "
 msgid "Do you really want to update the volume?"
 msgstr "Biztos, hogy frissíteni akarod a kötetet?"
 
-# Már az eredeti sem jó:
-# Unknown locale code '%s' in registry.
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:77
 #, c-format
@@ -142,9 +140,8 @@ msgstr "(alapértelmezett nyelv használata)"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Csatornák"
+msgstr "kínai"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -186,7 +183,7 @@ msgstr "német"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "magyar"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -198,7 +195,7 @@ msgstr "olasz"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "japán"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -308,7 +305,6 @@ msgstr "Konvertálás befejezve."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
 msgstr "Leírás"
 
@@ -322,9 +318,8 @@ msgstr "Név"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Kötet"
+msgstr "Érték"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -404,20 +399,18 @@ msgstr "Előadó"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Fájlnév"
+msgstr "Fájldátum"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Fájlnév"
+msgstr "Fájlméret"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "bájtok"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -427,9 +420,8 @@ msgstr "Fájlnév"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtuális"
+msgstr "Virtuális elérési út"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -631,7 +623,6 @@ msgstr "&Törlés"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
 msgstr "&Objektum leírása..."
 
@@ -1071,9 +1062,8 @@ msgstr "Objektum leírás"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Objektum leírás"
+msgstr "Fájl leírás"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2576
@@ -1084,7 +1074,6 @@ msgstr "Hozzáadás virtuális mappához"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
 msgstr "&Objektum leírása..."
 
@@ -1158,7 +1147,6 @@ msgstr "Teljes méret: "
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
 msgstr "&Objektum leírása..."
 
@@ -1230,7 +1218,6 @@ msgstr "Virtuális mappa átnevezése"
 # A meaning egy kicsit más, ezt el kellene küldeni
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
@@ -1238,7 +1225,7 @@ msgid ""
 msgstr ""
 "Ez a parancs törli a kiválasztott fájlokat a virtuális nézetből, de nem törli azokat a fizikai nézetből.\n"
 "\n"
-"Biztos, hogy törölni akarod a kiválasztott fájlokat a virtuális nézetből."
+"Biztos, hogy törölni akarod a kiválasztott fájlokat a virtuális nézetből?"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3665
@@ -1426,9 +1413,8 @@ msgstr "Általános"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Mutasd a következő adatokat az MP3-fájlokhoz:"
+msgstr "Mutasd a következő adatokat az audió fájlokhoz:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1438,7 +1424,7 @@ msgstr "Szám"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Audió fájlok"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1579,7 +1565,7 @@ msgstr "Kötetnév nem található"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Fájlinformációk"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71

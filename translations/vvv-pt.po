@@ -17,7 +17,7 @@ msgstr ""
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:174
 msgid "Enter or select the volume to catalog"
-msgstr "Insira ou seleccione o volume ao catálogo"
+msgstr "Insira ou seleccione o volume a catalogar"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/catalog_volume.cpp:183
@@ -141,9 +141,8 @@ msgstr "(Usar idioma padrão)"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Canais"
+msgstr "Chinês"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -185,7 +184,7 @@ msgstr "Alemão"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Húngaro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -197,7 +196,7 @@ msgstr "Italiano"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japonês"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -307,9 +306,8 @@ msgstr "Conversão completa"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
-msgstr "Descrição"
+msgstr "Descrição:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:255
@@ -321,9 +319,8 @@ msgstr "Nome"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Volume"
+msgstr "Valor"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -403,20 +400,18 @@ msgstr "Artista"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Nome do ficheiro"
+msgstr "Data do ficheiro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Nome do ficheiro"
+msgstr "Tamanho do ficheiro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -426,9 +421,8 @@ msgstr "Nome do ficheiro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtual"
+msgstr "Caminho Virtual"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -630,9 +624,8 @@ msgstr "&Apagar"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
-msgstr "&Descrição do Objecto..."
+msgstr "&Informação do Objecto..."
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
@@ -1070,9 +1063,8 @@ msgstr "Descrição do objecto"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Descrição do objecto"
+msgstr "Descrição do ficheiro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2576
@@ -1083,9 +1075,8 @@ msgstr "Adicionar À Pasta Virtual"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "&Descrição do Objecto..."
+msgstr "&Informação do Objecto..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2584
@@ -1158,9 +1149,8 @@ msgstr "Tamanho total: "
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
-msgstr "&Descrição do Objecto..."
+msgstr "&Informação do Objecto..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3220
@@ -1229,13 +1219,12 @@ msgstr "Mudar o nome da pasta virtual"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Este comando apagará os ficheiros virtuais seleccionados, mas não altera os ficheiros na vista física.\n"
+"Este comando apagará os ficheiros seleccionados da vista virtual, mas não altera os ficheiros na vista física.\n"
 "\n"
 "Deseja realmente apagar os ficheiros virtuais seleccionados?"
 
@@ -1425,9 +1414,8 @@ msgstr "Geral"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Mostrar os seguintes dados para ficheiros MP3:"
+msgstr "Mostrar a seguinte informação para ficheiros áudio:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1437,7 +1425,7 @@ msgstr "Número da faixa"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Ficheiros de áudio"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1578,7 +1566,7 @@ msgstr "Nome do volume não encontrado"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Informação do ficheiro"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71

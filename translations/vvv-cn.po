@@ -130,7 +130,7 @@ msgstr "你確定要更新索引嗎？"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:77
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown locale code '%s' in registry."
 msgstr "語言列表中沒有 %s 的語言。"
 
@@ -142,9 +142,8 @@ msgstr "（使用預設的語言）"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "聲道"
+msgstr "Chinese (中文)"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -186,7 +185,7 @@ msgstr "German（德文）"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Hungarian (匈牙利語)"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -198,7 +197,7 @@ msgstr "Italian（義大利文）"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japanese (日語)"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -308,9 +307,8 @@ msgstr "轉換結束"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
-msgstr "註解"
+msgstr "描述"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:255
@@ -322,9 +320,8 @@ msgstr "檔案"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "索引"
+msgstr "值"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -404,20 +401,18 @@ msgstr "演出"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "檔名"
+msgstr "日期"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "檔名"
+msgstr "大小"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "位元組"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -427,9 +422,8 @@ msgstr "檔名"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "虛擬"
+msgstr "虛擬路徑"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -631,9 +625,8 @@ msgstr "刪除(&D)"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
-msgstr "物件註解(&O)..."
+msgstr "物件資訊(&O)..."
 
 # Part of the Edit menu
 #: E:\C_Prg\vvv
@@ -980,9 +973,8 @@ msgstr ""
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "您確定要升級成新的索引檔？"
+msgstr "您要升級並另存成新的索引檔？"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2153
@@ -1070,9 +1062,8 @@ msgstr "檔案註解"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "檔案註解"
+msgstr "檔案描述"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2576
@@ -1083,9 +1074,8 @@ msgstr "新增到虛擬目錄"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "物件註解(&O)..."
+msgstr "物件資訊(&O)..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2584
@@ -1157,9 +1147,8 @@ msgstr "大小："
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
-msgstr "物件註解(&O)..."
+msgstr "物件資訊(&O)..."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3220
@@ -1228,13 +1217,12 @@ msgstr "更名虛擬目錄"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"接下來會刪除已選取的虛擬目錄，但是不會刪除實體模式下的資料。\n"
+"接下來會刪除虛擬目錄中已選取的檔案，但是不會刪除實體模式下的資料。\n"
 "\n"
 "確定要刪除虛擬目錄？"
 
@@ -1424,9 +1412,8 @@ msgstr "一般"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "顯示 MP3 的後設資料："
+msgstr "顯示音樂檔案的後設資料："
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1436,7 +1423,7 @@ msgstr "曲目"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "音訊檔案"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1575,7 +1562,7 @@ msgstr "錯誤：索引名稱不存在"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "檔案資訊"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71

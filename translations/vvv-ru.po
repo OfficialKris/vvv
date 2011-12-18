@@ -16,7 +16,7 @@ msgstr ""
 
 #: ..\src/catalog_volume.cpp:174
 msgid "Enter or select the volume to catalog"
-msgstr "Введите или выберите раздел диска для каталогизации"
+msgstr "Введите путь или выберите том для каталогизации"
 
 #: ..\src/catalog_volume.cpp:183
 #: ..\src/exportdata.cpp:223
@@ -29,11 +29,11 @@ msgstr "..."
 
 #: ..\src/catalog_volume.cpp:186
 msgid "Volume name"
-msgstr "Метка раздела"
+msgstr "Метка тома"
 
 #: ..\src/catalog_volume.cpp:196
 msgid "Get volume name"
-msgstr "Получить метку раздела"
+msgstr "Получить метку тома"
 
 #: ..\src/catalog_volume.cpp:204
 #: ..\src/dlg_file_information.cpp:170
@@ -64,25 +64,25 @@ msgstr "Текущая папка"
 
 #: ..\src/catalog_volume.cpp:218
 msgid "Previously cataloged volumes"
-msgstr "Ранее каталогизированные разделы"
+msgstr "Ранее каталогизированные тома"
 
 #: ..\src/catalog_volume.cpp:288
 #: ..\src/update_volume.cpp:270
 msgid "The volume path is missing"
-msgstr "Путь к разделу диска не указан"
+msgstr "Путь к тому отсутствует"
 
 #: ..\src/catalog_volume.cpp:293
 msgid "The volume name is missing"
-msgstr "Имя раздела не указано"
+msgstr "Название тома отсутствует"
 
 #: ..\src/catalog_volume.cpp:310
 msgid "This volume name is already present in the database"
-msgstr "Такое имя раздела уже присутствует в базе данных"
+msgstr "Такое название тома уже присутствует в базе данных"
 
 #: ..\src/catalog_volume.cpp:357
 #: ..\src/update_volume.cpp:297
 msgid "Select the volume to catalog"
-msgstr "Выберите раздел для каталогизации"
+msgstr "Выберите том для каталогизации"
 
 #: ..\src/catalog_volume_functions.cpp:328
 msgid "Number of added files: "
@@ -102,11 +102,11 @@ msgstr "Количество удалённых папок:"
 
 #: ..\src/catalog_volume_functions.cpp:332
 msgid "Number of unchanged files: "
-msgstr "Количество файлов без изменений:"
+msgstr "Количество неизменённых файлов:"
 
 #: ..\src/catalog_volume_functions.cpp:333
 msgid "Do you really want to update the volume?"
-msgstr "Вы действительно хотите обновить раздел?"
+msgstr "Вы действительно хотите обновить этот том?"
 
 #: ..\src/chooselang.cpp:77
 #, c-format
@@ -119,9 +119,8 @@ msgstr "(Использовать язык по умолчанию)"
 
 #: ..\src/chooselang.cpp:96
 #: ..\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Каналы"
+msgstr "Китайский"
 
 #: ..\src/chooselang.cpp:97
 #: ..\src/mainframe.cpp:2344
@@ -156,7 +155,7 @@ msgstr "Немецкий"
 #: ..\src/mainframe.cpp:2339
 #: ..\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Венгерский"
 
 #: ..\src/chooselang.cpp:104
 #: ..\src/mainframe.cpp:2347
@@ -166,7 +165,7 @@ msgstr "Итальянский"
 #: ..\src/chooselang.cpp:105
 #: ..\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Японский"
 
 #: ..\src/chooselang.cpp:106
 #: ..\src/mainframe.cpp:2341
@@ -259,7 +258,6 @@ msgid "Conversion completed"
 msgstr "Конвертирование окончено"
 
 #: ..\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
 msgstr "Описание"
 
@@ -271,9 +269,8 @@ msgid "Name"
 msgstr "Имя"
 
 #: ..\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Раздел"
+msgstr "Значение"
 
 #: ..\src/dlg_file_information.cpp:302
 #: ..\src/mainframe.cpp:1415
@@ -341,18 +338,16 @@ msgid "Artist"
 msgstr "Артист"
 
 #: ..\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Имя файла"
+msgstr "Дата файла"
 
 #: ..\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Имя файла"
+msgstr "Размер файла"
 
 #: ..\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "байтов"
 
 #: ..\src/dlg_file_information.cpp:323
 #: ..\src/mainframe.cpp:937
@@ -360,9 +355,8 @@ msgid "File name"
 msgstr "Имя файла"
 
 #: ..\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Виртуальный"
+msgstr "Виртуальный путь"
 
 #: ..\src/dlg_file_information.cpp:335
 #: ..\src/mainframe.cpp:1315
@@ -464,7 +458,7 @@ msgstr "Описание"
 
 #: ..\src/exportdata.cpp:526
 msgid "Volume"
-msgstr "Раздел"
+msgstr "Том"
 
 #: ..\src/exportdata.cpp:526
 msgid "Path"
@@ -529,9 +523,8 @@ msgstr "&Удалить"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
-msgstr "&Описане Объекта..."
+msgstr "&Описание объекта..."
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:817
@@ -555,16 +548,16 @@ msgstr "&Правка"
 # Part of the Volumes menu
 #: ..\src/mainframe.cpp:824
 msgid "&Catalog Volume..."
-msgstr "&Каталогизировать раздел..."
+msgstr "&Каталогизировать том..."
 
 # Part of the Volumes menu
 #: ..\src/mainframe.cpp:825
 msgid "&Update Volume..."
-msgstr "&Обновить раздел..."
+msgstr "&Обновить том..."
 
 #: ..\src/mainframe.cpp:826
 msgid "&Volumes"
-msgstr "&Разделы"
+msgstr "&Тома"
 
 # Part of the View menu
 #: ..\src/mainframe.cpp:828
@@ -652,7 +645,7 @@ msgstr "Открыть существующий каталог"
 #: ..\src/mainframe.cpp:869
 #: ..\src/mainframe.cpp:4054
 msgid "Catalog a new volume"
-msgstr "Каталогизировать новый раздел"
+msgstr "Каталогизировать новый том"
 
 #: ..\src/mainframe.cpp:872
 #: ..\src/mainframe.cpp:4057
@@ -721,7 +714,7 @@ msgstr "Выбранная физическая папка"
 
 #: ..\src/mainframe.cpp:1073
 msgid "Catalog volume"
-msgstr "Каталог раздела"
+msgstr "Каталогизировать раздел"
 
 #: ..\src/mainframe.cpp:1444
 msgid "Open catalog"
@@ -798,7 +791,7 @@ msgid ""
 "\n"
 "You can try reinstalling the program to solve this problem."
 msgstr ""
-"Этот каталог был создан предыдущей версией программы и он должен быть обновлен, но файл содержащий обновления списка отсутствует.\n"
+"Этот каталог был создан предыдущей версией программы и он должен быть обновлен, но файл содержащий список обновлений отсутствует.\n"
 "\n"
 "Вы можете попробовать переустановить программу для решения этой проблемы."
 
@@ -823,9 +816,8 @@ msgstr ""
 "\n"
 
 #: ..\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "Вы хотите переконвертировать каталог и создать новый?"
+msgstr "Вы хотите конвертировать каталог и создать новый?"
 
 #: ..\src/mainframe.cpp:2153
 #: ..\src/mainframe.cpp:2361
@@ -856,7 +848,7 @@ msgstr ""
 #: ..\src/mainframe.cpp:2328
 msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
 msgstr ""
-"VVV (Virtual Volumes View/Виртуальный Вид Разделов): программа для каталогизации\n"
+"VVV (Virtual Volumes View/Вид Виртуальных Томов): программа для каталогизации\n"
 "съемных устройств, таких как компакт-диски и DVD"
 
 #: ..\src/mainframe.cpp:2329
@@ -878,7 +870,7 @@ msgstr ""
 
 #: ..\src/mainframe.cpp:2332
 msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
-msgstr "Эта программа использует иконки с проэктов Gnome, Ubuntu и Crystal Icons."
+msgstr "Эта программа использует иконки из проектов Gnome, Ubuntu и Crystal Icons."
 
 #: ..\src/mainframe.cpp:2333
 msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
@@ -902,9 +894,8 @@ msgid "Object description"
 msgstr "Описание объекта"
 
 #: ..\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Описание объекта"
+msgstr "Описание файла"
 
 #: ..\src/mainframe.cpp:2576
 #: ..\src/mainframe.cpp:3173
@@ -913,9 +904,8 @@ msgstr "Добавить в Виртуальную Папку"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "&Описане Объекта..."
+msgstr "&Описание объекта..."
 
 #: ..\src/mainframe.cpp:2584
 msgid "Rename..."
@@ -930,7 +920,7 @@ msgstr "Удалить"
 # Part of the Volumes menu
 #: ..\src/mainframe.cpp:2586
 msgid "Update Volume..."
-msgstr "&Обновить раздел..."
+msgstr "&Обновить том..."
 
 #: ..\src/mainframe.cpp:2610
 msgid "New Root Folder"
@@ -974,9 +964,8 @@ msgstr "Общий размер:"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
-msgstr "&Описане Объекта..."
+msgstr "&Описание объекта..."
 
 #: ..\src/mainframe.cpp:3220
 msgid "Settings"
@@ -997,7 +986,7 @@ msgid ""
 "This command will delete this volume:\n"
 "\n"
 msgstr ""
-"Эта команда удалит следующий раздел:\n"
+"Эта команда удалит следующий том:\n"
 "\n"
 
 #: ..\src/mainframe.cpp:3335
@@ -1012,36 +1001,35 @@ msgstr ""
 "\n"
 "из каталога VVV. С вашего жесткого диска файлы удалены не будут.\n"
 "\n"
-"Вы действительно хотите удалить этот раздел?"
+"Вы действительно хотите удалить этот том?"
 
 #: ..\src/mainframe.cpp:3345
 msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
-msgstr "Не удаётся удалить этот раздел: по меньшей мере один из этих файлов используется в виртуальном виде"
+msgstr "Не удаётся удалить этот том: по меньшей мере один из этих файлов используется в виртуальном виде"
 
 #: ..\src/mainframe.cpp:3366
 msgid "Enter the new volume name"
-msgstr "Введите новое название раздела"
+msgstr "Введите новое название тома"
 
 #: ..\src/mainframe.cpp:3366
 msgid "Rename volume"
-msgstr "Переименовать раздел"
+msgstr "Переименовать том"
 
 #: ..\src/mainframe.cpp:3379
 msgid "The new volume name is already present in the database"
-msgstr "Новое название раздела уже существует в базе данных"
+msgstr "Новое название тома уже существует в базе данных"
 
 #: ..\src/mainframe.cpp:3400
 msgid "Rename virtual folder"
 msgstr "Переименовать виртуальную папку"
 
 #: ..\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Эта команда удалит выбранные виртуальные файлы, но это не повлияет на файлы отображаемые в физическом виде.\n"
+"Эта команда удалит выбранные файлы из виртуального вида, но не повлияет на файлы в физическом виде.\n"
 "\n"
 "Вы действительно хотите удалить выбранные виртуальные файлы?"
 
@@ -1118,7 +1106,7 @@ msgstr "Восстановление завершено"
 
 #: ..\src/mainframe.cpp:3878
 msgid "Update Volume"
-msgstr "Обновить Раздел"
+msgstr "Обновить том"
 
 #: ..\src/object_description.cpp:145
 msgid "Please enter the description for the following object:"
@@ -1202,9 +1190,8 @@ msgid "General"
 msgstr "Общий"
 
 #: ..\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Отображать следующие данные для MP3 файлов:"
+msgstr "Отображать следующие данные для звуковых файлов:"
 
 #: ..\src/settings.cpp:229
 msgid "Track number"
@@ -1212,7 +1199,7 @@ msgstr "Номер дорожки"
 
 #: ..\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Звуковые файлы"
 
 #: ..\src/settings.cpp:263
 msgid ""
@@ -1277,11 +1264,11 @@ msgstr "Успешное соединение с сервером"
 
 #: ..\src/update_volume.cpp:184
 msgid "VOLUME NAME"
-msgstr "НАЗВАНИЕ РАЗДЕЛА"
+msgstr "НАЗВАНИЕ ТОМА"
 
 #: ..\src/update_volume.cpp:189
 msgid "Enter or select the path to volume to update"
-msgstr "Введите или выберите путь к обновляемому разделу"
+msgstr "Введите или выберите путь к обновляемому тому"
 
 #: ..\src/update_volume.cpp:209
 msgid "Update"
@@ -1323,15 +1310,15 @@ msgstr ""
 
 #: ..\src/vvv.cpp:408
 msgid "The volume path does not exists"
-msgstr "Путь к разделу не существует"
+msgstr "Путь к тому не существует"
 
 #: ..\src/vvv.cpp:449
 msgid "Volume name not found"
-msgstr "Имя раздела не найдено"
+msgstr "Название тома не найдено"
 
 #: ..\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Информация о файле"
 
 #: ..\src/exportdata.h:71
 msgid "Export data"

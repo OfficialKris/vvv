@@ -141,9 +141,8 @@ msgstr "Koristi izvorni jezik"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Kanali"
+msgstr "Kineski"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -185,7 +184,7 @@ msgstr "Njemački"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Mađarski"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -197,7 +196,7 @@ msgstr "Talijanski"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japanski"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -307,7 +306,6 @@ msgstr "Proces katalogiziranja je završen"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
 msgstr "Opis"
 
@@ -321,9 +319,8 @@ msgstr "Naziv"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Disk"
+msgstr "Vrijednost"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -403,20 +400,18 @@ msgstr "Izvođač"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Naziv datoteke"
+msgstr "Datum datoteke"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Naziv datoteke"
+msgstr "Veličina datoteke"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "bajta"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -426,9 +421,8 @@ msgstr "Naziv datoteke"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtualni"
+msgstr "Virtualna staza"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -630,7 +624,6 @@ msgstr "&Obriši"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
 msgstr "&Opis..."
 
@@ -980,7 +973,6 @@ msgstr ""
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
 msgstr "Pretvoriti katalog stvarajući novi?"
 
@@ -1070,7 +1062,6 @@ msgstr "Opis stavke"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
 msgstr "Opis stavke"
 
@@ -1083,7 +1074,6 @@ msgstr "Dodaj u virtualnu mapu"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
 msgstr "&Opis..."
 
@@ -1158,7 +1148,6 @@ msgstr "Ukupna veličina"
 # Part of the Edit menu
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
 msgstr "&Opis..."
 
@@ -1229,7 +1218,6 @@ msgstr "Preimenovanje virtualne mape"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
@@ -1425,9 +1413,8 @@ msgstr "Općenito"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Uz MP3 prikaži i slijedeće podatke:"
+msgstr "Uz audio datoteke prikaži i slijedeće podatke:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1437,7 +1424,7 @@ msgstr "Broj snimke"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Audio datoteke"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1576,7 +1563,7 @@ msgstr "Nema kataloga tog naziva"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Podaci o datoteci"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71

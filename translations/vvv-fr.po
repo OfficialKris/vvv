@@ -131,7 +131,7 @@ msgstr "Voulez-vous vraiment mettre à jour ce volume?"
 #: (virtual volumes view)\src/chooselang.cpp:77
 #, c-format
 msgid "Unknown locale code '%s' in registry."
-msgstr "Paamètre régional inconnu '%s' en base de registre."
+msgstr "Paramètre régional inconnu '%s' en base de registre."
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:94
@@ -141,9 +141,8 @@ msgstr "(Utiliser la langue par défaut)"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:96
 #: view)\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Canaux"
+msgstr "Chinois"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:97
@@ -185,7 +184,7 @@ msgstr "Allemand"
 #: view)\src/mainframe.cpp:2339
 #: view)\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Hongrois"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:104
@@ -197,7 +196,7 @@ msgstr "Italien"
 #: (virtual volumes view)\src/chooselang.cpp:105
 #: view)\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Japonais"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/chooselang.cpp:106
@@ -309,9 +308,8 @@ msgstr "Conversion terminée"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
-msgstr "Description"
+msgstr "Description:"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:255
@@ -323,9 +321,8 @@ msgstr "Nom"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Volume"
+msgstr "Valeur"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:302
@@ -405,20 +402,18 @@ msgstr "Artiste"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Nom du fichier"
+msgstr "Date du fichier"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Nom du fichier"
+msgstr "taille du fichier"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "octets"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:323
@@ -428,9 +423,8 @@ msgstr "Nom du fichier"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Virtuel"
+msgstr "Chemin virtuel"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.cpp:335
@@ -1074,9 +1068,8 @@ msgstr "Description de l'objet"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Description de l'objet"
+msgstr "Description du fichier"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/mainframe.cpp:2576
@@ -1428,9 +1421,8 @@ msgstr "Général"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Afficher les données des fichiers MP3 suivantes :"
+msgstr "Afficher les données des fichiers audio suivants :"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:229
@@ -1440,7 +1432,7 @@ msgstr "Numéro de piste"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Fichiers audio"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/settings.cpp:263
@@ -1581,7 +1573,7 @@ msgstr "Nom du volume introuvable"
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Information sur le fichier"
 
 #: E:\C_Prg\vvv
 #: (virtual volumes view)\src/exportdata.h:71
