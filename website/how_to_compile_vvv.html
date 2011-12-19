@@ -78,7 +78,7 @@ to build VVV</a></li>
           </li>
           <li>
             <p>
-			<a href="versions.html">VVV Version 1.1 released</a></p>
+			<a href="versions.html">VVV Version 1.2 released</a></p>
           </li>
           <li>
             <p>
@@ -99,8 +99,11 @@ Here are instructions for building VVV in Windows, Linux and OS X. Feel free to 
 	Download the Windows installer and install the library source code. The &quot;docs\msw\install.txt&quot; 
 	file contains instructions about compiling the library. It is probably 
 	better to compile wxWidgets as a static library to avoid runtime 
-	dependencies.</p>
+	dependencies. You MUST compile a <strong>Unicode</strong> version.</p>
 <p>&nbsp;</p>
+VVV uses the TagLib library to read metadata tags from audio files. You can 
+download it from <a href="http://developer.kde.org/~wheeler/taglib.html">
+http://developer.kde.org/~wheeler/taglib.html</a>. You need to build it.<p>&nbsp;</p>
 <p>Unpack the VVV zip source file: you will have a root folder that contains all the 
 downloaded files.</p>
 <p>&nbsp;</p>
@@ -127,12 +130,18 @@ pairs colored in red. You need to set some of those values:</p>
 	<li>Set <strong>wxWidgets_CONFIGURATION</strong> to <strong>mswu</strong></li>
 	<li>Set <strong>wsWidgets_ROOT_DIR</strong> to the path of your wxWidgets 
 	library. For example <strong>E:/wxWidgets-2.8.10</strong></li>
-	<li>Set wxWidgets_<strong>LIB_DIR</strong> to the path of the libraries. For 
+	<li>Set <strong>wxWidgets_LIB_DIR</strong> to the path of the libraries. For 
 	example <strong>E:/wxWidgets-2.8.10/lib/vc_lib</strong></li>
 	<li>Select the <strong>wxWidgets_USE_REL_AND_DBG</strong> checkbox so you 
 	will create both a debug and release configuration.</li>
 	<li>Do not care about <strong>wxWidgets_wxrc_EXECUTABLE</strong>: VVV does 
 	not use the setting.</li>
+	<li>Set <strong>TAGLIB_INCLUDE_PATH</strong> to the folder that contains the 
+	TagLib include files. For example &quot;E:/C_Prg/taglib-1.7/installed_output/include/taglib&quot;.</li>
+	<li>Set <strong>TAGLIB_LIB_PATH_DEBUG</strong> to the debug version of the 
+	library: this is a file, not a folder. For example &quot;E:/C_Prg/taglib-1.7/installed_output/lib/tagd.lib&quot;.</li>
+	<li>Set <strong>TAGLIB_LIB_PATHRELEASE</strong> to the release version of 
+	the library: this is a file, not a folder. For example &quot;E:/C_Prg/taglib-1.7/installed_output/lib/tag.lib&quot;.</li>
 </ul>
 <p>&nbsp;</p>
 <p>Click <strong>Configure</strong> again: you should not see red lines any more 
@@ -178,6 +187,8 @@ For the release build I use <b>
 --disable-shared</b> to statically link wxWidgets and reduce dependencies. 
 </p>
 <p>
+You must use <strong>--enable-unicode</strong> to create a Unicode build.</p>
+<p>
 &nbsp;</p>
 <p>
 Configure will run and print a summary of the configuration: depending on your 
@@ -197,18 +208,13 @@ prefer to do it.</p>
 <p>
 &nbsp;</p>
 <p>
-<strong>Build id3lib</strong></p>
+<strong>Build TagLib</strong></p>
 <p>
 &nbsp;</p>
 <p>
-VVV uses the id3lib library to read metadata tags from mp3 files. The source 
-code contains a folder with the source code, but that folder is only used by the 
-Windows build: in Linux and OS X it is ignored.</p>
-<p>
-You can download a copy of the id3lib source code from the VVV Sourceforge files 
-page. It is based on the official one but it contains some patches. After 
-downloading it you can build it following the instructions: you don&#39;t need to 
-install it if you only want to build VVV.</p>
+VVV uses the TagLib library to read metadata tags from audio files. You can 
+download it from <a href="http://developer.kde.org/~wheeler/taglib.html">
+http://developer.kde.org/~wheeler/taglib.html</a>.</p>
 <p>&nbsp;</p>
 <p><strong>Get Firebird</strong></p>
 <p>&nbsp;</p>
@@ -279,15 +285,10 @@ do not get errors any more.</p>
 	<li>FB_EMBEDDED_PATH: it is the path to the folder that contains the runtime 
 	Firebird files as described above. For example 
 	/media/disco2/firebird-2.0.6-embedded-runtime/.</li>
-	<li>ID3_LIB: it is the path to the id3lib library, and it will be used by 
-	the linker. For example /media/disco2/id3lib-3.8.3/lib/libid3.a.</li>
-	<li>VVV_DEFINE_ID3_INCLUDE: it is a boolean variable. Check it if your copy 
-	of id3lib has not been installed because CMake needs to locate the library 
-	header files. If the library is installed the include files are stored in a 
-	standard location and the compiler can find it without problems.</li>
-	<li>ID3_INCLUDE: you will see this variable only if VVV_DEFINE_ID3_INCLUDE 
-	is checked. It is the path to the id3lib include files, for example 
-	/media/disco2/id3lib-3.8.3/include/.</li>
+	<li>TAGLIB_LIB: it is the path to the TagLib library, and it will be used by 
+	the linker. For example /home/fulvio/taglib-1.7/installed/lib/libtag.a.</li>
+	<li>TAGLIB_INCLUDE_PATH: it is the path to the id3lib include files, for example 
+	/home/fulvio/taglib-1.7/installed/include/taglib/.</li>
 	<li>CMAKE_INSTALL_PREFIX: it is the path to a folder that will contain the 
 	installed files, ready to be executed.</li>
 </ul>
@@ -312,9 +313,6 @@ from the Linux procedure.</p>
 <p>&nbsp;</p>
 <p>There is one more CMake variable: CMAKE_OSX_ARCHITECTURES. You can set it to
 <strong>i386</strong>.</p>
-<p>&nbsp;</p>
-<p>If you want to build the binary distribution go to grouped view and check the 
-CPACK_BINARY_DRAGNDROP variable. Uncheck the other CPACK variables.</p>
 <p>&nbsp;</p>
 <p>After generating the build files you can use them to build the VVV 
 executable.</p>
