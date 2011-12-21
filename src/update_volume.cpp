@@ -179,7 +179,7 @@ void CDialogUpdateVolume::CreateControls()
     wxBoxSizer* itemBoxSizer2 = new wxBoxSizer(wxVERTICAL);
     itemDialog1->SetSizer(itemBoxSizer2);
 
-    wxStaticText* itemStaticText3 = new wxStaticText( itemDialog1, wxID_STATIC, wxGetTranslation(wxString(wxT("You are about to update the following volume:")) + (wxChar) 0x00E0), wxDefaultPosition, wxDefaultSize, 0 );
+    wxStaticText* itemStaticText3 = new wxStaticText( itemDialog1, wxID_STATIC, _("You are about to update the following volume:"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer2->Add(itemStaticText3, 0, wxALIGN_LEFT|wxALL, 5);
 
     m_VolumeNameStatic = new wxStaticText( itemDialog1, wxID_STATIC, _("VOLUME NAME"), wxDefaultPosition, wxDefaultSize, 0 );
