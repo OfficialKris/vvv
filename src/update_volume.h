@@ -125,6 +125,8 @@ public:
 	/// Should we show tooltips?
     static bool ShowToolTips();
 
+	void SetCatalogAudioMetadata( bool doCatalog ) { m_CatalogAudioMetadata = doCatalog; }
+
 ////@begin CDialogUpdateVolume member variables
     wxStaticText* m_VolumeNameStatic;
     wxTextCtrl* m_VolumePath;
@@ -145,6 +147,7 @@ private:
 	// volume to be updated
 	long m_VolumeID;
 
+	bool m_CatalogAudioMetadata;
 };
 
 #endif

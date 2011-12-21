@@ -37,9 +37,10 @@
 #include "data_interface/files_audio_metadata.h"
 
 
-CCatalogVolumeFunctions::CCatalogVolumeFunctions( wxStaticText *statText )
+CCatalogVolumeFunctions::CCatalogVolumeFunctions( wxStaticText *statText, bool catalogAudioMetadata )
 {
 	this->statText = statText;
+	m_CatalogAudioMetadata = catalogAudioMetadata;
 }
 
 CCatalogVolumeFunctions::~CCatalogVolumeFunctions(void)
@@ -254,7 +255,7 @@ void CCatalogVolumeFunctions::AddFileToDB( wxString &path, wxString &fileName, C
 	file.DbInsert();
 	nAddedFiles++;
 
-	if( CAudioMetadata::IsAudioExtension(file.FileExt) ) {
+	if( CAudioMetadata::IsAudioExtension(file.FileExt) && m_CatalogAudioMetadata ) {
 		CFilesAudioMetadata metaData;
 		if( CAudioMetadata::ReadAudioMetadata( fn.GetFullPath(), metaData ) ) {
 			metaData.FileID = file.FileID;

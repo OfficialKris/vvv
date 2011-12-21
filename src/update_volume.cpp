@@ -163,6 +163,7 @@ void CDialogUpdateVolume::Init()
     m_CloseButton = NULL;
     m_CurrentFolder = NULL;
 ////@end CDialogUpdateVolume member initialisation
+	m_CatalogAudioMetadata = true;
 }
 
 
@@ -277,7 +278,7 @@ void CDialogUpdateVolume::OnButtonUpdateClick( wxCommandEvent& WXUNUSED(event) )
 	EnableDisableControls( false );
 
 	// creates an object that will be used to catalog data
-	CCatalogVolumeFunctions cvf( m_CurrentFolder );
+	CCatalogVolumeFunctions cvf( m_CurrentFolder, m_CatalogAudioMetadata );
 	cvf.UpdateVolume( path, m_VolumeID );
 
 	EnableDisableControls( true );

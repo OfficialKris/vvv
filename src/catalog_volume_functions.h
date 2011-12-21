@@ -38,7 +38,7 @@ this class contains the code used to catalog a volume
 class CCatalogVolumeFunctions
 {
 public:
-	CCatalogVolumeFunctions( wxStaticText *statText );
+	CCatalogVolumeFunctions( wxStaticText *statText, bool catalogAudioMetadata );
 	~CCatalogVolumeFunctions(void);
 
 	// catalog a volume that is not already stored in the database
@@ -111,6 +111,8 @@ private:
 	long nDeletedFiles;		// number of files that have been deleted (not counting files in deleted folders)
 	long nDeletedFolders;	// number of folders that that have been deleted
 	long nUnchangedFiles;	// number of files that have not been changed
+
+	bool m_CatalogAudioMetadata;
 
 };
 

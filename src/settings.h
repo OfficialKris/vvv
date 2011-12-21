@@ -157,6 +157,9 @@ public:
     int GetBeepTime() const { return m_BeepTime ; }
     void SetBeepTime(int value) { m_BeepTime = value ; }
 
+    bool GetCatalogAudioMetadata() const { return m_CatalogAudioMetadata ; }
+    void SetCatalogAudioMetadata(bool value) { m_CatalogAudioMetadata = value ; }
+
     /// Retrieves bitmap resources
     wxBitmap GetBitmapResource( const wxString& name );
 
@@ -169,6 +172,7 @@ public:
 
 ////@begin CDialogSettings member variables
     wxSpinCtrl* m_BeepTimeCtrl;
+    wxCheckBox* m_chkCatalogAudioMetadata;
     wxCheckBox* m_chkArtist;
     wxCheckBox* m_chkAlbum;
     wxCheckBox* m_chkTitle;
@@ -184,6 +188,7 @@ public:
     wxTextCtrl* m_ServerNameCtrl;
     wxTextCtrl* m_UsernameCtrl;
     wxTextCtrl* m_PasswordCtrl;
+    bool m_CatalogAudioMetadata;
 private:
     bool* m_amdColumnsToShow; // array of bools for visibility of audio metadata fields
     bool m_ReopenCatalog;

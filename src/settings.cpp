@@ -142,6 +142,7 @@ void CDialogSettings::Init()
 {
 ////@begin CDialogSettings member initialisation
     m_BeepTimeCtrl = NULL;
+    m_chkCatalogAudioMetadata = NULL;
     m_chkArtist = NULL;
     m_chkAlbum = NULL;
     m_chkTitle = NULL;
@@ -201,10 +202,14 @@ void CDialogSettings::CreateControls()
 
     wxBoxSizer* itemBoxSizer13 = new wxBoxSizer(wxVERTICAL);
     itemBoxSizer12->Add(itemBoxSizer13, 0, wxGROW|wxALL, 5);
-    wxStaticText* itemStaticText14 = new wxStaticText( itemPanel11, wxID_STATIC, _("Show the following data for audio files:"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer13->Add(itemStaticText14, 0, wxALIGN_LEFT|wxALL, 5);
+    m_chkCatalogAudioMetadata = new wxCheckBox( itemPanel11, wxID_ANY, _("Catalog audio metadata"), wxDefaultPosition, wxDefaultSize, 0 );
+    m_chkCatalogAudioMetadata->SetValue(false);
+    itemBoxSizer13->Add(m_chkCatalogAudioMetadata, 0, wxALIGN_LEFT|wxALL, 5);
 
-    itemBoxSizer13->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
+    itemBoxSizer13->Add(2, 2, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 2);
+
+    wxStaticText* itemStaticText16 = new wxStaticText( itemPanel11, wxID_STATIC, _("Show the following data for audio files:"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemBoxSizer13->Add(itemStaticText16, 0, wxALIGN_LEFT|wxALL, 5);
 
     m_chkArtist = new wxCheckBox( itemPanel11, ID_DS_ARTIST, _("Artist"), wxDefaultPosition, wxDefaultSize, 0 );
     m_chkArtist->SetValue(false);
@@ -254,52 +259,53 @@ void CDialogSettings::CreateControls()
 
     GetBookCtrl()->AddPage(itemPanel11, _("Audio files"));
 
-    wxPanel* itemPanel28 = new wxPanel( GetBookCtrl(), ID_DS_SERVER, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-    wxBoxSizer* itemBoxSizer29 = new wxBoxSizer(wxVERTICAL);
-    itemPanel28->SetSizer(itemBoxSizer29);
-
+    wxPanel* itemPanel29 = new wxPanel( GetBookCtrl(), ID_DS_SERVER, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
     wxBoxSizer* itemBoxSizer30 = new wxBoxSizer(wxVERTICAL);
-    itemBoxSizer29->Add(itemBoxSizer30, 0, wxGROW|wxALL, 5);
-    wxStaticText* itemStaticText31 = new wxStaticText( itemPanel28, wxID_STATIC, _("Check the checkbox below if you want to access catalogs stored\nin a network server. Each computer in the network will be able to\naccess the same catalogs stored in the server.\nDO NOT check the checkbox if you only want to access catalogs\nstored in this computer and you do not want to share them\nwith other computers."), wxDefaultPosition, wxDefaultSize, wxALIGN_LEFT );
-    itemBoxSizer30->Add(itemStaticText31, 0, wxGROW|wxALL, 5);
+    itemPanel29->SetSizer(itemBoxSizer30);
 
-    itemBoxSizer30->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
+    wxBoxSizer* itemBoxSizer31 = new wxBoxSizer(wxVERTICAL);
+    itemBoxSizer30->Add(itemBoxSizer31, 0, wxGROW|wxALL, 5);
+    wxStaticText* itemStaticText32 = new wxStaticText( itemPanel29, wxID_STATIC, _("Check the checkbox below if you want to access catalogs stored\nin a network server. Each computer in the network will be able to\naccess the same catalogs stored in the server.\nDO NOT check the checkbox if you only want to access catalogs\nstored in this computer and you do not want to share them\nwith other computers."), wxDefaultPosition, wxDefaultSize, wxALIGN_LEFT );
+    itemBoxSizer31->Add(itemStaticText32, 0, wxGROW|wxALL, 5);
 
-    m_ConnectServerCtrl = new wxCheckBox( itemPanel28, ID_DS_CONNECT_SERVER, _("Connect to a network server"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemBoxSizer31->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
+
+    m_ConnectServerCtrl = new wxCheckBox( itemPanel29, ID_DS_CONNECT_SERVER, _("Connect to a network server"), wxDefaultPosition, wxDefaultSize, 0 );
     m_ConnectServerCtrl->SetValue(false);
-    itemBoxSizer30->Add(m_ConnectServerCtrl, 0, wxALIGN_LEFT|wxALL, 5);
+    itemBoxSizer31->Add(m_ConnectServerCtrl, 0, wxALIGN_LEFT|wxALL, 5);
 
-    wxFlexGridSizer* itemFlexGridSizer34 = new wxFlexGridSizer(3, 2, 0, 0);
-    itemFlexGridSizer34->AddGrowableCol(1);
-    itemBoxSizer30->Add(itemFlexGridSizer34, 0, wxGROW|wxALL, 5);
-    wxStaticText* itemStaticText35 = new wxStaticText( itemPanel28, wxID_STATIC, _("Server"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer34->Add(itemStaticText35, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    wxFlexGridSizer* itemFlexGridSizer35 = new wxFlexGridSizer(3, 2, 0, 0);
+    itemFlexGridSizer35->AddGrowableCol(1);
+    itemBoxSizer31->Add(itemFlexGridSizer35, 0, wxGROW|wxALL, 5);
+    wxStaticText* itemStaticText36 = new wxStaticText( itemPanel29, wxID_STATIC, _("Server"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemFlexGridSizer35->Add(itemStaticText36, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    m_ServerNameCtrl = new wxTextCtrl( itemPanel28, ID_DS_SERVERNAME, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer34->Add(m_ServerNameCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    m_ServerNameCtrl = new wxTextCtrl( itemPanel29, ID_DS_SERVERNAME, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+    itemFlexGridSizer35->Add(m_ServerNameCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    wxStaticText* itemStaticText37 = new wxStaticText( itemPanel28, wxID_STATIC, _("Username"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer34->Add(itemStaticText37, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    wxStaticText* itemStaticText38 = new wxStaticText( itemPanel29, wxID_STATIC, _("Username"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemFlexGridSizer35->Add(itemStaticText38, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    m_UsernameCtrl = new wxTextCtrl( itemPanel28, ID_DS_USERNAME, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer34->Add(m_UsernameCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    m_UsernameCtrl = new wxTextCtrl( itemPanel29, ID_DS_USERNAME, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+    itemFlexGridSizer35->Add(m_UsernameCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    wxStaticText* itemStaticText39 = new wxStaticText( itemPanel28, wxID_STATIC, _("Password"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer34->Add(itemStaticText39, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    wxStaticText* itemStaticText40 = new wxStaticText( itemPanel29, wxID_STATIC, _("Password"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemFlexGridSizer35->Add(itemStaticText40, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    m_PasswordCtrl = new wxTextCtrl( itemPanel28, ID_DS_PASSWORD, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_PASSWORD );
-    itemFlexGridSizer34->Add(m_PasswordCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    m_PasswordCtrl = new wxTextCtrl( itemPanel29, ID_DS_PASSWORD, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_PASSWORD );
+    itemFlexGridSizer35->Add(m_PasswordCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
-    itemBoxSizer30->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
+    itemBoxSizer31->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
 
-    wxButton* itemButton42 = new wxButton( itemPanel28, ID_DS_TEST_CONNECTION, _("Test server connection"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer30->Add(itemButton42, 0, wxALIGN_RIGHT|wxALL, 5);
+    wxButton* itemButton43 = new wxButton( itemPanel29, ID_DS_TEST_CONNECTION, _("Test server connection"), wxDefaultPosition, wxDefaultSize, 0 );
+    itemBoxSizer31->Add(itemButton43, 0, wxALIGN_RIGHT|wxALL, 5);
 
-    GetBookCtrl()->AddPage(itemPanel28, _("Server"));
+    GetBookCtrl()->AddPage(itemPanel29, _("Server"));
 
     // Set validators
     itemCheckBox5->SetValidator( wxGenericValidator(& m_ReopenCatalog) );
     m_BeepTimeCtrl->SetValidator( wxGenericValidator(& m_BeepTime) );
+    m_chkCatalogAudioMetadata->SetValidator( wxGenericValidator(& m_CatalogAudioMetadata) );
     m_ConnectServerCtrl->SetValidator( wxGenericValidator(& m_ConnectServer) );
     m_ServerNameCtrl->SetValidator( wxGenericValidator(& m_ServerName) );
     m_UsernameCtrl->SetValidator( wxGenericValidator(& m_Username) );

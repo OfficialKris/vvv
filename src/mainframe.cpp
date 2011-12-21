@@ -712,6 +712,7 @@ bool CMainFrame::Create( wxWindow* parent, wxWindowID id, const wxString& captio
 	pConfig->Read( wxT("ReopenCatalog"), &m_reopenLastUsedCatalog, defVal );
 	pConfig->Read( wxT("ForceEnglish"), &m_forceEnglishLanguage, false );
 	pConfig->Read( wxT("LongTaskBeepTime"), &m_BeepTime, 5 );
+	pConfig->Read( wxT("CatalogAudioMetadata"), &m_CatalogAudioMetadata, true );
 	pConfig->SetPath(wxT("/Settings/DatabaseServer"));
 	pConfig->Read( wxT("ConnectToServer"), &DBConnectionData.connectToServer, false );
 	DBConnectionData.serverName = pConfig->Read( wxT("ServerName"), wxEmptyString );
@@ -1071,6 +1072,7 @@ wxIcon CMainFrame::GetIconResource( const wxString& name )
 void CMainFrame::OnCatalogVolumeClick( wxCommandEvent& WXUNUSED(event) )
 {
     CDialogCatalogVolume dialog(this, ID_DIALOG_CATALOG_VOLUME, _("Catalog volume"));
+	dialog.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
     dialog.ShowModal();
 	LoadTreeControl();
 }
@@ -1546,6 +1548,7 @@ CMainFrame::~CMainFrame() {
 	pConfig->Write( wxT("ReopenCatalog"), m_reopenLastUsedCatalog );
 	pConfig->Write( wxT("ForceEnglish"), m_forceEnglishLanguage );
 	pConfig->Write( wxT("LongTaskBeepTime"), m_BeepTime );
+	pConfig->Write( wxT("CatalogAudioMetadata"), m_CatalogAudioMetadata );
 	pConfig->SetPath(wxT("/Settings/DatabaseServer"));
 	pConfig->Write( wxT("ConnectToServer"), DBConnectionData.connectToServer );
 	pConfig->Write( wxT("ServerName"),  DBConnectionData.serverName );
@@ -3226,6 +3229,7 @@ void CMainFrame::OnPreferencesClick( wxCommandEvent& WXUNUSED(event) )
 	dlg.SetUsername( DBConnectionData.userName );
 	dlg.SetPassword( DBConnectionData.password );
 	dlg.SetBeepTime( m_BeepTime );
+	dlg.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
 	if( dlg.ShowModal() ) {
 		m_reopenLastUsedCatalog = dlg.GetReopenCatalog();
 		m_amdColumnsToShow = dlg.GetAmdColumnsToShow();
@@ -3235,6 +3239,7 @@ void CMainFrame::OnPreferencesClick( wxCommandEvent& WXUNUSED(event) )
 		DBConnectionData.password = dlg.GetPassword();
 		m_BeepTime = dlg.GetBeepTime();
 		CLongTaskBeep::SetMinSecondsForBell( m_BeepTime );
+		m_CatalogAudioMetadata = dlg.GetCatalogAudioMetadata();
 		RefreshCurrentView();	// if the user changes the columns to show
 	}
 
@@ -3879,6 +3884,7 @@ void CMainFrame::OnUpdateVolumeClick( wxCommandEvent& WXUNUSED(event) )
 	long volumeID = itemData->GetVolumeID();
 
 	CDialogUpdateVolume dialog( this, ID_DIALOG_UPDATE_VOLUME, _("Update Volume") );
+	dialog.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
 	dialog.SetVolumeData( volumeName, volumeID );
     if( dialog.ShowModal() == wxID_OK )
 		LoadTreeControl();

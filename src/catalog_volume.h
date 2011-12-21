@@ -147,6 +147,8 @@ public:
     /// Should we show tooltips?
     static bool ShowToolTips();
 
+	void SetCatalogAudioMetadata( bool doCatalog ) { m_CatalogAudioMetadata = doCatalog; }
+
 ////@begin CDialogCatalogVolume member variables
     wxTextCtrl* m_VolumePath;
     wxButton* m_VolumeBrowse;
@@ -170,6 +172,8 @@ private:
 
 	// the name read directly from the volume (useful if the user will change it)
 	wxString m_realVolumeName;
+
+	bool m_CatalogAudioMetadata;
 
 };
 

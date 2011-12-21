@@ -158,6 +158,7 @@ void CDialogCatalogVolume::Init()
     m_HistoryListBox = NULL;
 ////@end CDialogCatalogVolume member initialisation
 	m_realVolumeName = wxEmptyString;
+	m_CatalogAudioMetadata = true;
 }
 /*!
  * Control creation for Dialog
@@ -300,7 +301,7 @@ void CDialogCatalogVolume::OnButtonCatalogClick( wxCommandEvent& WXUNUSED(event)
 	EnableDisableControls( false );
 
 	// creates an object that will be used to catalog data
-	CCatalogVolumeFunctions cvf( m_CurrentFolder );
+	CCatalogVolumeFunctions cvf( m_CurrentFolder, m_CatalogAudioMetadata );
 	try {
 		cvf.CatalogVolume( path, vn );
 	}

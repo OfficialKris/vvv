@@ -465,6 +465,10 @@ private:
 	// minimum duration of a task (in seconds) before playing a beep at task end
 	int m_BeepTime;
 
+	// if true handle audio metadata when cataloging a volume
+	// if false ignore audio metadata
+	bool m_CatalogAudioMetadata;
+
 	// pointers to some windows used in the main frame
 	CRightPaneList* m_listCtl;	// the list control
 	wxTreeCtrl* m_treePhysicalCtl;	// the tree control with the physical view

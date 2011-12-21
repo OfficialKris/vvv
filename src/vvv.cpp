@@ -451,7 +451,7 @@ int CVvvApp::UpdateVolume( wxString catalogName, wxString volumeName, wxString v
 	}
 
 	// update the volume
-	CCatalogVolumeFunctions cvf( NULL );
+	CCatalogVolumeFunctions cvf( NULL, true );
 	cvf.UpdateVolume( volumePath, volumeID );
 
 	return 0;

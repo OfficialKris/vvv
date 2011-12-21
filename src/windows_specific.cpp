@@ -64,7 +64,7 @@ void GetFileDateSizeWindows( WIN32_FIND_DATA &ffd, wxDateTime &FileDateTime, wxL
 
 // add a file to the database
 // this function is not a member of CCatalogVolumeFunction to avoid problems with the definition of WIN32_FIND_DATA
-void AddFileToDBWindows( WIN32_FIND_DATA &ffd, wxString &path, CNullableLong& PathID ) {
+void AddFileToDBWindows( WIN32_FIND_DATA &ffd, wxString &path, CNullableLong& PathID, bool catalogAudioMetadata ) {
 	CFiles file;
 	file.FileName = ffd.cFileName;
 	wxFileName fn( path, file.FileName );
@@ -81,7 +81,7 @@ void AddFileToDBWindows( WIN32_FIND_DATA &ffd, wxString &path, CNullableLong& Pa
 	file.PathFileID.SetNull(true);
 	file.DbInsert();
 
-	if( CAudioMetadata::IsAudioExtension(file.FileExt) ) {
+	if( CAudioMetadata::IsAudioExtension(file.FileExt) && catalogAudioMetadata ) {
 		CFilesAudioMetadata metaData;
 		if( CAudioMetadata::ReadAudioMetadata( fn.GetFullPath(), metaData ) ) {
 			metaData.FileID = file.FileID;
@@ -107,7 +107,7 @@ void CCatalogVolumeFunctions::AddFolderToDBWindows( _tfinddata_t &c_file, wxStri
 	CatalogUpdateSingleFolderWindows( db, dirName.GetPath(), VolumeID, nl, PathID, &file );
 }
 
-void CCatalogVolumeFunctions::CatalogUpdateSingleFolderWindows( CBaseDB* db, wxString path, long VolumeID, CNullableLong PathID, CNullableLong& FatherID, CFiles* PathFile  ) {
+void CCatalogVolumeFunctions::CatalogUpdateSingleFolderWindows( CBaseDB* db, wxString path, long VolumeID, CNullableLong PathID, CNullableLong& FatherID, CFiles* PathFile ) {
 	bool doUpdate = (!PathID.IsNull());	// true if we must update the folder, false if we must catalog it
 
 	wxString fileName;
@@ -156,7 +156,7 @@ void CCatalogVolumeFunctions::CatalogUpdateSingleFolderWindows( CBaseDB* db, wxS
 				ffi = folderFiles.find( ffd.cFileName );
 				if( ffi == folderFiles.end() ) {
 					// not found, add the file to the database
-					AddFileToDBWindows( ffd, path, PathID );
+					AddFileToDBWindows( ffd, path, PathID, m_CatalogAudioMetadata );
 					nAddedFiles++;
 				}
 				else {
