@@ -169,7 +169,7 @@ wxString CUtils::GetStructUpdateDbName(void) {
 // converts a long to a string
 wxString CUtils::long2string( long val ) {
 	wxString retVal;
-	retVal.Printf( wxT("%d"), val );
+	retVal.Printf( wxT("%ld"), val );
 	return retVal;
 }
 
