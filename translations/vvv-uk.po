@@ -118,9 +118,8 @@ msgstr "(Використовувати стандартну мову)"
 
 #: ..\src/chooselang.cpp:96
 #: ..\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Chinese"
-msgstr "Канали"
+msgstr "Китайська"
 
 #: ..\src/chooselang.cpp:97
 #: ..\src/mainframe.cpp:2344
@@ -155,7 +154,7 @@ msgstr "Німецька"
 #: ..\src/mainframe.cpp:2339
 #: ..\src/mainframe.cpp:2342
 msgid "Hungarian"
-msgstr ""
+msgstr "Угорська"
 
 #: ..\src/chooselang.cpp:104
 #: ..\src/mainframe.cpp:2347
@@ -165,7 +164,7 @@ msgstr "Італійська"
 #: ..\src/chooselang.cpp:105
 #: ..\src/mainframe.cpp:2346
 msgid "Japanese"
-msgstr ""
+msgstr "Японська"
 
 #: ..\src/chooselang.cpp:106
 #: ..\src/mainframe.cpp:2341
@@ -258,9 +257,8 @@ msgid "Conversion completed"
 msgstr "Конвертування закінчено"
 
 #: ..\src/dlg_file_information.cpp:155
-#, fuzzy
 msgid "Description:"
-msgstr "Опис"
+msgstr "Опис:"
 
 #: ..\src/dlg_file_information.cpp:255
 #: ..\src/exportdata.cpp:524
@@ -270,9 +268,8 @@ msgid "Name"
 msgstr "Ім'я"
 
 #: ..\src/dlg_file_information.cpp:259
-#, fuzzy
 msgid "Value"
-msgstr "Розділ"
+msgstr "Значення"
 
 #: ..\src/dlg_file_information.cpp:302
 #: ..\src/mainframe.cpp:1415
@@ -340,18 +337,16 @@ msgid "Artist"
 msgstr "Артист"
 
 #: ..\src/dlg_file_information.cpp:321
-#, fuzzy
 msgid "File date"
-msgstr "Ім'я файлу"
+msgstr "Дата файла"
 
 #: ..\src/dlg_file_information.cpp:322
-#, fuzzy
 msgid "File size"
-msgstr "Ім'я файлу"
+msgstr "Розмір файла"
 
 #: ..\src/dlg_file_information.cpp:322
 msgid "bytes"
-msgstr ""
+msgstr "байтів"
 
 #: ..\src/dlg_file_information.cpp:323
 #: ..\src/mainframe.cpp:937
@@ -359,9 +354,8 @@ msgid "File name"
 msgstr "Ім'я файлу"
 
 #: ..\src/dlg_file_information.cpp:331
-#, fuzzy
 msgid "Virtual path"
-msgstr "Віртуальний"
+msgstr "Віртуальний шлях"
 
 #: ..\src/dlg_file_information.cpp:335
 #: ..\src/mainframe.cpp:1315
@@ -528,9 +522,8 @@ msgstr "&Видалити"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:815
-#, fuzzy
 msgid "&Object Information..."
-msgstr "&Опис об'єкту..."
+msgstr "&Інформація об'єкта..."
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:817
@@ -822,9 +815,8 @@ msgstr ""
 "\n"
 
 #: ..\src/mainframe.cpp:2149
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "Ви бажаєте переконвертувати каталог і створити новий?"
+msgstr "Ви бажаєте конвертувати каталог і створити новий?"
 
 #: ..\src/mainframe.cpp:2153
 #: ..\src/mainframe.cpp:2361
@@ -900,9 +892,8 @@ msgid "Object description"
 msgstr "Опис об'єкту"
 
 #: ..\src/mainframe.cpp:2431
-#, fuzzy
 msgid "File description"
-msgstr "Опис об'єкту"
+msgstr "Опис файла"
 
 #: ..\src/mainframe.cpp:2576
 #: ..\src/mainframe.cpp:3173
@@ -911,9 +902,8 @@ msgstr "Додати в Віртуальну Папку"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:2581
-#, fuzzy
 msgid "Object information..."
-msgstr "&Опис об'єкту..."
+msgstr "&Опис об'єкта..."
 
 #: ..\src/mainframe.cpp:2584
 msgid "Rename..."
@@ -972,9 +962,8 @@ msgstr "Загальний розмір:"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:3176
-#, fuzzy
 msgid "Object Information..."
-msgstr "&Опис об'єкту..."
+msgstr "&Опис об'єкта..."
 
 #: ..\src/mainframe.cpp:3220
 msgid "Settings"
@@ -1033,13 +1022,12 @@ msgid "Rename virtual folder"
 msgstr "Перейменувати віртуальну папку"
 
 #: ..\src/mainframe.cpp:3523
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Ця команда видалить вибрані віртуальні файли, але це не вплине на файли що відображаються у фізичному вигляді.\n"
+"Ця команда видалить вибрані файли за віртуального вігляду, але це не вплине на файли що відображаються у фізичному вигляді.\n"
 "\n"
 "Ви дійсно бажаєте видалити вибрані віртуальні файли?"
 
@@ -1200,9 +1188,8 @@ msgid "General"
 msgstr "Загальний"
 
 #: ..\src/settings.cpp:204
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Відображати наступні дані для MP3 файлів:"
+msgstr "Відображати наступні дані про аудио файли:"
 
 #: ..\src/settings.cpp:229
 msgid "Track number"
@@ -1210,7 +1197,7 @@ msgstr "Номер доріжки"
 
 #: ..\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Звуковий файл"
 
 #: ..\src/settings.cpp:263
 msgid ""
@@ -1329,7 +1316,7 @@ msgstr "Мітка розділу не знайдена"
 
 #: ..\src/dlg_file_information.h:47
 msgid "File information"
-msgstr ""
+msgstr "Опис файлу"
 
 #: ..\src/exportdata.h:71
 msgid "Export data"
