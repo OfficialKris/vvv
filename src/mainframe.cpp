@@ -361,7 +361,6 @@ BEGIN_EVENT_TABLE( CRightPaneList, wxListCtrl )
     EVT_CONTEXT_MENU( CRightPaneList::OnListControlContextMenu )
     EVT_SET_FOCUS( CRightPaneList::OnListControlSetFocus )
     EVT_KILL_FOCUS( CRightPaneList::OnListControlKillFocus )
-
 ////@end CRightPaneList event table entries
 
 END_EVENT_TABLE()
@@ -506,86 +505,59 @@ BEGIN_EVENT_TABLE( CMainFrame, wxFrame )
 
 ////@begin CMainFrame event table entries
     EVT_CLOSE( CMainFrame::OnCloseWindow )
-
     EVT_MENU( wxID_NEW, CMainFrame::OnNEWClick )
-
     EVT_MENU( wxID_OPEN, CMainFrame::OnOPENClick )
-
     EVT_MENU( ID_FILE_EXPORT, CMainFrame::OnFileExportClick )
     EVT_UPDATE_UI( ID_FILE_EXPORT, CMainFrame::OnFileExportUpdate )
-
     EVT_MENU( ID_FILE_BACKUP, CMainFrame::OnFileBackupClick )
     EVT_UPDATE_UI( ID_FILE_BACKUP, CMainFrame::OnFileBackupUpdate )
-
     EVT_MENU( ID_FILE_RESTORE, CMainFrame::OnFileRestoreClick )
-
     EVT_MENU( wxID_EXIT, CMainFrame::OnEXITClick )
-
     EVT_MENU( ID_ADD_VIRTUAL_FOLDER, CMainFrame::OnAddVirtualFolderClick )
     EVT_UPDATE_UI( ID_ADD_VIRTUAL_FOLDER, CMainFrame::OnAddVirtualFolderUpdate )
-
     EVT_MENU( ID_EDIT_RENAME, CMainFrame::OnEditRenameClick )
     EVT_UPDATE_UI( ID_EDIT_RENAME, CMainFrame::OnEditRenameUpdate )
-
     EVT_MENU( ID_EDIT_DELETE, CMainFrame::OnEditDeleteClick )
     EVT_UPDATE_UI( ID_EDIT_DELETE, CMainFrame::OnEditDeleteUpdate )
-
     EVT_MENU( ID_EDIT_OBJECT_DESCRIPTION, CMainFrame::OnEditObjectDescriptionClick )
     EVT_UPDATE_UI( ID_EDIT_OBJECT_DESCRIPTION, CMainFrame::OnEditObjectDescriptionUpdate )
-
     EVT_MENU( ID_NEW_VIRTUAL_ROOT_FOLDER, CMainFrame::OnNewVirtualRootFolderClick )
     EVT_UPDATE_UI( ID_NEW_VIRTUAL_ROOT_FOLDER, CMainFrame::OnNewVirtualRootFolderUpdate )
-
     EVT_MENU( ID_NEW_VIRTUAL_SUBFOLDER, CMainFrame::OnNewVirtualSubfolderClick )
     EVT_UPDATE_UI( ID_NEW_VIRTUAL_SUBFOLDER, CMainFrame::OnNewVirtualSubfolderUpdate )
-
 #if defined(__WXMAC__)
     EVT_MENU( wxID_PREFERENCES, CMainFrame::OnPreferencesClick )
 #endif
 
     EVT_MENU( ID_CATALOG_VOLUME, CMainFrame::OnCatalogVolumeClick )
     EVT_UPDATE_UI( ID_CATALOG_VOLUME, CMainFrame::OnCatalogVolumeUpdate )
-
     EVT_MENU( ID_UPDATE_VOLUME, CMainFrame::OnUpdateVolumeClick )
     EVT_UPDATE_UI( ID_UPDATE_VOLUME, CMainFrame::OnUpdateVolumeUpdate )
-
     EVT_MENU( ID_VIEW_PHYSICAL, CMainFrame::OnViewPhysicalClick )
     EVT_UPDATE_UI( ID_VIEW_PHYSICAL, CMainFrame::OnViewPhysicalUpdate )
-
     EVT_MENU( ID_VIEW_VIRTUAL, CMainFrame::OnViewVirtualClick )
     EVT_UPDATE_UI( ID_VIEW_VIRTUAL, CMainFrame::OnViewVirtualUpdate )
-
     EVT_MENU( ID_VIEW_SEARCH, CMainFrame::OnViewSearchClick )
     EVT_UPDATE_UI( ID_VIEW_SEARCH, CMainFrame::OnViewSearchUpdate )
-
     EVT_MENU( ID_VIEW_SHOW_IN_PHYSICAL, CMainFrame::OnViewShowInPhysicalViewClick )
     EVT_UPDATE_UI( ID_VIEW_SHOW_IN_PHYSICAL, CMainFrame::OnViewShowInPhysicalViewUpdate )
-
     EVT_MENU( ID_UP_ONE_FOLDER, CMainFrame::OnUpOneFolderClick )
     EVT_UPDATE_UI( ID_UP_ONE_FOLDER, CMainFrame::OnUpOneFolderUpdate )
-
     EVT_MENU( ID_VIEW_EXPAND, CMainFrame::OnViewExpandClick )
     EVT_UPDATE_UI( ID_VIEW_EXPAND, CMainFrame::OnViewExpandUpdate )
-
     EVT_MENU( ID_VIEW_COLLAPSE, CMainFrame::OnViewCollapseClick )
     EVT_UPDATE_UI( ID_VIEW_COLLAPSE, CMainFrame::OnViewCollapseUpdate )
-
     EVT_MENU( ID_VIEW_TOOLBAR, CMainFrame::OnViewToolbarClick )
-
     EVT_MENU( ID_VIEW_STATUS_BAR, CMainFrame::OnViewStatusBarClick )
-
 #if defined(__WXMSW__) || defined(__WXGTK__)
     EVT_MENU( wxID_PREFERENCES, CMainFrame::OnPreferencesClick )
 #endif
 
     EVT_MENU( ID_HELP_CONTENTS, CMainFrame::OnHelpContentsClick )
-
     EVT_MENU( wxID_ABOUT, CMainFrame::OnABOUTClick )
-
     EVT_TREE_SEL_CHANGED( ID_TREE_CONTROL, CMainFrame::OnTreeControlSelChanged )
     EVT_TREE_ITEM_EXPANDING( ID_TREE_CONTROL, CMainFrame::OnTreeControlItemExpanding )
     EVT_TREE_ITEM_MENU( ID_TREE_CONTROL, CMainFrame::OnTreeControlItemMenu )
-
 ////@end CMainFrame event table entries
 
     EVT_TREE_SEL_CHANGED( ID_TREE_CONTROL_VIRTUAL, CMainFrame::OnTreeControlVirtualSelChanged )
@@ -897,7 +869,7 @@ void CMainFrame::CreateControls()
     wxSplitterWindow* itemSplitterWindow54 = new wxSplitterWindow( itemFrame1, ID_SPLITTERWINDOW1, wxDefaultPosition, wxSize(100, 100), wxSP_3DBORDER|wxSP_3DSASH|wxSP_NO_XP_THEME|wxNO_BORDER );
     itemSplitterWindow54->SetMinimumPaneSize(0);
 
-    wxTreeCtrl* itemTreeCtrl55 = new wxTreeCtrl( itemSplitterWindow54, ID_TREE_CONTROL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
+    wxTreeCtrl* itemTreeCtrl55 = new wxTreeCtrl( itemSplitterWindow54, ID_TREE_CONTROL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
 
     CRightPaneList* itemListCtrl56 = new CRightPaneList( itemSplitterWindow54, ID_LIST_CONTROL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxNO_BORDER );
     itemSplitterWindow54->SplitVertically(itemTreeCtrl55, itemListCtrl56, 50);
@@ -914,7 +886,7 @@ void CMainFrame::CreateControls()
 	// creates the tree control used to show virtual folders
 	// this control must be created in the same way as the tree control created above
 	wxSplitterWindow* sw = (wxSplitterWindow*) FindWindow( ID_SPLITTERWINDOW1 );
-	wxTreeCtrl* itemTreeCtrlVirtual = new wxTreeCtrl( sw, ID_TREE_CONTROL_VIRTUAL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
+	wxTreeCtrl* itemTreeCtrlVirtual = new wxTreeCtrl( sw, ID_TREE_CONTROL_VIRTUAL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
 	itemTreeCtrlVirtual->Show( false );
 
 	// stores a pointer to some window components for later use
