@@ -255,7 +255,7 @@ void CDialogOpenCatalog::OnOpendialogBrowseClick( wxCommandEvent& WXUNUSED(event
 		wildcard = _("VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*");
 	else
 		wildcard = _("VVV files (*.vvv)|*.vvv|All files (*.*)|*.*");
-	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, m_Action == wxT("O") ? wxOPEN : wxSAVE );
+	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, m_Action == wxT("O") ? wxFD_OPEN : wxFD_SAVE );
 	if( fd.ShowModal() != wxID_OK ) return;
 	wxString databaseFile = fd.GetPath();
 	if ( databaseFile.empty() ) return;

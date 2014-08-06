@@ -285,7 +285,7 @@ void CDialogRestore::OnRestoredialogBrowseBackupClick( wxCommandEvent& WXUNUSED(
 	wxString wildcard;
 	wxString caption = _("Select backup file");
 	wildcard = _("VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*");
-	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, wxOPEN );
+	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, wxFD_OPEN );
 	if( fd.ShowModal() != wxID_OK ) return;
 	wxString backupFile = fd.GetPath();
 	if ( backupFile.empty() ) return;
@@ -303,7 +303,7 @@ void CDialogRestore::OnRestoredialogBrowseCatalogClick( wxCommandEvent& WXUNUSED
 	wxString wildcard;
 	wxString caption = _("Catalog file");
 	wildcard = _("VVV files (*.vvv)|*.vvv|All files (*.*)|*.*");
-	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, wxSAVE );
+	wxFileDialog fd( this, caption, wxEmptyString, wxEmptyString, wildcard, wxFD_SAVE );
 	if( fd.ShowModal() != wxID_OK ) return;
 	wxString databaseFile = fd.GetPath();
 	if ( databaseFile.empty() ) return;

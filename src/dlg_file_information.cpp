@@ -58,11 +58,8 @@ BEGIN_EVENT_TABLE( CFileInformationDialog, wxDialog )
 ////@begin CFileInformationDialog event table entries
     EVT_INIT_DIALOG( CFileInformationDialog::OnInitDialog )
     EVT_SIZE( CFileInformationDialog::OnSize )
-
     EVT_BUTTON( wxID_OK, CFileInformationDialog::OnOkClick )
-
     EVT_BUTTON( wxID_HELP, CFileInformationDialog::OnHelpClick )
-
 ////@end CFileInformationDialog event table entries
 
 END_EVENT_TABLE()

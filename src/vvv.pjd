@@ -196,6 +196,7 @@
         <string name="Include path">"%AUTO%"</string>
         <string name="Resource flags">"%AUTO%"</string>
         <string name="Resource path">"%AUTO%"</string>
+        <string name="Extra dependencies">"%AUTO%"</string>
         <bool name="Suppress source rules">0</bool>
         <bool name="Enable makefile generation">1</bool>
         <document>
@@ -265,6 +266,7 @@
           <string name="Include path">"%AUTO%"</string>
           <string name="Resource flags">"%AUTO%"</string>
           <string name="Resource path">"%AUTO%"</string>
+          <string name="Extra dependencies">"%AUTO%"</string>
           <bool name="Suppress source rules">0</bool>
           <bool name="Enable makefile generation">1</bool>
           <string name="Ignore libraries">"%AUTO%"</string>
@@ -336,6 +338,7 @@
           <string name="Include path">"%AUTO%"</string>
           <string name="Resource flags">"%AUTO%"</string>
           <string name="Resource path">"%AUTO%"</string>
+          <string name="Extra dependencies">"%AUTO%"</string>
           <bool name="Suppress source rules">0</bool>
           <bool name="Enable makefile generation">1</bool>
           <string name="Ignore libraries">"%AUTO%"</string>
@@ -407,6 +410,7 @@
           <string name="Include path">"%AUTO%"</string>
           <string name="Resource flags">"%AUTO%"</string>
           <string name="Resource path">"%AUTO%"</string>
+          <string name="Extra dependencies">"%AUTO%"</string>
           <bool name="Suppress source rules">0</bool>
           <bool name="Enable makefile generation">1</bool>
           <string name="Ignore libraries">"%AUTO%"</string>
@@ -478,6 +482,7 @@
           <string name="Include path">"%AUTO%"</string>
           <string name="Resource flags">"%AUTO%"</string>
           <string name="Resource path">"%AUTO%"</string>
+          <string name="Extra dependencies">"%AUTO%"</string>
           <bool name="Suppress source rules">0</bool>
           <bool name="Enable makefile generation">1</bool>
           <string name="Ignore libraries">"%AUTO%"</string>
@@ -691,6 +696,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -1771,6 +1777,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -1848,6 +1855,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -1931,6 +1939,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
               <string name="proxy-Event sources">""</string>
@@ -2020,6 +2029,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
               <string name="proxy-Event sources">""</string>
@@ -2130,6 +2140,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -2199,6 +2210,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -2226,6 +2238,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxTextCtrl: ID_VOLUME_PATH"</string>
@@ -2307,6 +2320,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2374,6 +2388,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2446,6 +2461,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -2473,6 +2489,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxTextCtrl: ID_VOLUME_NAME"</string>
@@ -2554,6 +2571,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2621,6 +2639,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2649,6 +2668,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxButton: wxID_HELP"</string>
@@ -2714,6 +2734,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2741,6 +2762,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -2807,6 +2829,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2873,6 +2896,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -2945,6 +2969,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -3016,6 +3041,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -3090,6 +3116,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -3199,6 +3226,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -3268,6 +3296,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -3348,6 +3377,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
               <string name="proxy-Event sources">""</string>
@@ -3376,6 +3406,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"__WXMSW__"</string>
               <document>
                 <string name="title">"Spacer"</string>
@@ -3401,6 +3432,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -3467,6 +3499,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -3533,6 +3566,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -3561,6 +3595,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"__WXMAC__,__WXGTK__"</string>
               <document>
                 <string name="title">"Spacer"</string>
@@ -3586,6 +3621,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -3651,6 +3687,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -3718,6 +3755,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -3874,6 +3912,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -3902,6 +3941,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxRadioBox: ID_RADIOBOX_FILENAME"</string>
@@ -3964,6 +4004,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4047,6 +4088,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4074,6 +4116,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -4144,6 +4187,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">1</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4227,6 +4271,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4254,6 +4299,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -4317,6 +4363,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4400,6 +4447,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4427,6 +4475,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -4490,6 +4539,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4517,6 +4567,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -4583,6 +4634,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -4692,6 +4744,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -4761,6 +4814,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -4832,6 +4886,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -4915,6 +4970,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -4942,6 +4998,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"__WXMSW__"</string>
               <document>
                 <string name="title">"wxButton: wxID_OK"</string>
@@ -5006,6 +5063,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -5072,6 +5130,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -5100,6 +5159,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"__WXMAC__,__WXGTK__"</string>
               <document>
                 <string name="title">"wxButton: wxID_CANCEL"</string>
@@ -5164,6 +5224,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -5230,6 +5291,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -5399,6 +5461,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -5429,6 +5492,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxBoxSizer V"</string>
@@ -5454,6 +5518,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxCheckBox: ID_DS_REOPEN_CATALOG"</string>
@@ -5516,6 +5581,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -5543,6 +5609,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                   <document>
                     <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -5612,6 +5679,7 @@
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -5682,6 +5750,7 @@
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -5709,6 +5778,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -5774,6 +5844,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -5850,6 +5921,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -5880,6 +5952,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxBoxSizer V"</string>
@@ -5905,6 +5978,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxCheckBox: wxID_ANY"</string>
@@ -5966,6 +6040,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -5992,6 +6067,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -6062,6 +6138,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6126,6 +6203,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6190,6 +6268,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6254,6 +6333,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6318,6 +6398,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6382,6 +6463,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6446,6 +6528,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6510,6 +6593,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6574,6 +6658,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6638,6 +6723,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6702,6 +6788,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6766,6 +6853,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -6793,6 +6881,7 @@
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
               </document>
@@ -6868,6 +6957,7 @@
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Custom arguments">""</string>
             <string name="proxy-Custom ctor arguments">""</string>
             <string name="proxy-Event sources">""</string>
@@ -6898,6 +6988,7 @@
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxBoxSizer V"</string>
@@ -6923,6 +7014,7 @@
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -6997,6 +7089,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -7024,6 +7117,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -7087,6 +7181,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -7120,6 +7215,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <document>
                     <string name="title">"wxStaticText: wxID_STATIC"</string>
                     <string name="type">"dialog-control-document"</string>
@@ -7188,6 +7284,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7272,6 +7369,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7343,6 +7441,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7427,6 +7526,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7498,6 +7598,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7582,6 +7683,7 @@ with other computers."</string>
                     <bool name="proxy-wxSHAPED">0</bool>
                     <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                     <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                    <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                     <string name="proxy-Custom arguments">""</string>
                     <string name="proxy-Custom ctor arguments">""</string>
                   </document>
@@ -7610,6 +7712,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -7677,6 +7780,7 @@ with other computers."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -7791,6 +7895,7 @@ with other computers."</string>
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxBoxSizer V"</string>
@@ -7816,6 +7921,7 @@ with other computers."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -7888,6 +7994,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -7915,6 +8022,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -7941,6 +8049,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxTextCtrl: ID_OPENDIALOG_CATALOG_NAME"</string>
@@ -8022,6 +8131,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8089,6 +8199,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8117,6 +8228,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMSW__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_OK"</string>
@@ -8181,6 +8293,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8247,6 +8360,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8275,6 +8389,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMAC__,__WXGTK__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_CANCEL"</string>
@@ -8339,6 +8454,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8405,6 +8521,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -8518,6 +8635,7 @@ Remember that the path must be relative to the server, not to the client."</stri
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxBoxSizer V"</string>
@@ -8543,6 +8661,7 @@ Remember that the path must be relative to the server, not to the client."</stri
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -8612,6 +8731,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -8676,6 +8796,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -8740,6 +8861,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -8805,6 +8927,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -8876,6 +8999,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -8903,6 +9027,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxTextCtrl: ID_EXPORT_FILENAME"</string>
@@ -8984,6 +9109,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9051,6 +9177,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9079,6 +9206,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMSW__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_HELP"</string>
@@ -9144,6 +9272,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9171,6 +9300,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -9237,6 +9367,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9303,6 +9434,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9331,6 +9463,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMAC__,__WXGTK__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_HELP"</string>
@@ -9396,6 +9529,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9423,6 +9557,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -9488,6 +9623,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9555,6 +9691,7 @@ Remember that the path must be relative to the server, not to the client."</stri
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -9669,6 +9806,7 @@ Remember that the path must be relative to the server, not to the client."</stri
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxBoxSizer V"</string>
@@ -9694,6 +9832,7 @@ Remember that the path must be relative to the server, not to the client."</stri
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -9766,6 +9905,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -9793,6 +9933,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -9863,6 +10004,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -9890,6 +10032,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxTextCtrl: ID_RESTOREDIALOG_BACKUP"</string>
@@ -9971,6 +10114,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10038,6 +10182,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10110,6 +10255,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -10137,6 +10283,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 <document>
                   <string name="title">"wxTextCtrl: ID_RESTOREDIALOG_CATALOG"</string>
@@ -10218,6 +10365,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10285,6 +10433,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10313,6 +10462,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMSW__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_HELP"</string>
@@ -10378,6 +10528,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10405,6 +10556,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -10471,6 +10623,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10537,6 +10690,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10565,6 +10719,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"__WXMAC__,__WXGTK__"</string>
                 <document>
                   <string name="title">"wxButton: wxID_HELP"</string>
@@ -10630,6 +10785,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10657,6 +10813,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
                 </document>
                 <document>
@@ -10722,6 +10879,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10789,6 +10947,7 @@ You cannot enter the name of an existing catalog."</string>
                   <bool name="proxy-wxSHAPED">0</bool>
                   <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                   <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                   <string name="proxy-Custom arguments">""</string>
                   <string name="proxy-Custom ctor arguments">""</string>
                 </document>
@@ -10888,9 +11047,18 @@ You cannot enter the name of an existing catalog."</string>
             <string name="proxy-type">"wbBoxSizerProxy"</string>
             <string name="proxy-Orientation">"Vertical"</string>
             <string name="proxy-Member variable name">""</string>
+            <string name="proxy-AlignH">"Centre"</string>
+            <string name="proxy-AlignV">"Centre"</string>
+            <long name="proxy-Stretch factor">0</long>
+            <long name="proxy-Border">5</long>
+            <bool name="proxy-wxLEFT">1</bool>
+            <bool name="proxy-wxRIGHT">1</bool>
+            <bool name="proxy-wxTOP">1</bool>
+            <bool name="proxy-wxBOTTOM">1</bool>
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxStaticText: wxID_STATIC"</string>
@@ -10960,6 +11128,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -11031,6 +11200,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -11058,6 +11228,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             </document>
             <document>
@@ -11128,6 +11299,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -11155,6 +11327,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxTextCtrl: ID_VOLUME_PATH"</string>
@@ -11236,6 +11409,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -11303,6 +11477,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -11331,6 +11506,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxButton: wxID_HELP"</string>
@@ -11396,6 +11572,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -11423,6 +11600,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               </document>
               <document>
@@ -11489,6 +11667,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -11555,6 +11734,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -11627,6 +11807,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">1</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -11654,6 +11835,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             </document>
           </document>
@@ -11714,7 +11896,7 @@ You cannot enter the name of an existing catalog."</string>
           <bool name="proxy-wxCLOSE_BOX">1</bool>
           <bool name="proxy-wxMAXIMIZE_BOX">0</bool>
           <bool name="proxy-wxMINIMIZE_BOX">0</bool>
-          <bool name="proxy-wxDIALOG_MODAL">1</bool>
+          <bool name="proxy-wxDIALOG_MODAL">0</bool>
           <bool name="proxy-wxNO_BORDER">0</bool>
           <bool name="proxy-wxSIMPLE_BORDER">0</bool>
           <bool name="proxy-wxDOUBLE_BORDER">0</bool>
@@ -11751,17 +11933,10 @@ You cannot enter the name of an existing catalog."</string>
             <string name="proxy-type">"wbBoxSizerProxy"</string>
             <string name="proxy-Orientation">"Vertical"</string>
             <string name="proxy-Member variable name">""</string>
-            <string name="proxy-AlignH">"Centre"</string>
-            <string name="proxy-AlignV">"Centre"</string>
-            <long name="proxy-Stretch factor">0</long>
-            <long name="proxy-Border">5</long>
-            <bool name="proxy-wxLEFT">1</bool>
-            <bool name="proxy-wxRIGHT">1</bool>
-            <bool name="proxy-wxTOP">1</bool>
-            <bool name="proxy-wxBOTTOM">1</bool>
             <bool name="proxy-wxSHAPED">0</bool>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <document>
               <string name="title">"wxListCtrl: ID_LISTCTRL1"</string>
@@ -11842,6 +12017,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
               <string name="proxy-Event sources">""</string>
@@ -11913,6 +12089,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -11995,6 +12172,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
             </document>
@@ -12028,6 +12206,7 @@ You cannot enter the name of an existing catalog."</string>
               <bool name="proxy-wxSHAPED">0</bool>
               <bool name="proxy-wxADJUST_MINSIZE">0</bool>
               <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+              <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
               <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
               <document>
                 <string name="title">"wxButton: wxID_OK"</string>
@@ -12092,6 +12271,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -12157,6 +12337,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>
@@ -12223,6 +12404,7 @@ You cannot enter the name of an existing catalog."</string>
                 <bool name="proxy-wxSHAPED">0</bool>
                 <bool name="proxy-wxADJUST_MINSIZE">0</bool>
                 <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
                 <string name="proxy-Custom arguments">""</string>
                 <string name="proxy-Custom ctor arguments">""</string>
               </document>

@@ -1335,9 +1335,13 @@ void CMainFrame::CreateListControlHeaders(void) {
 
 	// adds a dummy row and deletes it
 	// needed to correctly show the headers
-	wxListItem item;
-	item.SetMask( wxLIST_MASK_STATE|wxLIST_MASK_TEXT|wxLIST_MASK_IMAGE|wxLIST_MASK_DATA );
-	int i = lctl->InsertItem( item );
+    int i = lctl->InsertItem( 0, "" );
+    // this code is used to set the item's mask
+    wxListItem item;
+    item.SetId( i );
+    lctl->GetItem( item );
+    item.SetMask( wxLIST_MASK_STATE|wxLIST_MASK_TEXT|wxLIST_MASK_IMAGE|wxLIST_MASK_DATA );
+    lctl->SetItem( item );
 	lctl->SetItem( i, 0, wxT("a") );
 	lctl->SetItem( i, 1, wxT("a") );
 	lctl->SetItem( i, 2, wxT("a") );
@@ -1448,7 +1452,7 @@ void CMainFrame::OnOPENClick( wxCommandEvent& WXUNUSED(event) )
 	if( !DBConnectionData.connectToServer ) {
 		// open a local file
 		wxString wildcard = _("VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*");
-		wxFileDialog fd( this, caption, wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxOPEN );
+		wxFileDialog fd( this, caption, wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxFD_OPEN );
 		if( fd.ShowModal() == wxID_OK )
 			databaseName = fd.GetPath();
 	} else {
@@ -1697,6 +1701,8 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 
 	wxTreeCtrl* tctl = GetTreePhysicalControl();
 	wxListCtrl* lctl = GetListControl();
+
+    if( lctl == NULL ) return;
 	
 	// assigns the image list
 	wxImageList* iml = new wxImageList( 16, 16 );
@@ -1731,6 +1737,7 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 		int imageIndex = (files.IsFolder() ? 0 : 1 );
 
 		wxListItem item;
+        item.SetId( 0 );
 		item.SetMask( wxLIST_MASK_STATE|wxLIST_MASK_TEXT|wxLIST_MASK_IMAGE|wxLIST_MASK_DATA );
 		int i = lctl->InsertItem( item );
 		lctl->SetItem( i, 0, files.FileName, imageIndex );
@@ -1784,6 +1791,7 @@ void CMainFrame::ShowVirtualFolderFiles( wxTreeItemId itemID ) {
 
 	wxTreeCtrl* tctl = GetTreeVirtualControl();
 	wxListCtrl* lctl = GetListControl();
+    if( lctl == NULL ) return;
 	
 	// assigns the image list
 	wxImageList* iml = new wxImageList( 16, 16 );
@@ -2927,6 +2935,7 @@ int CMainFrame::AddRowToVirtualListControl( wxListCtrl* lctl, bool isFolder, wxS
 
 	int imageIndex = (isFolder ? 0 : 1 );
 	wxListItem item;
+    item.SetId( 0 );
 	item.SetMask( wxLIST_MASK_STATE|wxLIST_MASK_TEXT|wxLIST_MASK_IMAGE|wxLIST_MASK_DATA );
 	int i = lctl->InsertItem( item );
 	lctl->SetItem( i, 0, fileName, imageIndex );
@@ -3648,7 +3657,7 @@ wxString CMainFrame::RestoreDatabase( wxString caption, wxString backupName ) {
 	if( !DBConnectionData.connectToServer ) {
 		// create a local file
 		wxString wildcard = _("VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*");
-		wxFileDialog fd( this, caption, wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxSAVE );
+		wxFileDialog fd( this, caption, wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxFD_SAVE );
 		if( fd.ShowModal() == wxID_OK )
 			databaseFile = fd.GetPath();
 	} else {
@@ -3725,7 +3734,7 @@ void CMainFrame::OnFileBackupClick( wxCommandEvent& WXUNUSED(event) )
 	if( !DBConnectionData.connectToServer ) {
 		// create a local file
 		wxString wildcard = _("VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*");
-		wxFileDialog fd( this, _("Backup catalog"), wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxSAVE );
+		wxFileDialog fd( this, _("Backup catalog"), wxGetApp().GetDefaultDataFolder(), wxEmptyString, wildcard, wxFD_SAVE );
 		if( fd.ShowModal() == wxID_OK )
 			backupFile = fd.GetPath();
 	} else {
