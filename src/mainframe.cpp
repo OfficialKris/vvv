@@ -2552,9 +2552,6 @@ void CMainFrame::OnTreeControlItemMenu( wxTreeEvent& event )
 	tctl->SelectItem( item );
 	
     wxPoint pt = event.GetPoint();
-    // if there is a toolbar we need to correct the coordinates
-	wxPoint origin = GetClientAreaOrigin();
-    pt += origin;
 
 	wxMenu menu;
 	menu.Append( ID_ADD_VIRTUAL_FOLDER, _("Add To Virtual Folder") );
@@ -2586,9 +2583,6 @@ void CMainFrame::OnTreeControlVirtualItemMenu( wxTreeEvent& event )
 	if( item.IsOk() ) tctl->SelectItem( item );
 	
     wxPoint pt = event.GetPoint();
-    // if there is a toolbar we need to correct the coordinates
-	wxPoint origin = GetClientAreaOrigin();
-    pt += origin;
 
 	wxMenu menu;
 	menu.Append( ID_NEW_VIRTUAL_ROOT_FOLDER, _("New Root Folder") );
@@ -3142,9 +3136,6 @@ void CMainFrame::OnListControlContextMenu( wxContextMenuEvent& event )
 		point.y = size.y / 2;
 	} else {
 		point = ScreenToClient(point);
-		// if there is a toolbar we need to correct the coordinates
-		wxPoint origin = GetClientAreaOrigin();
-		point += origin;
 	}
 
 	wxMenu menu;
