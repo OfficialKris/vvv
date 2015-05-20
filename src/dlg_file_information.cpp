@@ -260,9 +260,15 @@ void CFileInformationDialog::CreateLCHeaders() {
 
 int CFileInformationDialog::AddLCRow( wxString col0, wxString col1 ) 
 {
+  	int i = m_ListCtrl->InsertItem( 0, "" );
+
+    // this code is used to set the item's mask
 	wxListItem item;
+	item.SetId( i );
+	m_ListCtrl->GetItem( item );
 	item.SetMask( wxLIST_MASK_STATE|wxLIST_MASK_TEXT|wxLIST_MASK_WIDTH );
-	int i = m_ListCtrl->InsertItem( item );
+	m_ListCtrl->SetItem( item );
+
 	m_ListCtrl->SetItem( i, 0, col0 );
 	m_ListCtrl->SetItem( i, 1, col1 );
 	return i;
