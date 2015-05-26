@@ -58,11 +58,6 @@
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_UPDATE_VOLUME 10087
-#define ID_VOLUME_PATH 10023
-#define ID_VOLUME_BROWSE 10019
-#define ID_BUTTON_UPDATE 10088
-#define ID_CURRENT_FOLDER 10024
 #define SYMBOL_CDIALOGUPDATEVOLUME_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL
 #define SYMBOL_CDIALOGUPDATEVOLUME_TITLE _("Update Volume")
 #define SYMBOL_CDIALOGUPDATEVOLUME_IDNAME ID_DIALOG_UPDATE_VOLUME
@@ -135,6 +130,14 @@ public:
     wxButton* m_UpdateButton;
     wxButton* m_CloseButton;
     wxStaticText* m_CurrentFolder;
+    /// Control identifiers
+    enum {
+        ID_DIALOG_UPDATE_VOLUME = 10000,
+        ID_VOLUME_PATH = 10001,
+        ID_VOLUME_BROWSE = 10002,
+        ID_BUTTON_UPDATE = 10003,
+        ID_CURRENT_FOLDER = 10004
+    };
 ////@end CDialogUpdateVolume member variables
 
 private:

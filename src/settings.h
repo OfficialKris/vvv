@@ -52,29 +52,6 @@ class wxSpinCtrl;
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_SETTINGS 10048
-#define ID_DS_GENERAL 10049
-#define ID_DS_REOPEN_CATALOG 10051
-#define ID_SPIN_BEEP_TIME 10020
-#define ID_BTN_CHANGE_LANGUAGE 10092
-#define ID_DS_MP3 10050
-#define ID_DS_ARTIST 10052
-#define ID_DS_ALBUM 10053
-#define ID_DS_TITLE 10054
-#define ID_DS_YEAR 10055
-#define ID_DS_COMMENT 10056
-#define ID_DS_TRACK_NUMBER 10057
-#define ID_DS_GENRE 10061
-#define ID_DS_LENGTH 10062
-#define ID_DS_BITRATE 10058
-#define ID_DS_SAMPLE_RATE 10059
-#define ID_DS_CHANNELS 10060
-#define ID_DS_SERVER 10063
-#define ID_DS_CONNECT_SERVER 10064
-#define ID_DS_SERVERNAME 10065
-#define ID_DS_USERNAME 10066
-#define ID_DS_PASSWORD 10067
-#define ID_DS_TEST_CONNECTION 10068
 #define SYMBOL_CDIALOGSETTINGS_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
 #define SYMBOL_CDIALOGSETTINGS_TITLE _("Settings")
 #define SYMBOL_CDIALOGSETTINGS_IDNAME ID_DIALOG_SETTINGS
@@ -136,14 +113,20 @@ public:
 
 ////@begin CDialogSettings member function declarations
 
-    bool* GetAmdColumnsToShow() const { return m_amdColumnsToShow ; }
-    void SetAmdColumnsToShow(bool* value) { m_amdColumnsToShow = value ; }
+    int GetBeepTime() const { return m_BeepTime ; }
+    void SetBeepTime(int value) { m_BeepTime = value ; }
 
-    bool GetReopenCatalog() const { return m_ReopenCatalog ; }
-    void SetReopenCatalog(bool value) { m_ReopenCatalog = value ; }
+    bool GetCatalogAudioMetadata() const { return m_CatalogAudioMetadata ; }
+    void SetCatalogAudioMetadata(bool value) { m_CatalogAudioMetadata = value ; }
 
     bool GetConnectServer() const { return m_ConnectServer ; }
     void SetConnectServer(bool value) { m_ConnectServer = value ; }
+
+    wxString GetPassword() const { return m_Password ; }
+    void SetPassword(wxString value) { m_Password = value ; }
+
+    bool GetReopenCatalog() const { return m_ReopenCatalog ; }
+    void SetReopenCatalog(bool value) { m_ReopenCatalog = value ; }
 
     wxString GetServerName() const { return m_ServerName ; }
     void SetServerName(wxString value) { m_ServerName = value ; }
@@ -151,14 +134,8 @@ public:
     wxString GetUsername() const { return m_Username ; }
     void SetUsername(wxString value) { m_Username = value ; }
 
-    wxString GetPassword() const { return m_Password ; }
-    void SetPassword(wxString value) { m_Password = value ; }
-
-    int GetBeepTime() const { return m_BeepTime ; }
-    void SetBeepTime(int value) { m_BeepTime = value ; }
-
-    bool GetCatalogAudioMetadata() const { return m_CatalogAudioMetadata ; }
-    void SetCatalogAudioMetadata(bool value) { m_CatalogAudioMetadata = value ; }
+    bool* GetAmdColumnsToShow() const { return m_amdColumnsToShow ; }
+    void SetAmdColumnsToShow(bool* value) { m_amdColumnsToShow = value ; }
 
     /// Retrieves bitmap resources
     wxBitmap GetBitmapResource( const wxString& name );
@@ -190,13 +167,39 @@ public:
     wxTextCtrl* m_PasswordCtrl;
     bool m_CatalogAudioMetadata;
 private:
-    bool* m_amdColumnsToShow; // array of bools for visibility of audio metadata fields
-    bool m_ReopenCatalog;
+    int m_BeepTime;
     bool m_ConnectServer;
+    wxString m_Password;
+    bool m_ReopenCatalog;
     wxString m_ServerName;
     wxString m_Username;
-    wxString m_Password;
-    int m_BeepTime;
+    bool* m_amdColumnsToShow; // array of bools for visibility of audio metadata fields
+    /// Control identifiers
+    enum {
+        ID_DIALOG_SETTINGS = 10048,
+        ID_DS_GENERAL = 10049,
+        ID_DS_REOPEN_CATALOG = 10051,
+        ID_SPIN_BEEP_TIME = 10020,
+        ID_BTN_CHANGE_LANGUAGE = 10092,
+        ID_DS_MP3 = 10050,
+        ID_DS_ARTIST = 10052,
+        ID_DS_ALBUM = 10053,
+        ID_DS_TITLE = 10054,
+        ID_DS_YEAR = 10055,
+        ID_DS_COMMENT = 10056,
+        ID_DS_TRACK_NUMBER = 10057,
+        ID_DS_GENRE = 10061,
+        ID_DS_LENGTH = 10062,
+        ID_DS_BITRATE = 10058,
+        ID_DS_SAMPLE_RATE = 10059,
+        ID_DS_CHANNELS = 10060,
+        ID_DS_SERVER = 10063,
+        ID_DS_CONNECT_SERVER = 10064,
+        ID_DS_SERVERNAME = 10065,
+        ID_DS_USERNAME = 10066,
+        ID_DS_PASSWORD = 10067,
+        ID_DS_TEST_CONNECTION = 10068
+    };
 ////@end CDialogSettings member variables
 
 	bool TransferDataToWindow();

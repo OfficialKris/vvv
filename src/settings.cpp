@@ -64,16 +64,11 @@ BEGIN_EVENT_TABLE( CDialogSettings, wxPropertySheetDialog )
 
 ////@begin CDialogSettings event table entries
     EVT_BUTTON( ID_BTN_CHANGE_LANGUAGE, CDialogSettings::OnBtnChangeLanguageClick )
-
     EVT_UPDATE_UI( ID_DS_SERVERNAME, CDialogSettings::OnDsServernameUpdate )
-
     EVT_UPDATE_UI( ID_DS_USERNAME, CDialogSettings::OnDsUsernameUpdate )
-
     EVT_UPDATE_UI( ID_DS_PASSWORD, CDialogSettings::OnDsPasswordUpdate )
-
     EVT_BUTTON( ID_DS_TEST_CONNECTION, CDialogSettings::OnDsTestConnectionClick )
     EVT_UPDATE_UI( ID_DS_TEST_CONNECTION, CDialogSettings::OnDsTestConnectionUpdate )
-
 ////@end CDialogSettings event table entries
 
     EVT_BUTTON( wxID_HELP, CDialogSettings::OnHelpClick )
@@ -186,7 +181,7 @@ void CDialogSettings::CreateControls()
     wxStaticText* itemStaticText7 = new wxStaticText( itemPanel2, wxID_STATIC, _("Beep for tasks longer than (seconds):"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer6->Add(itemStaticText7, 0, wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM, 5);
 
-    m_BeepTimeCtrl = new wxSpinCtrl( itemPanel2, ID_SPIN_BEEP_TIME, _T("0"), wxDefaultPosition, wxSize(60, -1), wxSP_ARROW_KEYS, 0, 10000, 0 );
+    m_BeepTimeCtrl = new wxSpinCtrl( itemPanel2, ID_SPIN_BEEP_TIME, wxT("0"), wxDefaultPosition, wxSize(60, -1), wxSP_ARROW_KEYS, 0, 10000, 0 );
     itemBoxSizer6->Add(m_BeepTimeCtrl, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     itemBoxSizer4->Add(5, 5, 1, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
@@ -275,7 +270,6 @@ void CDialogSettings::CreateControls()
     itemBoxSizer31->Add(m_ConnectServerCtrl, 0, wxALIGN_LEFT|wxALL, 5);
 
     wxFlexGridSizer* itemFlexGridSizer35 = new wxFlexGridSizer(3, 2, 0, 0);
-    itemFlexGridSizer35->AddGrowableCol(1);
     itemBoxSizer31->Add(itemFlexGridSizer35, 0, wxGROW|wxALL, 5);
     wxStaticText* itemStaticText36 = new wxStaticText( itemPanel29, wxID_STATIC, _("Server"), wxDefaultPosition, wxDefaultSize, 0 );
     itemFlexGridSizer35->Add(itemStaticText36, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
@@ -294,6 +288,8 @@ void CDialogSettings::CreateControls()
 
     m_PasswordCtrl = new wxTextCtrl( itemPanel29, ID_DS_PASSWORD, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_PASSWORD );
     itemFlexGridSizer35->Add(m_PasswordCtrl, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+
+    itemFlexGridSizer35->AddGrowableCol(1);
 
     itemBoxSizer31->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
 

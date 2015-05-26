@@ -74,11 +74,8 @@ BEGIN_EVENT_TABLE( CDialogUpdateVolume, wxDialog )
 
 ////@begin CDialogUpdateVolume event table entries
     EVT_BUTTON( ID_VOLUME_BROWSE, CDialogUpdateVolume::OnVolumeBrowseClick )
-
     EVT_BUTTON( wxID_HELP, CDialogUpdateVolume::OnHelpClick )
-
     EVT_BUTTON( ID_BUTTON_UPDATE, CDialogUpdateVolume::OnButtonUpdateClick )
-
 ////@end CDialogUpdateVolume event table entries
 
 END_EVENT_TABLE()
@@ -188,7 +185,7 @@ void CDialogUpdateVolume::CreateControls()
     itemBoxSizer2->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
 
     wxStaticText* itemStaticText6 = new wxStaticText( itemDialog1, wxID_STATIC, _("Enter or select the path to volume to update"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer2->Add(itemStaticText6, 0, wxALIGN_LEFT|wxALL, 5);
+    itemBoxSizer2->Add(itemStaticText6, 0, wxALIGN_LEFT|wxALL|wxADJUST_MINSIZE, 5);
 
     wxBoxSizer* itemBoxSizer7 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer2->Add(itemBoxSizer7, 0, wxGROW|wxBOTTOM, 5);
@@ -214,7 +211,7 @@ void CDialogUpdateVolume::CreateControls()
     itemBoxSizer10->Add(m_CloseButton, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     m_CurrentFolder = new wxStaticText( itemDialog1, ID_CURRENT_FOLDER, _("Current folder"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer2->Add(m_CurrentFolder, 0, wxGROW|wxALL, 5);
+    itemBoxSizer2->Add(m_CurrentFolder, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 5);
 
     itemBoxSizer2->Add(5, 5, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
 

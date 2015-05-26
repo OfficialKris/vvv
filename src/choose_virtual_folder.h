@@ -64,8 +64,6 @@ class wxTreeCtrl;
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_CHOOSE_VIRTUAL_FOLDER 10016
-#define ID_TREECTRL_CHOOSE 10017
 #define SYMBOL_CDIALOGCHOOSEVIRTUALFOLDER_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
 #define SYMBOL_CDIALOGCHOOSEVIRTUALFOLDER_TITLE _("Choose virtual folder")
 #define SYMBOL_CDIALOGCHOOSEVIRTUALFOLDER_IDNAME ID_DIALOG_CHOOSE_VIRTUAL_FOLDER
@@ -138,6 +136,11 @@ public:
 
 ////@begin CDialogChooseVirtualFolder member variables
     wxTreeCtrl* m_TreeCtrl;
+    /// Control identifiers
+    enum {
+        ID_DIALOG_CHOOSE_VIRTUAL_FOLDER = 10016,
+        ID_TREECTRL_CHOOSE = 10017
+    };
 ////@end CDialogChooseVirtualFolder member variables
 
 	long GetVirtualFolderID() { return m_VirtualFolderID; }

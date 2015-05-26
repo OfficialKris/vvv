@@ -49,6 +49,8 @@
 #endif
 
 ////@begin includes
+#include "wx/mstream.h"
+#include "wx/imaglist.h"
 ////@end includes
 
 #include "wx/filename.h"
@@ -79,7 +81,6 @@ BEGIN_EVENT_TABLE( CDialogChooseVirtualFolder, wxDialog )
 
 ////@begin CDialogChooseVirtualFolder event table entries
     EVT_TREE_ITEM_EXPANDING( ID_TREECTRL_CHOOSE, CDialogChooseVirtualFolder::OnTreectrlChooseItemExpanding )
-
 #if defined(__WXMSW__)
     EVT_BUTTON( wxID_OK, CDialogChooseVirtualFolder::OnOKClick )
 #endif
@@ -155,7 +156,7 @@ void CDialogChooseVirtualFolder::CreateControls()
     itemDialog1->SetSizer(itemBoxSizer2);
 
     wxStaticText* itemStaticText3 = new wxStaticText( itemDialog1, wxID_STATIC, _("Please select the virtual folder that will receive the selected files and/or folders:"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer2->Add(itemStaticText3, 0, wxALIGN_LEFT|wxALL, 5);
+    itemBoxSizer2->Add(itemStaticText3, 0, wxALIGN_LEFT|wxALL|wxADJUST_MINSIZE, 5);
 
     m_TreeCtrl = new wxTreeCtrl( itemDialog1, ID_TREECTRL_CHOOSE, wxDefaultPosition, wxSize(-1, 300), wxTR_NO_BUTTONS|wxTR_HIDE_ROOT|wxTR_SINGLE|wxTR_DEFAULT_STYLE );
     itemBoxSizer2->Add(m_TreeCtrl, 1, wxGROW|wxALL, 5);

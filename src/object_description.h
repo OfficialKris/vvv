@@ -47,9 +47,6 @@
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_OBJECT_DESCRIPTION 10026
-#define ID_STATIC_OBJECT_NAME 10027
-#define ID_TEXTCTRL1 10028
 #define SYMBOL_CDIALOGOBJECTDESCRIPTION_STYLE wxDEFAULT_DIALOG_STYLE|wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
 #define SYMBOL_CDIALOGOBJECTDESCRIPTION_TITLE _("Object Description")
 #define SYMBOL_CDIALOGOBJECTDESCRIPTION_IDNAME ID_DIALOG_OBJECT_DESCRIPTION
@@ -112,6 +109,12 @@ public:
 ////@begin CDialogObjectDescription member variables
     wxStaticText* m_ObjectNameStatic;
     wxTextCtrl* m_TextControl;
+    /// Control identifiers
+    enum {
+        ID_DIALOG_OBJECT_DESCRIPTION = 10026,
+        ID_STATIC_OBJECT_NAME = 10027,
+        ID_TEXTCTRL1 = 10028
+    };
 ////@end CDialogObjectDescription member variables
 
 private:

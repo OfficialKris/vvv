@@ -25,6 +25,7 @@
 #endif
 
 ////@begin includes
+#include "wx/mstream.h"
 ////@end includes
 
 #include "restore.h"
@@ -49,11 +50,8 @@ BEGIN_EVENT_TABLE( CDialogRestore, wxDialog )
 
 ////@begin CDialogRestore event table entries
     EVT_INIT_DIALOG( CDialogRestore::OnInitDialog )
-
     EVT_BUTTON( ID_RESTOREDIALOG_BROWSE_BACKUP, CDialogRestore::OnRestoredialogBrowseBackupClick )
-
     EVT_BUTTON( ID_RESTOREDIALOG_BROWSE_CATALOG, CDialogRestore::OnRestoredialogBrowseCatalogClick )
-
 #if defined(__WXMSW__)
     EVT_BUTTON( wxID_HELP, CDialogRestore::OnHelpClick )
 #endif
@@ -162,7 +160,7 @@ void CDialogRestore::CreateControls()
     wxBoxSizer* itemBoxSizer7 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer3->Add(itemBoxSizer7, 0, wxGROW|wxRIGHT|wxTOP|wxBOTTOM, 5);
 
-    m_BackupNameCtrl = new wxTextCtrl( itemDialog1, ID_RESTOREDIALOG_BACKUP, _T(""), wxDefaultPosition, wxDefaultSize, 0 );
+    m_BackupNameCtrl = new wxTextCtrl( itemDialog1, ID_RESTOREDIALOG_BACKUP, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer7->Add(m_BackupNameCtrl, 1, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     m_BrowseBackupCtrl = new wxButton( itemDialog1, ID_RESTOREDIALOG_BROWSE_BACKUP, _("..."), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT );
@@ -174,7 +172,7 @@ void CDialogRestore::CreateControls()
     wxBoxSizer* itemBoxSizer11 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer3->Add(itemBoxSizer11, 0, wxGROW|wxRIGHT|wxTOP|wxBOTTOM, 5);
 
-    m_CatalogNameCtrl = new wxTextCtrl( itemDialog1, ID_RESTOREDIALOG_CATALOG, _T(""), wxDefaultPosition, wxDefaultSize, 0 );
+    m_CatalogNameCtrl = new wxTextCtrl( itemDialog1, ID_RESTOREDIALOG_CATALOG, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer11->Add(m_CatalogNameCtrl, 1, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     m_BrowseCatalogCtrl = new wxButton( itemDialog1, ID_RESTOREDIALOG_BROWSE_CATALOG, _("..."), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT );

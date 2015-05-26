@@ -46,6 +46,7 @@
 #endif
 
 ////@begin includes
+#include "wx/mstream.h"
 ////@end includes
 
 #include "exportdata.h"
@@ -76,9 +77,7 @@ BEGIN_EVENT_TABLE( CDialogExportData, wxDialog )
 
 ////@begin CDialogExportData event table entries
     EVT_UPDATE_UI( ID_EXPORT_RADIOBOX_EXPORT, CDialogExportData::OnExportRadioboxExportUpdate )
-
     EVT_BUTTON( ID_EXPORT_BROWSE, CDialogExportData::OnExportBrowseClick )
-
 #if defined(__WXMSW__)
     EVT_BUTTON( wxID_HELP, CDialogExportData::OnHelpClick )
 #endif
@@ -162,8 +161,8 @@ void CDialogExportData::Init()
 {
 ////@begin CDialogExportData member initialisation
     m_SelectedPhysicalFolderId = -1;
-    m_SelectedVolumeId = -1;
     m_SelectedVirtualFolderId = -1;
+    m_SelectedVolumeId = -1;
     m_SeparatorRadioBox = NULL;
     m_IncludeHeadersCtrl = NULL;
     m_ExportRadioBox = NULL;
@@ -217,7 +216,7 @@ void CDialogExportData::CreateControls()
     wxBoxSizer* itemBoxSizer9 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer3->Add(itemBoxSizer9, 0, wxGROW|wxTOP|wxBOTTOM, 5);
 
-    m_FileNameCtrl = new wxTextCtrl( itemDialog1, ID_EXPORT_FILENAME, _T(""), wxDefaultPosition, wxSize(250, -1), 0 );
+    m_FileNameCtrl = new wxTextCtrl( itemDialog1, ID_EXPORT_FILENAME, wxEmptyString, wxDefaultPosition, wxSize(250, -1), 0 );
     itemBoxSizer9->Add(m_FileNameCtrl, 1, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     m_BrowseCtrl = new wxButton( itemDialog1, ID_EXPORT_BROWSE, _("..."), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT );

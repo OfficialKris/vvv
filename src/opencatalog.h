@@ -59,9 +59,6 @@
  */
 
 ////@begin control identifiers
-#define ID_CDIALOG_OPEN_CATALOG 10069
-#define ID_OPENDIALOG_CATALOG_NAME 10070
-#define ID_OPENDIALOG_BROWSE 10071
 #define SYMBOL_CDIALOGOPENCATALOG_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL
 #define SYMBOL_CDIALOGOPENCATALOG_TITLE _("Open Catalog")
 #define SYMBOL_CDIALOGOPENCATALOG_IDNAME ID_CDIALOG_OPEN_CATALOG
@@ -108,11 +105,11 @@ public:
 
 ////@begin CDialogOpenCatalog member function declarations
 
-    wxString GetCatalogName() const { return m_CatalogName ; }
-    void SetCatalogName(wxString value) { m_CatalogName = value ; }
-
     wxString GetAction() const { return m_Action ; }
     void SetAction(wxString value) { m_Action = value ; }
+
+    wxString GetCatalogName() const { return m_CatalogName ; }
+    void SetCatalogName(wxString value) { m_CatalogName = value ; }
 
     bool GetShowBrowseButton() const { return m_ShowBrowseButton ; }
     void SetShowBrowseButton(bool value) { m_ShowBrowseButton = value ; }
@@ -131,9 +128,15 @@ public:
     wxTextCtrl* m_CatalogNameCtrl;
     wxButton* m_BrowseCtrl;
 private:
-    wxString m_CatalogName;
     wxString m_Action; // "O" for OPEN, "N" for NEW, "B" for backup
+    wxString m_CatalogName;
     bool m_ShowBrowseButton; // if true the dialog will show a "Browse" button near the catalog name
+    /// Control identifiers
+    enum {
+        ID_CDIALOG_OPEN_CATALOG = 10069,
+        ID_OPENDIALOG_CATALOG_NAME = 10070,
+        ID_OPENDIALOG_BROWSE = 10071
+    };
 ////@end CDialogOpenCatalog member variables
 
 	CWindowPosition m_WindowPosition;

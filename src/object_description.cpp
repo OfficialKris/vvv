@@ -36,6 +36,7 @@
 #endif
 
 ////@begin includes
+#include "wx/mstream.h"
 ////@end includes
 
 #include "object_description.h"
@@ -148,7 +149,7 @@ void CDialogObjectDescription::CreateControls()
     m_ObjectNameStatic = new wxStaticText( itemDialog1, ID_STATIC_OBJECT_NAME, _("OBJECT NAME"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer2->Add(m_ObjectNameStatic, 0, wxALIGN_LEFT|wxALL, 5);
 
-    m_TextControl = new wxTextCtrl( itemDialog1, ID_TEXTCTRL1, _T(""), wxDefaultPosition, wxSize(-1, 100), wxTE_MULTILINE );
+    m_TextControl = new wxTextCtrl( itemDialog1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(-1, 100), wxTE_MULTILINE );
     itemBoxSizer2->Add(m_TextControl, 1, wxGROW|wxALL, 5);
 
 #if defined(__WXMSW__)

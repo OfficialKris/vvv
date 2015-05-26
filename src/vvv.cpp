@@ -292,7 +292,7 @@ bool CVvvApp::OnInit()
 #endif
 
 	try {
-		mainWindow = new CMainFrame( NULL, ID_MAIN_FRAME );
+        mainWindow = new CMainFrame( NULL, CMainFrame::ID_MAIN_FRAME );
 	}
 	catch( CDataErrorException& e ) {
 		wxString s;

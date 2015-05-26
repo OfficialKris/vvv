@@ -61,12 +61,6 @@
  */
 
 ////@begin control identifiers
-#define ID_CDIALOG_EXPORT_DATA 10014
-#define ID_EXPORT_RADIOBOX_SEPARATOR 10025
-#define ID_EXPORT_INCLUDE_HEADERS 10076
-#define ID_EXPORT_RADIOBOX_EXPORT 10029
-#define ID_EXPORT_FILENAME 10085
-#define ID_EXPORT_BROWSE 10084
 #define SYMBOL_CDIALOGEXPORTDATA_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL
 #define SYMBOL_CDIALOGEXPORTDATA_TITLE _("Export data")
 #define SYMBOL_CDIALOGEXPORTDATA_IDNAME ID_CDIALOG_EXPORT_DATA
@@ -136,11 +130,11 @@ public:
     long GetSelectedPhysicalFolderId() const { return m_SelectedPhysicalFolderId ; }
     void SetSelectedPhysicalFolderId(long value) { m_SelectedPhysicalFolderId = value ; }
 
-    long GetSelectedVolumeId() const { return m_SelectedVolumeId ; }
-    void SetSelectedVolumeId(long value) { m_SelectedVolumeId = value ; }
-
     long GetSelectedVirtualFolderId() const { return m_SelectedVirtualFolderId ; }
     void SetSelectedVirtualFolderId(long value) { m_SelectedVirtualFolderId = value ; }
+
+    long GetSelectedVolumeId() const { return m_SelectedVolumeId ; }
+    void SetSelectedVolumeId(long value) { m_SelectedVolumeId = value ; }
 
     /// Retrieves bitmap resources
     wxBitmap GetBitmapResource( const wxString& name );
@@ -160,8 +154,17 @@ public:
     wxButton* m_BrowseCtrl;
 private:
     long m_SelectedPhysicalFolderId;
-    long m_SelectedVolumeId;
     long m_SelectedVirtualFolderId;
+    long m_SelectedVolumeId;
+    /// Control identifiers
+    enum {
+        ID_CDIALOG_EXPORT_DATA = 10005,
+        ID_EXPORT_RADIOBOX_SEPARATOR = 10019,
+        ID_EXPORT_INCLUDE_HEADERS = 10023,
+        ID_EXPORT_RADIOBOX_EXPORT = 10024,
+        ID_EXPORT_FILENAME = 10087,
+        ID_EXPORT_BROWSE = 10088
+    };
 ////@end CDialogExportData member variables
 
 private:

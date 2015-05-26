@@ -37,11 +37,6 @@
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_RESTORE 10079
-#define ID_RESTOREDIALOG_BACKUP 10081
-#define ID_RESTOREDIALOG_BROWSE_BACKUP 10082
-#define ID_RESTOREDIALOG_CATALOG 10080
-#define ID_RESTOREDIALOG_BROWSE_CATALOG 10083
 #define SYMBOL_CDIALOGRESTORE_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL
 #define SYMBOL_CDIALOGRESTORE_TITLE _("Restore")
 #define SYMBOL_CDIALOGRESTORE_IDNAME ID_DIALOG_RESTORE
@@ -101,11 +96,11 @@ public:
 
 ////@begin CDialogRestore member function declarations
 
-    wxString GetCatalogName() const { return m_CatalogName ; }
-    void SetCatalogName(wxString value) { m_CatalogName = value ; }
-
     wxString GetBackupName() const { return m_BackupName ; }
     void SetBackupName(wxString value) { m_BackupName = value ; }
+
+    wxString GetCatalogName() const { return m_CatalogName ; }
+    void SetCatalogName(wxString value) { m_CatalogName = value ; }
 
     /// Retrieves bitmap resources
     wxBitmap GetBitmapResource( const wxString& name );
@@ -123,8 +118,16 @@ public:
     wxTextCtrl* m_CatalogNameCtrl;
     wxButton* m_BrowseCatalogCtrl;
 private:
-    wxString m_CatalogName;
     wxString m_BackupName;
+    wxString m_CatalogName;
+    /// Control identifiers
+    enum {
+        ID_DIALOG_RESTORE = 10079,
+        ID_RESTOREDIALOG_BACKUP = 10080,
+        ID_RESTOREDIALOG_BROWSE_BACKUP = 10081,
+        ID_RESTOREDIALOG_CATALOG = 10082,
+        ID_RESTOREDIALOG_BROWSE_CATALOG = 10083
+    };
 ////@end CDialogRestore member variables
 
 	CWindowPosition m_WindowPosition;

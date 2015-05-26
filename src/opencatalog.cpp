@@ -47,6 +47,7 @@
 #endif
 
 ////@begin includes
+#include "wx/mstream.h"
 ////@end includes
 
 #include "opencatalog.h"
@@ -70,9 +71,7 @@ BEGIN_EVENT_TABLE( CDialogOpenCatalog, wxDialog )
 
 ////@begin CDialogOpenCatalog event table entries
     EVT_INIT_DIALOG( CDialogOpenCatalog::OnInitDialog )
-
     EVT_BUTTON( ID_OPENDIALOG_BROWSE, CDialogOpenCatalog::OnOpendialogBrowseClick )
-
 ////@end CDialogOpenCatalog event table entries
 
 END_EVENT_TABLE()
@@ -168,7 +167,7 @@ void CDialogOpenCatalog::CreateControls()
     wxBoxSizer* itemBoxSizer6 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer3->Add(itemBoxSizer6, 0, wxGROW|wxALL, 5);
 
-    m_CatalogNameCtrl = new wxTextCtrl( itemDialog1, ID_OPENDIALOG_CATALOG_NAME, _T(""), wxDefaultPosition, wxDefaultSize, 0 );
+    m_CatalogNameCtrl = new wxTextCtrl( itemDialog1, ID_OPENDIALOG_CATALOG_NAME, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer6->Add(m_CatalogNameCtrl, 1, wxALIGN_CENTER_VERTICAL|wxALL, 5);
 
     m_BrowseCtrl = new wxButton( itemDialog1, ID_OPENDIALOG_BROWSE, _("..."), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT );

@@ -68,14 +68,6 @@
  */
 
 ////@begin control identifiers
-#define ID_DIALOG_CATALOG_VOLUME 10002
-#define ID_VOLUME_PATH 10023
-#define ID_VOLUME_BROWSE 10019
-#define ID_VOLUME_NAME 10008
-#define ID_GET_VOLUME_NAME 10009
-#define ID_BUTTON_CATALOG 10010
-#define ID_CURRENT_FOLDER 10024
-#define ID_LISTBOX_HISTORY 10007
 #define SYMBOL_CDIALOGCATALOGVOLUME_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
 #define SYMBOL_CDIALOGCATALOGVOLUME_TITLE _("Catalog volume")
 #define SYMBOL_CDIALOGCATALOGVOLUME_IDNAME ID_DIALOG_CATALOG_VOLUME
@@ -161,6 +153,17 @@ public:
     wxButton* m_CloseButton;
     wxStaticText* m_CurrentFolder;
     wxListBox* m_HistoryListBox;
+    /// Control identifiers
+    enum {
+        ID_DIALOG_CATALOG_VOLUME = 10007,
+        ID_VOLUME_PATH = 10008,
+        ID_VOLUME_BROWSE = 10009,
+        ID_VOLUME_NAME = 10010,
+        ID_GET_VOLUME_NAME = 10094,
+        ID_BUTTON_CATALOG = 10095,
+        ID_CURRENT_FOLDER = 10096,
+        ID_LISTBOX_HISTORY = 10097
+    };
 ////@end CDialogCatalogVolume member variables
 
 private:
