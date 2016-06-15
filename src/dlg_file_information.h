@@ -26,6 +26,7 @@
 
 #include "window_position.h"
 #include "mylistitemdata.h"
+#include "mytreeitemdata.h"
 
 /*!
  * Forward declarations
@@ -40,9 +41,6 @@ class wxListCtrl;
  */
 
 ////@begin control identifiers
-#define ID_CFILEINFORMATIONDIALOG 10093
-#define ID_LISTCTRL1 10076
-#define ID_TEXTCTRL 10077
 #define SYMBOL_CFILEINFORMATIONDIALOG_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL
 #define SYMBOL_CFILEINFORMATIONDIALOG_TITLE _("File information")
 #define SYMBOL_CFILEINFORMATIONDIALOG_IDNAME ID_CFILEINFORMATIONDIALOG
@@ -112,10 +110,16 @@ public:
 	wxString GetDescription( void );
 
 	void SetItemData( MyListItemData* itemData ) { m_ItemData = itemData; }
+	void SetItemData( MyTreeItemData* itemData ) { m_TreeItemData = itemData; }
 
 ////@begin CFileInformationDialog member variables
     wxListCtrl* m_ListCtrl;
     wxTextCtrl* m_TextCtrl;
+    /// Control identifiers
+    enum {
+        ID_CFILEINFORMATIONDIALOG = 10076,
+        ID_TEXTCTRL = 10093
+    };
 ////@end CFileInformationDialog member variables
 
 protected:
@@ -123,8 +127,11 @@ protected:
 	// create the list control headers
 	void CreateLCHeaders();
 
-	// fill the dialog with image data
+	// fill the dialog with data about the current file
 	void ShowFileData();
+
+	// fill the dialog with data about the current folder
+	void ShowFolderData();
 
 	// add a row to the list control
 	// return the index of the inserted row
@@ -135,6 +142,9 @@ protected:
 
 	// data about the file to be shown
 	MyListItemData* m_ItemData;
+
+    // if this dialog is called from the tree control this variable contains data about the selected element
+    MyTreeItemData* m_TreeItemData;
 
 	CWindowPosition m_WindowPosition;
 

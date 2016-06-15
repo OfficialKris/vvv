@@ -871,7 +871,7 @@ void CMainFrame::CreateControls()
 
     wxTreeCtrl* itemTreeCtrl55 = new wxTreeCtrl( itemSplitterWindow54, ID_TREE_CONTROL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
 
-    CRightPaneList* itemListCtrl56 = new CRightPaneList( itemSplitterWindow54, ID_LIST_CONTROL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxNO_BORDER );
+    CRightPaneList* itemListCtrl56 = new CRightPaneList( itemSplitterWindow54, CRightPaneList::ID_LIST_CONTROL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxNO_BORDER );
     itemSplitterWindow54->SplitVertically(itemTreeCtrl55, itemListCtrl56, 50);
 
 ////@end CMainFrame content construction
@@ -893,7 +893,7 @@ void CMainFrame::CreateControls()
 	m_splitterWindow = sw;
 	m_treePhysicalCtl = (wxTreeCtrl*) FindWindow( ID_TREE_CONTROL );
 	m_treeVirtualCtl = (wxTreeCtrl*) FindWindow( ID_TREE_CONTROL_VIRTUAL );
-	m_listCtl = (CRightPaneList*) FindWindow( ID_LIST_CONTROL );
+    m_listCtl = (CRightPaneList*) FindWindow( CRightPaneList::ID_LIST_CONTROL );
 	m_listCtl->SetMainFrame( this );
 
 	// creates the search panel
@@ -978,38 +978,38 @@ wxBitmap CMainFrame::GetBitmapResource( const wxString& name )
     // Bitmap retrieval
 ////@begin CMainFrame bitmap retrieval
     wxUnusedVar(name);
-    if (name == _T("graphics/tlb_new.xpm"))
+    if (name == wxT("graphics/tlb_new.xpm"))
     {
         wxBitmap bitmap(tlb_new_xpm);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_open.xpm"))
+    else if (name == wxT("graphics/tlb_open.xpm"))
     {
         wxBitmap bitmap(tlb_open_xpm);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_catalog.png"))
+    else if (name == wxT("graphics/tlb_catalog.png"))
     {
         wxMemoryInputStream memStream(tlb_catalog_png, sizeof(tlb_catalog_png));
         wxBitmap bitmap(wxImage(memStream, wxBITMAP_TYPE_ANY, -1), -1);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_up.xpm"))
+    else if (name == wxT("graphics/tlb_up.xpm"))
     {
         wxBitmap bitmap(tlb_up_xpm);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_physical.xpm"))
+    else if (name == wxT("graphics/tlb_physical.xpm"))
     {
         wxBitmap bitmap(tlb_physical_xpm);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_virtual.xpm"))
+    else if (name == wxT("graphics/tlb_virtual.xpm"))
     {
         wxBitmap bitmap(tlb_virtual_xpm);
         return bitmap;
     }
-    else if (name == _T("graphics/tlb_search.xpm"))
+    else if (name == wxT("graphics/tlb_search.xpm"))
     {
         wxBitmap bitmap(tlb_search_xpm);
         return bitmap;
@@ -1043,7 +1043,7 @@ wxIcon CMainFrame::GetIconResource( const wxString& name )
 
 void CMainFrame::OnCatalogVolumeClick( wxCommandEvent& WXUNUSED(event) )
 {
-    CDialogCatalogVolume dialog(this, ID_DIALOG_CATALOG_VOLUME, _("Catalog volume"));
+    CDialogCatalogVolume dialog( this );
 	dialog.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
     dialog.ShowModal();
 	LoadTreeControl();
@@ -1848,7 +1848,7 @@ void CMainFrame::OnAddVirtualFolderClick( wxCommandEvent& WXUNUSED(event) )
 {
 	bool listViewHadFocus = m_ListViewHasFocus;	// we store the value because it changes when opening the dialog
 
-	CDialogChooseVirtualFolder cvf(this, ID_DIALOG_CHOOSE_VIRTUAL_FOLDER, _("Choose virtual folder"));
+	CDialogChooseVirtualFolder cvf( this );
 	cvf.SetCurrentPathArray( m_SelectedVirtualFolderForAdd );
 	if( cvf.ShowModal() != wxID_OK ) {
 		m_ListViewHasFocus = listViewHadFocus;
@@ -2385,7 +2385,7 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 			long item = -1;
 			item = lctl->GetNextItem( item, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
 			itemData = (MyListItemData *) lctl->GetItemData( item );
-			descriptionOnly = itemData->IsFolder();
+			descriptionOnly = itemData->IsFolder() && nSelectedObjects > 1;
 			if( itemData->IsFolder() && m_CurrentView == cvVirtual ) {
 				// at the moment the program does not support description for folders in the virtual view
 				return;
@@ -2399,7 +2399,7 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 				objectName = _("Multiple items") + wxString::Format( wxT(" (%d)"), nSelectedObjects );
 			}
 
-			CDialogObjectDescription dialog( this, ID_DIALOG_OBJECT_DESCRIPTION, _("Object description") );
+			CDialogObjectDescription dialog( this );
 			dialog.SetObjectName( objectName );
 			dialog.SetDescription( orgDescr );
 
@@ -2412,7 +2412,7 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 			wxASSERT( itemData != NULL );
 			orgDescr = itemData->GetObjectDescription();
 
-			CFileInformationDialog dialog( this, ID_CFILEINFORMATIONDIALOG, _("File description") );
+			CFileInformationDialog dialog( this );
 			dialog.SetDescription( orgDescr );
 			dialog.SetItemData( itemData );
 
@@ -2450,10 +2450,15 @@ void CMainFrame::OnEditObjectDescriptionClick( wxCommandEvent& WXUNUSED(event) )
 		if( itemData == NULL ) return;	// generic treectrl bug
 		wxString objectName = itemData->GetDesc();
 
-		CDialogObjectDescription dialog( this, ID_DIALOG_OBJECT_DESCRIPTION, _("Object description") );
-		dialog.SetObjectName( objectName );
+		//CDialogObjectDescription dialog( this, ID_DIALOG_OBJECT_DESCRIPTION, _("Object description") );
+		//dialog.SetObjectName( objectName );
+		//wxString orgDescr = itemData->GetObjectDescription();
+		//dialog.SetDescription( orgDescr );
+
+		CFileInformationDialog dialog( this );
 		wxString orgDescr = itemData->GetObjectDescription();
 		dialog.SetDescription( orgDescr );
+		dialog.SetItemData( itemData );
 
 		if( dialog.ShowModal() != wxID_OK ) return;
 
@@ -3193,7 +3198,7 @@ void CMainFrame::OnListControlKillFocus( wxFocusEvent& WXUNUSED(event) )
 
 void CMainFrame::OnPreferencesClick( wxCommandEvent& WXUNUSED(event) )
 {
-	CDialogSettings dlg( this, ID_DIALOG_SETTINGS, _("Settings") );
+	CDialogSettings dlg( this );
 	dlg.SetAmdColumnsToShow( m_amdColumnsToShow );
 	dlg.SetReopenCatalog( m_reopenLastUsedCatalog );
 	dlg.SetConnectServer( DBConnectionData.connectToServer );
@@ -3855,7 +3860,7 @@ void CMainFrame::OnUpdateVolumeClick( wxCommandEvent& WXUNUSED(event) )
 	wxString volumeName = itemData->GetDesc();
 	long volumeID = itemData->GetVolumeID();
 
-	CDialogUpdateVolume dialog( this, ID_DIALOG_UPDATE_VOLUME, _("Update Volume") );
+	CDialogUpdateVolume dialog( this );
 	dialog.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
 	dialog.SetVolumeData( volumeName, volumeID );
     if( dialog.ShowModal() == wxID_OK )

@@ -187,3 +187,29 @@ void CPaths::FB_UpdateDescription( long PathID, const wxString& descr ) {
 	FB_ExecuteQueryNoReturn( sql );
 
 }
+
+wxLongLong CPaths::FB_GetFullSize( long PathID )
+{
+	bool inTransaction;
+    int64_t size;
+
+    CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
+	inTransaction = db->TransactionIsOpened();
+	if( !inTransaction ) {
+		db->TransactionStart();
+	}
+	Statement st = StatementFactory( db->GetIBPPDB(), db->TransactionGetReference() );
+
+	st->Prepare( "EXECUTE PROCEDURE SP_GET_PHYS_FOLDER_SIZE_RECURSE( ? )" );
+	st->Set( 1, (int32_t) PathID );
+	st->Execute();
+
+	st->Get( 1, size );
+
+	if( !inTransaction ) {
+		db->TransactionCommit();
+	}
+
+    return (wxLongLong) size;
+}
+

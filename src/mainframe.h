@@ -81,33 +81,6 @@ class CRightPaneList;
  */
 
 ////@begin control identifiers
-#define ID_MAIN_FRAME 10003
-#define ID_TOOLBAR1 10004
-#define ID_CATALOG_VOLUME 10005
-#define ID_UP_ONE_FOLDER 10006
-#define ID_VIEW_PHYSICAL 10011
-#define ID_VIEW_VIRTUAL 10012
-#define ID_VIEW_SEARCH 10013
-#define ID_FILE_EXPORT 10075
-#define ID_FILE_BACKUP 10077
-#define ID_FILE_RESTORE 10078
-#define ID_ADD_VIRTUAL_FOLDER 10015
-#define ID_EDIT_RENAME 10073
-#define ID_EDIT_DELETE 10074
-#define ID_EDIT_OBJECT_DESCRIPTION 10018
-#define ID_NEW_VIRTUAL_ROOT_FOLDER 10021
-#define ID_NEW_VIRTUAL_SUBFOLDER 10022
-#define ID_UPDATE_VOLUME 10090
-#define ID_VIEW_SHOW_IN_PHYSICAL 10086
-#define ID_VIEW_EXPAND 10089
-#define ID_VIEW_COLLAPSE 10091
-#define ID_VIEW_TOOLBAR 10042
-#define ID_VIEW_STATUS_BAR 10043
-#define ID_HELP_CONTENTS 10072
-#define ID_STATUSBAR1 10044
-#define ID_SPLITTERWINDOW1 10045
-#define ID_TREE_CONTROL 10046
-#define ID_LIST_CONTROL 10047
 #define SYMBOL_CMAINFRAME_STYLE wxDEFAULT_FRAME_STYLE|wxCAPTION
 #define SYMBOL_CMAINFRAME_TITLE _("VVV")
 #define SYMBOL_CMAINFRAME_IDNAME ID_MAIN_FRAME
@@ -347,6 +320,35 @@ public:
     wxToolBar* m_ToolbarCtrl;
     wxMenu* m_fileMenu;
     wxStatusBar* m_StatusBar;
+    /// Control identifiers
+    enum {
+        ID_MAIN_FRAME = 10006,
+        ID_TOOLBAR1 = 10011,
+        ID_CATALOG_VOLUME = 10012,
+        ID_UP_ONE_FOLDER = 10013,
+        ID_VIEW_PHYSICAL = 10014,
+        ID_VIEW_VIRTUAL = 10015,
+        ID_VIEW_SEARCH = 10018,
+        ID_FILE_EXPORT = 10022,
+        ID_FILE_BACKUP = 10025,
+        ID_FILE_RESTORE = 10029,
+        ID_ADD_VIRTUAL_FOLDER = 10036,
+        ID_EDIT_RENAME = 10038,
+        ID_EDIT_DELETE = 10039,
+        ID_EDIT_OBJECT_DESCRIPTION = 10040,
+        ID_NEW_VIRTUAL_ROOT_FOLDER = 10041,
+        ID_NEW_VIRTUAL_SUBFOLDER = 10042,
+        ID_UPDATE_VOLUME = 10044,
+        ID_VIEW_SHOW_IN_PHYSICAL = 10072,
+        ID_VIEW_EXPAND = 10074,
+        ID_VIEW_COLLAPSE = 10075,
+        ID_VIEW_TOOLBAR = 10078,
+        ID_VIEW_STATUS_BAR = 10084,
+        ID_HELP_CONTENTS = 10085,
+        ID_STATUSBAR1 = 10086,
+        ID_SPLITTERWINDOW1 = 10089,
+        ID_TREE_CONTROL = 10090
+    };
 ////@end CMainFrame member variables
 
 	// search panel member variables
@@ -669,6 +671,10 @@ public:
 ////@end CRightPaneList member function declarations
 
 ////@begin CRightPaneList member variables
+    /// Control identifiers
+    enum {
+        ID_LIST_CONTROL = 10091
+    };
 ////@end CRightPaneList member variables
 
 	// stores a reference to the main frame object, needed to call mainframe's member functions

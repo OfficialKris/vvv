@@ -131,6 +131,7 @@ void CFileInformationDialog::Init()
 ////@end CFileInformationDialog member initialisation
 
 	m_ItemData = NULL;
+    m_TreeItemData = NULL;
 }
 
 
@@ -146,7 +147,7 @@ void CFileInformationDialog::CreateControls()
     wxBoxSizer* itemBoxSizer2 = new wxBoxSizer(wxVERTICAL);
     itemDialog1->SetSizer(itemBoxSizer2);
 
-    m_ListCtrl = new wxListCtrl( itemDialog1, ID_LISTCTRL1, wxDefaultPosition, wxSize(400, 200), wxLC_REPORT|wxSUNKEN_BORDER );
+    m_ListCtrl = new wxListCtrl( itemDialog1, wxID_ANY, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxSUNKEN_BORDER );
     itemBoxSizer2->Add(m_ListCtrl, 3, wxGROW|wxALL, 5);
 
     wxStaticText* itemStaticText4 = new wxStaticText( itemDialog1, wxID_STATIC, _("Description:"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -278,7 +279,9 @@ void CFileInformationDialog::ResizeLCColumns() {
 	int x, y;
 	int firstColumnWidth = 120;
 
-	m_ListCtrl->GetClientSize( &x, &y );
+    if( m_ListCtrl == NULL ) return;
+
+    m_ListCtrl->GetClientSize( &x, &y );
 	m_ListCtrl->SetColumnWidth( 0, firstColumnWidth );
 	m_ListCtrl->SetColumnWidth( 1, x - firstColumnWidth - 2 );
 }
@@ -322,7 +325,8 @@ void CFileInformationDialog::ShowFileData()
 	}
 
 	AddLCRow( _("File date"), m_ItemData->GetDateTime().FormatDate() + wxT(" ") + m_ItemData->GetDateTime().FormatTime() );
-	AddLCRow( _("File size"), CUtils::HumanReadableFileSize(m_ItemData->GetSize()) + wxT(" (") + m_ItemData->GetSize().ToString() + wxT(" ") + _("bytes") + wxT(")") );
+    wxLongLong size = m_ItemData->GetSize();
+    AddLCRow( _("File size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
 	AddLCRow( _("File name"), m_ItemData->GetName() );
 
 	AddLCRow( wxEmptyString, wxEmptyString );
@@ -338,6 +342,71 @@ void CFileInformationDialog::ShowFileData()
 	AddLCRow( _("Physical path"), CPaths::GetFullPath(id) );
 }
 
+void CFileInformationDialog::ShowFolderData()
+{
+	m_ListCtrl->DeleteAllItems();
+
+    if( m_ItemData != NULL ) {
+        // we are showing data for a folder in the list control
+    	// each row is inserted at the top, so we add them in reverse order
+	    AddLCRow( _("Folder date"), m_ItemData->GetDateTime().FormatDate() + wxT(" ") + m_ItemData->GetDateTime().FormatTime() );
+        wxLongLong size = CPaths::GetFullSize( m_ItemData->GetPathFileID() );
+        AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+	    AddLCRow( _("Folder name"), m_ItemData->GetName() );
+
+	    AddLCRow( wxEmptyString, wxEmptyString );
+
+	    long id;
+	    std::vector<long> idList = CVirtualFiles::ListVirtualPathIDs( m_ItemData->GetPhysicalFileID() );
+	    for( size_t k = 0; k < idList.size(); k++ ) {
+		    id = idList[k];;
+		    AddLCRow( _("Virtual path"), CVirtualPaths::GetFullPath(id) );
+	    }
+
+	    id = CFiles::GetPathID( m_ItemData->GetPhysicalFileID() );
+	    AddLCRow( _("Physical path"), CPaths::GetFullPath(id) );
+    }
+    else {
+        // we are showing data for a folder in the tree control
+        wxDateTime dateTime = wxInvalidDateTime;
+        wxLongLong size;
+        wxString name;
+        
+        if( m_TreeItemData->IsVolume() ) {
+        }
+        else {
+            // get data for this folder from the corresponding FILES row
+            wxString sql = "SELECT * FROM FILES WHERE PATH_FILE_ID = ";
+            sql << m_TreeItemData->GetPathID();
+            CFiles file;
+            file.DBStartMultiRowQuery( sql, true );
+            dateTime = file.DateTime;
+            size = CPaths::GetFullSize( file.PathFileID );
+            name = file.FileName;
+
+
+	        AddLCRow( _("Folder date"), file.DateTime.FormatDate() + wxT(" ") + file.DateTime.FormatTime() );
+            wxLongLong size = CPaths::GetFullSize( file.PathFileID );
+            AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+	        AddLCRow( _("Folder name"), file.FileName );
+
+	        AddLCRow( wxEmptyString, wxEmptyString );
+
+	        long id;
+	        std::vector<long> idList = CVirtualFiles::ListVirtualPathIDs( file.FileID );
+	        for( size_t k = 0; k < idList.size(); k++ ) {
+		        id = idList[k];;
+		        AddLCRow( _("Virtual path"), CVirtualPaths::GetFullPath(id) );
+	        }
+
+	        id = m_TreeItemData->GetPathID();
+	        AddLCRow( _("Physical path"), CPaths::GetFullPath(id) );
+        }
+    }
+
+
+
+}
 
 
 /*!
@@ -346,8 +415,22 @@ void CFileInformationDialog::ShowFileData()
 
 void CFileInformationDialog::OnInitDialog( wxInitDialogEvent& event )
 {
-	CreateLCHeaders();
-	ShowFileData();
+    CreateLCHeaders();
+    bool isFolder;
+    if( m_ItemData == NULL ) {
+        isFolder = true;
+    }
+    else {
+        isFolder = m_ItemData->IsFolder();
+    }
+    if( isFolder ) {
+        SetTitle( _("Folder information") );
+        ShowFolderData();
+    }
+    else {
+        SetTitle( _("File information") );
+    	ShowFileData();
+    }
 
 	ResizeLCColumns();
 

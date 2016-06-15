@@ -64,3 +64,15 @@ void CPaths::UpdateDescription( long PathID, const wxString& descr ) {
 	}
 }
 
+wxLongLong CPaths::GetFullSize( long PathID ) {
+	wxLongLong retVal = 0;
+
+	switch( DatabaseType ) {
+		case dbtFirebird:
+			retVal = FB_GetFullSize( PathID );
+			break;
+	}
+
+	return retVal;
+}
+

@@ -53,6 +53,9 @@ public:
 	// updates the decription
 	static void UpdateDescription( long PathID, const wxString& descr );
 
+    // compute the size of a path and its subfolders
+    static wxLongLong GetFullSize( long PathID );
+
 
 protected:
 
@@ -64,6 +67,7 @@ protected:
 
 	static wxString FB_GetFullPath( long PathID );
 	static void FB_UpdateDescription( long PathID, const wxString& descr );
+    static wxLongLong FB_GetFullSize( long PathID );
 
 };
 
