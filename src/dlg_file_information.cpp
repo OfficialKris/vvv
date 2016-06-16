@@ -369,10 +369,13 @@ void CFileInformationDialog::ShowFolderData()
     else {
         // we are showing data for a folder in the tree control
         wxDateTime dateTime = wxInvalidDateTime;
-        wxLongLong size;
-        wxString name;
         
         if( m_TreeItemData->IsVolume() ) {
+            wxLongLong size = CPaths::GetFullSize( m_TreeItemData->GetPathID() );
+            AddLCRow( _("Volume size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+	        AddLCRow( _("Volume name"), m_TreeItemData->GetDesc() );
+
+            // there is no way to get a list of the virtual paths that contain this volume
         }
         else {
             // get data for this folder from the corresponding FILES row
@@ -381,9 +384,6 @@ void CFileInformationDialog::ShowFolderData()
             CFiles file;
             file.DBStartMultiRowQuery( sql, true );
             dateTime = file.DateTime;
-            size = CPaths::GetFullSize( file.PathFileID );
-            name = file.FileName;
-
 
 	        AddLCRow( _("Folder date"), file.DateTime.FormatDate() + wxT(" ") + file.DateTime.FormatTime() );
             wxLongLong size = CPaths::GetFullSize( file.PathFileID );
