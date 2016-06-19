@@ -63,6 +63,7 @@
 #include "wx/textfile.h"
 #include "wx/textdlg.h"
 #include "wx/busyinfo.h"
+#include "wx/artprov.h"
 #include "vvv.h"
 #include "mainframe.h"
 #include "data_interface/data_error.h"
@@ -340,7 +341,35 @@ int wxCALLBACK ListControlCompareFunction( long item1, long item2, long sortData
 	return retVal;
 }
 
+// return an icon to be used with the tree and list pane
+// looks for an icon returned from the art provider, if not found uses a stock one
+static wxIcon GetIconForPane( const char *xpm[], const wxArtID &id )
+{
+    wxIcon r;
+    wxIcon icoProv = wxArtProvider::GetIcon( id, wxART_OTHER, wxSize(16, 16) );
+    if( icoProv.IsOk() ) {
+    	r = icoProv;
+    }
+    else {
+	    wxIcon ico( xpm );
+	    r = ico;
+    }
+    return r;
+}
 
+static wxBitmap GetBitmapForToolbar( const char *xpm[], const wxArtID &id )
+{
+    wxBitmap r;
+    wxBitmap bmpProv = wxArtProvider::GetBitmap( id, wxART_TOOLBAR, wxSize(16, 16) );
+    if( bmpProv.IsOk() ) {
+        r = bmpProv;
+    }
+    else {
+        wxBitmap bitmap( xpm );
+        r = bitmap;
+    }
+    return r;
+}
 
 /*!
  * CRightPaneList type definition
@@ -976,17 +1005,14 @@ bool CMainFrame::ShowToolTips()
 wxBitmap CMainFrame::GetBitmapResource( const wxString& name )
 {
     // Bitmap retrieval
-////@begin CMainFrame bitmap retrieval
     wxUnusedVar(name);
     if (name == wxT("graphics/tlb_new.xpm"))
     {
-        wxBitmap bitmap(tlb_new_xpm);
-        return bitmap;
+        return GetBitmapForToolbar( tlb_new_xpm, wxART_NEW );
     }
     else if (name == wxT("graphics/tlb_open.xpm"))
     {
-        wxBitmap bitmap(tlb_open_xpm);
-        return bitmap;
+        return GetBitmapForToolbar( tlb_open_xpm, wxART_FILE_OPEN );
     }
     else if (name == wxT("graphics/tlb_catalog.png"))
     {
@@ -996,8 +1022,7 @@ wxBitmap CMainFrame::GetBitmapResource( const wxString& name )
     }
     else if (name == wxT("graphics/tlb_up.xpm"))
     {
-        wxBitmap bitmap(tlb_up_xpm);
-        return bitmap;
+        return GetBitmapForToolbar( tlb_up_xpm, wxART_GO_UP );
     }
     else if (name == wxT("graphics/tlb_physical.xpm"))
     {
@@ -1011,11 +1036,9 @@ wxBitmap CMainFrame::GetBitmapResource( const wxString& name )
     }
     else if (name == wxT("graphics/tlb_search.xpm"))
     {
-        wxBitmap bitmap(tlb_search_xpm);
-        return bitmap;
+        return GetBitmapForToolbar( tlb_search_xpm, wxART_FIND );
     }
     return wxNullBitmap;
-////@end CMainFrame bitmap retrieval
 }
 
 /*!
@@ -1057,10 +1080,9 @@ void CMainFrame::LoadTreeControl(void) {
 
 	wxTreeCtrl* tctl = GetTreePhysicalControl();
 	wxImageList* iml = new wxImageList( 16, 16 );
-	wxIcon ico(removable_xpm);
-	iml->Add(ico);
-	iml->Add(wxIcon(folder_closed_xpm));
-	iml->Add(wxIcon(folder_opened_xpm));
+    iml->Add( GetIconForPane(removable_xpm, wxART_REMOVABLE) );
+    iml->Add( GetIconForPane(folder_closed_xpm, wxART_FOLDER) );
+    iml->Add( GetIconForPane(folder_opened_xpm, wxART_FOLDER_OPEN) );
 	tctl->AssignImageList( iml );
 
 	m_IgnoreTreeCtrlEvents = true;
@@ -1141,9 +1163,9 @@ void CMainFrame::LoadVirtualTreeControl(void) {
 
 	wxTreeCtrl* tctl = GetTreeVirtualControl();
 	wxImageList* iml = new wxImageList( 16, 16 );
-	iml->Add(wxIcon(removable_xpm));
-	iml->Add(wxIcon(folder_closed_xpm));
-	iml->Add(wxIcon(folder_opened_xpm));
+    iml->Add( GetIconForPane(removable_xpm, wxART_REMOVABLE) );
+    iml->Add( GetIconForPane(folder_closed_xpm, wxART_FOLDER) );
+    iml->Add( GetIconForPane(folder_opened_xpm, wxART_FOLDER_OPEN) );
 	tctl->AssignImageList( iml );
 
 	tctl->DeleteAllItems();
@@ -1678,8 +1700,8 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 	
 	// assigns the image list
 	wxImageList* iml = new wxImageList( 16, 16 );
-	iml->Add(wxIcon(folder_closed_xpm));
-	iml->Add(wxIcon(deffile_xpm));
+    iml->Add( GetIconForPane(folder_closed_xpm, wxART_FOLDER) );
+    iml->Add( GetIconForPane(deffile_xpm, wxART_NORMAL_FILE) );
 	lctl->AssignImageList( iml, wxIMAGE_LIST_SMALL );
 
     MyTreeItemData *itemData = (MyTreeItemData *) tctl->GetItemData(itemID);
@@ -1767,8 +1789,8 @@ void CMainFrame::ShowVirtualFolderFiles( wxTreeItemId itemID ) {
 	
 	// assigns the image list
 	wxImageList* iml = new wxImageList( 16, 16 );
-	iml->Add(wxIcon(folder_closed_xpm));
-	iml->Add(wxIcon(deffile_xpm));
+    iml->Add( GetIconForPane(folder_closed_xpm, wxART_FOLDER) );
+    iml->Add( GetIconForPane(deffile_xpm, wxART_NORMAL_FILE) );
 	lctl->AssignImageList( iml, wxIMAGE_LIST_SMALL );
 
 	// retrieves info about the selected item
