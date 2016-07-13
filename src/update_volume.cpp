@@ -30,6 +30,10 @@
 // Licence:     
 /////////////////////////////////////////////////////////////////////////////
 
+#ifndef wxADJUST_MINSIZE
+#define wxADJUST_MINSIZE 0
+#endif
+
 #if defined(__GNUG__) && !defined(NO_GCC_PRAGMA)
 #pragma implementation "update_volume.h"
 #endif
