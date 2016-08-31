@@ -93,6 +93,7 @@ wxLanguage ChooseLanguage()
     {
         { _("(Use default language)"), wxLANGUAGE_DEFAULT },
 
+        { _("Bulgarian"), wxLANGUAGE_BULGARIAN },
         { _("Chinese"), wxLANGUAGE_CHINESE },
         { _("Croatian"), wxLANGUAGE_CROATIAN },
         { _("Czech"), wxLANGUAGE_CZECH },
