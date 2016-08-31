@@ -31,8 +31,8 @@
 class MyTreeItemData : public wxTreeItemData {
 public:
 	// constructor used for physical folders tree
-	MyTreeItemData( const wxString& desc, long VolumeID, long PathID, bool IsVolume, wxString ObjectDescription ) : 
-	                m_desc(desc), m_VolumeID(VolumeID), m_PathID(PathID), m_IsVolume(IsVolume), m_AlreadyOpened(false), m_ObjectDescription(ObjectDescription) {}
+	MyTreeItemData( const wxString& desc, long VolumeID, long PathID, bool IsVolume, wxString ObjectDescription, const wxString PhysicalPath = "" ) : 
+	                m_desc(desc), m_VolumeID(VolumeID), m_PathID(PathID), m_IsVolume(IsVolume), m_AlreadyOpened(false), m_ObjectDescription(ObjectDescription), m_PhysicalPath(PhysicalPath) {}
 	// constructor used for virtual folders tree
 	MyTreeItemData( const wxString& desc, long PathID, CNullableLong PhysicalPathID ) : 
 	                m_desc(desc), m_VolumeID(0), m_PathID(PathID), m_PhysPathID(PhysicalPathID), m_IsVolume(false), m_AlreadyOpened(false) {}
@@ -46,6 +46,8 @@ public:
 	CNullableLong& GetPhysPathID(void) { return m_PhysPathID; }
 	const wxString& GetObjectDescription() const { return m_ObjectDescription; }
 	void SetObjectDescription( const wxString& ObjDescr ) { m_ObjectDescription = ObjDescr; }
+    const wxString &GetPhysicalPath() const { return m_PhysicalPath; }
+    void SetPhysicalPath( const wxString &path ) { m_PhysicalPath = path; }
 private:
 	wxString m_desc;
 	long m_VolumeID, m_PathID;	// m_VolumeID is not used for the virtual folders tree
@@ -53,6 +55,7 @@ private:
 	bool m_IsVolume;	// true if this node is a volume and not a folder (only for physical view)
 	bool m_AlreadyOpened;	// true if this node has already been opened
 	wxString m_ObjectDescription;	// object description
+    wxString m_PhysicalPath;        // only used for volumes, it is the physical path of the volume in the file system
 };
 
 #endif

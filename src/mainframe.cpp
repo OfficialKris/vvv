@@ -1117,7 +1117,7 @@ void CMainFrame::LoadVolumeInTreeControl( CVolumes vol, wxTreeCtrl* tctl, wxTree
 
 	// appends the volume item
 	wxTreeItemId volumeID = tctl->AppendItem( rootID, CreateVolumeLabel(vol.VolumeName, vol.VolumeDescription), 0, 0, 
-							new MyTreeItemData(vol.VolumeName, vol.VolumeID, rootPathID, true, vol.VolumeDescription) );
+							new MyTreeItemData(vol.VolumeName, vol.VolumeID, rootPathID, true, vol.VolumeDescription, vol.PhysicalPath) );
 
 	// appends the first level of subfolders
 
@@ -3884,7 +3884,7 @@ void CMainFrame::OnUpdateVolumeClick( wxCommandEvent& WXUNUSED(event) )
 
 	CDialogUpdateVolume dialog( this );
 	dialog.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
-	dialog.SetVolumeData( volumeName, volumeID );
+	dialog.SetVolumeData( volumeName, volumeID, itemData->GetPhysicalPath() );
     if( dialog.ShowModal() == wxID_OK )
 		LoadTreeControl();
 		DeleteAllListControlItems();

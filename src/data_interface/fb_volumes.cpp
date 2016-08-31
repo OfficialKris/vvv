@@ -30,14 +30,22 @@ using namespace IBPP;
 // add this record to the database
 void CVolumes::FB_DbInsert(void)
 {
-	wxString sql;
+	wxString sql, sqlColumns, sqlValues;
 
 	if( VolumeID.IsNull() )
 		VolumeID = FB_GenNewValue( wxT("GEN_VOLUMES_ID") );
-	if( VolumeDescription.empty() )
-		sql = wxT("INSERT INTO VOLUMES (VOLUME_ID, VOLUME_NAME) VALUES (") +  CUtils::long2string(VolumeID) + wxT(", '") + ExpandSingleQuotes(VolumeName) + wxT("')");
-	else
-		sql = wxT("INSERT INTO VOLUMES (VOLUME_ID, VOLUME_NAME, VOLUME_DESCRIPTION) VALUES (") +  CUtils::long2string(VolumeID) + wxT(", '") + ExpandSingleQuotes(VolumeName) + wxT("', '") + ExpandSingleQuotes(VolumeDescription) + wxT("')");
+	
+    sqlColumns = "VOLUME_ID, VOLUME_NAME";
+    sqlValues = CUtils::long2string(VolumeID) + ", '" + ExpandSingleQuotes(VolumeName) + "'";
+    if( !VolumeDescription.empty() ) {
+        sqlColumns += ", VOLUME_DESCRIPTION";
+        sqlValues += ", '" + ExpandSingleQuotes(VolumeDescription) + "'";
+    }
+    if( !PhysicalPath.empty() ) {
+        sqlColumns += ", PHYSICAL_PATH";
+        sqlValues += ", '" + ExpandSingleQuotes(PhysicalPath) + "'";
+    }
+    sql = "INSERT INTO VOLUMES (" + sqlColumns + ") VALUES (" + sqlValues + ")";
 
 	FB_ExecuteQueryNoReturn( sql );
 }
@@ -47,12 +55,22 @@ void CVolumes::FB_DbUpdate(void)
 {
 	wxString sql;
 
-//	sql = "UPDATE VOLUMES SET VOLUME_NAME = '" + ExpandSingleQuotes(VolumeName) + "' WHERE VOLUME_ID = " + long2string( VolumeID );
-	if( VolumeDescription.empty() )
-		sql = wxT("UPDATE VOLUMES SET VOLUME_NAME = '") + ExpandSingleQuotes(VolumeName) + wxT("', VOLUME_DESCRIPTION = NULL WHERE VOLUME_ID = ") + CUtils::long2string( VolumeID );
-	else
-		sql = wxT("UPDATE VOLUMES SET VOLUME_NAME = '") + ExpandSingleQuotes(VolumeName) + wxT("', VOLUME_DESCRIPTION = '") + ExpandSingleQuotes(VolumeDescription) + wxT("' WHERE VOLUME_ID = ") + CUtils::long2string( VolumeID );
-	
+    sql = "UPDATE VOLUMES SET VOLUME_NAME = '" + ExpandSingleQuotes(VolumeName) + "', VOLUME_DESCRIPTION = ";
+    if( !VolumeDescription.empty() ) {
+        sql += "'" + ExpandSingleQuotes(VolumeDescription) + "'";
+    }
+    else {
+        sql += "NULL";
+    }
+    sql += ", PHYSICAL_PATH = ";
+    if( !PhysicalPath.empty() ) {
+        sql += "'" + ExpandSingleQuotes(PhysicalPath) + "'";
+    }
+    else {
+        sql += "NULL";
+    }
+    sql += " WHERE VOLUME_ID = " + CUtils::long2string( VolumeID );
+
 	FB_ExecuteQueryNoReturn( sql );
 }
 
@@ -111,13 +129,13 @@ void CVolumes::FB_FetchRow(void) {
 		else {
 			FB_st->Get( "VOLUME_DESCRIPTION", stmp );
 			VolumeDescription = CUtils::DBstd2wx( stmp );
-			//// reads the blob
-			//CFirebirdDB* db = (CFirebirdDB*) CBaseDB::GetDatabase();
-			//Blob bl = BlobFactory( db->GetIBPPDB(), db->TransactionGetReference() );
-			//string s;
-			//FB_st->Get( "VOLUME_DESCRIPTION", bl );
-			//bl->Load( s );
-			//VolumeDescription = CUtils::std2wx( s );
+		}
+		if( FB_st->IsNull("PHYSICAL_PATH") ) {
+			PhysicalPath = wxEmptyString;
+		}
+		else {
+			FB_st->Get( "PHYSICAL_PATH", stmp );
+			PhysicalPath = CUtils::DBstd2wx( stmp );
 		}
 	}
 	else {

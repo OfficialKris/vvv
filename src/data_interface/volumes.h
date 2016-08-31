@@ -46,6 +46,7 @@ public:
 	wxString VolumeName;
 	CNullableLong VolumeID;
 	wxString VolumeDescription;
+    wxString PhysicalPath;
 
 	// methods -----------------------------------
 

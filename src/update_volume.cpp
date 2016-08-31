@@ -119,11 +119,6 @@ bool CDialogUpdateVolume::Create( wxWindow* parent, wxWindowID id, const wxStrin
     Centre();
 ////@end CDialogUpdateVolume creation
 
-	wxConfigBase *pConfig = wxConfigBase::Get();
-	pConfig->SetPath(wxT("/CatalogVolume"));
-	wxString catalogPath = pConfig->Read( wxT("CatalogPath"), wxT("") );
-	m_VolumePath->SetValue( catalogPath );
-
 	m_WindowPosition.SetWindow( this );
 	m_WindowPosition.RestorePosition();
 
@@ -309,9 +304,10 @@ void CDialogUpdateVolume::EnableDisableControls( bool enabled ) {
 	m_CloseButton->Enable( enabled );
 }
 
-void CDialogUpdateVolume::SetVolumeData(wxString volumeName, long volumeID) {
+void CDialogUpdateVolume::SetVolumeData(const wxString &volumeName, long volumeID, const wxString &volumePath) {
 	m_VolumeID = volumeID;
 	m_VolumeNameStatic->SetLabel( volumeName );
+    m_VolumePath->SetValue( volumePath );
 }
 
 

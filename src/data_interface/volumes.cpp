@@ -25,6 +25,7 @@
 CVolumes::CVolumes(void) {
 	VolumeName = wxEmptyString;
 	VolumeDescription = wxEmptyString;
+    PhysicalPath = wxEmptyString;
 }
 
 CVolumes::CVolumes( long volumeID ) {

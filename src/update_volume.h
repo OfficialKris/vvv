@@ -115,7 +115,7 @@ public:
 ////@end CDialogUpdateVolume member function declarations
 
 	// set volume data
-	void SetVolumeData(wxString volumeName, long volumeID);
+	void SetVolumeData(const wxString &volumeName, long volumeID, const wxString &volumePath);
 	
 	/// Should we show tooltips?
     static bool ShowToolTips();
