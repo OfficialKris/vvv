@@ -34,7 +34,8 @@ def RemoveIBPP( poFile ):
     os.remove( poFile )
     os.rename( tmpFile, poFile )
 
-RemoveIBPP( "po vuoto/vvv.po" )
+RemoveIBPP( "empty .po file/vvv.po" )
+RemoveIBPP( "vvv-bg.po" )
 RemoveIBPP( "vvv-cn.po" )
 RemoveIBPP( "vvv-cs.po" )
 RemoveIBPP( "vvv-de.po" )
