@@ -28,7 +28,7 @@ OutputBaseFilename=VVV-1.3-Setup
 Name: desktopicon; Description: {cm:CreateDesktopIcon}
 
 [Files]
-Source: "E:\Build folders\VVV\build\src\Release\{#ExeName}"; DestDir: "{app}"
+Source: "E:\Build folders\VVV\build\src\Release\{#ExeName}"; DestDir: "{app}"; Flags: replacesameversion
 Source: "msvcr71.dll"; DestDir: "{app}"; Flags: replacesameversion
 Source: "fbclient.dll"; DestDir: "{app}"; Flags: replacesameversion
 Source: "firebird.msg"; DestDir: "{app}"; Flags: replacesameversion
