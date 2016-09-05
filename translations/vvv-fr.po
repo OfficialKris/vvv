@@ -2,561 +2,548 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VVV 0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-05 09:34+0100\n"
+"POT-Creation-Date: 2016-09-05 11:30+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fulvio Senore <mailing@fsoft.it>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: E:\\C_Prg\\vvv (virtual volumes view)\\src\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
-"X-Poedit-SearchPath-0: E:\\C_Prg\\vvv (virtual volumes view)\\src\n"
+"X-Poedit-Basepath: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: Z:\\Sviluppo_C++\\VVV\\src\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:174
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:177
 msgid "Enter or select the volume to catalog"
 msgstr "Entrez ou sélectionnez le volume à cataloguer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:183
-#: view)\src/exportdata.cpp:223
-#: view)\src/opencatalog.cpp:174
-#: view)\src/restore.cpp:168
-#: view)\src/restore.cpp:180
-#: view)\src/update_volume.cpp:198
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:186
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:222
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:173
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:166
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:178
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:195
 msgid "..."
 msgstr "..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:186
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:189
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:382
 msgid "Volume name"
 msgstr "Nom du volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:196
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:199
 msgid "Get volume name"
 msgstr "Récupérer le nom du volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:204
-#: view)\src/dlg_file_information.cpp:170
-#: view)\src/exportdata.cpp:230
-#: view)\src/exportdata.cpp:248
-#: view)\src/mainframe.cpp:856
-#: view)\src/restore.cpp:187
-#: view)\src/restore.cpp:205
-#: view)\src/update_volume.cpp:204
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:207
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:168
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:229
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:247
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:858
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:185
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:203
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:201
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:141
 msgid "&Help"
 msgstr "&Aide"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:209
-#: view)\src/mainframe.cpp:869
-#: view)\src/mainframe.cpp:4054
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:212
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:871
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4063
 msgid "Catalog"
 msgstr "Cataloguer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:212
-#: view)\src/update_volume.cpp:212
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:215
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:209
 msgid "&Close"
 msgstr "&Fermer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:215
-#: view)\src/update_volume.cpp:215
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:218
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:212
 msgid "Current folder"
 msgstr "Répertoire courant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:218
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:221
 msgid "Previously cataloged volumes"
 msgstr "Volumes précédemment catalogués"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:288
-#: view)\src/update_volume.cpp:270
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:291
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:267
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:404
 msgid "The volume path is missing"
 msgstr "Le chemin du volume est manquant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:293
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:296
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:400
 msgid "The volume name is missing"
 msgstr "Le nom du volume est manquant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:310
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:313
 msgid "This volume name is already present in the database"
 msgstr "Ce nom de volume est déjà présent dans la base de données"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume.cpp:357
-#: view)\src/update_volume.cpp:297
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:360
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:294
 msgid "Select the volume to catalog"
 msgstr "Sélectionnez le volume à cataloguer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:328
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:337
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:335
 msgid "Number of added files: "
 msgstr "Nombre de fichiers ajoutés:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:329
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:338
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:336
 msgid "Number of updated files: "
 msgstr "Nombre de fichiers mis à jour:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:330
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:339
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:337
 msgid "Number of deleted files (not counting those in deleted folders): "
-msgstr "Nombre de fichiers supprimés (sans compter ceux qui sont dans les dossiers supprimés):"
+msgstr ""
+"Nombre de fichiers supprimés (sans compter ceux qui sont dans les dossiers "
+"supprimés):"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:331
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:340
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:338
 msgid "Number of deleted folders: "
 msgstr "Nombre de dossiers supprimés:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:332
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:341
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:339
 msgid "Number of unchanged files: "
 msgstr "Nombre de fichiers inchangés:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/catalog_volume_functions.cpp:333
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:342
+#: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:340
 msgid "Do you really want to update the volume?"
 msgstr "Voulez-vous vraiment mettre à jour ce volume?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:77
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:77
 #, c-format
 msgid "Unknown locale code '%s' in registry."
 msgstr "Paramètre régional inconnu '%s' en base de registre."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:94
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:94
 msgid "(Use default language)"
 msgstr "(Utiliser la langue par défaut)"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:96
-#: view)\src/mainframe.cpp:2334
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2355
+#, fuzzy
+msgid "Bulgarian"
+msgstr "Hongrois"
+
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:97
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2339
 msgid "Chinese"
 msgstr "Chinois"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:97
-#: view)\src/mainframe.cpp:2344
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:98
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2350
 msgid "Croatian"
 msgstr "Croate"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:98
-#: view)\src/mainframe.cpp:2340
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:99
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2345
 msgid "Czech"
 msgstr "Tchèque"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:99
-#: view)\src/mainframe.cpp:2349
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:100
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2356
 msgid "Dutch"
 msgstr "Néerlandais"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:100
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:101
 msgid "English"
 msgstr "Anglais"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:101
-#: view)\src/mainframe.cpp:2337
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:102
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2342
 msgid "French"
 msgstr "Français"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:102
-#: view)\src/mainframe.cpp:2338
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:103
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2343
 msgid "German"
 msgstr "Allemand"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:103
-#: view)\src/mainframe.cpp:2339
-#: view)\src/mainframe.cpp:2342
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:104
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2344
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2347
 msgid "Hungarian"
 msgstr "Hongrois"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:104
-#: view)\src/mainframe.cpp:2347
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:105
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2353
 msgid "Italian"
 msgstr "Italien"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:105
-#: view)\src/mainframe.cpp:2346
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:106
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2352
 msgid "Japanese"
 msgstr "Japonais"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:106
-#: view)\src/mainframe.cpp:2341
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:107
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2346
 msgid "Polish"
 msgstr "Polonais"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:107
-#: view)\src/mainframe.cpp:2335
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:108
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2340
 msgid "Portuguese"
 msgstr "Portugais"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:108
-#: view)\src/mainframe.cpp:2348
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:109
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2354
 msgid "Romanian"
 msgstr "Roumain"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:109
-#: view)\src/mainframe.cpp:2343
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:110
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2348
 msgid "Russian"
 msgstr "Russe"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:110
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:111
 msgid "Serbian (cyrillic)"
 msgstr "Serbe (cyrillique)"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:111
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:112
 msgid "Serbian (latin)"
 msgstr "Serbe (latin)"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:112
-#: view)\src/mainframe.cpp:2336
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:113
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2341
 msgid "Spanish"
 msgstr "Espagnol"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:113
-#: view)\src/mainframe.cpp:2343
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:114
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2349
 msgid "Ukrainian"
 msgstr "Ukrainien"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:122
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:123
 msgid "Select your preferred language"
 msgstr "Choisissez votre langue préférée"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:123
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:124
 msgid "Language selection"
 msgstr "Sélection de la langue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/chooselang.cpp:137
+#: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:138
 msgid "You must restart the program for this change to take effect."
-msgstr "Vous devez redémarrer le programme pour que cette modification prenne effet."
+msgstr ""
+"Vous devez redémarrer le programme pour que cette modification prenne effet."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/choose_virtual_folder.cpp:157
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:162
 #, fuzzy
-msgid "Please select the virtual folder that will receive the selected files and/or folders:"
-msgstr "Veuillez sélectionner le répertoire virtuel destiné aux fichiers et/ou répertoires sélectionnés :"
+msgid ""
+"Please select the virtual folder that will receive the selected files and/or "
+"folders:"
+msgstr ""
+"Veuillez sélectionner le répertoire virtuel destiné aux fichiers et/ou "
+"répertoires sélectionnés :"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/choose_virtual_folder.cpp:169
-#: view)\src/choose_virtual_folder.cpp:187
-#: view)\src/dlg_file_information.cpp:164
-#: view)\src/exportdata.cpp:235
-#: view)\src/exportdata.cpp:256
-#: view)\src/object_description.cpp:158
-#: view)\src/object_description.cpp:174
-#: view)\src/opencatalog.cpp:181
-#: view)\src/opencatalog.cpp:197
-#: view)\src/restore.cpp:192
-#: view)\src/restore.cpp:213
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:174
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:192
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:162
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:234
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:255
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:159
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:175
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:180
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:196
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:190
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:211
 msgid "&OK"
 msgstr "&OK"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/choose_virtual_folder.cpp:173
-#: view)\src/choose_virtual_folder.cpp:184
-#: view)\src/dlg_file_information.cpp:167
-#: view)\src/exportdata.cpp:239
-#: view)\src/exportdata.cpp:253
-#: view)\src/object_description.cpp:162
-#: view)\src/object_description.cpp:171
-#: view)\src/opencatalog.cpp:185
-#: view)\src/opencatalog.cpp:194
-#: view)\src/restore.cpp:196
-#: view)\src/restore.cpp:210
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:178
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:189
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:165
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:238
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:252
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:163
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:172
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:184
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:193
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:194
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:208
 msgid "&Cancel"
 msgstr "&Annuler"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/convert_db_unicode.cpp:520
+#: Z:\Sviluppo_C++\VVV\src/convert_db_unicode.cpp:520
 #, fuzzy
-msgid "Conversion is about to start: a message will tell you when it will be completed."
-msgstr "La conversion est sur le point de débuter: un message vous indiquera quand tout sera terminé."
+msgid ""
+"Conversion is about to start: a message will tell you when it will be "
+"completed."
+msgstr ""
+"La conversion est sur le point de débuter: un message vous indiquera quand "
+"tout sera terminé."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/convert_db_unicode.cpp:546
+#: Z:\Sviluppo_C++\VVV\src/convert_db_unicode.cpp:546
 msgid "Conversion completed"
 msgstr "Conversion terminée"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:155
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:153
 msgid "Description:"
 msgstr "Description:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:255
-#: view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1297
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:253
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1293
 msgid "Name"
 msgstr "Nom"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:259
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:257
 msgid "Value"
 msgstr "Valeur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:302
-#: view)\src/mainframe.cpp:1415
-#: view)\src/settings.cpp:249
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:308
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1415
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:249
 msgid "Channels"
 msgstr "Canaux"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:304
-#: view)\src/mainframe.cpp:1410
-#: view)\src/settings.cpp:245
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:310
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1410
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:245
 msgid "Sample rate"
 msgstr "Taux d'échantillonage"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:306
-#: view)\src/mainframe.cpp:1405
-#: view)\src/settings.cpp:241
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:312
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1405
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:241
 msgid "Bitrate"
 msgstr "Débit"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:307
-#: view)\src/mainframe.cpp:1400
-#: view)\src/settings.cpp:237
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:313
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1400
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:237
 msgid "Length"
 msgstr "Longueur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:308
-#: view)\src/mainframe.cpp:1395
-#: view)\src/settings.cpp:233
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:314
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1395
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:233
 msgid "Genre"
 msgstr "Genre"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:310
-#: view)\src/mainframe.cpp:1390
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:316
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1390
 msgid "Number"
 msgstr "Numéro"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:311
-#: view)\src/mainframe.cpp:1385
-#: view)\src/settings.cpp:225
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:317
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1385
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:225
 msgid "Comment"
 msgstr "Commentaire"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:313
-#: view)\src/mainframe.cpp:1380
-#: view)\src/settings.cpp:221
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:319
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1380
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:221
 msgid "Year"
 msgstr "Année"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:314
-#: view)\src/mainframe.cpp:1375
-#: view)\src/settings.cpp:217
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:320
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1375
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:217
 msgid "Title"
 msgstr "Titre"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:315
-#: view)\src/mainframe.cpp:1370
-#: view)\src/settings.cpp:213
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:321
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1370
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:213
 msgid "Album"
 msgstr "Album"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:316
-#: view)\src/mainframe.cpp:1365
-#: view)\src/settings.cpp:209
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:322
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1365
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:209
 msgid "Artist"
 msgstr "Artiste"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:321
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:327
 msgid "File date"
 msgstr "Date du fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:322
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:329
 msgid "File size"
 msgstr "taille du fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:322
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:329
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
 msgid "bytes"
 msgstr "octets"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:323
-#: view)\src/mainframe.cpp:937
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:330
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:939
 msgid "File name"
 msgstr "Nom du fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:331
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:338
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:363
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:405
 msgid "Virtual path"
 msgstr "Chemin virtuel"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.cpp:335
-#: view)\src/mainframe.cpp:1315
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:342
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:367
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:409
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1311
 msgid "Physical path"
 msgstr "Chemin physique"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:191
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:352
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:394
+#, fuzzy
+msgid "Folder date"
+msgstr "Date du fichier"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
+#, fuzzy
+msgid "Folder size"
+msgstr "taille du fichier"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:355
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:397
+#, fuzzy
+msgid "Folder name"
+msgstr "Nom du fichier"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
+#, fuzzy
+msgid "Last updated"
+msgstr "Dernière modification"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:378
+#, fuzzy
+msgid "Cataloged"
+msgstr "Cataloguer"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
+#, fuzzy
+msgid "Volume size"
+msgstr "&Volumes"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:433
+#, fuzzy
+msgid "Folder information"
+msgstr "Information sur le fichier"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:437
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.h:45
+msgid "File information"
+msgstr "Information sur le fichier"
+
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:190
 msgid "Use this window to export data to a CSV file"
 msgstr "Utiliser cette fenêtre pour exporter les données dans un fichier CSV"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:195
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:194
 msgid "Comma"
 msgstr "virgule"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:196
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:195
 msgid "TAB"
 msgstr "TAB"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:197
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:196
 msgid "Pipe"
 msgstr "Pipe"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:198
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:197
 msgid "Separator"
 msgstr "Séparateur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:202
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:201
 msgid "Include headers"
 msgstr "Inclure les en-têtes"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:207
-#: view)\src/mainframe.cpp:968
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:206
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:970
 msgid "All physical volumes"
 msgstr "Tous les volumes physiques"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:208
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:207
 msgid "Selected physical volume/folder"
 msgstr "Volume ou répertoire physique sélectionnés"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:209
-#: view)\src/mainframe.cpp:970
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:208
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:972
 msgid "Selected virtual folder"
 msgstr "Répertoire virtuel sélectionné"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:210
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:209
 msgid "Export"
 msgstr "Exporter"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:214
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:213
 msgid "File name:"
 msgstr "Nom du fichier:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:309
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:308
 msgid "CSV files (*.csv;*.txt)|*.csv;*.txt|All files (*.*)|*.*"
 msgstr "fichiers CSV (*.csv;*.txt)|*.csv;*.txt|Tous les fichiers (*.*)|*.*"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:336
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:335
 msgid "Please enter a file name"
 msgstr "Veuillez entrer un nom de fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:341
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:340
 msgid "The output file already exists: do you want to overwrite it?"
 msgstr "Le fichier à créer existe déjà: voulez vous l'écraser ?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:344
-#: view)\src/exportdata.cpp:358
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:343
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:357
 msgid "Unable to create the file."
 msgstr "Impossible de créer le fichier."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1302
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1298
 msgid "Size"
 msgstr "Taille"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1306
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1302
 msgid "Ext"
 msgstr "Extension"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:1310
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1306
 msgid "Last modified"
 msgstr "Dernière modification"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
 msgid "PhysicalPath"
 msgstr "CheminPhysique"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:524
-#: view)\src/exportdata.cpp:526
-#: view)\src/mainframe.cpp:958
-#: view)\src/mainframe.cpp:1318
-#: view)\src/mainframe.cpp:1323
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:523
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:960
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1314
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1319
 msgid "Description"
 msgstr "Description"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:526
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
 msgid "Volume"
 msgstr "Volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.cpp:526
+#: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:525
 msgid "Path"
 msgstr "Chemin"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:738
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:740
 msgid ""
 "This catalog file does not exist:\n"
 "\n"
@@ -565,347 +552,280 @@ msgstr ""
 "\n"
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:800
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:802
 msgid "&New..."
 msgstr "&Nouveau..."
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:801
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:803
 msgid "&Open..."
 msgstr "&Ouvrir..."
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:802
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:804
 msgid "&Export..."
 msgstr "&Exporter..."
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:804
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:806
 msgid "&Backup..."
 msgstr "&Sauvegarder..."
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:805
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:807
 msgid "&Restore..."
 msgstr "&Restaurer"
 
 # Part of the File menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:807
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:809
 msgid "E&xit"
 msgstr "Q&uitter"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:808
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:810
 msgid "&File"
 msgstr "&Fichier"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:810
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:812
 msgid "&Add To Virtual Folder..."
 msgstr "&Ajouter dans le Répertoire Virtuel"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:812
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:814
 msgid "&Rename...\tF2"
 msgstr "&Renommer...\tF2"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:813
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:815
 msgid "&Delete"
 msgstr "&Supprimer"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:815
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:817
 #, fuzzy
 msgid "&Object Information..."
 msgstr "&Description de l'Objet..."
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:817
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:819
 msgid "&New Virtual Root Folder..."
 msgstr "&Nouveau Répertoire Racine Virtuel..."
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:818
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:820
 msgid "New Virtual &Subfolder..."
 msgstr "Nouveau Dossier &Virtuel"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:820
-#: view)\src/mainframe.cpp:846
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:822
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:848
 msgid "&Options..."
 msgstr "&Options..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:822
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:824
 msgid "&Edit"
 msgstr "&Edition"
 
 # Part of the Volumes menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:824
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:826
 msgid "&Catalog Volume..."
 msgstr "&Cataloguer le volume..."
 
 # Part of the Volumes menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:825
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:827
 msgid "&Update Volume..."
 msgstr "&Mettre à jour le volume..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:826
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:828
 msgid "&Volumes"
 msgstr "&Volumes"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:828
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:830
 msgid "&Physical View"
 msgstr "&Vue Physique"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:830
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:832
 msgid "&Virtual View"
 msgstr "&Vue Virtuelle"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:831
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:833
 msgid "&Search View"
 msgstr "&Vue Recherche"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:833
-#: view)\src/mainframe.cpp:3167
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:835
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3171
 msgid "Show in physical view"
 msgstr "Montrer dans la vue physique"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:834
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:836
 msgid "Go &Up One Level"
 msgstr "&Remonter d'un niveau"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:835
-#: view)\src/mainframe.cpp:2578
-#: view)\src/mainframe.cpp:2615
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:837
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2587
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2621
 msgid "Expand"
 msgstr "Développer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:836
-#: view)\src/mainframe.cpp:2579
-#: view)\src/mainframe.cpp:2616
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:838
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2588
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2622
 msgid "Collapse"
 msgstr "Réduire"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:838
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:840
 msgid "&Toolbar"
 msgstr "&Barre d'outil"
 
 # Part of the View menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:840
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:842
 msgid "Status &Bar"
 msgstr "Barre &d'état"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:842
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:844
 msgid "Vie&w"
 msgstr "Vu&e"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:848
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:850
 msgid "&Tools"
 msgstr "&Outils"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:851
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:853
 msgid "Help &Contents"
 msgstr "Aide &Sommaire"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:855
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:857
 msgid "&About VVV..."
 msgstr "&A propos de VVV..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:863
-#: view)\src/mainframe.cpp:4048
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:865
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4057
 msgid "New"
 msgstr "Nouveau"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:863
-#: view)\src/mainframe.cpp:4048
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:865
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4057
 msgid "Create a new catalog"
 msgstr "Créer un nouveau catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:866
-#: view)\src/mainframe.cpp:4051
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:868
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4060
 msgid "Open"
 msgstr "Ouvrir"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:866
-#: view)\src/mainframe.cpp:4051
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:868
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4060
 msgid "Open an existing catalog"
 msgstr "Ouvrir un catalogue existant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:869
-#: view)\src/mainframe.cpp:4054
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:871
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4063
 msgid "Catalog a new volume"
 msgstr "Cataloguer un nouveau volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:872
-#: view)\src/mainframe.cpp:4057
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:874
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4066
 msgid "Up"
 msgstr "Remonter"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:872
-#: view)\src/mainframe.cpp:4057
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:874
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4066
 msgid "Move up one level"
 msgstr "Remonter d'un niveau"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:876
-#: view)\src/mainframe.cpp:4061
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:878
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4070
 msgid "Physical"
 msgstr "Physique"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:876
-#: view)\src/mainframe.cpp:4061
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:878
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4070
 msgid "Show the physical view"
 msgstr "Montrer la vue physique"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:879
-#: view)\src/mainframe.cpp:4064
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:881
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4073
 msgid "Virtual"
 msgstr "Virtuel"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:879
-#: view)\src/mainframe.cpp:4064
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:881
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4073
 msgid "Show the virtual view"
 msgstr "Montrer la vue virtuelle"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:882
-#: view)\src/mainframe.cpp:971
-#: view)\src/mainframe.cpp:977
-#: view)\src/mainframe.cpp:4067
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:884
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:973
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:979
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4076
 msgid "Search"
 msgstr "Rechercher"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:882
-#: view)\src/mainframe.cpp:4067
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:884
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4076
 msgid "Show the search view"
 msgstr "Montrer la vue de recherche"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:934
-#: view)\src/mainframe.cpp:955
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:936
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:957
 msgid "Is equal to:"
 msgstr "Est égal à:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:935
-#: view)\src/mainframe.cpp:956
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:937
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:958
 msgid "Starts with:"
 msgstr "Débute par:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:936
-#: view)\src/mainframe.cpp:957
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:938
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:959
 msgid "Contains:"
 msgstr "Contient:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:946
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:948
 msgid "Extension:"
 msgstr "Extension:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:969
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:971
 msgid "Selected physical folder"
 msgstr "Répertoire physique sélectionné"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1073
-msgid "Catalog volume"
-msgstr "Cataloguer le volume"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1444
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1444
 msgid "Open catalog"
 msgstr "Ouvrir le catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1448
-#: view)\src/mainframe.cpp:3642
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1448
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3650
 msgid "VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*"
 msgstr "Fichiers VVV (*.vvv)|*.vvv|Tous les fichiers (*.*)|*.*"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1868
-msgid "Choose virtual folder"
-msgstr "Choisir le répertoire virtuel"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1954
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1959
 msgid "New virtual root folder"
 msgstr "Nouveau répertoire virtuel racine"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:1982
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1987
 msgid "New virtual subfolder"
 msgstr "Nouveau sous-répertoire virtuel"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2000
-#: view)\src/mainframe.cpp:3400
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2005
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3408
 msgid "Enter the new folder name"
 msgstr "Entrez le nouveau nom de répertoire"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2015
-#: view)\src/mainframe.cpp:3411
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2020
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3419
 msgid "The new folder name is already present in the database"
 msgstr "Le nouveau nom de répertoire est déjà présent dans la base de données"
 
 # When this message appears?
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2068
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2073
 #, fuzzy
 msgid "This catalog file does not exist any more"
 msgstr "Ce fichier catalogue n'existe plus"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2098
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2103
 msgid ""
 "Catalog not found:\n"
 "\n"
@@ -913,17 +833,16 @@ msgstr ""
 "Catalogue non trouvé:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2102
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2107
 msgid ""
 "Incorrect username or password for the following database:\n"
 "\n"
 msgstr ""
-"nom d'utilisateur ou mot de passe incorrect pour la base de donnée suivante:\n"
+"nom d'utilisateur ou mot de passe incorrect pour la base de donnée "
+"suivante:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2107
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2112
 msgid ""
 "Unable to connect to the following server:\n"
 "\n"
@@ -931,77 +850,85 @@ msgstr ""
 "Impossible de se connecter au serveur suivant:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2109
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2114
 msgid ""
 "Unable to open the catalog.\n"
-"Please note that you are not connected to a database server so you cannot open a catalog located on another computer in the network.\n"
-"If you want to open a catalog on another computer you must connect to the database server (Tools/Options menu)."
+"Please note that you are not connected to a database server so you cannot "
+"open a catalog located on another computer in the network.\n"
+"If you want to open a catalog on another computer you must connect to the "
+"database server (Tools/Options menu)."
 msgstr ""
 "Impossible d'ouvrir le catalogue.\n"
-"Veuillez noter que vous n'êtes pas connecté a un serveur de base de données et donc que vous ne pouvez pas ouvrir de catalogue situé sur un autre ordniateur sur le réseau.\n"
-"Si vous voulez ouvrir un catalogue sur un autre ordinateur vous devez vous connecter a un server de base de données (Menu Outils/Options)."
+"Veuillez noter que vous n'êtes pas connecté a un serveur de base de données "
+"et donc que vous ne pouvez pas ouvrir de catalogue situé sur un autre "
+"ordniateur sur le réseau.\n"
+"Si vous voulez ouvrir un catalogue sur un autre ordinateur vous devez vous "
+"connecter a un server de base de données (Menu Outils/Options)."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2131
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2136
 msgid ""
-"This catalog has been created with a previous version of the program and it needs to be upgraded, but the file containing the upgrades list is missing.\n"
+"This catalog has been created with a previous version of the program and it "
+"needs to be upgraded, but the file containing the upgrades list is missing.\n"
 "\n"
 "You can try reinstalling the program to solve this problem."
 msgstr ""
-"Ce catalogue a été créé avec une version précédente de ce programme et il doit être mis à jour, mais le fichier contenant les mises à jour est manquant.\n"
+"Ce catalogue a été créé avec une version précédente de ce programme et il "
+"doit être mis à jour, mais le fichier contenant les mises à jour est "
+"manquant.\n"
 "\n"
 "Vous pouvez essayer de réinstaller le programme pour résoudre ce problème."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2135
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2140
 msgid "Upgrading the catalog, please wait..."
 msgstr "Mise à jour du catalogue, veuillez patienter..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2147
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2152
 msgid ""
-"This catalog has been created with an older version of VVV so you need to convert it to a newer format.\n"
+"This catalog has been created with an older version of VVV so you need to "
+"convert it to a newer format.\n"
 "\n"
 msgstr ""
-"Ce catalogue a été créé avec une ancienne version de VVV vous devez alors le convertir dans un format plus récent.\n"
+"Ce catalogue a été créé avec une ancienne version de VVV vous devez alors le "
+"convertir dans un format plus récent.\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2148
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2153
 msgid ""
-"The conversion will create a new catalog with the same data as the older one, then you will use this new catalog with VVV. You will not use the older catalog any more.\n"
+"The conversion will create a new catalog with the same data as the older "
+"one, then you will use this new catalog with VVV. You will not use the older "
+"catalog any more.\n"
 "\n"
 msgstr ""
-"La conversion créera un nouveau catalogue avec les mêmes données que l'ancien, alors vous pourrez utiliser ce nouveau catalogue avec VVV. Vous n'utiliserez plus jamais l'ancien catalogue.\n"
+"La conversion créera un nouveau catalogue avec les mêmes données que "
+"l'ancien, alors vous pourrez utiliser ce nouveau catalogue avec VVV. Vous "
+"n'utiliserez plus jamais l'ancien catalogue.\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2149
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2154
 #, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
 msgstr "Souhaitez vous convertir le catalogue afin d'en créer un nouveau ?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2153
-#: view)\src/mainframe.cpp:2361
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2158
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2368
 msgid ""
 "Unable to create a new catalog.\n"
 "\n"
-"You are connecting to a database server on another computer. You must execute this program on the server to be able to create a new catalog."
+"You are connecting to a database server on another computer. You must "
+"execute this program on the server to be able to create a new catalog."
 msgstr ""
 "Impossible de créer un nouveau catalogue.\n"
 "\n"
-"Vous êtes connectés à un serveur de base de donées sur un autre ordinateur. Vous devez exécuter ce programme sur le serveur afin de pouvoir créer un nouveau catalogue."
+"Vous êtes connectés à un serveur de base de donées sur un autre ordinateur. "
+"Vous devez exécuter ce programme sur le serveur afin de pouvoir créer un "
+"nouveau catalogue."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2157
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2162
 msgid "Convert to a new catalog"
 msgstr "Convertir en un nouveau catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2165
-#: view)\src/mainframe.cpp:2373
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2170
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2380
 msgid ""
 "Unable to find the database backup to restore.\n"
 "\n"
@@ -1011,172 +938,145 @@ msgstr ""
 "\n"
 "Vous pouvez essayer de réinstaller le programme pour résoudre ce problème."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2328
-msgid "VVV (Virtual Volumes View): a program to catalog removable devices like CDs and DVDs"
-msgstr "VVV (Vue de Volumes Virtuels): un programme pour cataloguer les unités amovibles comme les CDs et les DVDs"
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2333
+msgid ""
+"VVV (Virtual Volumes View): a program to catalog removable devices like CDs "
+"and DVDs"
+msgstr ""
+"VVV (Vue de Volumes Virtuels): un programme pour cataloguer les unités "
+"amovibles comme les CDs et les DVDs"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2329
-msgid "Copyright (C) 2007-2010 The VVV Team"
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2334
+#, fuzzy
+msgid "Copyright (C) 2007-2016 The VVV Team"
 msgstr "Copyright (C) 2007-2008 L'équipe VVV"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2330
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2335
 msgid "Fulvio Senore: main developer"
 msgstr "Fulvio Senore: développeur principal"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2331
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2336
 msgid ""
 "\n"
-"Jan Albartus: worked at the portable version and designed the application's icon"
+"Jan Albartus: worked at the portable version and designed the application's "
+"icon"
 msgstr ""
 "\n"
-"Jan Albartus: a travaillé sur la version portable et a conçu l'icône de l'application"
+"Jan Albartus: a travaillé sur la version portable et a conçu l'icône de "
+"l'application"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2332
-msgid "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
-msgstr "Ce programme utilise des icônes provenant des projets Gnome, Ubuntu et Crystal icons"
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2337
+msgid ""
+"This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
+msgstr ""
+"Ce programme utilise des icônes provenant des projets Gnome, Ubuntu et "
+"Crystal icons"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2333
-msgid "This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE"
-msgstr "Ceci est du logiciel libre, distribué sous la licence GNU GENERAL PUBLIC LICENSE"
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2338
+msgid ""
+"This is open source software, distributed under the GNU GENERAL PUBLIC "
+"LICENSE"
+msgstr ""
+"Ceci est du logiciel libre, distribué sous la licence GNU GENERAL PUBLIC "
+"LICENSE"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2345
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2351
 msgid "Serbian"
 msgstr "Serbe"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2365
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2372
 msgid "New catalog"
 msgstr "Nouveau catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2415
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2422
 msgid "Multiple items"
 msgstr "Objets multiples"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2418
-#: view)\src/mainframe.cpp:2469
-msgid "Object description"
-msgstr "Description de l'objet"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2431
-msgid "File description"
-msgstr "Description du fichier"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2576
-#: view)\src/mainframe.cpp:3173
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2585
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3177
 msgid "Add To Virtual Folder"
 msgstr "Ajouter au Répertoire Virtuel"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2581
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2590
 #, fuzzy
 msgid "Object information..."
 msgstr "&Description de l'Objet..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2584
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2593
 msgid "Rename..."
 msgstr "Renommer..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2585
-#: view)\src/mainframe.cpp:2620
-#: view)\src/mainframe.cpp:3169
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2594
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2626
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3173
 msgid "Delete"
 msgstr "Effacer"
 
 # Part of the Volumes menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2586
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2595
 msgid "Update Volume..."
 msgstr "&Mettre à jour le volume..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2610
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2616
 msgid "New Root Folder"
 msgstr "Nouveau Répertoire Racine"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2613
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2619
 msgid "New Subfolder"
 msgstr "Nouveau sous-répertoire"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2619
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2625
 msgid "Rename"
 msgstr "Renommer"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2760
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2766
 msgid "Please enter some search data"
 msgstr "Veuillez entrer quelque chose à chercher"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2779
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2785
 msgid "Incorrect file name search data"
 msgstr "Mavaise information de recherche sur les noms de fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2790
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2796
 msgid "Incorrect extension search data"
 msgstr "Mavaise information de recherche sur les extensions de fichier"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2802
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2808
 msgid "Incorrect description search data"
 msgstr "Mavaise information de recherche sur les descriptions"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:2907
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2913
 msgid "The search did not find anything"
 msgstr "La recherche n'a rien donné"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3056
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3063
 msgid "Objects: "
 msgstr "Objets:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3063
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3070
 msgid "Total size: "
 msgstr "Taille totale:"
 
 # Part of the Edit menu
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3176
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3180
 #, fuzzy
 msgid "Object Information..."
 msgstr "&Description de l'Objet..."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3220
-msgid "Settings"
-msgstr "Préférences"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3310
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3316
 msgid ""
-"This command will delete the selected virtual folder, but it will not change the folders in the physical view.\n"
+"This command will delete the selected virtual folder, but it will not change "
+"the folders in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual folder?"
 msgstr ""
-"Cette commande supprimera le dossier virtuel sélectionné, mais ne changera pas les répertoires dans la vue physique.\n"
+"Cette commande supprimera le dossier virtuel sélectionné, mais ne changera "
+"pas les répertoires dans la vue physique.\n"
 "\n"
 "Souhaitez vous vraiment supprimer le dossier virtuel sélectionné ?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3335
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3342
 msgid ""
 "This command will delete this volume:\n"
 "\n"
@@ -1184,8 +1084,7 @@ msgstr ""
 "Cette commande supprimera ce volume:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3335
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3342
 msgid ""
 "\n"
 "\n"
@@ -1199,46 +1098,45 @@ msgstr ""
 "\n"
 "Souhaitez vous vraiment effacer ce volume ?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3345
-msgid "Unable to delete this volume: at least one of its files is used in the virtual view"
-msgstr "Impossible de supprimer ce volume : au moins un de ses fichiers est utilisé dans la vue virtuelle"
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3352
+msgid ""
+"Unable to delete this volume: at least one of its files is used in the "
+"virtual view"
+msgstr ""
+"Impossible de supprimer ce volume : au moins un de ses fichiers est utilisé "
+"dans la vue virtuelle"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3366
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3374
 msgid "Enter the new volume name"
 msgstr "Enteer le nouveau nom de volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3366
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3374
 msgid "Rename volume"
 msgstr "Renommer le volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3379
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3387
 msgid "The new volume name is already present in the database"
 msgstr "Le nouveau nom de volume est déjà présent dans la base de donnée"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3400
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3408
 msgid "Rename virtual folder"
 msgstr "Renommerle répertoire virtuel"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3523
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3531
 #, fuzzy
 msgid ""
-"This command will delete the selected files from the virtual view, but it will not change the files in the physical view.\n"
+"This command will delete the selected files from the virtual view, but it "
+"will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Cette commande supprimera les fichiers virtuels sélectionnés, mais ne modifiera pas les fichiers dans la vue physique.\n"
+"Cette commande supprimera les fichiers virtuels sélectionnés, mais ne "
+"modifiera pas les fichiers dans la vue physique.\n"
 "\n"
 "Souhaitez vous vraiment supprimer les fichiers virtuels sélectionnés ?"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3665
-#: view)\src/mainframe.cpp:3742
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3673
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3750
 msgid ""
 "Unable to continue. You have choosen an existing file:\n"
 "\n"
@@ -1246,10 +1144,9 @@ msgstr ""
 "Impossible de continuer. Vous avez choisi un fichier existant:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3665
-#: view)\src/mainframe.cpp:3742
-#: view)\src/mainframe.cpp:3824
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3673
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3750
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3832
 msgid ""
 "\n"
 "\n"
@@ -1259,53 +1156,54 @@ msgstr ""
 "\n"
 "Vous devez entrer le nom d'un fichier inexistant."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3674
-#: view)\src/mainframe.cpp:3751
-#: view)\src/mainframe.cpp:3833
-msgid "Unable to continue: you have choosen a folder where you do not have the right to create a file."
-msgstr "Impossible de continuer : vous avez choisi un répertoire où vous n'avez pas le droit de créer de fichier."
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3682
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3759
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3841
+msgid ""
+"Unable to continue: you have choosen a folder where you do not have the "
+"right to create a file."
+msgstr ""
+"Impossible de continuer : vous avez choisi un répertoire où vous n'avez pas "
+"le droit de créer de fichier."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3719
-#: view)\src/opencatalog.cpp:255
-#: view)\src/restore.cpp:287
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3727
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:254
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:285
 msgid "VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*"
-msgstr "Fichiers de sauvegarde VVV  (*.vvvbk)|*.vvvbk|Tous les fichiers  (*.*)|*.*"
+msgstr ""
+"Fichiers de sauvegarde VVV  (*.vvvbk)|*.vvvbk|Tous les fichiers  (*.*)|*.*"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3720
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3728
 msgid "Backup catalog"
 msgstr "Sauvegarder le catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3765
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3773
 msgid "Backup completed"
 msgstr "Sauvegarde terminée"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3788
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3796
 msgid ""
 "Unable to restore.\n"
 "\n"
-"You are connecting to a database server on another computer. You must execute this command on the server to be able to restore a catalog."
+"You are connecting to a database server on another computer. You must "
+"execute this command on the server to be able to restore a catalog."
 msgstr ""
 "Impossible de restaurer.\n"
 "\n"
-"Vous êtes connectés à un serveur de base de données sur un autre ordinateur. Vous devez exécutez cette commande sur le serveur afin de pouvoir restaurer un catalogue."
+"Vous êtes connectés à un serveur de base de données sur un autre ordinateur. "
+"Vous devez exécutez cette commande sur le serveur afin de pouvoir restaurer "
+"un catalogue."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3802
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3810
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:396
 msgid "The catalog name is missing"
 msgstr "Le nom du catalogue est manquant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3806
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3814
 msgid "The backup name is missing"
 msgstr "Le nom de la sauvegarde est manquant"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3824
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3832
 msgid ""
 "Unable to continue. You have choosen an existing catalog:\n"
 "\n"
@@ -1313,129 +1211,111 @@ msgstr ""
 "Impossible de continuer. Vous avez choisi un catalogue existant:\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3861
+#: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3869
 msgid "Restore completed"
 msgstr "Restauration terminée"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.cpp:3878
-msgid "Update Volume"
-msgstr "Mettre à jour le Volume"
-
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/object_description.cpp:145
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:146
 msgid "Please enter the description for the following object:"
 msgstr "Veuillez entrer la description de l'objet suivant:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/object_description.cpp:148
+#: Z:\Sviluppo_C++\VVV\src/object_description.cpp:149
 msgid "OBJECT NAME"
 msgstr "NOM DE L'OBJET"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/opencatalog.cpp:163
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:162
 msgid ""
 "You are about to open a catalog located on the server.\n"
 "\n"
 "Enter the alias or the complete path to the catalog file.\n"
 "Remember that the path must be relative to the server, not to the client."
 msgstr ""
-"Vous allez ouvrir un catalogue situé sur le serveur.\\n"
-"Entrer l'alias ou le chemin complet du fichier catalogue.\n"
+"Vous allez ouvrir un catalogue situé sur le serveur.\\nEntrer l'alias ou le "
+"chemin complet du fichier catalogue.\n"
 "Attention le chemin est relatif au serveur, et non au client."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/opencatalog.cpp:257
-#: view)\src/restore.cpp:305
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:256
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:303
 msgid "VVV files (*.vvv)|*.vvv|All files (*.*)|*.*"
 msgstr "Fichiers VVV (*.vvv)|*.vvv|Tous les fichiers  (*.*)|*.*"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/opencatalog.cpp:277
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:276
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.h:63
 msgid "Open Catalog"
 msgstr "Ouvrir le catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/opencatalog.cpp:281
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:280
 msgid "New Catalog"
 msgstr "Nouveau catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/opencatalog.cpp:285
+#: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:284
 msgid "Backup"
 msgstr "Sauvegarde"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.cpp:154
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:152
 msgid ""
 "You are about to create a new catalog from a backup file.\n"
 "\n"
-"Enter the complete path to the backup file and to the catalog file that will be created.\n"
+"Enter the complete path to the backup file and to the catalog file that will "
+"be created.\n"
 "You cannot enter the name of an existing catalog."
 msgstr ""
 "Vous aller créer un nouveau catalogue à partir d'un fichier de sauvegarde.\n"
 "\n"
-"Entrer le chemin compler du fichier de sauvegarde et dy fichier catalogue qui sera créé.\n"
+"Entrer le chemin compler du fichier de sauvegarde et dy fichier catalogue "
+"qui sera créé.\n"
 "Vous ne pouvez entrer le nom d'un fichier catalogue existant."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.cpp:159
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:157
 msgid "Backup file:"
 msgstr "Fichier de sauvegarde:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.cpp:171
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:169
 msgid "New catalog:"
 msgstr "Nouveau catalogue:"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.cpp:286
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:284
 msgid "Select backup file"
 msgstr "Sélectionner le fichier de sauvegarde"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.cpp:304
+#: Z:\Sviluppo_C++\VVV\src/restore.cpp:302
 msgid "Catalog file"
 msgstr "Fichier catalogue"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:179
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:175
 msgid "Reopen the last used catalog at startup"
 msgstr "Réouvrir au démarrage le dernier catalogue utilisé "
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:185
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:181
 msgid "Beep for tasks longer than (seconds):"
 msgstr "Bip pour des tâches plus longue que (en secondes):"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:193
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:189
 msgid "Change language"
 msgstr "Choisir la langue de l'interface"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:196
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:192
 msgid "General"
 msgstr "Général"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:204
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:200
+#, fuzzy
+msgid "Catalog audio metadata"
+msgstr "Cataloguer le volume"
+
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:206
 msgid "Show the following data for audio files:"
 msgstr "Afficher les données des fichiers audio suivants :"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:229
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:229
 msgid "Track number"
 msgstr "Numéro de piste"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:255
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:255
 msgid "Audio files"
 msgstr "Fichiers audio"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:263
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:263
 msgid ""
 "Check the checkbox below if you want to access catalogs stored\n"
 "in a network server. Each computer in the network will be able to\n"
@@ -1444,87 +1324,76 @@ msgid ""
 "stored in this computer and you do not want to share them\n"
 "with other computers."
 msgstr ""
-"Cocher la case ci-dessous si vous souhaitez accéder à des catalogues stockés\n"
+"Cocher la case ci-dessous si vous souhaitez accéder à des catalogues "
+"stockés\n"
 "sur un serveur réseau. Chaque ordinateur sur le réseau pourra\n"
 "accéder aux mêmes catalogues sur le serveur.\n"
 "NE PAS cocher la case si vous souhaitez seulement accéder aux catalogues\n"
 "stockés sur cet ordinateur et que vous ne voulez pas les partager\n"
 "avec d'autres ordinateurs."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:268
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:268
 msgid "Connect to a network server"
 msgstr "Se connecter à un serveur réseau"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:275
-#: view)\src/settings.cpp:298
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:274
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:299
 msgid "Server"
 msgstr "Serveur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:281
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:280
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:287
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:286
 msgid "Password"
 msgstr "Mot de passe"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:295
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:296
 msgid "Test server connection"
 msgstr "Tester la connexion au serveur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:385
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:387
 msgid "You must enter a server name or address"
 msgstr "Vous devez entrer un nom de serveur ou une adresse"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:389
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:391
 msgid "You must enter a username"
 msgstr "Vous devez entrer un nom d'utilisateur"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:393
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:395
 msgid "You must enter a password"
 msgstr "Vous devez entrer un mot de passe"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:456
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:458
 msgid "You must enter the server name or address"
 msgstr "Vous devez entrer le nom du serveur ou son adresse"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:461
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:463
 msgid "Unable to connect to the server"
 msgstr "Impossible de se connecter au server"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/settings.cpp:463
+#: Z:\Sviluppo_C++\VVV\src/settings.cpp:465
 msgid "Server connection successful"
 msgstr "Connexion au serveur réussie"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:184
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:178
+msgid "You are about to update the following volume:"
+msgstr "Vous vous apprêtez à mettre à jour le volume suivant:"
+
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:181
 msgid "VOLUME NAME"
 msgstr "NOM DU VOLUME"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:189
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:186
 msgid "Enter or select the path to volume to update"
 msgstr "Entrez ou sélectionnez le volume à mettre à jour"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/update_volume.cpp:209
+#: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:206
 msgid "Update"
 msgstr "Mise à jour"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:300
-#: view)\src/vvv.cpp:356
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:300 Z:\Sviluppo_C++\VVV\src/vvv.cpp:356
 msgid ""
 "Unable to connect to the server\n"
 "\n"
@@ -1532,11 +1401,8 @@ msgstr ""
 "Impossible de se connecter au serveur\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:302
-#: view)\src/vvv.cpp:308
-#: view)\src/vvv.cpp:358
-#: view)\src/vvv.cpp:364
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:302 Z:\Sviluppo_C++\VVV\src/vvv.cpp:308
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:358 Z:\Sviluppo_C++\VVV\src/vvv.cpp:364
 msgid ""
 "An unexpected error has occurred. Here is a description of the error:\n"
 "\n"
@@ -1544,15 +1410,11 @@ msgstr ""
 "Une erreur inattendue est intervenue. En voici la description :\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:314
-#: view)\src/vvv.cpp:370
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:314 Z:\Sviluppo_C++\VVV\src/vvv.cpp:370
 msgid "An unexpected error has occurred. This application will be terminated"
 msgstr "Une erreur inattendue est intervenue. L'application va être fermée."
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:382
-#: view)\src/vvv.cpp:466
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:382 Z:\Sviluppo_C++\VVV\src/vvv.cpp:466
 msgid ""
 "An unexpected error has happened. Here is a description of the error:\n"
 "\n"
@@ -1560,54 +1422,65 @@ msgstr ""
 "Une erreur inattendue est intervenue. En voici la description :\n"
 "\n"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:408
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:408
 msgid "The volume path does not exists"
 msgstr "Le chemin du volume n'existe pas"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/vvv.cpp:449
+#: Z:\Sviluppo_C++\VVV\src/vvv.cpp:449
 msgid "Volume name not found"
 msgstr "Nom du volume introuvable"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/dlg_file_information.h:47
-msgid "File information"
-msgstr "Information sur le fichier"
+#: Z:\Sviluppo_C++\VVV\src/catalog_volume.h:72
+msgid "Catalog volume"
+msgstr "Cataloguer le volume"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/exportdata.h:71
+#: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.h:68
+msgid "Choose virtual folder"
+msgstr "Choisir le répertoire virtuel"
+
+#: Z:\Sviluppo_C++\VVV\src/exportdata.h:65
 msgid "Export data"
 msgstr "Exporter les données"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/mainframe.h:112
+#: Z:\Sviluppo_C++\VVV\src/mainframe.h:85
 msgid "VVV"
 msgstr "VVV"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/object_description.h:54
+#: Z:\Sviluppo_C++\VVV\src/object_description.h:51
 msgid "Object Description"
 msgstr "Description de l'Objet"
 
-#: E:\C_Prg\vvv
-#: (virtual volumes view)\src/restore.h:46
+#: Z:\Sviluppo_C++\VVV\src/restore.h:41
 msgid "Restore"
 msgstr "Restaurer"
 
+#: Z:\Sviluppo_C++\VVV\src/settings.h:56
+msgid "Settings"
+msgstr "Préférences"
+
+#: Z:\Sviluppo_C++\VVV\src/update_volume.h:62
+msgid "Update Volume"
+msgstr "Mettre à jour le Volume"
+
+#~ msgid "Object description"
+#~ msgstr "Description de l'objet"
+
+#~ msgid "File description"
+#~ msgstr "Description du fichier"
+
 #~ msgid "Edit Description..."
 #~ msgstr "Editer la description"
+
 #~ msgid "MP3"
 #~ msgstr "MP3"
-#~ msgid "You are about to update the following volume:"
-#~ msgstr "Vous vous apprêtez à mettre à jour le volume suivant:"
 
 # Please do not translate this sentence
 #~ msgid "Use VVV in English (restart required)"
 #~ msgstr "Use VVV in English (restart required)"
+
 #, fuzzy
 #~ msgid "Missing volume name"
 #~ msgstr "Récupérer le nom du volume"
+
 #~ msgid "Enter the new forder name"
 #~ msgstr "Entrer ke nouveau nom de répertoire"
-

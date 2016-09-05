@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VVV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-01 22:27+0100\n"
+"POT-Creation-Date: 2016-09-05 11:31+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fulvio Senore <mailing@fsoft.it>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgid "..."
 msgstr "..."
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:189
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:376
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:382
 msgid "Volume name"
 msgstr "Nome del volume"
 
@@ -371,8 +371,8 @@ msgstr "Dimensioni del file"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:329
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:390
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
 msgid "bytes"
 msgstr "bytes"
 
@@ -383,41 +383,49 @@ msgstr "Nome del file"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:338
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:363
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:399
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:405
 msgid "Virtual path"
 msgstr "Percorso virtuale"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:342
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:367
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:403
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:409
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1311
 msgid "Physical path"
 msgstr "Percorso fisico"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:352
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:388
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:394
 msgid "Folder date"
 msgstr "Data della cartella"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:390
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
 msgid "Folder size"
 msgstr "Dimensioni della cartella"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:355
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:391
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:397
 msgid "Folder name"
 msgstr "Nome della cartella"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
+msgid "Last updated"
+msgstr "Ultimo aggiornamento"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:378
+msgid "Cataloged"
+msgstr "Catalogato"
+
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
 msgid "Volume size"
 msgstr "Dimensione del volume"
 
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:427
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:433
 msgid "Folder information"
 msgstr "Informazioni sulla cartella"
 
-#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:431
+#: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:437
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.h:45
 msgid "File information"
 msgstr "Informazioni sul file"
