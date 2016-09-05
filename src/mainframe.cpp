@@ -1117,7 +1117,7 @@ void CMainFrame::LoadVolumeInTreeControl( CVolumes vol, wxTreeCtrl* tctl, wxTree
 
 	// appends the volume item
 	wxTreeItemId volumeID = tctl->AppendItem( rootID, CreateVolumeLabel(vol.VolumeName, vol.VolumeDescription), 0, 0, 
-							new MyTreeItemData(vol.VolumeName, vol.VolumeID, rootPathID, true, vol.VolumeDescription, vol.PhysicalPath) );
+							new MyTreeItemData(vol.VolumeName, vol.VolumeID, rootPathID, true, vol.VolumeDescription, vol.PhysicalPath, vol.CatalogDate, vol.LastUpdateDate) );
 
 	// appends the first level of subfolders
 

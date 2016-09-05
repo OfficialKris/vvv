@@ -26,6 +26,8 @@ CVolumes::CVolumes(void) {
 	VolumeName = wxEmptyString;
 	VolumeDescription = wxEmptyString;
     PhysicalPath = wxEmptyString;
+    CatalogDate = wxInvalidDateTime;
+    LastUpdateDate = wxInvalidDateTime;
 }
 
 CVolumes::CVolumes( long volumeID ) {

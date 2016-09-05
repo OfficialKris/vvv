@@ -371,6 +371,12 @@ void CFileInformationDialog::ShowFolderData()
         wxDateTime dateTime = wxInvalidDateTime;
         
         if( m_TreeItemData->IsVolume() ) {
+            if( m_TreeItemData->GetLastUpdateDate().IsValid() ) {
+                AddLCRow( _("Last updated"), m_TreeItemData->GetLastUpdateDate().FormatDate() + " " + m_TreeItemData->GetLastUpdateDate().FormatTime() );
+            }
+            if( m_TreeItemData->GetCatalogDate().IsValid() ) {
+                AddLCRow( _("Cataloged"), m_TreeItemData->GetCatalogDate().FormatDate() + " " + m_TreeItemData->GetCatalogDate().FormatTime() );
+            }
             wxLongLong size = CPaths::GetFullSize( m_TreeItemData->GetPathID() );
             AddLCRow( _("Volume size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
 	        AddLCRow( _("Volume name"), m_TreeItemData->GetDesc() );

@@ -47,6 +47,7 @@ public:
 	CNullableLong VolumeID;
 	wxString VolumeDescription;
     wxString PhysicalPath;
+    wxDateTime CatalogDate, LastUpdateDate;
 
 	// methods -----------------------------------
 

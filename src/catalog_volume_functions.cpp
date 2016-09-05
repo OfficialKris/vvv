@@ -59,6 +59,7 @@ void CCatalogVolumeFunctions::CatalogVolume( wxString volumePath, wxString volum
 	CVolumes vol;
 	vol.VolumeName = volumeName;
     vol.PhysicalPath = volumePath;
+    vol.CatalogDate = wxDateTime::Now();
 	try {
 		// this will throw a CDataErrorException::ecUnique exception if the volume name is already present
 		// to be catched by the caller
@@ -324,12 +325,11 @@ void CCatalogVolumeFunctions::UpdateVolume( wxString volumePath, long volumeID )
 	// update the database statistics, useful after a massive change
 	db->UpdateStatistics( CBaseDB::usAll );
 
-    // store the new physical path for this volume
+    // store the new physical path for this volume and the update date
     CVolumes vol( volumeID );
-    if( volumePath != vol.PhysicalPath ) {
-        vol.PhysicalPath = volumePath;
-        vol.DbUpdate();
-    }
+    vol.PhysicalPath = volumePath;
+    vol.LastUpdateDate = wxDateTime::Now();
+    vol.DbUpdate();
 
 	bool doCommit = true;
 	if( statText != NULL ) {

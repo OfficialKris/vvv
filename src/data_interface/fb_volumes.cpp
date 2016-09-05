@@ -45,6 +45,14 @@ void CVolumes::FB_DbInsert(void)
         sqlColumns += ", PHYSICAL_PATH";
         sqlValues += ", '" + ExpandSingleQuotes(PhysicalPath) + "'";
     }
+    if( CatalogDate.IsValid() ) {
+        sqlColumns += ", CATALOG_DATE";
+        sqlValues += ", " + CatalogDate.Format( wxT("'%Y-%m-%d %H:%M:%S'") );
+    }
+    if( LastUpdateDate.IsValid() ) {
+        sqlColumns += ", LAST_UPDATE_DATE";
+        sqlValues += ", " + LastUpdateDate.Format( wxT("'%Y-%m-%d %H:%M:%S'") );
+    }
     sql = "INSERT INTO VOLUMES (" + sqlColumns + ") VALUES (" + sqlValues + ")";
 
 	FB_ExecuteQueryNoReturn( sql );
@@ -69,6 +77,21 @@ void CVolumes::FB_DbUpdate(void)
     else {
         sql += "NULL";
     }
+    sql += ", CATALOG_DATE = ";
+    if( CatalogDate.IsValid() ) {
+        sql += CatalogDate.Format( wxT("'%Y-%m-%d %H:%M:%S'") );
+    }
+    else {
+        sql += "NULL";
+    }
+    sql += ", LAST_UPDATE_DATE = ";
+    if( LastUpdateDate.IsValid() ) {
+        sql += LastUpdateDate.Format( wxT("'%Y-%m-%d %H:%M:%S'") );
+    }
+    else {
+        sql += "NULL";
+    }
+
     sql += " WHERE VOLUME_ID = " + CUtils::long2string( VolumeID );
 
 	FB_ExecuteQueryNoReturn( sql );
@@ -111,6 +134,7 @@ void CVolumes::FB_DbDelete(void)
 void CVolumes::FB_FetchRow(void) {
 	int64_t tmp;
 	string stmp;
+	Timestamp ts;
 
 	if( FB_st->Fetch() ) {
 		// fetches a record
@@ -137,6 +161,20 @@ void CVolumes::FB_FetchRow(void) {
 			FB_st->Get( "PHYSICAL_PATH", stmp );
 			PhysicalPath = CUtils::DBstd2wx( stmp );
 		}
+		if( FB_st->IsNull("CATALOG_DATE") ) {
+            CatalogDate = wxInvalidDateTime;
+        }
+        else {
+		    FB_st->Get("CATALOG_DATE", ts);
+		    CatalogDate.Set( ts.Day(), (wxDateTime::Month) (wxDateTime::Jan + ts.Month() - 1), ts.Year(), ts.Hours(), ts.Minutes(), ts.Seconds() );
+        }
+		if( FB_st->IsNull("LAST_UPDATE_DATE") ) {
+            LastUpdateDate = wxInvalidDateTime;
+        }
+        else {
+		    FB_st->Get("LAST_UPDATE_DATE", ts);
+		    LastUpdateDate.Set( ts.Day(), (wxDateTime::Month) (wxDateTime::Jan + ts.Month() - 1), ts.Year(), ts.Hours(), ts.Minutes(), ts.Seconds() );
+        }
 	}
 	else {
 		// end of the rowset
