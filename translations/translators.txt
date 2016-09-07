@@ -31,7 +31,8 @@ hasan.osmanagic@zg.t-com.hr
 
 hu:
 Krisztian Mukli
-krisztian.mukli@gmail.com
+krisztian.mukli@gmail.com (does not exists any more)
+krisztianmukli@mukli.hu
 
 ja:
 Suguru SASAKI
@@ -43,7 +44,7 @@ gvmelle@gmail.com
 
 pl:
 Dariusz Liszewski
-d2m@op.pl
+d2m@op.pl (does not exists any more)
 //Grzegorz Skoczylas
 //gskoczylas@gmail.com
 
