@@ -129,9 +129,8 @@ msgstr "(alapértelmezett nyelv használata)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2355
-#, fuzzy
 msgid "Bulgarian"
-msgstr "magyar"
+msgstr "bolgár"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:97
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2339
@@ -275,7 +274,7 @@ msgid ""
 "Conversion is about to start: a message will tell you when it will be "
 "completed."
 msgstr ""
-"A konvertálás elindítására készülsz: egy üzenet fog tájékoztatni arról hogy "
+"A konvertálás elindítására készülsz: egy üzenet fog tájékoztatni arról, hogy "
 "befejeződött a folyamat."
 
 #: Z:\Sviluppo_C++\VVV\src/convert_db_unicode.cpp:546
@@ -397,41 +396,34 @@ msgstr "Fizikai elérési út"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:352
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:394
-#, fuzzy
 msgid "Folder date"
-msgstr "Fájldátum"
+msgstr "Mappa dátum"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
-#, fuzzy
 msgid "Folder size"
-msgstr "Fájlméret"
+msgstr "Mappa méret"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:355
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:397
-#, fuzzy
 msgid "Folder name"
-msgstr "Fájlnév"
+msgstr "Mappa név"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
-#, fuzzy
 msgid "Last updated"
 msgstr "Utolsó módosítás"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:378
-#, fuzzy
 msgid "Cataloged"
-msgstr "Katalogizálás"
+msgstr "Katalogizált"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
-#, fuzzy
 msgid "Volume size"
-msgstr "&Kötetek"
+msgstr "Kötet méret"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:433
-#, fuzzy
 msgid "Folder information"
-msgstr "Fájlinformációk"
+msgstr "Mappa információk"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:437
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.h:45
@@ -936,9 +928,8 @@ msgstr ""
 "program"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Copyright (C) 2007-2016 The VVV Team"
-msgstr "Copyright (C) 2007-2010 The VVV Team"
+msgstr "Copyright (C) 2007-2016 The VVV Team"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2335
 msgid "Fulvio Senore: main developer"
@@ -1282,9 +1273,8 @@ msgid "General"
 msgstr "Általános"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:200
-#, fuzzy
 msgid "Catalog audio metadata"
-msgstr "Kötet katalogizálása"
+msgstr "Audió metaadat katalogizálása"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:206
 msgid "Show the following data for audio files:"

@@ -10,10 +10,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Poedit-Basepath: Z:/Sviluppo_C++/VVV/src\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Poedit-SearchPath-0: Z:/Sviluppo_C++/VVV/src\n"
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:177
 msgid "Enter or select the volume to catalog"
@@ -131,9 +131,8 @@ msgstr "(Gebruik standaard taal)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2355
-#, fuzzy
 msgid "Bulgarian"
-msgstr "Hongaars"
+msgstr "Bulgaars"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:97
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2339
@@ -397,41 +396,34 @@ msgstr "Fysiek pad"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:352
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:394
-#, fuzzy
 msgid "Folder date"
-msgstr "Bestandsdatum"
+msgstr "Map datum"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
-#, fuzzy
 msgid "Folder size"
-msgstr "Bestandsgrootte"
+msgstr "Mapgrootte"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:355
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:397
-#, fuzzy
 msgid "Folder name"
-msgstr "Bestandsnaam"
+msgstr "Naam map"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
-#, fuzzy
 msgid "Last updated"
-msgstr "Gewijzigd"
+msgstr "Laatst bijgewerkt"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:378
-#, fuzzy
 msgid "Cataloged"
-msgstr "Catalogiseren"
+msgstr "Gecatalogiseerd"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
-#, fuzzy
 msgid "Volume size"
-msgstr "&Volumes"
+msgstr "Volumegrootte"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:433
-#, fuzzy
 msgid "Folder information"
-msgstr "Bestandsinformatie"
+msgstr "Map informatie"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:437
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.h:45
@@ -937,9 +929,8 @@ msgstr ""
 "and DVD's te catalogiseren"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Copyright (C) 2007-2016 The VVV Team"
-msgstr "Auteursrechten © 2007-2010 Het VVV Team"
+msgstr "Auteursrechten © 2007-2016 Het VVV Team"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2335
 msgid "Fulvio Senore: main developer"
@@ -1288,9 +1279,8 @@ msgid "General"
 msgstr "Algemeen"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:200
-#, fuzzy
 msgid "Catalog audio metadata"
-msgstr "Catalogiseer Volume"
+msgstr "Catalogus audio metadata"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:206
 msgid "Show the following data for audio files:"
