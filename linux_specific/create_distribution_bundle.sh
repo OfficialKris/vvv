@@ -5,7 +5,7 @@
 PROGRAM_NAME="VVV"
 
 # change here the version number
-VERSION="1.2.9"
+VERSION="1.3.0"
 
 # changest the file name based on the package being 32 or 64 bit
 NBITS=`getconf LONG_BIT`
