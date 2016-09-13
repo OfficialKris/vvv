@@ -173,6 +173,8 @@ if( UNIX )
   endif( APPLE )
 
   # copy localization files -- vvv files...
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-bg.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/bg RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cn.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/cn RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cs.mo 
