@@ -130,9 +130,8 @@ msgstr "(Usar idioma padrão)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2355
-#, fuzzy
 msgid "Bulgarian"
-msgstr "Húngaro"
+msgstr "Búlgaro"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:97
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2339
@@ -396,41 +395,34 @@ msgstr "Caminho físico"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:352
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:394
-#, fuzzy
 msgid "Folder date"
-msgstr "Data do ficheiro"
+msgstr "Data da pasta"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:354
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:396
-#, fuzzy
 msgid "Folder size"
-msgstr "Tamanho do ficheiro"
+msgstr "Tamanho da pasta"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:355
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:397
-#, fuzzy
 msgid "Folder name"
-msgstr "Nome do ficheiro"
+msgstr "Nome da pasta"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:375
-#, fuzzy
 msgid "Last updated"
-msgstr "Última modificação"
+msgstr "Última actualização"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:378
-#, fuzzy
 msgid "Cataloged"
-msgstr "Catalogar"
+msgstr "Catalogado"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:381
-#, fuzzy
 msgid "Volume size"
-msgstr "&Volumes"
+msgstr "Tamanho do volume"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:433
-#, fuzzy
 msgid "Folder information"
-msgstr "Informação do ficheiro"
+msgstr "Informação da pasta"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:437
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.h:45
@@ -895,9 +887,8 @@ msgstr ""
 "\n"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2154
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "Deseja converter o catálogo criando um novo?"
+msgstr "Pretende converter o catálogo criando um novo?"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2158
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2368
@@ -937,9 +928,8 @@ msgstr ""
 "amovíveis como CDs e DVDs"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Copyright (C) 2007-2016 The VVV Team"
-msgstr "Copyright (C) 2007-2010 A equipa VVV"
+msgstr "Copyright (C) 2007-2016 A equipa VVV"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2335
 msgid "Fulvio Senore: main developer"
@@ -1285,9 +1275,8 @@ msgid "General"
 msgstr "Geral"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:200
-#, fuzzy
 msgid "Catalog audio metadata"
-msgstr "Catalogar volume"
+msgstr "Catalogar metadados de áudio"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:206
 msgid "Show the following data for audio files:"
