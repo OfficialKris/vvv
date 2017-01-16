@@ -96,14 +96,16 @@ class CRightPaneList;
 #define ID_TREE_CONTROL_VIRTUAL 10007
 
 // search view
-#define ID_SEARCH_PANEL 10031
-#define ID_RADIOBOX_FILENAME 10037
-#define ID_SEARCH_FILE_NAME 10032
-#define ID_SEARCH_EXTENSION 10033
-#define ID_RADIOBOX_SEARCH 10034
-#define ID_BUTTON_SEARCH 10035
-#define ID_RADIOBOX_DESCRIPTION 10040
-#define ID_SEARCH_DESCRIPTION 10041
+// these IDs are out of DialogBlocks control
+// they start at a high value to avoid clashes with DB generated ones that start at 10000
+#define ID_SEARCH_PANEL 11001
+#define ID_RADIOBOX_FILENAME 11002
+#define ID_SEARCH_FILE_NAME 11003
+#define ID_SEARCH_EXTENSION 11004
+#define ID_RADIOBOX_SEARCH 11005
+#define ID_BUTTON_SEARCH 11006
+#define ID_RADIOBOX_DESCRIPTION 11007
+#define ID_SEARCH_DESCRIPTION 11008
 
 /*!
  * Compatibility
