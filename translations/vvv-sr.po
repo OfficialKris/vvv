@@ -5,18 +5,18 @@ msgstr ""
 "Project-Id-Version: VVV 0.9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-05 11:33+0100\n"
-"PO-Revision-Date: 2016-09-05 11:41+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2016-09-21 17:48+0200\n"
+"Last-Translator: Милош Поповић <gpopac@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: ..\\src\n"
+"X-Poedit-Basepath: ../src\n"
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\\n;\n"
-"X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: ..\\src\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: ../src\n"
 
 #: ..\src/catalog_volume.cpp:177
 msgid "Enter or select the volume to catalog"
@@ -26,7 +26,7 @@ msgstr "Уђи у овај диск ради прављења каталога"
 #: ..\src/opencatalog.cpp:173 ..\src/restore.cpp:166 ..\src/restore.cpp:178
 #: ..\src/update_volume.cpp:195
 msgid "..."
-msgstr "..."
+msgstr "…"
 
 #: ..\src/catalog_volume.cpp:189 ..\src/dlg_file_information.cpp:382
 msgid "Volume name"
@@ -37,9 +37,9 @@ msgid "Get volume name"
 msgstr "Преузми назив диска"
 
 #: ..\src/catalog_volume.cpp:207 ..\src/dlg_file_information.cpp:168
-#: ..\src/exportdata.cpp:229 ..\src/exportdata.cpp:247
-#: ..\src/mainframe.cpp:858 ..\src/restore.cpp:185 ..\src/restore.cpp:203
-#: ..\src/update_volume.cpp:201 ..\src/vvv.cpp:141
+#: ..\src/exportdata.cpp:229 ..\src/exportdata.cpp:247 ..\src/mainframe.cpp:858
+#: ..\src/restore.cpp:185 ..\src/restore.cpp:203 ..\src/update_volume.cpp:201
+#: ..\src/vvv.cpp:141
 msgid "&Help"
 msgstr "&Помоћ"
 
@@ -118,12 +118,11 @@ msgstr "(користи подразумевани језик)"
 
 #: ..\src/chooselang.cpp:96 ..\src/mainframe.cpp:2355
 msgid "Bulgarian"
-msgstr ""
+msgstr "бугарски"
 
 #: ..\src/chooselang.cpp:97 ..\src/mainframe.cpp:2339
-#, fuzzy
 msgid "Chinese"
-msgstr "Број канала"
+msgstr "кинески"
 
 #: ..\src/chooselang.cpp:98 ..\src/mainframe.cpp:2350
 msgid "Croatian"
@@ -152,7 +151,7 @@ msgstr "немачки"
 #: ..\src/chooselang.cpp:104 ..\src/mainframe.cpp:2344
 #: ..\src/mainframe.cpp:2347
 msgid "Hungarian"
-msgstr ""
+msgstr "мађарски"
 
 #: ..\src/chooselang.cpp:105 ..\src/mainframe.cpp:2353
 msgid "Italian"
@@ -160,7 +159,7 @@ msgstr "италијански"
 
 #: ..\src/chooselang.cpp:106 ..\src/mainframe.cpp:2352
 msgid "Japanese"
-msgstr ""
+msgstr "јапански"
 
 #: ..\src/chooselang.cpp:107 ..\src/mainframe.cpp:2346
 msgid "Polish"
@@ -240,9 +239,8 @@ msgid "Conversion completed"
 msgstr "Превођење је завршено"
 
 #: ..\src/dlg_file_information.cpp:153
-#, fuzzy
 msgid "Description:"
-msgstr "Опис"
+msgstr "Опис:"
 
 #: ..\src/dlg_file_information.cpp:253 ..\src/exportdata.cpp:523
 #: ..\src/exportdata.cpp:525 ..\src/mainframe.cpp:1293
@@ -250,9 +248,8 @@ msgid "Name"
 msgstr "Име"
 
 #: ..\src/dlg_file_information.cpp:257
-#, fuzzy
 msgid "Value"
-msgstr "Диск"
+msgstr "Вредност"
 
 #: ..\src/dlg_file_information.cpp:308 ..\src/mainframe.cpp:1415
 #: ..\src/settings.cpp:249
@@ -309,19 +306,17 @@ msgid "Artist"
 msgstr "Извођач"
 
 #: ..\src/dlg_file_information.cpp:327
-#, fuzzy
 msgid "File date"
-msgstr "Име датотеке"
+msgstr "Датум датотеке"
 
 #: ..\src/dlg_file_information.cpp:329
-#, fuzzy
 msgid "File size"
-msgstr "Име датотеке"
+msgstr "Величина датотеке"
 
 #: ..\src/dlg_file_information.cpp:329 ..\src/dlg_file_information.cpp:354
 #: ..\src/dlg_file_information.cpp:381 ..\src/dlg_file_information.cpp:396
 msgid "bytes"
-msgstr ""
+msgstr "битова"
 
 #: ..\src/dlg_file_information.cpp:330 ..\src/mainframe.cpp:939
 msgid "File name"
@@ -329,9 +324,8 @@ msgstr "Име датотеке"
 
 #: ..\src/dlg_file_information.cpp:338 ..\src/dlg_file_information.cpp:363
 #: ..\src/dlg_file_information.cpp:405
-#, fuzzy
 msgid "Virtual path"
-msgstr "Виртуелан"
+msgstr "Виртуелна путања"
 
 #: ..\src/dlg_file_information.cpp:342 ..\src/dlg_file_information.cpp:367
 #: ..\src/dlg_file_information.cpp:409 ..\src/mainframe.cpp:1311
@@ -339,44 +333,37 @@ msgid "Physical path"
 msgstr "Стварна путања"
 
 #: ..\src/dlg_file_information.cpp:352 ..\src/dlg_file_information.cpp:394
-#, fuzzy
 msgid "Folder date"
-msgstr "Име датотеке"
+msgstr "Датум фасцикле"
 
 #: ..\src/dlg_file_information.cpp:354 ..\src/dlg_file_information.cpp:396
-#, fuzzy
 msgid "Folder size"
-msgstr "Име датотеке"
+msgstr "Величина фасцикле"
 
 #: ..\src/dlg_file_information.cpp:355 ..\src/dlg_file_information.cpp:397
-#, fuzzy
 msgid "Folder name"
-msgstr "Име датотеке"
+msgstr "Назив фасцикле"
 
 #: ..\src/dlg_file_information.cpp:375
-#, fuzzy
 msgid "Last updated"
-msgstr "Измењено"
+msgstr "Последња измена"
 
 #: ..\src/dlg_file_information.cpp:378
-#, fuzzy
 msgid "Cataloged"
-msgstr "Каталог"
+msgstr "У каталогу"
 
 #: ..\src/dlg_file_information.cpp:381
-#, fuzzy
 msgid "Volume size"
-msgstr "&Дискови"
+msgstr "Величина диска"
 
 # Part of the Edit menu
 #: ..\src/dlg_file_information.cpp:433
-#, fuzzy
 msgid "Folder information"
-msgstr "Опис о&бјекта..."
+msgstr "Подаци о фасцикли"
 
 #: ..\src/dlg_file_information.cpp:437 ..\src/dlg_file_information.h:45
 msgid "File information"
-msgstr ""
+msgstr "Подаци о датотеци"
 
 #: ..\src/exportdata.cpp:190
 msgid "Use this window to export data to a CSV file"
@@ -457,9 +444,8 @@ msgstr "Измењено"
 msgid "PhysicalPath"
 msgstr "Стварна путања"
 
-#: ..\src/exportdata.cpp:523 ..\src/exportdata.cpp:525
-#: ..\src/mainframe.cpp:960 ..\src/mainframe.cpp:1314
-#: ..\src/mainframe.cpp:1319
+#: ..\src/exportdata.cpp:523 ..\src/exportdata.cpp:525 ..\src/mainframe.cpp:960
+#: ..\src/mainframe.cpp:1314 ..\src/mainframe.cpp:1319
 msgid "Description"
 msgstr "Опис"
 
@@ -482,27 +468,27 @@ msgstr ""
 # Part of the File menu
 #: ..\src/mainframe.cpp:802
 msgid "&New..."
-msgstr "&Нови..."
+msgstr "&Нови…"
 
 # Part of the File menu
 #: ..\src/mainframe.cpp:803
 msgid "&Open..."
-msgstr "&Отвори..."
+msgstr "&Отвори…"
 
 # Part of the File menu
 #: ..\src/mainframe.cpp:804
 msgid "&Export..."
-msgstr "И&звези..."
+msgstr "И&звези…"
 
 # Part of the File menu
 #: ..\src/mainframe.cpp:806
 msgid "&Backup..."
-msgstr "Направи &резервну копију..."
+msgstr "Направи &резервну копију…"
 
 # Part of the File menu
 #: ..\src/mainframe.cpp:807
 msgid "&Restore..."
-msgstr "&Врати..."
+msgstr "&Врати…"
 
 # Part of the File menu
 #: ..\src/mainframe.cpp:809
@@ -516,12 +502,12 @@ msgstr "&Датотека"
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:812
 msgid "&Add To Virtual Folder..."
-msgstr "&Додај у виртуелну фасциклу..."
+msgstr "&Додај у виртуелну фасциклу…"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:814
 msgid "&Rename...\tF2"
-msgstr "&Преименуј...\tF2"
+msgstr "&Преименуј…\tF2"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:815
@@ -530,23 +516,22 @@ msgstr "&Обриши"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:817
-#, fuzzy
 msgid "&Object Information..."
-msgstr "Опис о&бјекта..."
+msgstr "Подаци о о&бјекту…"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:819
 msgid "&New Virtual Root Folder..."
-msgstr "Нови виртуелна корена &фасцикла..."
+msgstr "Нови виртуелна корена &фасцикла…"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:820
 msgid "New Virtual &Subfolder..."
-msgstr "Нова виртуелна подф&асцикла..."
+msgstr "Нова виртуелна подф&асцикла…"
 
 #: ..\src/mainframe.cpp:822 ..\src/mainframe.cpp:848
 msgid "&Options..."
-msgstr "&Опције..."
+msgstr "&Опције…"
 
 #: ..\src/mainframe.cpp:824
 msgid "&Edit"
@@ -555,11 +540,11 @@ msgstr "&Уређивање"
 # Part of the Volumes menu
 #: ..\src/mainframe.cpp:826
 msgid "&Catalog Volume..."
-msgstr "Додај диск у &каталог..."
+msgstr "Додај диск у &каталог…"
 
 #: ..\src/mainframe.cpp:827
 msgid "&Update Volume..."
-msgstr "&Ажурирај диск..."
+msgstr "&Ажурирај диск…"
 
 #: ..\src/mainframe.cpp:828
 msgid "&Volumes"
@@ -589,13 +574,11 @@ msgstr "Прикажи стварне ставке"
 msgid "Go &Up One Level"
 msgstr "Иди &горе за један ниво"
 
-#: ..\src/mainframe.cpp:837 ..\src/mainframe.cpp:2587
-#: ..\src/mainframe.cpp:2621
+#: ..\src/mainframe.cpp:837 ..\src/mainframe.cpp:2587 ..\src/mainframe.cpp:2621
 msgid "Expand"
 msgstr "Рашири"
 
-#: ..\src/mainframe.cpp:838 ..\src/mainframe.cpp:2588
-#: ..\src/mainframe.cpp:2622
+#: ..\src/mainframe.cpp:838 ..\src/mainframe.cpp:2588 ..\src/mainframe.cpp:2622
 msgid "Collapse"
 msgstr "Сакупи"
 
@@ -623,7 +606,7 @@ msgstr "Помоћ и &садржај"
 
 #: ..\src/mainframe.cpp:857
 msgid "&About VVV..."
-msgstr "&О програму..."
+msgstr "&О програму…"
 
 #: ..\src/mainframe.cpp:865 ..\src/mainframe.cpp:4057
 msgid "New"
@@ -778,7 +761,7 @@ msgstr ""
 
 #: ..\src/mainframe.cpp:2140
 msgid "Upgrading the catalog, please wait..."
-msgstr "Ажурирам каталог, сачекајте..."
+msgstr "Ажурирам каталог, сачекајте…"
 
 #: ..\src/mainframe.cpp:2152
 msgid ""
@@ -802,9 +785,9 @@ msgstr ""
 "\n"
 
 #: ..\src/mainframe.cpp:2154
-#, fuzzy
 msgid "Do you want to convert the catalog creating a new one?"
-msgstr "Да ли желите да пребаците каталог у нови формат?"
+msgstr ""
+"Да ли желите да претворите каталог у нови формат и направите нови каталог?"
 
 #: ..\src/mainframe.cpp:2158 ..\src/mainframe.cpp:2368
 msgid ""
@@ -841,9 +824,8 @@ msgstr ""
 "медијума, као што су ЦД и ДВД дискови"
 
 #: ..\src/mainframe.cpp:2334
-#, fuzzy
 msgid "Copyright (C) 2007-2016 The VVV Team"
-msgstr "Сва права су задржана, (C) 2007-2010 ВПД тим"
+msgstr "Сва права су задржана, (C) 2007-2016 ВПД тим"
 
 #: ..\src/mainframe.cpp:2335
 msgid "Fulvio Senore: main developer"
@@ -890,13 +872,12 @@ msgstr "Додај у виртуелну фасциклу"
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:2590
-#, fuzzy
 msgid "Object information..."
-msgstr "Опис о&бјекта..."
+msgstr "Подаци о објекту…"
 
 #: ..\src/mainframe.cpp:2593
 msgid "Rename..."
-msgstr "Преименуј..."
+msgstr "Преименуј…"
 
 #: ..\src/mainframe.cpp:2594 ..\src/mainframe.cpp:2626
 #: ..\src/mainframe.cpp:3173
@@ -905,7 +886,7 @@ msgstr "Обриши"
 
 #: ..\src/mainframe.cpp:2595
 msgid "Update Volume..."
-msgstr "Ажурирај диск..."
+msgstr "Ажурирај диск…"
 
 #: ..\src/mainframe.cpp:2616
 msgid "New Root Folder"
@@ -949,9 +930,8 @@ msgstr "Укупна величина: "
 
 # Part of the Edit menu
 #: ..\src/mainframe.cpp:3180
-#, fuzzy
 msgid "Object Information..."
-msgstr "Опис о&бјекта..."
+msgstr "Подаци о објекту…"
 
 #: ..\src/mainframe.cpp:3316
 msgid ""
@@ -1012,17 +992,16 @@ msgid "Rename virtual folder"
 msgstr "Преименуј виртуелну фасциклу"
 
 #: ..\src/mainframe.cpp:3531
-#, fuzzy
 msgid ""
 "This command will delete the selected files from the virtual view, but it "
 "will not change the files in the physical view.\n"
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Ова наредба ће обрисати изабране виртуелне датотеке, али неће утицати на "
-"стварне датотеке.\n"
+"Ова наредба ће обрисати изабране датотеке из виртуелног прегледа, али неће "
+"утицати на стварне датотеке.\n"
 "\n"
-"Да ли желите да обришете датотеке?"
+"Да ли желите да обришете виртуелне датотеке?"
 
 #: ..\src/mainframe.cpp:3673 ..\src/mainframe.cpp:3750
 msgid ""
@@ -1178,14 +1157,12 @@ msgid "General"
 msgstr "Опште"
 
 #: ..\src/settings.cpp:200
-#, fuzzy
 msgid "Catalog audio metadata"
-msgstr "Додај диск у каталог"
+msgstr "Додај аудио метаподатке у каталог"
 
 #: ..\src/settings.cpp:206
-#, fuzzy
 msgid "Show the following data for audio files:"
-msgstr "Прикажи следеће податке за MP3 датотеке:"
+msgstr "Прикажи следеће податке за аудио датотеке:"
 
 #: ..\src/settings.cpp:229
 msgid "Track number"
@@ -1193,7 +1170,7 @@ msgstr "Број песме"
 
 #: ..\src/settings.cpp:255
 msgid "Audio files"
-msgstr ""
+msgstr "Аудио датотеке"
 
 #: ..\src/settings.cpp:263
 msgid ""
