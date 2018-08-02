@@ -35,16 +35,22 @@ void CFiles::FB_DbInsert(void)
 	if( FileID.IsNull() )
 		FileID = FB_GenNewValue( wxT("GEN_FILES_ID") );
 
+    // sometimes dates are invalid: this crashed the program
+    bool validDate = DateTime.IsValid();
+
 	sql = wxT("INSERT INTO FILES (");
 	if( !FileID.IsNull() )
 		sql += wxT("FILE_ID, ");
-	sql += wxT("FILE_NAME, FILE_EXT, FILE_SIZE, FILE_DATETIME, PATH_FILE_ID, PATH_ID, FILE_DESCRIPTION) VALUES (");
+    if( validDate )
+    	sql += wxT("FILE_DATETIME, ");
+	sql += wxT("FILE_NAME, FILE_EXT, FILE_SIZE, PATH_FILE_ID, PATH_ID, FILE_DESCRIPTION) VALUES (");
 	if( !FileID.IsNull() )
 		sql += CUtils::long2string(FileID) + wxT(", ");
+    if( validDate )
+	    sql += DateTime.Format( wxT("'%Y-%m-%d %H:%M:%S'") ) + wxT(", "); 
 	sql += wxT("'") + ExpandSingleQuotes(FileName) + wxT("', '") + 
 		         ExpandSingleQuotes(FileExt) + wxT("', ") + 
                  FileSize.ToString() + wxT(", ") +
-				 DateTime.Format( wxT("'%Y-%m-%d %H:%M:%S'") ) + wxT(", ") +
 				 (PathFileID.IsNull() ? wxT("NULL") : CUtils::long2string(PathFileID) ) + wxT(", ") +
 				 CUtils::long2string(PathID) + wxT(", ") +
 				 (FileDescription.empty() ? wxT("NULL") : wxT("'") + ExpandSingleQuotes(FileDescription) + wxT("'")) +
@@ -61,7 +67,7 @@ void CFiles::FB_DbUpdate(void)
 	sql += wxT("FILE_NAME = '") + ExpandSingleQuotes(FileName) + wxT("', ");
 	sql += wxT("FILE_EXT = '") + ExpandSingleQuotes(FileExt) + wxT("', ");
 	sql += wxT("FILE_SIZE = ") + FileSize.ToString() + wxT(", ");
-	sql += wxT("FILE_DATETIME = ") + DateTime.Format( wxT("'%Y-%m-%d %H:%M:%S'") ) + wxT(", ") +
+    sql += wxT("FILE_DATETIME = ") + (DateTime.IsValid() ? DateTime.Format(wxT("'%Y-%m-%d %H:%M:%S'")) : "NULL") + wxT(", ") +
 	       wxT("PATH_FILE_ID = ") + (PathFileID.IsNull() ? wxT("NULL") : CUtils::long2string(PathFileID) ) + wxT(", ");
 	sql += wxT("PATH_ID = ") + CUtils::long2string(PathID) + wxT(", ") +
 	       wxT("FILE_DESCRIPTION = ") + (FileDescription.empty() ? wxT("NULL") : wxT("'") + ExpandSingleQuotes(FileDescription) + wxT("'")) + wxT(" ");
@@ -116,9 +122,13 @@ void CFiles::FB_FetchRow(void) {
 		FileExt = CUtils::DBstd2wx( stmp );
 		FB_st->Get("FILE_SIZE", tmp);
 		FileSize = (wxLongLong) tmp;
-		FB_st->Get("FILE_DATETIME", ts);
-		DateTime.Set( ts.Day(), (wxDateTime::Month) (wxDateTime::Jan + ts.Month() - 1), ts.Year(), ts.Hours(), ts.Minutes(), ts.Seconds() );
-		if( FB_st->IsNull("PATH_FILE_ID") )
+		if( FB_st->IsNull("FILE_DATETIME") )
+            DateTime = wxInvalidDateTime;
+        else {
+		    FB_st->Get("FILE_DATETIME", ts);
+		    DateTime.Set( ts.Day(), (wxDateTime::Month) (wxDateTime::Jan + ts.Month() - 1), ts.Year(), ts.Hours(), ts.Minutes(), ts.Seconds() );
+        }
+        if( FB_st->IsNull("PATH_FILE_ID") )
 			PathFileID.SetNull(true);
 		else {
 			FB_st->Get("PATH_FILE_ID", tmp);
@@ -162,7 +172,10 @@ void CFiles::FB_UpdateDescription( long FileID, const wxString& descr ) {
 void CFiles::FB_UpdateDateSize( long FileID, const wxDateTime& fdt, const wxLongLong& fs ) {
 	wxString sql;
 
-	sql = wxT("UPDATE FILES SET FILE_DATETIME = ") + fdt.Format( wxT("'%Y-%m-%d %H:%M:%S'") ) + wxT(", ");
+    sql = wxT("UPDATE FILES SET ");
+    if( fdt.IsValid() ) {
+        sql += wxT("FILE_DATETIME = ") + fdt.Format( wxT("'%Y-%m-%d %H:%M:%S'") ) + wxT(", ");
+    }
 	sql += wxT("FILE_SIZE = ") + fs.ToString();
 	sql += wxT(" WHERE FILE_ID = ") + CUtils::long2string( FileID );
 	FB_ExecuteQueryNoReturn( sql );

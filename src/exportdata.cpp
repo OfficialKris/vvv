@@ -434,7 +434,14 @@ void CDialogExportData::ExportOnePhysicalFolder( wxTextOutputStream& fout, wxStr
 	while( !files.IsEOF() ) {
 
 		if( !files.IsFolder() ) {
-			fout << FormatStringForCSV(volumeName) << separator << FormatStringForCSV(pathName) << separator << FormatStringForCSV(files.FileName) << separator << files.FileSize << separator << FormatStringForCSV(files.FileExt) << separator << files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() << separator << FormatStringForCSV(files.FileDescription) << endl;
+			fout << FormatStringForCSV(volumeName) << separator << FormatStringForCSV(pathName) << separator << FormatStringForCSV(files.FileName) << separator << files.FileSize << separator << FormatStringForCSV(files.FileExt) << separator;
+            if( files.DateTime.IsValid() ) {
+                fout << files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() << separator;
+            }
+            else {
+                fout << separator;
+            }
+            fout << FormatStringForCSV(files.FileDescription) << endl;
 		}
 
 		files.DBNextRow();
@@ -488,7 +495,14 @@ void CDialogExportData::ExportOneVirtualFolder( wxTextOutputStream& fout, wxStri
 	while( !files.IsEOF() ) {
 
 		if( !files.IsFolder() ) {
-			fout << FormatStringForCSV(files.FileName) << separator << files.FileSize << separator << FormatStringForCSV(files.FileExt) << separator << files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() << separator << FormatStringForCSV(files.FullPhysicalPath) << separator << FormatStringForCSV(files.FileDescription) << endl;
+			fout << FormatStringForCSV(files.FileName) << separator << files.FileSize << separator << FormatStringForCSV(files.FileExt) << separator;
+            if( files.DateTime.IsValid() ) {
+                fout << files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() << separator;
+            }
+            else {
+                fout << separator;
+            }
+            fout << FormatStringForCSV(files.FullPhysicalPath) << separator << FormatStringForCSV(files.FileDescription) << endl;
 		}
 
 		files.DBNextRow();

@@ -165,7 +165,11 @@ void CCatalogVolumeFunctions::CatalogUpdateSingleFolderWindows( CBaseDB* db, wxS
 					wxDateTime fTime;
 					wxLongLong fSize;
 					GetFileDateSizeWindows( ffd, fTime, fSize );
-					if( !fTime.IsEqualUpTo(ffi->second.DateTime, wxTimeSpan::Seconds(10)) || fSize != ffi->second.FileSize ) {
+                    bool toBeUpdated = (fSize != ffi->second.FileSize);
+                    if( !toBeUpdated && ffi->second.DateTime.IsValid() ) {
+                        toBeUpdated = !fTime.IsEqualUpTo(ffi->second.DateTime, wxTimeSpan::Seconds(10));
+                    }
+					if( toBeUpdated ) {
 						CFiles::UpdateDateSize( ffi->second.FileID, fTime, fSize );
 						nUpdatedFiles++;
 					}

@@ -1738,7 +1738,12 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 		if( files.IsFolder() ) s = wxEmptyString; else s = CUtils::HumanReadableFileSize(files.FileSize);
 		lctl->SetItem( i, 1, s );
 		lctl->SetItem( i, 2, files.FileExt );
-		lctl->SetItem( i, 3, files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() );
+        if( files.DateTime.IsValid() ) {
+		    lctl->SetItem( i, 3, files.DateTime.FormatDate() + wxT(" ") + files.DateTime.FormatTime() );
+        }
+        else {
+		    lctl->SetItem( i, 3, "" );
+        }
 		lctl->SetItem( i, 4, FormatObjectDescriptionForListView(files.FileDescription) );
 		MyListItemData *itemData = new MyListItemData( files.FileID, -1, files.PathFileID.IsNull() ? 0 : (long) files.PathFileID, files.FileName, files.FileExt, files.FileSize, files.DateTime, files.IsFolder(), wxEmptyString, files.FileDescription );
 		lctl->SetItemData( i, (long) itemData );
@@ -2936,7 +2941,12 @@ int CMainFrame::AddRowToVirtualListControl( wxListCtrl* lctl, bool isFolder, wxS
 	if( isFolder ) s = wxEmptyString; else s = CUtils::HumanReadableFileSize(fileSize);
 	lctl->SetItem( i, 1, s );
 	lctl->SetItem( i, 2, ext );
-	lctl->SetItem( i, 3, dateTime.FormatDate() + wxT(" ") + dateTime.FormatTime() );
+    if( dateTime.IsValid() ) {
+        lctl->SetItem( i, 3, dateTime.FormatDate() + wxT(" ") + dateTime.FormatTime() );
+    }
+    else {
+        lctl->SetItem( i, 3, "" );
+    }
 	lctl->SetItem( i, 4, physicalPath );
 	lctl->SetItem( i, 5, FormatObjectDescriptionForListView(fileDescription) );
 	MyListItemData *itemData = new MyListItemData( physicalFileID, fileID, virtualPathFileID, fileName, ext, fileSize, dateTime, isFolder, physicalPath, fileDescription );
