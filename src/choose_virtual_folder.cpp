@@ -162,7 +162,7 @@ void CDialogChooseVirtualFolder::CreateControls()
     wxStaticText* itemStaticText3 = new wxStaticText( itemDialog1, wxID_STATIC, _("Please select the virtual folder that will receive the selected files and/or folders:"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer2->Add(itemStaticText3, 0, wxALIGN_LEFT|wxALL|wxADJUST_MINSIZE, 5);
 
-    m_TreeCtrl = new wxTreeCtrl( itemDialog1, ID_TREECTRL_CHOOSE, wxDefaultPosition, wxSize(-1, 300), wxTR_NO_BUTTONS|wxTR_HIDE_ROOT|wxTR_SINGLE|wxTR_DEFAULT_STYLE );
+    m_TreeCtrl = new wxTreeCtrl( itemDialog1, ID_TREECTRL_CHOOSE, wxDefaultPosition, wxSize(-1, 300), wxTR_NO_BUTTONS|wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxTR_DEFAULT_STYLE );
     itemBoxSizer2->Add(m_TreeCtrl, 1, wxGROW|wxALL, 5);
 
 #if defined(__WXMSW__)
