@@ -24,12 +24,12 @@
 #include<errno.h>
 #endif
 
-#include <iostream>
-
+#include "utils.h"
 #include <wx/stdpaths.h>
 #include <wx/filename.h>
 #include <wx/filefn.h>
-#include "utils.h"
+
+#include <iostream>
 
 wxString CUtils::applicationName = wxT("VVV");
 wxString CUtils::applicationVersion = wxT("1.3.0.2");
@@ -265,5 +265,18 @@ wxString CUtils::ConvertSecondsToTimeString( int seconds )
 	return sl;
 }
 
+wxIcon CUtils::GetIconForPane( const char *xpm[], const wxArtID &id )
+{
+    wxIcon r;
+    wxIcon icoProv = wxArtProvider::GetIcon( id, wxART_OTHER, wxSize(16, 16) );
+    if( icoProv.IsOk() ) {
+    	r = icoProv;
+    }
+    else {
+	    wxIcon ico( xpm );
+	    r = ico;
+    }
+    return r;
+}
 
 

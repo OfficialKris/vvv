@@ -27,6 +27,7 @@
 #include <wx/msgdlg.h>
 #include <wx/image.h>
 #include <wx/bitmap.h>
+#include <wx/artprov.h>
 #include <string>
 
 class wxMBConv;
@@ -108,6 +109,10 @@ public:
 
 	// convert a time in seconds to a string with hours, minutes and seconds
 	static wxString ConvertSecondsToTimeString( int seconds );
+
+    // return an icon to be used with the tree and list pane
+    // looks for an icon returned from the art provider, if not found uses a stock one
+    static wxIcon GetIconForPane( const char *xpm[], const wxArtID &id );
 
 private:
 	// name of the current application
