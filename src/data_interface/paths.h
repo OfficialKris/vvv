@@ -33,6 +33,7 @@ class CPaths : public CBaseRec
 {
 public:
 	CPaths(void);
+	CPaths( long pathID );	// creates an object reading the database with the supplied primary key
 	~CPaths(void);
 	
 	// data members ----------------------------

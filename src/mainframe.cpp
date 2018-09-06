@@ -3017,7 +3017,48 @@ void CMainFrame::OnListControlItemActivated( wxListEvent& event )
 	wxListCtrl* lctl = GetListControl();
 	MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( i );
 
-	if( !itemData->IsFolder() ) return;
+    if( !itemData->IsFolder() ) {
+        // here we handle files
+        long fileID = itemData->GetPhysicalFileID();
+        long pathID = CFiles::GetPathID( fileID );
+        wxString pathName = CPaths::GetFullPath( pathID );
+        CPaths path( pathID );
+        CVolumes vol( path.VolumeID );
+        if( !pathName.StartsWith(vol.VolumeName) ) {
+            return;
+        }
+        wxString physPath = vol.PhysicalPath;
+        if( physPath.IsEmpty() ) {
+            // this volume has been cataloged with an older version of the program: use the last cataloged path
+            wxConfigBase *pConfig = wxConfigBase::Get();
+            pConfig->SetPath(wxT("/CatalogVolume"));
+            physPath = pConfig->Read( wxT("CatalogPath"), wxT("") );
+        }
+        wxString sep = wxString(wxFileName::GetPathSeparator());
+        if( pathName.Len() == vol.VolumeName.Len() ) {
+            pathName = "";
+        }
+        else {
+            pathName = pathName.Right( pathName.Len() - vol.VolumeName.Len() - 1 );
+        }
+        wxString fullPath = physPath;
+        if( !fullPath.EndsWith(sep) ) {
+            fullPath += sep;
+        }
+        fullPath += pathName;
+        if( !fullPath.EndsWith(sep) ) {
+            fullPath += sep;
+        }
+        fullPath += itemData->GetName();
+        if( !wxFileExists(fullPath) ) {
+            CUtils::MsgInfo( _("Unable to find the file:") + "\n\n" + fullPath );
+            return;
+        }
+        wxLaunchDefaultApplication( fullPath );
+        return;
+    }
+
+    // and here we handle folders
 	long pathFileID = itemData->GetPathFileID();
 	if( pathFileID == 0 ) return;
 

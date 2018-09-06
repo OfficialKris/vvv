@@ -27,6 +27,15 @@ CPaths::CPaths(void) {
 	PathDescription = wxEmptyString;
 }
 
+CPaths::CPaths( long pathID ) {
+	DBStartMultiRowQuery( wxT("SELECT * FROM PATHS WHERE PATH_ID = ") + CUtils::long2string(pathID), true );
+	while( !IsEOF() ) {
+		// this query should return only one row
+		DBNextRow();
+	}
+	// at this point "this" should contain the volume's data
+}
+
 CPaths::~CPaths(void) {
 }
 
