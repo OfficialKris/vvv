@@ -3029,10 +3029,8 @@ void CMainFrame::OnListControlItemActivated( wxListEvent& event )
         }
         wxString physPath = vol.PhysicalPath;
         if( physPath.IsEmpty() ) {
-            // this volume has been cataloged with an older version of the program: use the last cataloged path
-            wxConfigBase *pConfig = wxConfigBase::Get();
-            pConfig->SetPath(wxT("/CatalogVolume"));
-            physPath = pConfig->Read( wxT("CatalogPath"), wxT("") );
+            CUtils::MsgInfo( _("This volume has been cataloged with an older version of VVV. You need to update it in order to open files.") );
+            return;
         }
         wxString sep = wxString(wxFileName::GetPathSeparator());
         if( pathName.Len() == vol.VolumeName.Len() ) {
