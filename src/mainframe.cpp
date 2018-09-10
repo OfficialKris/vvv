@@ -562,6 +562,8 @@ BEGIN_EVENT_TABLE( CMainFrame, wxFrame )
     EVT_UPDATE_UI( ID_VIEW_COLLAPSE, CMainFrame::OnViewCollapseUpdate )
     EVT_MENU( ID_VIEW_TOOLBAR, CMainFrame::OnViewToolbarClick )
     EVT_MENU( ID_VIEW_STATUS_BAR, CMainFrame::OnViewStatusBarClick )
+    EVT_MENU( ID_MENU_OPENFILE_FOLDER, CMainFrame::OnMenuOpenfileFolderClick )
+    EVT_UPDATE_UI( ID_MENU_OPENFILE_FOLDER, CMainFrame::OnMenuOpenfileFolderUpdate )
 #if defined(__WXMSW__) || defined(__WXGTK__)
     EVT_MENU( wxID_PREFERENCES, CMainFrame::OnPreferencesClick )
 #endif
@@ -826,20 +828,22 @@ void CMainFrame::CreateControls()
     itemMenu35->Append(ID_VIEW_STATUS_BAR, _("Status &Bar"), wxEmptyString, wxITEM_CHECK);
     itemMenu35->Check(ID_VIEW_STATUS_BAR, true);
     menuBar->Append(itemMenu35, _("Vie&w"));
-#if defined(__WXMSW__) || defined(__WXGTK__)
     wxMenu* itemMenu47 = new wxMenu;
+    itemMenu47->Append(ID_MENU_OPENFILE_FOLDER, _("Open with default program"), wxEmptyString, wxITEM_NORMAL);
+#if defined(__WXMSW__) || defined(__WXGTK__)
+    itemMenu47->AppendSeparator();
+#endif
 #if defined(__WXMSW__) || defined(__WXGTK__)
     itemMenu47->Append(wxID_PREFERENCES, _("&Options..."), wxEmptyString, wxITEM_NORMAL);
 #endif
     menuBar->Append(itemMenu47, _("&Tools"));
-#endif
-    wxMenu* itemMenu49 = new wxMenu;
-    itemMenu49->Append(ID_HELP_CONTENTS, _("Help &Contents"), wxEmptyString, wxITEM_NORMAL);
+    wxMenu* itemMenu51 = new wxMenu;
+    itemMenu51->Append(ID_HELP_CONTENTS, _("Help &Contents"), wxEmptyString, wxITEM_NORMAL);
 #if defined(__WXMSW__) || defined(__WXGTK__)
-    itemMenu49->AppendSeparator();
+    itemMenu51->AppendSeparator();
 #endif
-    itemMenu49->Append(wxID_ABOUT, _("&About VVV..."), wxEmptyString, wxITEM_NORMAL);
-    menuBar->Append(itemMenu49, _("&Help"));
+    itemMenu51->Append(wxID_ABOUT, _("&About VVV..."), wxEmptyString, wxITEM_NORMAL);
+    menuBar->Append(itemMenu51, _("&Help"));
     itemFrame1->SetMenuBar(menuBar);
 
     m_ToolbarCtrl = CreateToolBar( wxTB_FLAT|wxTB_HORIZONTAL|wxTB_TEXT, ID_TOOLBAR1 );
@@ -879,13 +883,13 @@ void CMainFrame::CreateControls()
     m_StatusBar->SetStatusWidths(4, m_StatusBarWidths);
     itemFrame1->SetStatusBar(m_StatusBar);
 
-    wxSplitterWindow* itemSplitterWindow54 = new wxSplitterWindow( itemFrame1, ID_SPLITTERWINDOW1, wxDefaultPosition, wxSize(100, 100), wxSP_3DBORDER|wxSP_3DSASH|wxSP_NO_XP_THEME|wxNO_BORDER );
-    itemSplitterWindow54->SetMinimumPaneSize(0);
+    wxSplitterWindow* itemSplitterWindow56 = new wxSplitterWindow( itemFrame1, ID_SPLITTERWINDOW1, wxDefaultPosition, wxSize(100, 100), wxSP_3DBORDER|wxSP_3DSASH|wxSP_NO_XP_THEME|wxNO_BORDER );
+    itemSplitterWindow56->SetMinimumPaneSize(0);
 
-    wxTreeCtrl* itemTreeCtrl55 = new wxTreeCtrl( itemSplitterWindow54, ID_TREE_CONTROL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
+    wxTreeCtrl* itemTreeCtrl57 = new wxTreeCtrl( itemSplitterWindow56, ID_TREE_CONTROL, wxDefaultPosition, wxSize(100, 100), wxTR_HAS_BUTTONS |wxTR_TWIST_BUTTONS|wxTR_NO_LINES|wxTR_HIDE_ROOT|wxTR_SINGLE|wxNO_BORDER|wxTR_DEFAULT_STYLE );
 
-    CRightPaneList* itemListCtrl56 = new CRightPaneList( itemSplitterWindow54, CRightPaneList::ID_LIST_CONTROL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxNO_BORDER );
-    itemSplitterWindow54->SplitVertically(itemTreeCtrl55, itemListCtrl56, 50);
+    CRightPaneList* itemListCtrl58 = new CRightPaneList( itemSplitterWindow56, CRightPaneList::ID_LIST_CONTROL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxNO_BORDER );
+    itemSplitterWindow56->SplitVertically(itemTreeCtrl57, itemListCtrl58, 50);
 
 ////@end CMainFrame content construction
 
@@ -3004,7 +3008,6 @@ void CMainFrame::SearchPhysicalFolder( long folderID, long volumeID, const wxStr
 
 }
 
-
 /*!
  * wxEVT_COMMAND_LIST_ITEM_ACTIVATED event handler for ID_LIST_CONTROL
  */
@@ -3018,41 +3021,7 @@ void CMainFrame::OnListControlItemActivated( wxListEvent& event )
 	MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( i );
 
     if( !itemData->IsFolder() ) {
-        // here we handle files
-        long fileID = itemData->GetPhysicalFileID();
-        long pathID = CFiles::GetPathID( fileID );
-        wxString pathName = CPaths::GetFullPath( pathID );
-        CPaths path( pathID );
-        CVolumes vol( path.VolumeID );
-        if( !pathName.StartsWith(vol.VolumeName) ) {
-            return;
-        }
-        wxString physPath = vol.PhysicalPath;
-        if( physPath.IsEmpty() ) {
-            CUtils::MsgInfo( _("This volume has been cataloged with an older version of VVV. You need to update it in order to open files.") );
-            return;
-        }
-        wxString sep = wxString(wxFileName::GetPathSeparator());
-        if( pathName.Len() == vol.VolumeName.Len() ) {
-            pathName = "";
-        }
-        else {
-            pathName = pathName.Right( pathName.Len() - vol.VolumeName.Len() - 1 );
-        }
-        wxString fullPath = physPath;
-        if( !fullPath.EndsWith(sep) ) {
-            fullPath += sep;
-        }
-        fullPath += pathName;
-        if( !fullPath.EndsWith(sep) ) {
-            fullPath += sep;
-        }
-        fullPath += itemData->GetName();
-        if( !wxFileExists(fullPath) ) {
-            CUtils::MsgInfo( _("Unable to find the file:") + "\n\n" + fullPath );
-            return;
-        }
-        wxLaunchDefaultApplication( fullPath );
+        OpenFileInListView( i );
         return;
     }
 
@@ -3209,6 +3178,9 @@ void CMainFrame::OnListControlContextMenu( wxContextMenuEvent& event )
 	if( m_CurrentView == cvPhysical || m_CurrentView == cvSearch ) {
 		menu.Append( ID_ADD_VIRTUAL_FOLDER, _("Add To Virtual Folder") );
 	}
+    if( IsToolsOpenEnabled() ) {
+		menu.Append( ID_MENU_OPENFILE_FOLDER, _("Open with default program") );
+    }
 	menu.AppendSeparator();
 	menu.Append( ID_EDIT_OBJECT_DESCRIPTION, _("Object Information...") );
 
@@ -4225,4 +4197,123 @@ void CMainFrame::OnViewShowInPhysicalViewUpdate( wxUpdateUIEvent& event )
 
 	event.Enable( enabled );
 }
+
+
+/*!
+ * wxEVT_COMMAND_MENU_SELECTED event handler for ID_MENU_OPENFILE_FOLDER
+ */
+
+void CMainFrame::OnMenuOpenfileFolderClick( wxCommandEvent& event )
+{
+    if( CBaseDB::GetDatabase() == NULL || !m_ListViewHasFocus ) {
+		return;
+	}
+
+	if( m_CurrentView == cvSearch ) {
+        return;
+    }
+
+	wxListCtrl* lctl = GetListControl();
+    if( lctl->GetItemCount() == 0 ) {
+        return;
+    }
+	long item = lctl->GetNextItem( -1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
+    if( item < 0 ) {
+        return;
+    }
+
+    OpenFileInListView( item );
+}
+
+
+bool CMainFrame::IsToolsOpenEnabled()
+{
+    if( CBaseDB::GetDatabase() == NULL || !m_ListViewHasFocus ) {
+		return false;
+	}
+
+	bool enabled = true;
+
+	if( m_CurrentView == cvSearch ) {
+        enabled = false;
+    }
+
+	if( m_CurrentView == cvVirtual ) {
+    	wxListCtrl* lctl = GetListControl();
+        if( lctl->GetItemCount() == 0 ) {
+            return false;
+        }
+    	long item = lctl->GetNextItem( -1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
+        if( item < 0 ) {
+            return false;
+        }
+    	MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( item );
+        if( itemData->GetFullPhysicalPath().IsEmpty() )
+            enabled = false;
+    }
+
+    return enabled;
+}
+
+
+/*!
+ * wxEVT_UPDATE_UI event handler for ID_MENU_OPENFILE_FOLDER
+ */
+
+void CMainFrame::OnMenuOpenfileFolderUpdate( wxUpdateUIEvent& event )
+{
+
+    event.Enable( IsToolsOpenEnabled() );
+}
+
+void CMainFrame::OpenFileInListView( const long index )
+{
+	wxListCtrl* lctl = GetListControl();
+	MyListItemData *itemData = (MyListItemData *) lctl->GetItemData( index );
+
+    long fileID = itemData->GetPhysicalFileID();
+    long pathID = CFiles::GetPathID( fileID );
+    wxString pathName = CPaths::GetFullPath( pathID );
+    CPaths path( pathID );
+    CVolumes vol( path.VolumeID );
+    if( !pathName.StartsWith(vol.VolumeName) ) {
+        return;
+    }
+    wxString physPath = vol.PhysicalPath;
+    if( physPath.IsEmpty() ) {
+        CUtils::MsgInfo( _("This volume has been cataloged with an older version of VVV. You need to update it in order to open files.") );
+        return;
+    }
+    wxString sep = wxString(wxFileName::GetPathSeparator());
+    if( pathName.Len() == vol.VolumeName.Len() ) {
+        pathName = "";
+    }
+    else {
+        pathName = pathName.Right( pathName.Len() - vol.VolumeName.Len() - 1 );
+    }
+    wxString fullPath = physPath;
+    if( !fullPath.EndsWith(sep) ) {
+        fullPath += sep;
+    }
+    fullPath += pathName;
+    if( !fullPath.EndsWith(sep) ) {
+        fullPath += sep;
+    }
+    fullPath += itemData->GetName();
+    if( itemData->IsFolder() ) {
+        if( !wxDirExists(fullPath) ) {
+            CUtils::MsgInfo( _("Unable to find the folder:") + "\n\n" + fullPath );
+            return;
+        }
+    }
+    else {
+        if( !wxFileExists(fullPath) ) {
+            CUtils::MsgInfo( _("Unable to find the file:") + "\n\n" + fullPath );
+            return;
+        }
+    }
+    wxLaunchDefaultApplication( fullPath );
+
+}
+
 

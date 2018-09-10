@@ -548,6 +548,7 @@
           <string name="icon-name">"frame"</string>
           <string name="id-prefix">""</string>
           <string name="id-suffix">""</string>
+          <string name="identifier">"itemFrame1"</string>
           <long name="is-transient">0</long>
           <long name="locked">0</long>
           <long name="owns-file">1</long>
@@ -624,6 +625,7 @@
             <string name="created">"30/4/2007"</string>
             <string name="filename">""</string>
             <string name="icon-name">"toolbar"</string>
+            <string name="identifier">"itemToolBar2"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -706,6 +708,7 @@
               <string name="created">"30/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool3"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -728,6 +731,7 @@
               <string name="created">"30/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool4"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -750,6 +754,7 @@
               <string name="created">"1/5/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool5"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -772,6 +777,7 @@
               <string name="created">"22/6/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool6"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -794,6 +800,7 @@
               <string name="created">"30/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemseparator7"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -807,6 +814,7 @@
               <string name="created">"30/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool8"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -829,6 +837,7 @@
               <string name="created">"30/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool9"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -851,6 +860,7 @@
               <string name="created">"31/5/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menuitem"</string>
+              <string name="identifier">"itemtool10"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -874,11 +884,11 @@
             <string name="created">"16/12/2006"</string>
             <string name="filename">""</string>
             <string name="icon-name">"menubar"</string>
+            <string name="identifier">"itemMenuBar11"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
             <string name="proxy-Id name">"ID_MAINMENUBAR"</string>
-            <long name="proxy-Id value">10021</long>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
             <string name="title">"wxMenuBar: ID_MAINMENUBAR"</string>
             <long name="title-mode">0</long>
@@ -888,6 +898,7 @@
               <string name="created">"16/12/2006"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu12"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -904,6 +915,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnNEWClick|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem13"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -927,6 +939,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnOPENClick"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem14"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -951,6 +964,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnFileExportUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem15"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -973,6 +987,7 @@
                 <string name="created">"16/12/2006"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator16"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -988,6 +1003,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnFileBackupUpdate|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem17"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1011,6 +1027,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnFileRestoreClick|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem18"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1033,6 +1050,7 @@
                 <string name="created">"25/6/2008"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator19"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1047,6 +1065,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnEXITClick|||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem20"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1070,6 +1089,7 @@
               <string name="created">"16/4/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu21"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -1087,6 +1107,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnAddVirtualFolderUpdate"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem22"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1109,6 +1130,7 @@
                 <string name="created">"16/4/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator23"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1124,6 +1146,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnEditRenameUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem24"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1148,6 +1171,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnEditDeleteUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem25"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1170,6 +1194,7 @@
                 <string name="created">"16/12/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator26"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1185,6 +1210,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnEditObjectDescriptionUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem27"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1207,6 +1233,7 @@
                 <string name="created">"20/4/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator28"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1222,6 +1249,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnNewVirtualRootFolderUpdate"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem29"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1246,6 +1274,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnNewVirtualSubfolderUpdate"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem30"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1269,6 +1298,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnPreferencesClick|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem31"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1292,6 +1322,7 @@
               <string name="created">"29/12/2006"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu32"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -1309,6 +1340,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnCatalogVolumeUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem33"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1333,6 +1365,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnUpdateVolumeUpdate|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem34"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1356,6 +1389,7 @@
               <string name="created">"16/3/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu35"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -1373,6 +1407,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewPhysicalUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem36"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1397,6 +1432,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewVirtualUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem37"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1421,6 +1457,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewSearchUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem38"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1443,6 +1480,7 @@
                 <string name="created">"4/5/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator39"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1457,6 +1495,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewShowInPhysicalViewUpdate|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem40"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1481,6 +1520,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnUpOneFolderUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem41"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1504,6 +1544,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewExpandUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem42"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1527,6 +1568,7 @@
                 <string name="event-handler-1">"wxEVT_UPDATE_UI|OnViewCollapseUpdate|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem43"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1549,6 +1591,7 @@
                 <string name="created">"22/6/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator44"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1563,6 +1606,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnViewToolbarClick|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem45"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1586,6 +1630,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnViewStatusBarClick|NONE||"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem46"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1609,22 +1654,61 @@
               <string name="created">"10/11/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu47"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
               <bool name="proxy-Enabled">1</bool>
               <string name="proxy-Label">"&amp;Tools"</string>
               <string name="proxy-Member variable name">""</string>
-              <string name="proxy-Platform">"__WXMSW__,__WXGTK__"</string>
+              <string name="proxy-Platform">""</string>
               <string name="title">"Tools"</string>
               <long name="title-mode">0</long>
               <string name="type">"dialog-control-document"</string>
+              <document>
+                <string name="proxy-type">"wbMenuItemProxy"</string>
+                <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnMenuOpenfileFolderClick|NONE||CMainFrame"</string>
+                <string name="event-handler-1">"wxEVT_UPDATE_UI|OnMenuOpenfileFolderUpdate|NONE||"</string>
+                <string name="filename">""</string>
+                <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem48"</string>
+                <long name="is-transient">0</long>
+                <long name="locked">0</long>
+                <long name="owns-file">1</long>
+                <string name="proxy-Bitmap">""</string>
+                <string name="proxy-Bitmap unchecked">""</string>
+                <bool name="proxy-Checked">0</bool>
+                <bool name="proxy-Enabled">1</bool>
+                <string name="proxy-Help text">""</string>
+                <string name="proxy-Id name">"ID_MENU_OPENFILE_FOLDER"</string>
+                <long name="proxy-Id value">10021</long>
+                <string name="proxy-Kind">"Normal"</string>
+                <string name="proxy-Label">"Open with default program"</string>
+                <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
+                <string name="title">"Open with default program: ID_MENU_OPENFILE_FOLDER"</string>
+                <long name="title-mode">0</long>
+                <string name="type">"dialog-control-document"</string>
+              </document>
+              <document>
+                <string name="proxy-type">"wbMenuSeparatorProxy"</string>
+                <string name="filename">""</string>
+                <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator49"</string>
+                <long name="is-transient">0</long>
+                <long name="locked">0</long>
+                <long name="owns-file">1</long>
+                <string name="proxy-Platform">"__WXMSW__,__WXGTK__"</string>
+                <string name="title">"------------"</string>
+                <long name="title-mode">0</long>
+                <string name="type">"dialog-control-document"</string>
+              </document>
               <document>
                 <string name="proxy-type">"wbMenuItemProxy"</string>
                 <string name="created">"10/11/2007"</string>
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnPreferencesClick|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem50"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1637,7 +1721,7 @@
                 <long name="proxy-Id value">5022</long>
                 <string name="proxy-Kind">"Normal"</string>
                 <string name="proxy-Label">"&amp;Options..."</string>
-                <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
+                <string name="proxy-Platform">"__WXMSW__,__WXGTK__"</string>
                 <string name="title">"&amp;Options...: wxID_PREFERENCES"</string>
                 <long name="title-mode">0</long>
                 <string name="type">"dialog-control-document"</string>
@@ -1648,6 +1732,7 @@
               <string name="created">"15/5/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"menu"</string>
+              <string name="identifier">"itemMenu51"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -1664,6 +1749,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnHelpContentsClick|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem52"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1686,6 +1772,7 @@
                 <string name="created">"31/12/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemseparator53"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1700,6 +1787,7 @@
                 <string name="event-handler-0">"wxEVT_COMMAND_MENU_SELECTED|OnABOUTClick|NONE||CMainFrame"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"menuitem"</string>
+                <string name="identifier">"itemMenuItem54"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -1724,6 +1812,7 @@
             <string name="created">"16/12/2006"</string>
             <string name="filename">""</string>
             <string name="icon-name">"statusbar"</string>
+            <string name="identifier">"itemStatusBar55"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -1789,6 +1878,7 @@
             <string name="created">"16/12/2006"</string>
             <string name="filename">""</string>
             <string name="icon-name">"splitter"</string>
+            <string name="identifier">"itemSplitterWindow56"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -1870,6 +1960,7 @@
               <string name="event-handler-2">"wxEVT_COMMAND_TREE_ITEM_MENU|OnTreeControlItemMenu|NONE||"</string>
               <string name="filename">""</string>
               <string name="icon-name">"treectrl"</string>
+              <string name="identifier">"itemTreeCtrl57"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -1956,6 +2047,7 @@
               <string name="event-handler-4">"wxEVT_KILL_FOCUS|OnListControlKillFocus|NONE||"</string>
               <string name="filename">""</string>
               <string name="icon-name">"listctrl"</string>
+              <string name="identifier">"itemListCtrl58"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -3214,13 +3306,21 @@
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
+            <string name="proxy-AlignH">"Centre"</string>
+            <string name="proxy-AlignV">"Centre"</string>
+            <long name="proxy-Border">5</long>
             <string name="proxy-Member variable name">""</string>
             <string name="proxy-Orientation">"Vertical"</string>
             <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
+            <long name="proxy-Stretch factor">0</long>
             <bool name="proxy-wxADJUST_MINSIZE">0</bool>
+            <bool name="proxy-wxBOTTOM">1</bool>
             <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+            <bool name="proxy-wxLEFT">1</bool>
             <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
+            <bool name="proxy-wxRIGHT">1</bool>
             <bool name="proxy-wxSHAPED">0</bool>
+            <bool name="proxy-wxTOP">1</bool>
             <string name="title">"wxBoxSizer V"</string>
             <long name="title-mode">0</long>
             <string name="type">"dialog-control-document"</string>

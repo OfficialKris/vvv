@@ -277,6 +277,12 @@ public:
     /// wxEVT_COMMAND_MENU_SELECTED event handler for ID_VIEW_STATUS_BAR
     void OnViewStatusBarClick( wxCommandEvent& event );
 
+    /// wxEVT_COMMAND_MENU_SELECTED event handler for ID_MENU_OPENFILE_FOLDER
+    void OnMenuOpenfileFolderClick( wxCommandEvent& event );
+
+    /// wxEVT_UPDATE_UI event handler for ID_MENU_OPENFILE_FOLDER
+    void OnMenuOpenfileFolderUpdate( wxUpdateUIEvent& event );
+
 #if defined(__WXMSW__) || defined(__WXGTK__)
     /// wxEVT_COMMAND_MENU_SELECTED event handler for wxID_PREFERENCES
     void OnPreferencesClick( wxCommandEvent& event );
@@ -346,6 +352,7 @@ public:
         ID_VIEW_COLLAPSE = 10075,
         ID_VIEW_TOOLBAR = 10078,
         ID_VIEW_STATUS_BAR = 10084,
+        ID_MENU_OPENFILE_FOLDER = 10021,
         ID_HELP_CONTENTS = 10085,
         ID_STATUSBAR1 = 10086,
         ID_SPLITTERWINDOW1 = 10089,
@@ -607,6 +614,11 @@ private:
 
 	// create a toolbar for the Mac version ( bitmaps are enlarged )
 	void CreateMacToolbar();
+
+    bool IsToolsOpenEnabled();
+
+    // open file in the listview control based on its index
+    void OpenFileInListView( const long index );
 
 protected:
 	// shows in the listview the files contained in the passed folder
