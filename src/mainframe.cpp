@@ -683,6 +683,27 @@ bool CMainFrame::Create( wxWindow* parent, wxWindowID id, const wxString& captio
 	m_ListviewColWidthVirtual[k++] = pConfig->Read(wxT("cw15"), 90);
 	m_ListviewColWidthVirtual[k++] = pConfig->Read(wxT("cw16"), 70);
 
+	k = 0;
+	pConfig->SetPath(wxT("/Mainframe/Layout/ListViewSearch"));
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw0"), 200);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw1"), 100);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw2"), 100);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw3"), 200);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw4"), 200);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw5"), 100);
+	// audio metadata
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw6"), 150);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw7"), 150);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw8"), 150);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw9"), 50);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw10"), 100);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw11"), 70);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw12"), 90);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw13"), 70);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw14"), 70);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw15"), 90);
+	m_ListviewColWidthSearch[k++] = pConfig->Read(wxT("cw16"), 70);
+
 	// reads the visibility state of audio metadata columns
 	m_amdColumnsToShow = new bool[N_AUDIO_METADATA_COLUMNS];
 	pConfig->SetPath(wxT("/Mainframe/Layout"));
@@ -1335,9 +1356,13 @@ void CMainFrame::CreateListControlHeaders(void) {
 		for( k = 0; k < N_BASE_COLS_PHYSICAL; k++ )
 			lctl->SetColumnWidth( k, m_ListviewColWidthPhysical[k] );
 	}
-	else {
+	if( m_CurrentView == cvVirtual ) {
 		for( k = 0; k < N_BASE_COLS_VIRTUAL; k++ )
 			lctl->SetColumnWidth( k, m_ListviewColWidthVirtual[k] );
+	}
+	if( m_CurrentView == cvSearch ) {
+		for( k = 0; k < N_BASE_COLS_VIRTUAL; k++ )
+			lctl->SetColumnWidth( k, m_ListviewColWidthSearch[k] );
 	}
 
 	m_CurrentlyShowingAudioMetadata = false;
@@ -1453,8 +1478,10 @@ CMainFrame::~CMainFrame() {
 
 	if( m_CurrentView == cvPhysical ) 
 		StoreListControlPhysicalWidth();
-	else
+	if( m_CurrentView == cvVirtual ) 
 		StoreListControlVirtualWidth();
+	if( m_CurrentView == cvSearch ) 
+		StoreListControlSearchWidth();
 
 	DeleteAllListControlItems();	// to delete item data
 
@@ -1521,6 +1548,25 @@ CMainFrame::~CMainFrame() {
 	pConfig->Write(wxT("cw14"), (long) m_ListviewColWidthVirtual[k++]);
 	pConfig->Write(wxT("cw15"), (long) m_ListviewColWidthVirtual[k++]);
 	pConfig->Write(wxT("cw16"), (long) m_ListviewColWidthVirtual[k++]);
+	k = 0;
+	pConfig->SetPath(wxT("/Mainframe/Layout/ListViewSearch"));
+	pConfig->Write(wxT("cw0"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw1"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw2"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw3"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw4"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw5"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw6"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw7"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw8"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw9"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw10"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw11"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw12"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw13"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw14"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw15"), (long) m_ListviewColWidthSearch[k++]);
+	pConfig->Write(wxT("cw16"), (long) m_ListviewColWidthSearch[k++]);
 
 	// saves the visibility state of audio metadata columns
 	pConfig->SetPath(wxT("/Mainframe/Layout"));
@@ -1668,7 +1714,19 @@ void CMainFrame::AddAudioMetatataToListControl( CFilesAudioMetadata fam, wxListC
 	k = firstColumnIndex;
 	for( int i = 0; i < N_AUDIO_METADATA_COLUMNS; i++ )
 		if( m_amdColumnsToShow[i] ) {
-			lctl->SetColumnWidth( k, m_CurrentView == cvPhysical ? m_ListviewColWidthPhysical[firstColumnIndex + i] : m_ListviewColWidthVirtual[firstColumnIndex + i] );
+            switch( m_CurrentView ) {
+                case cvPhysical:
+        			lctl->SetColumnWidth( k, m_ListviewColWidthPhysical[firstColumnIndex + i] );
+                    break;
+                case cvVirtual:
+        			lctl->SetColumnWidth( k, m_ListviewColWidthVirtual[firstColumnIndex + i] );
+                    break;
+                case cvSearch:
+        			lctl->SetColumnWidth( k, m_ListviewColWidthSearch[firstColumnIndex + i] );
+                    break;
+                default:
+                    wxFAIL;
+            }
 			k++;
 		}
 
@@ -2304,6 +2362,25 @@ void CMainFrame::StoreListControlPhysicalWidth(void) {
 	}
 }
 
+void CMainFrame::StoreListControlSearchWidth(void) {
+
+	int k;
+	wxListCtrl* lctl = GetListControl();
+
+	for( k = 0; k < N_BASE_COLS_VIRTUAL; k++ )
+		m_ListviewColWidthSearch[k] = lctl->GetColumnWidth(k);
+
+	if( m_CurrentlyShowingAudioMetadata ) {
+		// stores the width of the audio metadata columns
+		k = N_BASE_COLS_VIRTUAL;
+		for( int i = 0; i < N_AUDIO_METADATA_COLUMNS; i++ )
+			if( m_amdColumnsToShow[i] ) {
+				m_ListviewColWidthSearch[N_BASE_COLS_VIRTUAL + i] = lctl->GetColumnWidth(k);
+				k++;
+			}
+	}
+}
+
 /*!
  * wxEVT_COMMAND_MENU_SELECTED event handler for wxID_EXIT
  */
@@ -2732,6 +2809,7 @@ void CMainFrame::ShowSearchView(void) {
 }
 
 void CMainFrame::HideSearchView(void) {
+	StoreListControlSearchWidth();
 	m_SearchPanel->Show( false );
 }
 

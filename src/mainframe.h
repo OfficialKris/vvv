@@ -538,11 +538,15 @@ private:
 	int m_ListviewColWidthPhysical[N_BASE_COLS_PHYSICAL + N_AUDIO_METADATA_COLUMNS];
 	// width of the listview columns in virtual view
 	int m_ListviewColWidthVirtual[N_BASE_COLS_VIRTUAL + N_AUDIO_METADATA_COLUMNS];
+	// width of the listview columns in search view
+	int m_ListviewColWidthSearch[N_BASE_COLS_VIRTUAL + N_AUDIO_METADATA_COLUMNS];
 
 	// stores the column widths of the list control columns in physical view
 	void StoreListControlPhysicalWidth();
 	// stores the column widths of the list control columns in virtual view
 	void StoreListControlVirtualWidth();
+	// stores the column widths of the list control columns in search view
+	void StoreListControlSearchWidth();
 
 	// shows the physical view
 	void ShowPhysicalView(void);
