@@ -113,6 +113,9 @@ public:
 
 ////@begin CDialogSettings member function declarations
 
+    bool GetAlternateRowColors() const { return m_AlternateRowColors ; }
+    void SetAlternateRowColors(bool value) { m_AlternateRowColors = value ; }
+
     int GetBeepTime() const { return m_BeepTime ; }
     void SetBeepTime(int value) { m_BeepTime = value ; }
 
@@ -165,6 +168,7 @@ public:
     wxTextCtrl* m_ServerNameCtrl;
     wxTextCtrl* m_UsernameCtrl;
     wxTextCtrl* m_PasswordCtrl;
+    bool m_AlternateRowColors;
     bool m_CatalogAudioMetadata;
 private:
     int m_BeepTime;

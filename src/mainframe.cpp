@@ -497,6 +497,26 @@ void CRightPaneList::OnListControlKillFocus( wxFocusEvent& event )
 	m_MainFrame->OnListControlKillFocus( event );
 }
 
+void CRightPaneList::AlternateRowColors( const bool alternate )
+{
+    if( GetItemCount() == 0 ) return;
+
+    wxColour col;
+    if( alternate ) {
+        const wxColour bgColour = GetBackgroundColour();
+        // Depending on the background, alternate row color
+        // will be 3% more dark or 50% brighter.
+        int alpha = bgColour.GetRGB() > 0x808080 ? 97 : 150;
+        col = bgColour.ChangeLightness(alpha);
+    }
+    else {
+        col = GetBackgroundColour();
+    }
+
+    for( int k = 1; k < GetItemCount(); k += 2 ) {
+        SetItemBackgroundColour( k, col );
+    }
+}
 
 
 
@@ -732,6 +752,7 @@ bool CMainFrame::Create( wxWindow* parent, wxWindowID id, const wxString& captio
 		if( pwd != wxEmptyString )	pwd = CUtils::Encrypt( pwd );
 	}
 	DBConnectionData.password = pwd;
+	pConfig->Read( wxT("AlternateRowColors"), &m_AlternateRowColors, false );
 
     // read search settings
 	long ltmp;
@@ -1595,6 +1616,7 @@ CMainFrame::~CMainFrame() {
 	wxString pwd = DBConnectionData.password;
 	if( pwd != wxEmptyString )	pwd = CUtils::Encrypt( pwd );
 	pConfig->Write( wxT("Password"),  pwd );
+	pConfig->Write( wxT("AlternateRowColors"), m_AlternateRowColors );
 
     // search options
 	pConfig->Write( wxT("SearchFileNameSelection"), m_FilenameRadioBox->GetSelection() );
@@ -1751,7 +1773,7 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 	wxBusyCursor wait;
 
 	wxTreeCtrl* tctl = GetTreePhysicalControl();
-	wxListCtrl* lctl = GetListControl();
+	CRightPaneList* lctl = GetListControl();
 
     if( lctl == NULL ) return;
 	
@@ -1822,9 +1844,15 @@ void CMainFrame::ShowFolderFiles( wxTreeItemId itemID ) {
 		DeleteAudioMetadataListControlHeaders();
 
 	lctl->SortItems( ListControlCompareFunction, m_CurrentView == cvPhysical ? 0 : 1 );
+
+    // alternate row colors
+    if( m_AlternateRowColors ) {
+        lctl->AlternateRowColors( true );
+    }
+
 	lctl->Show();
 
-	UpdateStatusBar( nPhysicalFiles, sizePhysicalFiles );
+    UpdateStatusBar( nPhysicalFiles, sizePhysicalFiles );
 }
 
 // shows in the listview the files contained in the currently selected folder
@@ -1846,7 +1874,7 @@ void CMainFrame::ShowVirtualFolderFiles( wxTreeItemId itemID ) {
 	wxBusyCursor wait;
 
 	wxTreeCtrl* tctl = GetTreeVirtualControl();
-	wxListCtrl* lctl = GetListControl();
+	CRightPaneList* lctl = GetListControl();
     if( lctl == NULL ) return;
 	
 	// assigns the image list
@@ -1905,9 +1933,15 @@ void CMainFrame::ShowVirtualFolderFiles( wxTreeItemId itemID ) {
 		DeleteAudioMetadataListControlHeaders();
 
 	lctl->SortItems( ListControlCompareFunction, m_CurrentView == cvPhysical ? 0 : 1 );
-	lctl->Show();
 
-	UpdateStatusBar( nVirtualFiles, sizeVirtualFiles );
+    // alternate row colors
+    if( m_AlternateRowColors ) {
+        lctl->AlternateRowColors( true );
+    }
+
+    lctl->Show();
+
+    UpdateStatusBar( nVirtualFiles, sizeVirtualFiles );
 }
 
 // shows in the listview the files contained in the currently selected virtual folder
@@ -2903,7 +2937,7 @@ void CMainFrame::OnButtonSearchClick( wxCommandEvent& WXUNUSED(event) ) {
 
 	SearchScope scope = (SearchScope) m_SearchRadioBox->GetSelection();
 	wxBusyCursor wait;
-	wxListCtrl* lctl = GetListControl();
+	CRightPaneList* lctl = GetListControl();
 	
 	// assigns the image list
 	wxImageList* iml = new wxImageList( 16, 16 );
@@ -2989,7 +3023,13 @@ void CMainFrame::OnButtonSearchClick( wxCommandEvent& WXUNUSED(event) ) {
 	}
 
 	lctl->SortItems( ListControlCompareFunction, m_CurrentView == cvPhysical ? 0 : 1 );
-	lctl->Show();
+
+    // alternate row colors
+    if( m_AlternateRowColors ) {
+        lctl->AlternateRowColors( true );
+    }
+
+    lctl->Show();
 
 	if( lctl->GetItemCount() == 0 ) {
 		CUtils::MsgInfo( _("The search did not find anything") );
@@ -3324,6 +3364,7 @@ void CMainFrame::OnPreferencesClick( wxCommandEvent& WXUNUSED(event) )
 	dlg.SetPassword( DBConnectionData.password );
 	dlg.SetBeepTime( m_BeepTime );
 	dlg.SetCatalogAudioMetadata( m_CatalogAudioMetadata );
+    dlg.SetAlternateRowColors( m_AlternateRowColors );
 	if( dlg.ShowModal() ) {
 		m_reopenLastUsedCatalog = dlg.GetReopenCatalog();
 		m_amdColumnsToShow = dlg.GetAmdColumnsToShow();
@@ -3334,6 +3375,7 @@ void CMainFrame::OnPreferencesClick( wxCommandEvent& WXUNUSED(event) )
 		m_BeepTime = dlg.GetBeepTime();
 		CLongTaskBeep::SetMinSecondsForBell( m_BeepTime );
 		m_CatalogAudioMetadata = dlg.GetCatalogAudioMetadata();
+        m_AlternateRowColors = dlg.GetAlternateRowColors();
 		RefreshCurrentView();	// if the user changes the columns to show
 	}
 

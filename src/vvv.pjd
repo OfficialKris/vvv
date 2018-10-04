@@ -5413,6 +5413,7 @@
           <string name="icon-name">"dialog"</string>
           <string name="id-prefix">""</string>
           <string name="id-suffix">""</string>
+          <string name="identifier">"itemPropertySheetDialog1"</string>
           <long name="is-transient">0</long>
           <long name="locked">0</long>
           <long name="owns-file">1</long>
@@ -5488,20 +5489,22 @@
           <bool name="use-id-prefix">0</bool>
           <bool name="use-id-suffix">0</bool>
           <long name="use-xrc">0</long>
-          <string name="variable-0">"m_BeepTime|int|BeepTime||2|0|"</string>
-          <string name="variable-1">"m_CatalogAudioMetadata|bool|CatalogAudioMetadata||0|0|"</string>
-          <string name="variable-2">"m_ConnectServer|bool|ConnectServer||2|0|"</string>
-          <string name="variable-3">"m_Password|wxString|Password||2|0|"</string>
-          <string name="variable-4">"m_ReopenCatalog|bool|ReopenCatalog||2|0|"</string>
-          <string name="variable-5">"m_ServerName|wxString|ServerName||2|0|"</string>
-          <string name="variable-6">"m_Username|wxString|Username||2|0|"</string>
-          <string name="variable-7">"m_amdColumnsToShow|bool*|AmdColumnsToShow||2|0|array of bools for visibility of audio metadata fields"</string>
+          <string name="variable-0">"m_AlternateRowColors|bool|AlternateRowColors||0|0|"</string>
+          <string name="variable-1">"m_BeepTime|int|BeepTime||2|0|"</string>
+          <string name="variable-2">"m_CatalogAudioMetadata|bool|CatalogAudioMetadata||0|0|"</string>
+          <string name="variable-3">"m_ConnectServer|bool|ConnectServer||2|0|"</string>
+          <string name="variable-4">"m_Password|wxString|Password||2|0|"</string>
+          <string name="variable-5">"m_ReopenCatalog|bool|ReopenCatalog||2|0|"</string>
+          <string name="variable-6">"m_ServerName|wxString|ServerName||2|0|"</string>
+          <string name="variable-7">"m_Username|wxString|Username||2|0|"</string>
+          <string name="variable-8">"m_amdColumnsToShow|bool*|AmdColumnsToShow||2|0|array of bools for visibility of audio metadata fields"</string>
           <long name="working-mode">0</long>
           <document>
             <string name="proxy-type">"wbPanelProxy"</string>
             <string name="created">"10/11/2007"</string>
             <string name="filename">""</string>
             <string name="icon-name">"panel"</string>
+            <string name="identifier">"itemPanel2"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -5579,6 +5582,7 @@
               <string name="created">"10/11/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"sizer"</string>
+              <string name="identifier">"itemBoxSizer3"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -5605,6 +5609,7 @@
                 <string name="created">"10/11/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"sizer"</string>
+                <string name="identifier">"itemBoxSizer4"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -5631,6 +5636,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox5"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -5692,10 +5698,76 @@
                   <string name="type">"dialog-control-document"</string>
                 </document>
                 <document>
+                  <string name="proxy-type">"wbCheckBoxProxy"</string>
+                  <string name="filename">""</string>
+                  <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox6"</string>
+                  <long name="is-transient">0</long>
+                  <long name="locked">0</long>
+                  <long name="owns-file">1</long>
+                  <string name="proxy-AlignH">"Left"</string>
+                  <string name="proxy-AlignV">"Centre"</string>
+                  <string name="proxy-Background colour">""</string>
+                  <string name="proxy-Base class">"wxCheckBox"</string>
+                  <long name="proxy-Border">5</long>
+                  <string name="proxy-Class">"wxCheckBox"</string>
+                  <string name="proxy-Custom arguments">""</string>
+                  <string name="proxy-Custom ctor arguments">""</string>
+                  <string name="proxy-Custom styles">""</string>
+                  <string name="proxy-Data class header filename">""</string>
+                  <string name="proxy-Data class implementation filename">""</string>
+                  <string name="proxy-Data class manager window">""</string>
+                  <string name="proxy-Data class name">""</string>
+                  <string name="proxy-Data source">""</string>
+                  <string name="proxy-Data validator">"wxGenericValidator(&amp; %VARIABLE%)"</string>
+                  <string name="proxy-Data variable">"m_AlternateRowColors"</string>
+                  <bool name="proxy-Enabled">1</bool>
+                  <bool name="proxy-External implementation">1</bool>
+                  <string name="proxy-Font">""</string>
+                  <string name="proxy-Foreground colour">""</string>
+                  <string name="proxy-Header filename">""</string>
+                  <long name="proxy-Height">-1</long>
+                  <string name="proxy-Help text">""</string>
+                  <bool name="proxy-Hidden">0</bool>
+                  <string name="proxy-Id name">"wxID_ANY"</string>
+                  <long name="proxy-Id value">-1</long>
+                  <string name="proxy-Implementation filename">""</string>
+                  <bool name="proxy-Initial value">0</bool>
+                  <string name="proxy-Label">"Alternate row colors"</string>
+                  <string name="proxy-Member variable name">""</string>
+                  <string name="proxy-Name">""</string>
+                  <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
+                  <bool name="proxy-Separate files">0</bool>
+                  <long name="proxy-Stretch factor">0</long>
+                  <string name="proxy-Tooltip text">""</string>
+                  <long name="proxy-Width">-1</long>
+                  <bool name="proxy-wxADJUST_MINSIZE">0</bool>
+                  <bool name="proxy-wxALIGN_RIGHT">0</bool>
+                  <bool name="proxy-wxBOTTOM">1</bool>
+                  <bool name="proxy-wxCHK_2STATE">0</bool>
+                  <bool name="proxy-wxCHK_3STATE">0</bool>
+                  <bool name="proxy-wxCHK_ALLOW_3RD_STATE_FOR_USER">0</bool>
+                  <bool name="proxy-wxFIXED_MINSIZE">0</bool>
+                  <bool name="proxy-wxFULL_REPAINT_ON_RESIZE">0</bool>
+                  <bool name="proxy-wxLEFT">1</bool>
+                  <bool name="proxy-wxNO_FULL_REPAINT_ON_RESIZE">0</bool>
+                  <bool name="proxy-wxRESERVE_SPACE_EVEN_IF_HIDDEN">0</bool>
+                  <bool name="proxy-wxRIGHT">1</bool>
+                  <bool name="proxy-wxSHAPED">0</bool>
+                  <bool name="proxy-wxTOP">1</bool>
+                  <bool name="proxy-wxWANTS_CHARS">0</bool>
+                  <long name="proxy-X">-1</long>
+                  <long name="proxy-Y">-1</long>
+                  <string name="title">"wxCheckBox: wxID_ANY"</string>
+                  <long name="title-mode">0</long>
+                  <string name="type">"dialog-control-document"</string>
+                </document>
+                <document>
                   <string name="proxy-type">"wbBoxSizerProxy"</string>
                   <string name="created">"18/12/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"sizer"</string>
+                  <string name="identifier">"itemBoxSizer7"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -5722,6 +5794,7 @@
                     <string name="created">"18/12/2007"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"statictext"</string>
+                    <string name="identifier">"itemStaticText8"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -5794,6 +5867,7 @@
                     <string name="created">"18/12/2007"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"spinctrl"</string>
+                    <string name="identifier">"itemSpinCtrl9"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -5865,6 +5939,7 @@
                   <string name="proxy-type">"wbSpacerProxy"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"spacer"</string>
+                  <string name="identifier">"itemSpacer10"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -5892,6 +5967,7 @@
                   <string name="event-handler-0">"wxEVT_COMMAND_BUTTON_CLICKED|OnBtnChangeLanguageClick|NONE||CDialogSettings"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"dialogcontrol"</string>
+                  <string name="identifier">"itemButton11"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -5962,6 +6038,7 @@
             <string name="created">"10/11/2007"</string>
             <string name="filename">""</string>
             <string name="icon-name">"panel"</string>
+            <string name="identifier">"itemPanel12"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -6039,6 +6116,7 @@
               <string name="created">"10/11/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"sizer"</string>
+              <string name="identifier">"itemBoxSizer13"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -6065,6 +6143,7 @@
                 <string name="created">"10/11/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"sizer"</string>
+                <string name="identifier">"itemBoxSizer14"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -6090,6 +6169,7 @@
                   <string name="proxy-type">"wbCheckBoxProxy"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox15"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6154,6 +6234,7 @@
                   <string name="proxy-type">"wbSpacerProxy"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"spacer"</string>
+                  <string name="identifier">"itemSpacer16"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6181,6 +6262,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"statictext"</string>
+                  <string name="identifier">"itemStaticText17"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6253,6 +6335,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox18"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6318,6 +6401,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox19"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6383,6 +6467,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox20"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6448,6 +6533,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox21"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6513,6 +6599,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox22"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6578,6 +6665,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox23"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6643,6 +6731,7 @@
                   <string name="created">"11/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox24"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6708,6 +6797,7 @@
                   <string name="created">"11/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox25"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6773,6 +6863,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox26"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6838,6 +6929,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox27"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6903,6 +6995,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox28"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6968,6 +7061,7 @@
                   <string name="created">"10/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"spacer"</string>
+                  <string name="identifier">"itemSpacer29"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -6998,6 +7092,7 @@
             <string name="created">"14/11/2007"</string>
             <string name="filename">""</string>
             <string name="icon-name">"panel"</string>
+            <string name="identifier">"itemPanel30"</string>
             <long name="is-transient">0</long>
             <long name="locked">0</long>
             <long name="owns-file">1</long>
@@ -7075,6 +7170,7 @@
               <string name="created">"14/11/2007"</string>
               <string name="filename">""</string>
               <string name="icon-name">"sizer"</string>
+              <string name="identifier">"itemBoxSizer31"</string>
               <long name="is-transient">0</long>
               <long name="locked">0</long>
               <long name="owns-file">1</long>
@@ -7101,6 +7197,7 @@
                 <string name="created">"14/11/2007"</string>
                 <string name="filename">""</string>
                 <string name="icon-name">"sizer"</string>
+                <string name="identifier">"itemBoxSizer32"</string>
                 <long name="is-transient">0</long>
                 <long name="locked">0</long>
                 <long name="owns-file">1</long>
@@ -7127,6 +7224,7 @@
                   <string name="created">"14/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"statictext"</string>
+                  <string name="identifier">"itemStaticText33"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -7204,6 +7302,7 @@ with other computers."</string>
                   <string name="created">"14/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"spacer"</string>
+                  <string name="identifier">"itemSpacer34"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -7231,6 +7330,7 @@ with other computers."</string>
                   <string name="created">"14/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"checkbox"</string>
+                  <string name="identifier">"itemCheckBox35"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -7296,6 +7396,7 @@ with other computers."</string>
                   <string name="created">"14/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"sizer"</string>
+                  <string name="identifier">"itemFlexGridSizer36"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -7327,6 +7428,7 @@ with other computers."</string>
                     <string name="created">"14/11/2007"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"statictext"</string>
+                    <string name="identifier">"itemStaticText37"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7400,6 +7502,7 @@ with other computers."</string>
                     <string name="event-handler-0">"wxEVT_UPDATE_UI|OnDsServernameUpdate|NONE||CDialogSettings"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"textctrl"</string>
+                    <string name="identifier">"itemTextCtrl38"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7484,6 +7587,7 @@ with other computers."</string>
                     <string name="created">"14/11/2007"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"statictext"</string>
+                    <string name="identifier">"itemStaticText39"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7557,6 +7661,7 @@ with other computers."</string>
                     <string name="event-handler-0">"wxEVT_UPDATE_UI|OnDsUsernameUpdate|NONE||CDialogSettings"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"textctrl"</string>
+                    <string name="identifier">"itemTextCtrl40"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7641,6 +7746,7 @@ with other computers."</string>
                     <string name="created">"14/11/2007"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"statictext"</string>
+                    <string name="identifier">"itemStaticText41"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7714,6 +7820,7 @@ with other computers."</string>
                     <string name="event-handler-0">"wxEVT_UPDATE_UI|OnDsPasswordUpdate|NONE||CDialogSettings"</string>
                     <string name="filename">""</string>
                     <string name="icon-name">"textctrl"</string>
+                    <string name="identifier">"itemTextCtrl42"</string>
                     <long name="is-transient">0</long>
                     <long name="locked">0</long>
                     <long name="owns-file">1</long>
@@ -7799,6 +7906,7 @@ with other computers."</string>
                   <string name="created">"14/11/2007"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"spacer"</string>
+                  <string name="identifier">"itemSpacer43"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>
@@ -7828,6 +7936,7 @@ with other computers."</string>
                   <string name="event-handler-1">"wxEVT_UPDATE_UI|OnDsTestConnectionUpdate|NONE||CDialogSettings"</string>
                   <string name="filename">""</string>
                   <string name="icon-name">"dialogcontrol"</string>
+                  <string name="identifier">"itemButton44"</string>
                   <long name="is-transient">0</long>
                   <long name="locked">0</long>
                   <long name="owns-file">1</long>

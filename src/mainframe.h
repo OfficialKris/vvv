@@ -480,6 +480,9 @@ private:
 	// if false ignore audio metadata
 	bool m_CatalogAudioMetadata;
 
+    // if true show alternate row colors in the list controls
+    bool m_AlternateRowColors;
+
 	// pointers to some windows used in the main frame
 	CRightPaneList* m_listCtl;	// the list control
 	wxTreeCtrl* m_treePhysicalCtl;	// the tree control with the physical view
@@ -697,6 +700,11 @@ public:
 
 	// stores a reference to the main frame object, needed to call mainframe's member functions
 	void SetMainFrame( CMainFrame* mfp ) { m_MainFrame = mfp; }
+
+    // if alternate = true show alternate row colors for readability
+    // if false show an even background
+    void AlternateRowColors( const bool alternate = true );
+
 
 private:
 
