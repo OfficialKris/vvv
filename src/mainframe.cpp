@@ -733,6 +733,13 @@ bool CMainFrame::Create( wxWindow* parent, wxWindowID id, const wxString& captio
 	}
 	DBConnectionData.password = pwd;
 
+    // read search settings
+	long ltmp;
+    pConfig->Read( wxT("SearchFileNameSelection"), &ltmp, wxNOT_FOUND );
+    if( ltmp != wxNOT_FOUND ) m_FilenameRadioBox->SetSelection( ltmp );
+    pConfig->Read( wxT("SearchDescriptionSelection"), &ltmp, wxNOT_FOUND );
+    if( ltmp != wxNOT_FOUND ) m_DescriptionRadioBox->SetSelection( ltmp );
+
 	CreateListControlHeaders();
 
 	// checks to see if a catalog name has been passed in the command line
@@ -1588,6 +1595,10 @@ CMainFrame::~CMainFrame() {
 	wxString pwd = DBConnectionData.password;
 	if( pwd != wxEmptyString )	pwd = CUtils::Encrypt( pwd );
 	pConfig->Write( wxT("Password"),  pwd );
+
+    // search options
+	pConfig->Write( wxT("SearchFileNameSelection"), m_FilenameRadioBox->GetSelection() );
+	pConfig->Write( wxT("SearchDescriptionSelection"), m_DescriptionRadioBox->GetSelection() );
 
 	delete []m_amdColumnsToShow;
 
