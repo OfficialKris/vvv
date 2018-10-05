@@ -101,8 +101,8 @@ public:
 	// return the name of the default data folder (or "" if none). used for the portable version
 	wxString GetDefaultDataFolder() { return m_DefaultDataFolder; }
 
-//	wxHtmlHelpController *GetHelpController() { return m_HelpController; }
-	wxHelpController *GetHelpController() { return m_HelpController; }
+	wxHtmlHelpController *GetHelpController() { return m_HelpController; }
+//	wxHelpController *GetHelpController() { return m_HelpController; }
 
 ////@begin CVvvApp event handler declarations
 
@@ -143,8 +143,8 @@ private:
 
 
 	// help controller
-//	wxHtmlHelpController *m_HelpController;
-	wxHelpController *m_HelpController;
+	wxHtmlHelpController *m_HelpController;
+//	wxHelpController *m_HelpController;
 };
 
 /*!

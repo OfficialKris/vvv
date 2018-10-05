@@ -147,8 +147,8 @@ bool CVvvApp::OnInit()
 
 	// initialize help
 	wxFileSystem::AddHandler( new wxZipFSHandler );
-//	m_HelpController = new wxHtmlHelpController;
-	m_HelpController = new wxHelpController;
+	m_HelpController = new wxHtmlHelpController( wxHF_TOOLBAR | wxHF_CONTENTS | wxHF_SEARCH | wxHF_BOOKMARKS | wxHF_PRINT );
+//	m_HelpController = new wxHelpController;
 	m_HelpController->Initialize( CUtils::GetHelpFileName() );
 
 	// parse the command line

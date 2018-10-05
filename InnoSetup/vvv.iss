@@ -42,7 +42,7 @@ Source: "intl\fbintl.dll"; DestDir: "{app}\intl"; Flags: replacesameversion
 Source: "intl\fbintl.conf"; DestDir: "{app}\intl"; Flags: replacesameversion
 Source: "..\vvv-struct-update.fdb"; DestDir: "{app}"; Flags: overwritereadonly uninsremovereadonly; Attribs: readonly
 Source: "..\VVV.fbk"; DestDir: "{app}"
-Source: "..\help\en\vvv.chm"; DestDir: "{app}"
+Source: "..\help\en\vvv.htb"; DestDir: "{app}"
 Source: "..\translations\vvv-bg.mo"; DestDir: "{app}\languages\bg"; DestName: "vvv.mo"
 Source: "..\translations\vvv-cn.mo"; DestDir: "{app}\languages\cn"; DestName: "vvv.mo"
 Source: "..\translations\vvv-cs.mo"; DestDir: "{app}\languages\cs"; DestName: "vvv.mo"
