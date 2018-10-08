@@ -35,6 +35,7 @@
 #include "virtual_files.h"
 #include "virtual_paths.h"
 #include "audio_metadata.h"
+#include "vvv.h"
 
 #include <vector>
 
@@ -204,10 +205,7 @@ void CFileInformationDialog::OnOkClick( wxCommandEvent& event )
 
 void CFileInformationDialog::OnHelpClick( wxCommandEvent& event )
 {
-////@begin wxEVT_COMMAND_BUTTON_CLICKED event handler for wxID_HELP in CFileInformationDialog.
-    // Before editing this code, remove the block markers.
-    event.Skip();
-////@end wxEVT_COMMAND_BUTTON_CLICKED event handler for wxID_HELP in CFileInformationDialog. 
+	wxGetApp().GetHelpController()->DisplaySection( wxT("file_information.htm") );
 }
 
 
