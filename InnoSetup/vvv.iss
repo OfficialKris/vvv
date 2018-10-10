@@ -8,7 +8,7 @@
 
 #define AppName "VVV (Virtual Volumes View)"
 #define ExeName "vvv.exe"
-#define AppVersion "1.3"
+#define AppVersion "1.4"
 
 [Setup]
 AppId=VVV-fu-ku-jitsu
@@ -22,7 +22,7 @@ VersionInfoVersion={#AppVersion}
 ChangesAssociations=yes
 OutputDir=.
 ;OutputBaseFilename=VVV- + {#AppVersion} + -Setup
-OutputBaseFilename=VVV-1.3-Setup
+OutputBaseFilename=VVV-1.4-Setup
 SignTool=kSign /d $qVVV (Virtual Volumes View)$q /du $qhttp://vvvapp.sourceforge.net$q $f
 
 [Tasks]
