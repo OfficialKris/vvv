@@ -37,6 +37,9 @@ int CUtils::expectedDatabaseVersion = 23;
 int CUtils::firstUnicodeDatabaseVersion = 14;
 wxString CUtils::strucUpdateDbName = wxT("vvv-struct-update.fdb");
 
+// will be changed to the correct value by the first function call
+wxChar CUtils::m_thousandsSeparator = 'x';
+
 //-----------------------------------------------------------------------------
 //! converts wxString to std::string
 std::string CUtils::wx2std(const wxString& input, wxMBConv* conv)
@@ -125,15 +128,15 @@ wxString CUtils::HumanReadableFileSize( wxLongLong size ) {
 
 	if( size > 1024*1024 ) {
 		size = size / (1024*1024);
-		retVal = size.ToString() + wxT(" MB");
+		retVal = AddThousandsSeparators(size.ToString()) + wxT(" MB");
 	}
 	else {
 		if( size > 1024 ) {
 			size = size / 1024;
-			retVal = size.ToString() + wxT(" KB");
+			retVal = AddThousandsSeparators(size.ToString()) + wxT(" KB");
 		}
 		else {
-			retVal = size.ToString();
+			retVal = AddThousandsSeparators(size.ToString());
 		}
 	}
 
@@ -277,6 +280,47 @@ wxIcon CUtils::GetIconForPane( const char *xpm[], const wxArtID &id )
 	    r = ico;
     }
     return r;
+}
+
+void CUtils::SetThousandsSeparators()
+{
+    if( m_thousandsSeparator == 'x' )
+    {
+        // discover the right decimal separator for this computer's settings
+        wxChar m_decimalSeparator;
+        wxString stmp = wxString::Format( wxT("%.1f"), 1.2 );
+        m_decimalSeparator = stmp[1];
+        // set the thousands separator (hope this way is right)
+        if( m_decimalSeparator == '.' )
+            m_thousandsSeparator = ',';
+        else
+            m_thousandsSeparator = '.';
+    }
+}
+
+wxString CUtils::AddThousandsSeparators( const wxString &s )
+{
+    SetThousandsSeparators();
+
+    wxString intPart = s;
+    int n3 = 0;
+    wxString intPartNew = wxEmptyString;
+    int minIdx = 0;
+    if( intPart[0] == '-' ) minIdx = 1;
+    for( int k = intPart.Len() - 1; k >= minIdx; k-- )
+    {
+        intPartNew = intPart[k] + intPartNew;
+        n3++;
+        if( n3 == 3 )
+        {
+            if( k > minIdx )
+                intPartNew = m_thousandsSeparator + intPartNew;
+            n3 = 0;
+        }
+    }
+    if( minIdx == 1 ) intPartNew = intPart[0] + intPartNew;
+
+    return intPartNew;
 }
 
 

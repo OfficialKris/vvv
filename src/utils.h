@@ -114,6 +114,9 @@ public:
     // looks for an icon returned from the art provider, if not found uses a stock one
     static wxIcon GetIconForPane( const char *xpm[], const wxArtID &id );
 
+    // add thousands separators to the input string that must reperesente an integer number
+    static wxString AddThousandsSeparators( const wxString &s );
+
 private:
 	// name of the current application
 	static wxString applicationName;
@@ -129,6 +132,11 @@ private:
 
 	// name of the database that contains the database changes from version to version
 	static wxString strucUpdateDbName;
+
+    // set the thousands separators
+    static void SetThousandsSeparators();
+    // contains the thousands separator: changes from country to country
+    static wxChar m_thousandsSeparator;
 
 };
 

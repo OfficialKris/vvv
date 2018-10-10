@@ -324,7 +324,7 @@ void CFileInformationDialog::ShowFileData()
 
 	AddLCRow( _("File date"), m_ItemData->GetDateTime().FormatDate() + wxT(" ") + m_ItemData->GetDateTime().FormatTime() );
     wxLongLong size = m_ItemData->GetSize();
-    AddLCRow( _("File size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+    AddLCRow( _("File size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + CUtils::AddThousandsSeparators(size.ToString()) + wxT(" ") + _("bytes") + wxT(")") );
 	AddLCRow( _("File name"), m_ItemData->GetName() );
 
 	AddLCRow( wxEmptyString, wxEmptyString );
@@ -349,7 +349,7 @@ void CFileInformationDialog::ShowFolderData()
     	// each row is inserted at the top, so we add them in reverse order
 	    AddLCRow( _("Folder date"), m_ItemData->GetDateTime().FormatDate() + wxT(" ") + m_ItemData->GetDateTime().FormatTime() );
         wxLongLong size = CPaths::GetFullSize( m_ItemData->GetPathFileID() );
-        AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+        AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + CUtils::AddThousandsSeparators(size.ToString()) + wxT(" ") + _("bytes") + wxT(")") );
 	    AddLCRow( _("Folder name"), m_ItemData->GetName() );
 
 	    AddLCRow( wxEmptyString, wxEmptyString );
@@ -376,7 +376,7 @@ void CFileInformationDialog::ShowFolderData()
                 AddLCRow( _("Cataloged"), m_TreeItemData->GetCatalogDate().FormatDate() + " " + m_TreeItemData->GetCatalogDate().FormatTime() );
             }
             wxLongLong size = CPaths::GetFullSize( m_TreeItemData->GetPathID() );
-            AddLCRow( _("Volume size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+            AddLCRow( _("Volume size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + CUtils::AddThousandsSeparators(size.ToString()) + wxT(" ") + _("bytes") + wxT(")") );
 	        AddLCRow( _("Volume name"), m_TreeItemData->GetDesc() );
 
             // there is no way to get a list of the virtual paths that contain this volume
@@ -391,7 +391,7 @@ void CFileInformationDialog::ShowFolderData()
 
 	        AddLCRow( _("Folder date"), file.DateTime.FormatDate() + wxT(" ") + file.DateTime.FormatTime() );
             wxLongLong size = CPaths::GetFullSize( file.PathFileID );
-            AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + size.ToString() + wxT(" ") + _("bytes") + wxT(")") );
+            AddLCRow( _("Folder size"), CUtils::HumanReadableFileSize(size) + wxT(" (") + CUtils::AddThousandsSeparators(size.ToString()) + wxT(" ") + _("bytes") + wxT(")") );
 	        AddLCRow( _("Folder name"), file.FileName );
 
 	        AddLCRow( wxEmptyString, wxEmptyString );
