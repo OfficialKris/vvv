@@ -9,6 +9,7 @@
 #define AppName "VVV (Virtual Volumes View)"
 #define ExeName "vvv.exe"
 #define AppVersion "1.4"
+#define FirebirdEmbeddedPath "..\FB 2.1.4 embedded"
 
 [Setup]
 AppId=VVV-fu-ku-jitsu
@@ -30,16 +31,18 @@ Name: desktopicon; Description: {cm:CreateDesktopIcon}
 
 [Files]
 Source: "E:\Build folders\VVV\build\src\Release\{#ExeName}"; DestDir: "{app}"; Flags: replacesameversion
-Source: "msvcr71.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "fbclient.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "firebird.msg"; DestDir: "{app}"; Flags: replacesameversion
-Source: "icudt30.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "icuin30.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "icuuc30.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "License.txt"; DestDir: "{app}"
-Source: "msvcp71.dll"; DestDir: "{app}"; Flags: replacesameversion
-Source: "intl\fbintl.dll"; DestDir: "{app}\intl"; Flags: replacesameversion
-Source: "intl\fbintl.conf"; DestDir: "{app}\intl"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\fbembed.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\firebird.conf"; DestDir: "{app}"
+Source: "{#FirebirdEmbeddedPath}\firebird.msg"; DestDir: "{app}"
+Source: "{#FirebirdEmbeddedPath}\ib_util.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\icudt30.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\icuin30.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\icuuc30.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\Microsoft.VC80.CRT.manifest"; DestDir: "{app}"
+Source: "{#FirebirdEmbeddedPath}\msvcp80.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\msvcr80.dll"; DestDir: "{app}"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\intl\fbintl.dll"; DestDir: "{app}\intl"; Flags: replacesameversion
+Source: "{#FirebirdEmbeddedPath}\intl\fbintl.conf"; DestDir: "{app}\intl"
 Source: "..\vvv-struct-update.fdb"; DestDir: "{app}"; Flags: overwritereadonly uninsremovereadonly; Attribs: readonly
 Source: "..\VVV.fbk"; DestDir: "{app}"
 Source: "..\help\en\vvv.htb"; DestDir: "{app}"
