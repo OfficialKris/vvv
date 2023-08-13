@@ -29,6 +29,8 @@
 #include "wx/imaglist.h"
 ////@end includes
 
+#include <wx/clipbrd.h>
+
 #include "dlg_file_information.h"
 #include "paths.h"
 #include "files.h"
@@ -63,6 +65,7 @@ BEGIN_EVENT_TABLE( CFileInformationDialog, wxDialog )
     EVT_BUTTON( wxID_HELP, CFileInformationDialog::OnHelpClick )
 ////@end CFileInformationDialog event table entries
 
+    EVT_MENU( wxID_COPY, CFileInformationDialog::OnMenuCopyRow )
 END_EVENT_TABLE()
 
 
@@ -148,7 +151,7 @@ void CFileInformationDialog::CreateControls()
     wxBoxSizer* itemBoxSizer2 = new wxBoxSizer(wxVERTICAL);
     itemDialog1->SetSizer(itemBoxSizer2);
 
-    m_ListCtrl = new wxListCtrl( itemDialog1, wxID_ANY, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxSUNKEN_BORDER );
+    m_ListCtrl = new wxListCtrl( itemDialog1, ID_LISTCTRL, wxDefaultPosition, wxSize(100, 100), wxLC_REPORT|wxSUNKEN_BORDER );
     itemBoxSizer2->Add(m_ListCtrl, 3, wxGROW|wxALL, 5);
 
     wxStaticText* itemStaticText4 = new wxStaticText( itemDialog1, wxID_STATIC, _("Description:"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -171,6 +174,9 @@ void CFileInformationDialog::CreateControls()
 
     itemStdDialogButtonSizer6->Realize();
 
+    // Connect events and objects
+    m_ListCtrl->Connect(ID_LISTCTRL, wxEVT_CONTEXT_MENU, wxContextMenuEventHandler(CFileInformationDialog::OnListControlContextMenu), NULL, this);
+    m_ListCtrl->Connect(ID_LISTCTRL, wxEVT_CHAR, wxKeyEventHandler(CFileInformationDialog::OnListControlChar), NULL, this);
 ////@end CFileInformationDialog content construction
 }
 
@@ -439,5 +445,62 @@ void CFileInformationDialog::OnInitDialog( wxInitDialogEvent& event )
 	ResizeLCColumns();
 
     m_TextCtrl->SetFocus();
+}
+
+/*!
+ * wxEVT_CONTEXT_MENU event handler for ID_LISTCTRL
+ */
+
+void CFileInformationDialog::OnListControlContextMenu( wxContextMenuEvent& event )
+{
+	if( m_ListCtrl->GetSelectedItemCount() <= 0 ) return;
+
+	wxPoint point = event.GetPosition();
+	// If from keyboard
+	if (point.x == -1 && point.y == -1) {
+		wxSize size = GetSize();
+		point.x = size.x / 2;
+		point.y = size.y / 2;
+	} else {
+		point = ScreenToClient(point);
+	}
+
+	wxMenu menu;
+    menu.Append( wxID_COPY, _("Copy to clipboard\tCtrl+C") );
+	PopupMenu( &menu, point );
+}
+
+void CFileInformationDialog::OnMenuCopyRow( wxCommandEvent& event )
+{
+    DoCopyRow();
+}
+
+void CFileInformationDialog::DoCopyRow()
+{
+    if( m_ListCtrl->GetSelectedItemCount() <= 0 ) return;
+
+	long item = -1;
+	item = m_ListCtrl->GetNextItem( item, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED );
+    wxString s = m_ListCtrl->GetItemText( item, 1 );
+
+    if( wxTheClipboard->Open() ) {
+        wxTheClipboard->SetData( new wxTextDataObject(s) );
+        wxTheClipboard->Close();
+    }
+}
+
+/*!
+ * wxEVT_CHAR event handler for ID_LISTCTRL
+ */
+
+void CFileInformationDialog::OnListControlChar( wxKeyEvent& event )
+{
+    if( event.GetKeyCode() == 3 ) {
+        //  CTRL+C
+        DoCopyRow();
+    }
+    else {
+        event.Skip();
+    }
 }
 

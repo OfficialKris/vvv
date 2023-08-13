@@ -83,6 +83,12 @@ public:
     /// wxEVT_SIZE event handler for ID_CFILEINFORMATIONDIALOG
     void OnSize( wxSizeEvent& event );
 
+    /// wxEVT_CONTEXT_MENU event handler for ID_LISTCTRL
+    void OnListControlContextMenu( wxContextMenuEvent& event );
+
+    /// wxEVT_CHAR event handler for ID_LISTCTRL
+    void OnListControlChar( wxKeyEvent& event );
+
     /// wxEVT_COMMAND_BUTTON_CLICKED event handler for wxID_OK
     void OnOkClick( wxCommandEvent& event );
 
@@ -118,6 +124,7 @@ public:
     /// Control identifiers
     enum {
         ID_CFILEINFORMATIONDIALOG = 10076,
+        ID_LISTCTRL = 10077,
         ID_TEXTCTRL = 10093
     };
 ////@end CFileInformationDialog member variables
@@ -140,7 +147,11 @@ protected:
 	// set the columns size to a reasonable value
 	void ResizeLCColumns();
 
-	// data about the file to be shown
+    // copy a row to the clipboard
+    void OnMenuCopyRow( wxCommandEvent& event );    // menu interface
+    void DoCopyRow();
+    
+    // data about the file to be shown
 	MyListItemData* m_ItemData;
 
     // if this dialog is called from the tree control this variable contains data about the selected element
