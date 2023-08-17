@@ -2727,10 +2727,9 @@ void CMainFrame::OnTreeControlVirtualItemMenu( wxTreeEvent& event )
 	
     wxPoint pt = event.GetPoint();
 
-	wxMenu menu;
-	menu.Append( ID_NEW_VIRTUAL_ROOT_FOLDER, _("New Root Folder") );
 	if( item.IsOk() ) {
 		// only if we have a selected item
+    	wxMenu menu;
 		menu.Append( ID_NEW_VIRTUAL_SUBFOLDER, _("New Subfolder") );
 		menu.AppendSeparator();
 		menu.Append( ID_VIEW_EXPAND, _("Expand") );
@@ -2739,9 +2738,9 @@ void CMainFrame::OnTreeControlVirtualItemMenu( wxTreeEvent& event )
 	    MyTreeItemData *itemData = (MyTreeItemData *) tctl->GetItemData(item);
 		if( itemData->GetPhysPathID().IsNull() ) menu.Append( ID_EDIT_RENAME, _("Rename") );
 		menu.Append( ID_EDIT_DELETE, _("Delete") );
-	}
 
-	PopupMenu( &menu, pt );
+        PopupMenu( &menu, pt );
+	}
 
 	event.Skip();
 }
