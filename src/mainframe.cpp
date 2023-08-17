@@ -760,6 +760,8 @@ bool CMainFrame::Create( wxWindow* parent, wxWindowID id, const wxString& captio
     if( ltmp != wxNOT_FOUND ) m_FilenameRadioBox->SetSelection( ltmp );
     pConfig->Read( wxT("SearchDescriptionSelection"), &ltmp, wxNOT_FOUND );
     if( ltmp != wxNOT_FOUND ) m_DescriptionRadioBox->SetSelection( ltmp );
+    pConfig->Read( wxT("SearchFoldersSelection"), &ltmp, wxNOT_FOUND );
+    if( ltmp != wxNOT_FOUND && ltmp != 2 ) m_SearchRadioBox->SetSelection( ltmp ); // cannot use "selected virtual folder" because at startup there is no selected virtual folder
 
 	CreateListControlHeaders();
 
@@ -1621,6 +1623,13 @@ CMainFrame::~CMainFrame() {
     // search options
 	pConfig->Write( wxT("SearchFileNameSelection"), m_FilenameRadioBox->GetSelection() );
 	pConfig->Write( wxT("SearchDescriptionSelection"), m_DescriptionRadioBox->GetSelection() );
+    {
+        int itmp = m_SearchRadioBox->GetSelection();
+        if( itmp < 2 ) {
+            // do not save the "selected virtual folder" setting because at startup there is no selected virtal folder
+            pConfig->Write( wxT("SearchFoldersSelection"), itmp );
+        }
+    }
 
 	delete []m_amdColumnsToShow;
 
