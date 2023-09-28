@@ -43,7 +43,9 @@ void CBaseRec::FB_ExecuteQueryNoReturn( wxString sql ) {
 	}
 	catch( IBPP::SQLException& e ) {
 		// catches exceptions in order to convert interesting ones
-		db->TransactionRollback();
+    	if( !inTransaction ) {
+	    	db->TransactionRollback();
+        }
 		CDataErrorException::ErrorCause ec;
 		if( CDataErrorException::ConvertFirebirdError( e.EngineCode(), ec )  )
 			throw CDataErrorException( e.ErrorMessage(), ec );
