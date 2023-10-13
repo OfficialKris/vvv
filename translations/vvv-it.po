@@ -432,7 +432,7 @@ msgstr "Informazioni sul file"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:469
 msgid "Copy to clipboard\tCtrl+C"
-msgstr ""
+msgstr "Copia negli Appunti\tCtrl+C"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:190
 msgid "Use this window to export data to a CSV file"
@@ -664,7 +664,7 @@ msgstr "&Visualizza"
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:883
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3319
 msgid "Open with default program"
-msgstr ""
+msgstr "Apri con il programma predefinito"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:890
 msgid "&Tools"
@@ -919,9 +919,8 @@ msgstr ""
 "\"Il fango di Venaus è il sangue di questa terra\""
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2458
-#, fuzzy
 msgid "Copyright (C) 2007-2023 The VVV Team"
-msgstr "Copyright (C) 2007-2016 The VVV Team"
+msgstr "Copyright (C) 2007-2023 The VVV Team"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2459
 msgid "Fulvio Senore: main developer"
@@ -1174,24 +1173,20 @@ msgid "Restore completed"
 msgstr "Ripristino terminato"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4423
-#, fuzzy
 msgid ""
 "This volume has been cataloged with an older version of VVV. You need to "
 "update it in order to open files."
 msgstr ""
-"Questo catalogo è stato creato con una versione precedente di VVV e deve "
-"essere convertito ad un nuovo formato.\n"
-"\n"
+"Questo volume è stato catalogato on una versione precedente di VVV. E' "
+"necessario aggiornarlo per aprire dei file."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4444
-#, fuzzy
 msgid "Unable to find the folder:"
-msgstr "Impossibile creare il file."
+msgstr "Impossibile trovare la cartella:"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4450
-#, fuzzy
 msgid "Unable to find the file:"
-msgstr "Impossibile creare il file."
+msgstr "Impossibile trovare il file:"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.cpp:146
 msgid "Please enter the description for the following object:"
@@ -1268,7 +1263,7 @@ msgstr "Riapri l'ultimo catalogo usato all'avvio"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:179
 msgid "Alternate row colors"
-msgstr ""
+msgstr "Righe con colori alternati"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:185
 msgid "Beep for tasks longer than (seconds):"
