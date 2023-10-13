@@ -175,8 +175,6 @@ if( UNIX )
   # copy localization files -- vvv files...
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-bg.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/bg RENAME vvv.mo )
-  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cn.mo 
-           DESTINATION ${RESOURCES_INTALL_PATH}/languages/cn RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-cs.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/cs RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-de.mo 
@@ -209,6 +207,8 @@ if( UNIX )
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/sr@latin RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-uk.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/uk RENAME vvv.mo )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-zh_TW.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/zh_TW RENAME vvv.mo )
 # ... wxWidgets files
   install( FILES ${PROJECT_SOURCE_DIR}/translations/cs/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/cs )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/de/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/de )
