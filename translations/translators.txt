@@ -3,6 +3,9 @@ Toni
 anton.radenkov@gmail.com
 
 cn:
+Caretuse
+caretuse@caretuse.com
+previous
 bec
 billeccentrec@gmail.com
 
@@ -19,9 +22,11 @@ David de Castro
 david.decastro@gmail.com
 
 fr:
+Michel Comblen
+mcom3331@hotmail.com
+previous
 TheG!
 osgab@neuf.fr
-previous
 Frédéric Gacquer
 Frederic.Gacquer@univ-orleans.fr
 

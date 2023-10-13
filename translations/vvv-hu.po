@@ -6,13 +6,14 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: The VVV Team <fsenore@ica-net.it>\n"
-"Language: en\n"
+"Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: Z:\\Sviluppo_C++\\VVV\\src\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: Z:/Sviluppo_C++/VVV/src\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Poedit-SearchPath-0: Z:/Sviluppo_C++/VVV/src\n"
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:177
 msgid "Enter or select the volume to catalog"
@@ -125,100 +126,100 @@ msgstr "Ismeretlen nyelvi kód '%s' a regisztrációs adatbázisban."
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:94
 msgid "(Use default language)"
-msgstr "(alapértelmezett nyelv használata)"
+msgstr "(Alapértelmezett nyelv használata)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2479
 msgid "Bulgarian"
-msgstr "bolgár"
+msgstr "Bolgár"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:97
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2463
 msgid "Chinese"
-msgstr "kínai"
+msgstr "Kínai"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:98
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2474
 msgid "Croatian"
-msgstr "horvát"
+msgstr "Horvát"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:99
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2469
 msgid "Czech"
-msgstr "cseh"
+msgstr "Cseh"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:100
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2480
 msgid "Dutch"
-msgstr "holland"
+msgstr "Holland"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:101
 msgid "English"
-msgstr "angol"
+msgstr "Angol"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:102
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2466
 msgid "French"
-msgstr "francia"
+msgstr "Francia"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:103
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2467
 msgid "German"
-msgstr "német"
+msgstr "Német"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:104
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2468
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2471
 msgid "Hungarian"
-msgstr "magyar"
+msgstr "Magyar"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:105
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2477
 msgid "Italian"
-msgstr "olasz"
+msgstr "Olasz"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:106
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2476
 msgid "Japanese"
-msgstr "japán"
+msgstr "Japán"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:107
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2470
 msgid "Polish"
-msgstr "lengyel"
+msgstr "Lengyel"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:108
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2464
 msgid "Portuguese"
-msgstr "portugál"
+msgstr "Portugál"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:109
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2478
 msgid "Romanian"
-msgstr "román"
+msgstr "Román"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:110
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2472
 msgid "Russian"
-msgstr "orosz"
+msgstr "Orosz"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:111
 msgid "Serbian (cyrillic)"
-msgstr "szerb (cirill)"
+msgstr "Szerb (cirill)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:112
 msgid "Serbian (latin)"
-msgstr "szerb (latin)"
+msgstr "Szerb (latin)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:113
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2465
 msgid "Spanish"
-msgstr "spanyol"
+msgstr "Spanyol"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:114
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2473
 msgid "Ukrainian"
-msgstr "ukrán"
+msgstr "Ukrán"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:123
 msgid "Select your preferred language"
@@ -279,11 +280,11 @@ msgstr ""
 
 #: Z:\Sviluppo_C++\VVV\src/convert_db_unicode.cpp:546
 msgid "Conversion completed"
-msgstr "Konvertálás befejezve."
+msgstr "Konvertálás befejezve"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:157
 msgid "Description:"
-msgstr "Leírás"
+msgstr "Leírás:"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:257
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:537
@@ -312,7 +313,7 @@ msgstr "Frekvencia"
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1448
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:245
 msgid "Bitrate"
-msgstr "Bitsűrűség"
+msgstr "Bitráta"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:317
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1443
@@ -432,7 +433,7 @@ msgstr "Fájlinformációk"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:469
 msgid "Copy to clipboard\tCtrl+C"
-msgstr ""
+msgstr "Másolás a vágólapra\tCtrl+C"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:190
 msgid "Use this window to export data to a CSV file"
@@ -580,7 +581,7 @@ msgstr "&Fájl"
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:849
 msgid "&Add To Virtual Folder..."
-msgstr "&Hozzáadás virtuális mappához"
+msgstr "&Hozzáadás virtuális mappához..."
 
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:851
@@ -605,7 +606,7 @@ msgstr "Új &virtuális gyökérmappa..."
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:857
 msgid "New Virtual &Subfolder..."
-msgstr "Új virtuális &almappa"
+msgstr "Új virtuális &almappa..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:859
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:888
@@ -683,7 +684,7 @@ msgstr "&Nézet"
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:883
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3319
 msgid "Open with default program"
-msgstr ""
+msgstr "Megnyitás az alapértelmezett programmal"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:890
 msgid "&Tools"
@@ -695,7 +696,7 @@ msgstr "&Tartalomjegyzék"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:896
 msgid "&About VVV..."
-msgstr "&Névjegy"
+msgstr "VVV &névjegye..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:904
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4201
@@ -878,7 +879,7 @@ msgid ""
 "convert it to a newer format.\n"
 "\n"
 msgstr ""
-"Ezt a katalógust a VVV egy régebbi verzójával készítették, így szükséges a "
+"Ezt a katalógust a VVV egy régebbi verziójával készítették, így szükséges a "
 "konvertálása az újabb formátumra.\n"
 "\n"
 
@@ -926,7 +927,7 @@ msgid ""
 msgstr ""
 "Nem található az adatbázis biztonsági másolata a visszaállításhoz.\n"
 "\n"
-"A probléma megoldásához próbáld meg újratelepíteni a programot."
+"A probléma megoldásához próbáld meg újra telepíteni a programot."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2457
 msgid ""
@@ -937,9 +938,8 @@ msgstr ""
 "program"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2458
-#, fuzzy
 msgid "Copyright (C) 2007-2023 The VVV Team"
-msgstr "Copyright (C) 2007-2016 The VVV Team"
+msgstr "Copyright (C) 2007-2023 The VVV Team"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2459
 msgid "Fulvio Senore: main developer"
@@ -958,7 +958,7 @@ msgstr ""
 msgid ""
 "This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
 msgstr ""
-"A program a Gnome, az Ubuntu és a Crystal ikon projektek ikonjait használja."
+"A program a Gnome, az Ubuntu és a Crystal ikon projektek ikonjait használja"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2462
 msgid ""
@@ -969,7 +969,7 @@ msgstr ""
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2475
 msgid "Serbian"
-msgstr "szerb"
+msgstr "Szerb"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2496
 msgid "New catalog"
@@ -1194,28 +1194,24 @@ msgid "Restore completed"
 msgstr "A visszaállítás kész"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4423
-#, fuzzy
 msgid ""
 "This volume has been cataloged with an older version of VVV. You need to "
 "update it in order to open files."
 msgstr ""
-"Ezt a katalógust a VVV egy régebbi verzójával készítették, így szükséges a "
-"konvertálása az újabb formátumra.\n"
-"\n"
+"Ezt a katalógust a VVV egy régebbi verziójával készítették, így szükséges a "
+"konvertálása az újabb formátumra."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4444
-#, fuzzy
 msgid "Unable to find the folder:"
-msgstr "Nem sikerült létrehozni a fájlt."
+msgstr "A mappa nem található:"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4450
-#, fuzzy
 msgid "Unable to find the file:"
-msgstr "Nem sikerült létrehozni a fájlt."
+msgstr "A fájl nem található:"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.cpp:146
 msgid "Please enter the description for the following object:"
-msgstr "Add meg a leírását a  következő objektumnak:"
+msgstr "Add meg a leírását a következő objektumnak:"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.cpp:149
 msgid "OBJECT NAME"
@@ -1230,9 +1226,9 @@ msgid ""
 msgstr ""
 "Egy szerveren található katalógus megnyitására készülsz.\n"
 "\n"
-"Add meg az álnevét vagy a teljes elérési útját a katalógusfájlnak.\n"
+"Add meg az aliasát vagy a teljes elérési útját a katalógusfájlnak.\n"
 "Ne feledd, hogy az elérési útnak a szerverhez képest kell relatívnak lennie, "
-"nem a klienshez."
+"nem a klienshez képest."
 
 #: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:256
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:303
@@ -1272,7 +1268,7 @@ msgstr "Biztonsági másolat:"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:169
 msgid "New catalog:"
-msgstr "Új katalógus"
+msgstr "Új katalógus:"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:284
 msgid "Select backup file"
@@ -1284,11 +1280,11 @@ msgstr "Katalógus fájl"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:175
 msgid "Reopen the last used catalog at startup"
-msgstr "Az utoljára használt katalógus megnyitása indításkor."
+msgstr "Az utoljára használt katalógus megnyitása indításkor"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:179
 msgid "Alternate row colors"
-msgstr ""
+msgstr "Váltakozó sor színek"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:185
 msgid "Beep for tasks longer than (seconds):"
@@ -1377,7 +1373,7 @@ msgstr "Nem lehet csatlakozni a szerverhez"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:470
 msgid "Server connection successful"
-msgstr "Sikeres kapcsolódás a szerverhez."
+msgstr "Sikeres kapcsolódás a szerverhez"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:178
 msgid "You are about to update the following volume:"
@@ -1414,7 +1410,7 @@ msgstr ""
 
 #: Z:\Sviluppo_C++\VVV\src/vvv.cpp:314 Z:\Sviluppo_C++\VVV\src/vvv.cpp:370
 msgid "An unexpected error has occurred. This application will be terminated"
-msgstr "Váratlan hiba történt. Az alkalmazás kilép."
+msgstr "Váratlan hiba történt. Az alkalmazás kilép"
 
 #: Z:\Sviluppo_C++\VVV\src/vvv.cpp:382 Z:\Sviluppo_C++\VVV\src/vvv.cpp:466
 msgid ""
