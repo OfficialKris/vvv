@@ -2460,10 +2460,10 @@ void CMainFrame::OnABOUTClick( wxCommandEvent& WXUNUSED(event) )
 	info.AddDeveloper( _("\nJan Albartus: worked at the portable version and designed the application's icon") );
 	info.AddArtist( _("This program uses icons from the Gnome, Ubuntu and Crystal icons projects") );
 	info.SetLicence( _("This is open source software, distributed under the GNU GENERAL PUBLIC LICENSE") );
-	info.AddTranslator( wxString(wxT("bec: ")) + _("Chinese") );
+	info.AddTranslator( wxString(wxT("Caretuse, bec: ")) + _("Chinese") );
 	info.AddTranslator( wxString(wxT("Pedro Cunha: ")) + _("Portuguese") );
 	info.AddTranslator( wxString(wxT("David de Castro: ")) + _("Spanish") );
-	info.AddTranslator( wxString(wxT("Fr\u00E9d\u00E9ric Gacquer, TheG!: ")) + _("French") );
+	info.AddTranslator( wxString(wxT("Michel Comblen, Fr\u00E9d\u00E9ric Gacquer, TheG!: ")) + _("French") );
 	info.AddTranslator( wxString(wxT("Steve K\u00F6hler: ")) + _("German") );
 	info.AddTranslator( wxString(wxT("Kriszti\u00E1n Mukli: ")) + _("Hungarian") );
 	info.AddTranslator( wxString(wxT("Karel Kozl\u00EDk: ")) + _("Czech") );
