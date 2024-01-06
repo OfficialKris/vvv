@@ -10,13 +10,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Poedit-Basepath: Z:/Sviluppo_C++/VVV/src\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: Z:\\Sviluppo_C++\\VVV\\src\n"
+"X-Poedit-SearchPath-0: Z:/Sviluppo_C++/VVV/src\n"
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:177
 msgid "Enter or select the volume to catalog"
-msgstr "Insira ou seleccione o volume a catalogar"
+msgstr "Insira ou selecione o volume a catalogar"
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:186
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:222
@@ -86,7 +86,7 @@ msgstr "Este nome de volume já está presente na base de dados"
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume.cpp:360
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:294
 msgid "Select the volume to catalog"
-msgstr "Seleccione o volume a catalogar"
+msgstr "Selecione o volume a catalogar"
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:341
 #: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:335
@@ -96,7 +96,7 @@ msgstr "Número de ficheiros adicionados: "
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:342
 #: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:336
 msgid "Number of updated files: "
-msgstr "Número de ficheiros actualizados: "
+msgstr "Número de ficheiros atualizados: "
 
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:343
 #: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:337
@@ -117,7 +117,7 @@ msgstr "Número de ficheiros inalterados: "
 #: Z:\Sviluppo_C++\VVV\src/catalog_volume_functions.cpp:346
 #: Z:\Sviluppo_C++\VVV\src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:340
 msgid "Do you really want to update the volume?"
-msgstr "Deseja mesmo actualizar o volume?"
+msgstr "Deseja mesmo atualizar o volume?"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:77
 #, c-format
@@ -126,7 +126,7 @@ msgstr "Código local '%s' desconhecido no registo."
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:94
 msgid "(Use default language)"
-msgstr "(Usar idioma padrão)"
+msgstr "(Usar idioma predefinido)"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:96
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2479
@@ -223,11 +223,11 @@ msgstr "Ucraniano"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:123
 msgid "Select your preferred language"
-msgstr "Seleccione seu idioma preferido"
+msgstr "Selecione seu idioma preferido"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:124
 msgid "Language selection"
-msgstr "Selecção de idioma"
+msgstr "Seleção de idioma"
 
 #: Z:\Sviluppo_C++\VVV\src/chooselang.cpp:138
 msgid "You must restart the program for this change to take effect."
@@ -237,9 +237,7 @@ msgstr "Tem de reiniciar o programa para que esta alteração tenha efeito."
 msgid ""
 "Please select the virtual folder that will receive the selected files and/or "
 "folders:"
-msgstr ""
-"Seleccione a pasta virtual que receberá os ficheiros e/ou pastas "
-"seleccionadas"
+msgstr "Selecione a pasta virtual que receberá os ficheiros e/ou pastas:"
 
 #: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:174
 #: Z:\Sviluppo_C++\VVV\src/choose_virtual_folder.cpp:192
@@ -274,7 +272,7 @@ msgid ""
 "Conversion is about to start: a message will tell you when it will be "
 "completed."
 msgstr ""
-"Conversão prestes a iniciar: uma mensagem dir-lhe-á quando estiver completa"
+"Conversão prestes a iniciar: uma mensagem dir-lhe-á quando estiver completa."
 
 #: Z:\Sviluppo_C++\VVV\src/convert_db_unicode.cpp:546
 msgid "Conversion completed"
@@ -352,7 +350,7 @@ msgstr "Título"
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1413
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:217
 msgid "Album"
-msgstr "Album"
+msgstr "Álbum"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:326
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1408
@@ -431,7 +429,7 @@ msgstr "Informação do ficheiro"
 
 #: Z:\Sviluppo_C++\VVV\src/dlg_file_information.cpp:469
 msgid "Copy to clipboard\tCtrl+C"
-msgstr ""
+msgstr "Copiar para área de transferência\tCtrl+C"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:190
 msgid "Use this window to export data to a CSV file"
@@ -464,12 +462,12 @@ msgstr "Todos os volumes físicos"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:207
 msgid "Selected physical volume/folder"
-msgstr "Seleccione volume/pasta física"
+msgstr "Selecione volume/pasta física"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:208
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:1011
 msgid "Selected virtual folder"
-msgstr "Pasta virtual seleccionada"
+msgstr "Pasta virtual selecionada"
 
 #: Z:\Sviluppo_C++\VVV\src/exportdata.cpp:209
 msgid "Export"
@@ -594,12 +592,12 @@ msgstr "&Apagar"
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:854
 msgid "&Object Information..."
-msgstr "&Informação do Objecto..."
+msgstr "&Informação do Objeto..."
 
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:856
 msgid "&New Virtual Root Folder..."
-msgstr "&Nova Pasta Virtual de Raíz..."
+msgstr "&Nova Pasta Virtual de Raiz..."
 
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:857
@@ -623,7 +621,7 @@ msgstr "&Catalogar Volume..."
 # Part of the Volumes menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:864
 msgid "&Update Volume..."
-msgstr "&Actualizar Volume..."
+msgstr "&Atualizar Volume..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:865
 msgid "&Volumes"
@@ -683,7 +681,7 @@ msgstr "&Ver"
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:883
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3319
 msgid "Open with default program"
-msgstr ""
+msgstr "Abrir com o programa predefinido"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:890
 msgid "&Tools"
@@ -798,7 +796,7 @@ msgstr "Ficheiros VVV (*.vvv)|*.vvv|Todos os ficheiros (*.*)|*.*"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2064
 msgid "New virtual root folder"
-msgstr "Nova pasta de raíz virtual"
+msgstr "Nova pasta de raiz virtual"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2092
 msgid "New virtual subfolder"
@@ -854,7 +852,7 @@ msgstr ""
 "Tenha em atenção que não se encontra ligado a um servidor de base de dados, "
 "daí não poder abrir um catálogo de outro computador na rede.\n"
 "Se deseja abrir um catálogo noutro computador tem que ligar ao servidor de "
-"base de dados (Menu Ferramentas/Opções)."
+"base de dados (Ferramentas/Menu de Opções)."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2241
 msgid ""
@@ -864,14 +862,14 @@ msgid ""
 "You can try reinstalling the program to solve this problem."
 msgstr ""
 "Este catálogo foi criado com uma versão anterior do programa e necessita de "
-"ser actualizado, mas o ficheiro contendo a lista das actualizações está em "
+"ser atualizado, mas o ficheiro contendo a lista das atualizações está em "
 "falta.\n"
 "\n"
 "Pode tentar reinstalar o programa para resolver este problema."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2245
 msgid "Upgrading the catalog, please wait..."
-msgstr "A actualizar o catálogo, aguarde..."
+msgstr "A atualizar o catálogo, aguarde..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2257
 msgid ""
@@ -937,9 +935,8 @@ msgstr ""
 "amovíveis como CDs e DVDs"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2458
-#, fuzzy
 msgid "Copyright (C) 2007-2023 The VVV Team"
-msgstr "Copyright (C) 2007-2016 A equipa VVV"
+msgstr "Copyright (C) 2007-2023 A equipa VVV"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2459
 msgid "Fulvio Senore: main developer"
@@ -986,7 +983,7 @@ msgstr "Adicionar À Pasta Virtual"
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2714
 msgid "Object information..."
-msgstr "&Informação do Objecto..."
+msgstr "&Informação do Objeto..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2717
 msgid "Rename..."
@@ -1001,7 +998,7 @@ msgstr "Apagar"
 # Part of the Volumes menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2719
 msgid "Update Volume..."
-msgstr "&Actualizar Volume..."
+msgstr "&Atualizar Volume..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2742
 msgid "New Subfolder"
@@ -1017,15 +1014,15 @@ msgstr "Insira alguns caracteres para procura"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2909
 msgid "Incorrect file name search data"
-msgstr "Dados incorrectos da pesquisa do nome de ficheiro"
+msgstr "Dados incorretos da pesquisa do nome de ficheiro"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2920
 msgid "Incorrect extension search data"
-msgstr "Dados incorrectos da pesquisa da extensão"
+msgstr "Dados incorretos da pesquisa da extensão"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:2932
 msgid "Incorrect description search data"
-msgstr "Dados incorrectos da pesquisa da descrição"
+msgstr "Dados incorretos da pesquisa da descrição"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3043
 msgid "The search did not find anything"
@@ -1033,7 +1030,7 @@ msgstr "A procura não devolveu quaisquer resultados"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3202
 msgid "Objects: "
-msgstr "Objectos: "
+msgstr "Objetos: "
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3209
 msgid "Total size: "
@@ -1042,7 +1039,7 @@ msgstr "Tamanho total: "
 # Part of the Edit menu
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3322
 msgid "Object Information..."
-msgstr "&Informação do Objecto..."
+msgstr "&Informação do Objeto..."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3460
 msgid ""
@@ -1051,10 +1048,10 @@ msgid ""
 "\n"
 "Do you really want to delete the selected virtual folder?"
 msgstr ""
-"Este comando apagará a pasta virtual seleccionada, mas não altera as pastas "
+"Este comando apagará a pasta virtual selecionada, mas não altera as pastas "
 "na vista física.\n"
 "\n"
-"Deseja realmente apagar a pasta virtual seleccionada?"
+"Deseja realmente apagar a pasta virtual selecionada?"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3486
 msgid ""
@@ -1109,10 +1106,10 @@ msgid ""
 "\n"
 "Do you really want to delete the selected virtual files?"
 msgstr ""
-"Este comando apagará os ficheiros seleccionados da vista virtual, mas não "
+"Este comando apagará os ficheiros selecionados da vista virtual, mas não "
 "altera os ficheiros na vista física.\n"
 "\n"
-"Deseja realmente apagar os ficheiros virtuais seleccionados?"
+"Deseja realmente apagar os ficheiros virtuais selecionados?"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3817
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:3894
@@ -1195,28 +1192,24 @@ msgid "Restore completed"
 msgstr "Restauro concluído"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4423
-#, fuzzy
 msgid ""
 "This volume has been cataloged with an older version of VVV. You need to "
 "update it in order to open files."
 msgstr ""
-"Este catálogo foi criado com uma versão mais antiga do VVV e necessita de "
-"ser convertido para um novo formato.\n"
-"\n"
+"Este catálogo foi criado com uma versão mais antiga do VVV. Necessita de ser "
+"atualizado para abrir arquivos."
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4444
-#, fuzzy
 msgid "Unable to find the folder:"
-msgstr "Não é possível criar o ficheiro."
+msgstr "Não é possível encontrar a pasta:"
 
 #: Z:\Sviluppo_C++\VVV\src/mainframe.cpp:4450
-#, fuzzy
 msgid "Unable to find the file:"
-msgstr "Não é possível criar o ficheiro."
+msgstr "Não é possível encontrar o ficheiro:"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.cpp:146
 msgid "Please enter the description for the following object:"
-msgstr "Insira a descrição para o seguinte objecto:"
+msgstr "Insira a descrição para o seguinte objeto:"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.cpp:149
 msgid "OBJECT NAME"
@@ -1232,7 +1225,7 @@ msgstr ""
 "Está prestes a abrir um catálogo localizado no servidor.\n"
 "\n"
 "Insira o atalho ou o caminho completo para o ficheiro de catálogo.\n"
-"Lembre-se que que o caminho tem que ser realtivo ao servidor, e não ao "
+"Lembre-se que que o caminho tem que ser relativo ao servidor, e não ao "
 "cliente."
 
 #: Z:\Sviluppo_C++\VVV\src/opencatalog.cpp:256
@@ -1261,7 +1254,7 @@ msgid ""
 "be created.\n"
 "You cannot enter the name of an existing catalog."
 msgstr ""
-"Está prestes a criar um novo catálogo apartir de um ficheiro de cópia de "
+"Está prestes a criar um novo catálogo a partir de um ficheiro de cópia de "
 "segurança.\n"
 "\n"
 "Insira o caminho completo para o ficheiro de cópia de segurança e para o "
@@ -1270,15 +1263,15 @@ msgstr ""
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:157
 msgid "Backup file:"
-msgstr "Ficheiro de Cópia de Segurança"
+msgstr "Ficheiro de Cópia de Segurança:"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:169
 msgid "New catalog:"
-msgstr "Novo catálogo"
+msgstr "Novo catálogo:"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:284
 msgid "Select backup file"
-msgstr "Seleccione o ficheiro de Cópia de Segurança"
+msgstr "Selecione o ficheiro de Cópia de Segurança"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.cpp:302
 msgid "Catalog file"
@@ -1290,7 +1283,7 @@ msgstr "Reabrir o último catálogo usado ao iniciar"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:179
 msgid "Alternate row colors"
-msgstr ""
+msgstr "Alternar cores da linha"
 
 #: Z:\Sviluppo_C++\VVV\src/settings.cpp:185
 msgid "Beep for tasks longer than (seconds):"
@@ -1329,10 +1322,10 @@ msgid ""
 "stored in this computer and you do not want to share them\n"
 "with other computers."
 msgstr ""
-"Marque a caixa de selecção abaixo se deseja aceder a catálogos armazenados\n"
+"Marque a caixa de seleção abaixo se deseja aceder a catálogos armazenados\n"
 "num servidor de rede. Cada computador na rede será capaz de\n"
 "aceder aos mesmos catálogos armazenados no servidor.\n"
-"NÃO marque a caixa de selecção se apenas quiser aceder a catálogos\n"
+"NÃO marque a caixa de seleção se apenas quiser aceder a catálogos\n"
 "armazenados neste computador e não os quiser partilhar\n"
 "com outros computadores."
 
@@ -1383,7 +1376,7 @@ msgstr "Ligação ao servidor bem sucedida"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:178
 msgid "You are about to update the following volume:"
-msgstr "Está prestes a actualizar o seguinte volume:"
+msgstr "Está prestes a atualizar o seguinte volume:"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:181
 msgid "VOLUME NAME"
@@ -1391,7 +1384,7 @@ msgstr "NOME DO VOLUME"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:186
 msgid "Enter or select the path to volume to update"
-msgstr "Insira ou seleccione o caminho do volume a actualizar"
+msgstr "Insira ou selecione o caminho do volume a atualizar"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.cpp:206
 msgid "Update"
@@ -1411,19 +1404,19 @@ msgid ""
 "An unexpected error has occurred. Here is a description of the error:\n"
 "\n"
 msgstr ""
-"Ocurreu um erro inesperado. Aqui está uma descrição do erro:\n"
+"Ocorreu um erro inesperado. Descrição do erro:\n"
 "\n"
 
 #: Z:\Sviluppo_C++\VVV\src/vvv.cpp:314 Z:\Sviluppo_C++\VVV\src/vvv.cpp:370
 msgid "An unexpected error has occurred. This application will be terminated"
-msgstr "Ocurreu um erro inesperado. Esta aplicação vai ser terminada"
+msgstr "Ocorreu um erro inesperado. Esta aplicação vai ser terminada"
 
 #: Z:\Sviluppo_C++\VVV\src/vvv.cpp:382 Z:\Sviluppo_C++\VVV\src/vvv.cpp:466
 msgid ""
 "An unexpected error has happened. Here is a description of the error:\n"
 "\n"
 msgstr ""
-"Ocurreu um erro inesperado. Aqui está uma descrição do erro:\n"
+"Ocorreu um erro inesperado. Descrição do erro:\n"
 "\n"
 
 #: Z:\Sviluppo_C++\VVV\src/vvv.cpp:408
@@ -1452,7 +1445,7 @@ msgstr "VVV"
 
 #: Z:\Sviluppo_C++\VVV\src/object_description.h:51
 msgid "Object Description"
-msgstr "Descrição do Objecto"
+msgstr "Descrição do Objeto"
 
 #: Z:\Sviluppo_C++\VVV\src/restore.h:41
 msgid "Restore"
@@ -1464,7 +1457,7 @@ msgstr "Configurações"
 
 #: Z:\Sviluppo_C++\VVV\src/update_volume.h:62
 msgid "Update Volume"
-msgstr "Actualizar Volume"
+msgstr "Atualizar Volume"
 
 #~ msgid "New Root Folder"
 #~ msgstr "Nova Pasta de Raíz"
