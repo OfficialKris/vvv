@@ -33,7 +33,7 @@
 
 wxString CUtils::applicationName = wxT("VVV");
 wxString CUtils::applicationVersion = wxT("1.5.0.0");
-int CUtils::expectedDatabaseVersion = 23;
+int CUtils::expectedDatabaseVersion = 24;
 int CUtils::firstUnicodeDatabaseVersion = 14;
 wxString CUtils::strucUpdateDbName = wxT("vvv-struct-update.fdb");
 
