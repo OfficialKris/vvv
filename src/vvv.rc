@@ -99,7 +99,7 @@ BEGIN
             VALUE "FileDescription", "VVV (Virtual Volumes View): an application to catalog removable disks"
             VALUE "FileVersion", "1, 5, 0, 1"
             VALUE "InternalName", "VVV"
-            VALUE "LegalCopyright", "Copyright (C) 2007-2023 The VVV Team"
+            VALUE "LegalCopyright", "Copyright (C) 2007-2024 The VVV Team"
             VALUE "OriginalFilename", "vvv.rc"
             VALUE "ProductName", "VVV"
             VALUE "ProductVersion", "1, 5, 0, 1"
