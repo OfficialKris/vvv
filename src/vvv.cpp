@@ -179,6 +179,12 @@ bool CVvvApp::OnInit()
 		wxLogNull log;
 		res = cmdParser.Parse( false );
 	}
+    if( res > 0 ) {
+        wxString s;
+        s = _("An error happened while parsing the command line") + ": ";
+        s << res;
+        CUtils::MsgStderr( s );
+    }
 	if( res == -1 || res > 0 ) {
 		m_CatalogName = wxEmptyString;
 		m_SettingsFileName = wxEmptyString;
@@ -190,8 +196,9 @@ bool CVvvApp::OnInit()
 			fName.Normalize( wxPATH_NORM_LONG | wxPATH_NORM_DOTS | wxPATH_NORM_TILDE | wxPATH_NORM_ABSOLUTE );
 			m_CatalogName = fName.GetFullPath();
 		}
-		else 
+        else {
 			m_CatalogName = wxEmptyString;
+        }
 		m_SettingsFileName = wxEmptyString;
 		m_DefaultDataFolder = wxEmptyString;
 		if( cmdParser.Found( wxT("s"), &m_SettingsFileName ) ) {
@@ -234,6 +241,19 @@ bool CVvvApp::OnInit()
 			}
 		}
 	}
+
+    // command line update checks
+    if( m_CLIUpdate ) {
+        if( m_CatalogName.IsEmpty() ) {
+            CUtils::MsgErr( _("The command line asks for a volume update but the catalog name is missing") );
+        }
+        if( m_VolumeName.IsEmpty() ) {
+            CUtils::MsgErr( _("The command line asks for a volume update but the volume name is missing") );
+        }
+        if( m_VolumePath.IsEmpty() ) {
+            CUtils::MsgErr( _("The command line asks for a volume update but the volume path is missing") );
+        }
+    }
 
 	// if a settings file name has been passed as an option, create the corresponding config object
 	if( !m_SettingsFileName.empty() ) {
