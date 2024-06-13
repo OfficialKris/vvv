@@ -24,7 +24,7 @@ ChangesAssociations=yes
 OutputDir=.
 ;OutputBaseFilename=VVV- + {#AppVersion} + -Setup
 OutputBaseFilename=VVV-1.5-Setup
-SignTool=kSign /d $qVVV (Virtual Volumes View)$q /du $qhttp://vvvapp.sourceforge.net$q $f
+SignTool=signtool /d $qVVV (Virtual Volumes View)$q $f
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}
