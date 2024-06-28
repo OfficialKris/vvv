@@ -23,7 +23,6 @@
 // Windows specific code
 // compile only for the Windows version
 
-#include <windows.h>
 #include <io.h>
 #include <wx/app.h>
 #include <wx/dir.h>
