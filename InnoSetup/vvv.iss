@@ -23,7 +23,7 @@ VersionInfoVersion={#AppVersion}
 ChangesAssociations=yes
 OutputDir=.
 ;OutputBaseFilename=VVV- + {#AppVersion} + -Setup
-OutputBaseFilename=VVV-1.5-Setup
+OutputBaseFilename=VVV-1.5.0.3-Setup
 SignTool=signtool /d $qVVV (Virtual Volumes View)$q $f
 
 [Tasks]
