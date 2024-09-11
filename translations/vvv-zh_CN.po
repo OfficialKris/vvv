@@ -1,0 +1,1428 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VVV 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-29 15:43+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: Z:/Sviluppo_C++/VVV/src\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: Z:/Sviluppo_C++/VVV/src\n"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:177
+msgid "Enter or select the volume to catalog"
+msgstr "输入或选择要索引的卷"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:186
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:222
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:173
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:166
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:178
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:195
+msgid "..."
+msgstr "..."
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:189
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:386
+msgid "Volume name"
+msgstr "卷名"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:199
+msgid "Get volume name"
+msgstr "获取卷名"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:207
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:172
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:229
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:247
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:897
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:185
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:203
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:201
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:141
+msgid "&Help"
+msgstr "帮助(&H)"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:212
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:910
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4207
+msgid "Catalog"
+msgstr "建立索引"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:215
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:209
+msgid "&Close"
+msgstr "关闭(&C)"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:218
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:212
+msgid "Current folder"
+msgstr "当前文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:221
+msgid "Previously cataloged volumes"
+msgstr "已建立的索引"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:291
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:267
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:404
+msgid "The volume path is missing"
+msgstr "卷路径丢失"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:296
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:400
+msgid "The volume name is missing"
+msgstr "卷名称丢失"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:313
+msgid "This volume name is already present in the database"
+msgstr "卷名称已存在"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.cpp:360
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:294
+msgid "Select the volume to catalog"
+msgstr "选择要建立索引的卷"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:341
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:335
+msgid "Number of added files: "
+msgstr "新增的文件数量："
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:342
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:336
+msgid "Number of updated files: "
+msgstr "更新的文件数量："
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:343
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:337
+msgid "Number of deleted files (not counting those in deleted folders): "
+msgstr "删除的文件数量（不包括已删除文件夹中的文件）："
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:344
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:338
+msgid "Number of deleted folders: "
+msgstr "删除的文件夹数量："
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:345
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:339
+msgid "Number of unchanged files: "
+msgstr "未更改的文件数量： "
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume_functions.cpp:346
+#: Z:/Sviluppo_C++/VVV/src/tmp_sorgenti_modificati/catalog_volume_functions.cpp:340
+msgid "Do you really want to update the volume?"
+msgstr "你确定要更新卷索引吗？"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:77
+#, c-format
+msgid "Unknown locale code '%s' in registry."
+msgstr "注册表中的未知区别代码 '%s' 。"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:94
+msgid "(Use default language)"
+msgstr "(使用默认语言)"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:96
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2479
+msgid "Bulgarian"
+msgstr "Bulgarian（保加利亚语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:97
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2463
+msgid "Chinese"
+msgstr "Chinese（中文）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:98
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2474
+msgid "Croatian"
+msgstr "Croatian（克罗地亚语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:99
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2469
+msgid "Czech"
+msgstr "Czech（捷克语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:100
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2480
+msgid "Dutch"
+msgstr "Dutch（荷兰语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:101
+msgid "English"
+msgstr "English（英语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:102
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2466
+msgid "French"
+msgstr "French（法语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:103
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2467
+msgid "German"
+msgstr "German（德语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:104
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2468
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2471
+msgid "Hungarian"
+msgstr "Hungarian（匈牙利语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:105
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2477
+msgid "Italian"
+msgstr "Italian（意大利语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:106
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2476
+msgid "Japanese"
+msgstr "Japanese（日语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:107
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2470
+msgid "Polish"
+msgstr "Polish（波兰语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:108
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2464
+msgid "Portuguese"
+msgstr "Portuguese（葡萄牙语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:109
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2478
+msgid "Romanian"
+msgstr "Romanian（罗马尼亚语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:110
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2472
+msgid "Russian"
+msgstr "Russian（俄罗斯语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:111
+msgid "Serbian (cyrillic)"
+msgstr "Serbian (cyrillic)（塞尔维亚文（西里尔文））"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:112
+msgid "Serbian (latin)"
+msgstr "Serbian (latin)（塞尔维亚语（拉丁文））"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:113
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2465
+msgid "Spanish"
+msgstr "Spanish（西班牙语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:114
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2473
+msgid "Ukrainian"
+msgstr "Ukrainian（乌克兰语）"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:123
+msgid "Select your preferred language"
+msgstr "选择语言"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:124
+msgid "Language selection"
+msgstr "语言选择"
+
+#: Z:/Sviluppo_C++/VVV/src/chooselang.cpp:138
+msgid "You must restart the program for this change to take effect."
+msgstr "重启程序以应用更改。"
+
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.cpp:162
+msgid ""
+"Please select the virtual folder that will receive the selected files and/or "
+"folders:"
+msgstr "请选择要添加到的虚拟文件夹："
+
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.cpp:174
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.cpp:192
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:166
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:234
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:255
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:159
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:175
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:180
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:196
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:190
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:211
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.cpp:178
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.cpp:189
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:169
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:238
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:252
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:163
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:172
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:184
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:193
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:194
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:208
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: Z:/Sviluppo_C++/VVV/src/convert_db_unicode.cpp:520
+msgid ""
+"Conversion is about to start: a message will tell you when it will be "
+"completed."
+msgstr "转换即将开始：完成后会有提示信息。"
+
+#: Z:/Sviluppo_C++/VVV/src/convert_db_unicode.cpp:546
+msgid "Conversion completed"
+msgstr "转换完成"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:157
+msgid "Description:"
+msgstr "描述："
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:257
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1332
+msgid "Name"
+msgstr "名称"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:261
+msgid "Value"
+msgstr "值"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:312
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1458
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:253
+msgid "Channels"
+msgstr "声道"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:314
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1453
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:249
+msgid "Sample rate"
+msgstr "采样率"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:316
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1448
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:245
+msgid "Bitrate"
+msgstr "比特率"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:317
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1443
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:241
+msgid "Length"
+msgstr "时长"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:318
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1438
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:237
+msgid "Genre"
+msgstr "流派"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:320
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1433
+msgid "Number"
+msgstr "曲目编号"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:321
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1428
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:229
+msgid "Comment"
+msgstr "备注"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:323
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1423
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:225
+msgid "Year"
+msgstr "年份"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:324
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1418
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:221
+msgid "Title"
+msgstr "标题"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:325
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1413
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:217
+msgid "Album"
+msgstr "专辑"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:326
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1408
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:213
+msgid "Artist"
+msgstr "艺术家"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:331
+msgid "File date"
+msgstr "文件日期"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:333
+msgid "File size"
+msgstr "文件大小"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:333
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:358
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:385
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:400
+msgid "bytes"
+msgstr "字节"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:334
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:978
+msgid "File name"
+msgstr "文件名"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:342
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:367
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:409
+msgid "Virtual path"
+msgstr "虚拟路径"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:346
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:371
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:413
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1350
+msgid "Physical path"
+msgstr "物理路径"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:356
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:398
+msgid "Folder date"
+msgstr "文件夹日期"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:358
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:400
+msgid "Folder size"
+msgstr "文件夹大小"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:359
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:401
+msgid "Folder name"
+msgstr "文件夹名"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:379
+msgid "Last updated"
+msgstr "最后更新"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:382
+msgid "Cataloged"
+msgstr "索引于"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:385
+msgid "Volume size"
+msgstr "卷大小"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:437
+msgid "Folder information"
+msgstr "文件夹信息"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:441
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.h:45
+msgid "File information"
+msgstr "文件信息"
+
+#: Z:/Sviluppo_C++/VVV/src/dlg_file_information.cpp:469
+msgid "Copy to clipboard\tCtrl+C"
+msgstr "复制到剪贴板（Ctrl+C）"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:190
+msgid "Use this window to export data to a CSV file"
+msgstr "将数据导出为 CSV 文件"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:194
+msgid "Comma"
+msgstr "逗号（,）"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:195
+msgid "TAB"
+msgstr "制表符（TAB）"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:196
+msgid "Pipe"
+msgstr "管道符（|）"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:197
+msgid "Separator"
+msgstr "分隔符"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:201
+msgid "Include headers"
+msgstr "包含标题"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:206
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1009
+msgid "All physical volumes"
+msgstr "所有物理卷"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:207
+msgid "Selected physical volume/folder"
+msgstr "选择的物理卷/文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:208
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1011
+msgid "Selected virtual folder"
+msgstr "选择的虚拟文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:209
+msgid "Export"
+msgstr "导出"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:213
+msgid "File name:"
+msgstr "文件名："
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:308
+msgid "CSV files (*.csv;*.txt)|*.csv;*.txt|All files (*.*)|*.*"
+msgstr "CSV 文件 (*.csv;*.txt)|*.csv;*.txt|所有文件 (*.*)|*.*"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:335
+msgid "Please enter a file name"
+msgstr "请选择保存位置"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:340
+msgid "The output file already exists: do you want to overwrite it?"
+msgstr "输出文件已经存在：是否要覆盖它？"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:343
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:357
+msgid "Unable to create the file."
+msgstr "无法创建文件。"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1337
+msgid "Size"
+msgstr "大小"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1341
+msgid "Ext"
+msgstr "扩展名"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1345
+msgid "Last modified"
+msgstr "最后修改"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+msgid "PhysicalPath"
+msgstr "物理路径"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:537
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:999
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1353
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1358
+msgid "Description"
+msgstr "描述"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+msgid "Volume"
+msgstr "卷"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.cpp:539
+msgid "Path"
+msgstr "路径"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:777
+msgid ""
+"This catalog file does not exist:\n"
+"\n"
+msgstr ""
+"该索引文件不存在：\n"
+"\n"
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:839
+msgid "&New..."
+msgstr "新建(&N)..."
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:840
+msgid "&Open..."
+msgstr "打开(&O)..."
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:841
+msgid "&Export..."
+msgstr "导出(&E)..."
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:843
+msgid "&Backup..."
+msgstr "备份(&B)..."
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:844
+msgid "&Restore..."
+msgstr "还原(&R)..."
+
+# Part of the File menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:846
+msgid "E&xit"
+msgstr "退出(&X)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:847
+msgid "&File"
+msgstr "文件(&F)"
+
+# Part of the Edit menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:849
+msgid "&Add To Virtual Folder..."
+msgstr "添加到虚拟文件夹(&A)..."
+
+# Part of the Edit menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:851
+msgid "&Rename...\tF2"
+msgstr "重命名(&R)\tF2"
+
+# Part of the Edit menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:852
+msgid "&Delete"
+msgstr "删除(&D)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:854
+msgid "&Object Information..."
+msgstr "项目信息(&O)..."
+
+# Part of the Edit menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:856
+msgid "&New Virtual Root Folder..."
+msgstr "新建虚拟根文件夹(&N)..."
+
+# Part of the Edit menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:857
+msgid "New Virtual &Subfolder..."
+msgstr "新建虚拟子文件夹(&S)..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:859
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:888
+msgid "&Options..."
+msgstr "选项(&O)..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:861
+msgid "&Edit"
+msgstr "编辑(&E)"
+
+# Part of the Volumes menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:863
+msgid "&Catalog Volume..."
+msgstr "建立索引(&C)..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:864
+msgid "&Update Volume..."
+msgstr "更新索引(&U)..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:865
+msgid "&Volumes"
+msgstr "索引(&V)"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:867
+msgid "&Physical View"
+msgstr "物理视图(&P)"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:869
+msgid "&Virtual View"
+msgstr "虚拟视图(&V)"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:870
+msgid "&Search View"
+msgstr "搜索视图(&S)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:872
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3310
+msgid "Show in physical view"
+msgstr "在物理视图中显示"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:873
+msgid "Go &Up One Level"
+msgstr "向上一级(&U)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:874
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2711
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2744
+msgid "Expand"
+msgstr "展开"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:875
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2712
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2745
+msgid "Collapse"
+msgstr "折叠"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:877
+msgid "&Toolbar"
+msgstr "工具栏(&T)"
+
+# Part of the View menu
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:879
+msgid "Status &Bar"
+msgstr "状态栏(&B)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:881
+msgid "Vie&w"
+msgstr "视图(&W)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:883
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3319
+msgid "Open with default program"
+msgstr "使用默认程序打开"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:890
+msgid "&Tools"
+msgstr "工具(&T)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:892
+msgid "Help &Contents"
+msgstr "帮助内容(&C)"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:896
+msgid "&About VVV..."
+msgstr "关于 VVV(&A)..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:904
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4201
+msgid "New"
+msgstr "新建"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:904
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4201
+msgid "Create a new catalog"
+msgstr "建立新索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:907
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4204
+msgid "Open"
+msgstr "打开"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:907
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4204
+msgid "Open an existing catalog"
+msgstr "打开现有索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:910
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4207
+msgid "Catalog a new volume"
+msgstr "索引新卷"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:913
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4210
+msgid "Up"
+msgstr "向上"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:913
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4210
+msgid "Move up one level"
+msgstr "向上移动一级"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:917
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4214
+msgid "Physical"
+msgstr "物理"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:917
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4214
+msgid "Show the physical view"
+msgstr "显示物理视图"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:920
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4217
+msgid "Virtual"
+msgstr "虚拟"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:920
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4217
+msgid "Show the virtual view"
+msgstr "显示虚拟视图"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:923
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1012
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1018
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4220
+msgid "Search"
+msgstr "搜索"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:923
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4220
+msgid "Show the search view"
+msgstr "显示搜索视图"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:975
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:996
+msgid "Is equal to:"
+msgstr "完全匹配："
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:976
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:997
+msgid "Starts with:"
+msgstr "以...开头："
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:977
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:998
+msgid "Contains:"
+msgstr "内容包含："
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:987
+msgid "Extension:"
+msgstr "扩展名："
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1010
+msgid "Selected physical folder"
+msgstr "选择的物理文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1487
+msgid "Open catalog"
+msgstr "打开索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:1491
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3794
+msgid "VVV  files (*.vvv)|*.vvv|All files (*.*)|*.*"
+msgstr "VVV  文件 (*.vvv)|*.vvv|所有文件 (*.*)|*.*"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2064
+msgid "New virtual root folder"
+msgstr "新建虚拟根文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2092
+msgid "New virtual subfolder"
+msgstr "新建虚拟子文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2110
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3552
+msgid "Enter the new folder name"
+msgstr "输入新文件夹名称"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2125
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3563
+msgid "The new folder name is already present in the database"
+msgstr "文件夹名称已存在"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2178
+msgid "This catalog file does not exist any more"
+msgstr "该索引文件已不存在"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2208
+msgid ""
+"Catalog not found:\n"
+"\n"
+msgstr ""
+"未找到索引:\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2212
+msgid ""
+"Incorrect username or password for the following database:\n"
+"\n"
+msgstr ""
+"以下数据库的用户名或密码不正确：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2217
+msgid ""
+"Unable to connect to the following server:\n"
+"\n"
+msgstr ""
+"无法连接到以下服务器：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2219
+msgid ""
+"Unable to open the catalog.\n"
+"Please note that you are not connected to a database server so you cannot "
+"open a catalog located on another computer in the network.\n"
+"If you want to open a catalog on another computer you must connect to the "
+"database server (Tools/Options menu)."
+msgstr ""
+"无法打开索引。\n"
+"请注意，你未连接到数据库服务器，因此无法打开位于网络中其他计算机上的索引。\n"
+"如果您想打开其他计算机上的索引，必须连接到数据库服务器（工具/选项菜单）。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2241
+msgid ""
+"This catalog has been created with a previous version of the program and it "
+"needs to be upgraded, but the file containing the upgrades list is missing.\n"
+"\n"
+"You can try reinstalling the program to solve this problem."
+msgstr ""
+"此目录是使用该程序的旧版本创建的，需要升级，但包含升级列表的文件丢失。\n"
+"\n"
+"你可以尝试重新安装该程序以解决此问题。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2245
+msgid "Upgrading the catalog, please wait..."
+msgstr "正在升级索引，请稍候..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2257
+msgid ""
+"This catalog has been created with an older version of VVV so you need to "
+"convert it to a newer format.\n"
+"\n"
+msgstr ""
+"此索引是使用旧版本的 VVV 创建的，你需要将其转换为更新的格式。\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2258
+msgid ""
+"The conversion will create a new catalog with the same data as the older "
+"one, then you will use this new catalog with VVV. You will not use the older "
+"catalog any more.\n"
+"\n"
+msgstr ""
+"转换将创建一个与旧索引包含相同数据的新索引，然后你将使用这个新索引与 VVV 一起"
+"工作。旧索引将不再使用。\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2259
+msgid "Do you want to convert the catalog creating a new one?"
+msgstr "您想要转换索引并创建一个新的吗？"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2263
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2492
+msgid ""
+"Unable to create a new catalog.\n"
+"\n"
+"You are connecting to a database server on another computer. You must "
+"execute this program on the server to be able to create a new catalog."
+msgstr ""
+"无法创建新索引。\n"
+"\n"
+"你正在连接到另一台计算机上的数据库服务器。你必须在服务器上运行此程序，才能创"
+"建新索引。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2267
+msgid "Convert to a new catalog"
+msgstr "转换为新索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2275
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2504
+msgid ""
+"Unable to find the database backup to restore.\n"
+"\n"
+"You can try reinstalling the program to solve this problem."
+msgstr ""
+"无法找到用于还原的数据库备份。\n"
+"\n"
+"你可以尝试重新安装该程序以解决此问题。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2457
+msgid ""
+"VVV (Virtual Volumes View): a program to catalog removable devices like CDs "
+"and DVDs"
+msgstr "VVV（虚拟卷视图）：一个用于索引可移动设备（如 CD 和 DVD）的程序"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2458
+msgid "Copyright (C) 2007-2023 The VVV Team"
+msgstr "版权所有 © 2007-2023 VVV 团队"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2459
+msgid "Fulvio Senore: main developer"
+msgstr "Fulvio Senore：主开发者"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2460
+msgid ""
+"\n"
+"Jan Albartus: worked at the portable version and designed the application's "
+"icon"
+msgstr ""
+"\n"
+"Jan Albartus：便携版的开发和设计应用程序图标"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2461
+msgid ""
+"This program uses icons from the Gnome, Ubuntu and Crystal icons projects"
+msgstr "本程序使用了来自 Gnome、Ubuntu 和 Crystal 图标项目的图标"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2462
+msgid ""
+"This is open source software, distributed under the GNU GENERAL PUBLIC "
+"LICENSE"
+msgstr "此程序是开源软件，遵循 GNU 通用公共许可证 发布"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2475
+msgid "Serbian"
+msgstr "Serbian（塞尔维亚语）"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2496
+msgid "New catalog"
+msgstr "新建索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2546
+msgid "Multiple items"
+msgstr "多个项目"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2709
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3316
+msgid "Add To Virtual Folder"
+msgstr "添加到虚拟文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2714
+msgid "Object information..."
+msgstr "项目信息..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2717
+msgid "Rename..."
+msgstr "重命名..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2718
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2749
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3312
+msgid "Delete"
+msgstr "删除"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2719
+msgid "Update Volume..."
+msgstr "更新索引..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2742
+msgid "New Subfolder"
+msgstr "新建子文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2748
+msgid "Rename"
+msgstr "重命名"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2890
+msgid "Please enter some search data"
+msgstr "搜索内容不能为空"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2909
+msgid "Incorrect file name search data"
+msgstr "文件名搜索内容不正确"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2920
+msgid "Incorrect extension search data"
+msgstr "扩展名搜索内容不正确"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:2932
+msgid "Incorrect description search data"
+msgstr "描述搜索内容不正确"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3043
+msgid "The search did not find anything"
+msgstr "搜索未找到任何内容"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3202
+msgid "Objects: "
+msgstr "项目： "
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3209
+msgid "Total size: "
+msgstr "总大小： "
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3322
+msgid "Object Information..."
+msgstr "项目信息..."
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3460
+msgid ""
+"This command will delete the selected virtual folder, but it will not change "
+"the folders in the physical view.\n"
+"\n"
+"Do you really want to delete the selected virtual folder?"
+msgstr ""
+"此操作将删除选择的虚拟文件夹，但不会影响物理视图中的文件夹。\n"
+"\n"
+"你确定要删除选择的虚拟文件夹吗？"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3486
+msgid ""
+"This command will delete this volume:\n"
+"\n"
+msgstr ""
+"此操作将删除下列卷索引：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3486
+msgid ""
+"\n"
+"\n"
+"from the VVV catalog. It will not delete any file from your disk.\n"
+"\n"
+"Do you really want to delete this volume?"
+msgstr ""
+"\n"
+"\n"
+"从 VVV 索引中删除。这不会影响你实体存储上的任何文件。\n"
+"\n"
+"你确定要删除以上索引吗？"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3496
+msgid ""
+"Unable to delete this volume: at least one of its files is used in the "
+"virtual view"
+msgstr "无法删除此索引：其中至少有一个文件正在虚拟视图中使用"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3518
+msgid "Enter the new volume name"
+msgstr "输入新索引名称"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3518
+msgid "Rename volume"
+msgstr "重命名索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3531
+msgid "The new volume name is already present in the database"
+msgstr "索引名称已存在"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3552
+msgid "Rename virtual folder"
+msgstr "重命名虚拟文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3675
+msgid ""
+"This command will delete the selected files from the virtual view, but it "
+"will not change the files in the physical view.\n"
+"\n"
+"Do you really want to delete the selected virtual files?"
+msgstr ""
+"此操作将从虚拟视图中删除选择的文件，但不会影响物理视图中的文件。\n"
+"\n"
+"你确定要删除选择的虚拟文件吗？"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3817
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3894
+msgid ""
+"Unable to continue. You have choosen an existing file:\n"
+"\n"
+msgstr ""
+"无法继续。你选择了一个现有文件：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3817
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3894
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3976
+msgid ""
+"\n"
+"\n"
+"You must type the name of a non-existing file."
+msgstr ""
+"\n"
+"\n"
+"文件名已存在，请输入一个新文件名。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3826
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3903
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3985
+msgid ""
+"Unable to continue: you have choosen a folder where you do not have the "
+"right to create a file."
+msgstr "无法继续：你选择了一个没有创建文件权限的文件夹。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3871
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:254
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:285
+msgid "VVV backup files (*.vvvbk)|*.vvvbk|All files (*.*)|*.*"
+msgstr "VVV 备份文件 (*.vvvbk)|*.vvvbk|所有文件 (*.*)|*.*"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3872
+msgid "Backup catalog"
+msgstr "备份索引"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3917
+msgid "Backup completed"
+msgstr "备份已完成"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3940
+msgid ""
+"Unable to restore.\n"
+"\n"
+"You are connecting to a database server on another computer. You must "
+"execute this command on the server to be able to restore a catalog."
+msgstr ""
+"无法还原。\n"
+"\n"
+"你正在连接到另一台计算机上的数据库服务器。你必须在服务器上执行此命令，才能还"
+"原目录。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3954
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:396
+msgid "The catalog name is missing"
+msgstr "索引名称丢失"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3958
+msgid "The backup name is missing"
+msgstr "备份名称丢失"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:3976
+msgid ""
+"Unable to continue. You have choosen an existing catalog:\n"
+"\n"
+msgstr ""
+"无法继续。你选择的索引已存在：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4013
+msgid "Restore completed"
+msgstr "还原已完成"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4423
+msgid ""
+"This volume has been cataloged with an older version of VVV. You need to "
+"update it in order to open files."
+msgstr "此卷是使用旧版本的 VVV 索引的。你需要更新它才能打开文件。"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4444
+msgid "Unable to find the folder:"
+msgstr "无法找到文件夹："
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.cpp:4450
+msgid "Unable to find the file:"
+msgstr "无法找到文件："
+
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:146
+msgid "Please enter the description for the following object:"
+msgstr "请输入以下对象的描述："
+
+#: Z:/Sviluppo_C++/VVV/src/object_description.cpp:149
+msgid "OBJECT NAME"
+msgstr "项目名称"
+
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:162
+msgid ""
+"You are about to open a catalog located on the server.\n"
+"\n"
+"Enter the alias or the complete path to the catalog file.\n"
+"Remember that the path must be relative to the server, not to the client."
+msgstr ""
+"你即将打开位于服务器上的索引。\n"
+"\n"
+"请输入索引文件的别名或完整路径。\n"
+"请注意，路径必须相对于服务器，而不是客户端。"
+
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:256
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:303
+msgid "VVV files (*.vvv)|*.vvv|All files (*.*)|*.*"
+msgstr "VVV 文件 (*.vvv)|*.vvv|所有文件 (*.*)|*.*"
+
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:276
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.h:63
+msgid "Open Catalog"
+msgstr "打开索引"
+
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:280
+msgid "New Catalog"
+msgstr "新建索引"
+
+#: Z:/Sviluppo_C++/VVV/src/opencatalog.cpp:284
+msgid "Backup"
+msgstr "备份"
+
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:152
+msgid ""
+"You are about to create a new catalog from a backup file.\n"
+"\n"
+"Enter the complete path to the backup file and to the catalog file that will "
+"be created.\n"
+"You cannot enter the name of an existing catalog."
+msgstr ""
+"你将从备份文件创建一个新的索引。\n"
+"\n"
+"请输入备份文件和将要创建的索引文件的完整路径。\n"
+"不能使用已存在的索引文件。"
+
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:157
+msgid "Backup file:"
+msgstr "备份文件："
+
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:169
+msgid "New catalog:"
+msgstr "新索引文件："
+
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:284
+msgid "Select backup file"
+msgstr "选择备份文件"
+
+#: Z:/Sviluppo_C++/VVV/src/restore.cpp:302
+msgid "Catalog file"
+msgstr "选择新索引文件"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:175
+msgid "Reopen the last used catalog at startup"
+msgstr "在启动时打开上次使用的索引文件"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:179
+msgid "Alternate row colors"
+msgstr "交替行颜色"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:185
+msgid "Beep for tasks longer than (seconds):"
+msgstr "任务超过（秒）时发出声音："
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:193
+msgid "Change language"
+msgstr "更改语言（Change language）"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:196
+msgid "General"
+msgstr "常规"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:204
+msgid "Catalog audio metadata"
+msgstr "索引音频元数据"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:210
+msgid "Show the following data for audio files:"
+msgstr "要显示的音频文件数据："
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:233
+msgid "Track number"
+msgstr "曲目编号"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:259
+msgid "Audio files"
+msgstr "音频文件"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:267
+msgid ""
+"Check the checkbox below if you want to access catalogs stored\n"
+"in a network server. Each computer in the network will be able to\n"
+"access the same catalogs stored in the server.\n"
+"DO NOT check the checkbox if you only want to access catalogs\n"
+"stored in this computer and you do not want to share them\n"
+"with other computers."
+msgstr ""
+"如果你希望访问存储在网络服务器上的目录，请勾选下面的复选框。\n"
+"网络中的每台计算机都可以访问存储在服务器上的相同索引文件。\n"
+"如果你只想访问存储在此计算机上的目录，\n"
+"并且不希望与其他计算机共享，请不要勾选该复选框。"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:272
+msgid "Connect to a network server"
+msgstr "连接到网络服务器"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:278
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:303
+msgid "Server"
+msgstr "服务器"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:284
+msgid "Username"
+msgstr "用户名"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:290
+msgid "Password"
+msgstr "密码"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:300
+msgid "Test server connection"
+msgstr "测试服务器连接"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:392
+msgid "You must enter a server name or address"
+msgstr "服务器名称或地址不可为空"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:396
+msgid "You must enter a username"
+msgstr "请输入用户名"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:400
+msgid "You must enter a password"
+msgstr "请输入密码"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:463
+msgid "You must enter the server name or address"
+msgstr "服务器名称或地址不可为空"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:468
+msgid "Unable to connect to the server"
+msgstr "无法连接到服务器"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.cpp:470
+msgid "Server connection successful"
+msgstr "连接服务器成功"
+
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:178
+msgid "You are about to update the following volume:"
+msgstr "你即将更新以下索引："
+
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:181
+msgid "VOLUME NAME"
+msgstr "卷名"
+
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:186
+msgid "Enter or select the path to volume to update"
+msgstr "输入或选择要更新的卷的路径"
+
+#: Z:/Sviluppo_C++/VVV/src/update_volume.cpp:206
+msgid "Update"
+msgstr "更新"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:300 Z:/Sviluppo_C++/VVV/src/vvv.cpp:356
+msgid ""
+"Unable to connect to the server\n"
+"\n"
+msgstr ""
+"无法连接到服务器\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:302 Z:/Sviluppo_C++/VVV/src/vvv.cpp:308
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:358 Z:/Sviluppo_C++/VVV/src/vvv.cpp:364
+msgid ""
+"An unexpected error has occurred. Here is a description of the error:\n"
+"\n"
+msgstr ""
+"发生了意外错误。以下是错误描述：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:314 Z:/Sviluppo_C++/VVV/src/vvv.cpp:370
+msgid "An unexpected error has occurred. This application will be terminated"
+msgstr "发生了意外错误。此程序将被终止"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:382 Z:/Sviluppo_C++/VVV/src/vvv.cpp:466
+msgid ""
+"An unexpected error has happened. Here is a description of the error:\n"
+"\n"
+msgstr ""
+"发生了意外错误。以下是错误描述：\n"
+"\n"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:408
+msgid "The volume path does not exists"
+msgstr "卷路径不存在"
+
+#: Z:/Sviluppo_C++/VVV/src/vvv.cpp:449
+msgid "Volume name not found"
+msgstr "未找到卷名称"
+
+#: Z:/Sviluppo_C++/VVV/src/catalog_volume.h:72
+msgid "Catalog volume"
+msgstr "建立卷索引"
+
+#: Z:/Sviluppo_C++/VVV/src/choose_virtual_folder.h:68
+msgid "Choose virtual folder"
+msgstr "选择虚拟文件夹"
+
+#: Z:/Sviluppo_C++/VVV/src/exportdata.h:65
+msgid "Export data"
+msgstr "导出数据"
+
+#: Z:/Sviluppo_C++/VVV/src/mainframe.h:85
+msgid "VVV"
+msgstr "VVV"
+
+#: Z:/Sviluppo_C++/VVV/src/object_description.h:51
+msgid "Object Description"
+msgstr "项目描述"
+
+#: Z:/Sviluppo_C++/VVV/src/restore.h:41
+msgid "Restore"
+msgstr "还原"
+
+#: Z:/Sviluppo_C++/VVV/src/settings.h:56
+msgid "Settings"
+msgstr "设置"
+
+#: Z:/Sviluppo_C++/VVV/src/update_volume.h:62
+msgid "Update Volume"
+msgstr "更新卷索引"

@@ -47,6 +47,7 @@ Source: "..\vvv-struct-update.fdb"; DestDir: "{app}"; Flags: overwritereadonly u
 Source: "..\VVV.fbk"; DestDir: "{app}"
 Source: "..\help\en\vvv.htb"; DestDir: "{app}"
 Source: "..\translations\vvv-bg.mo"; DestDir: "{app}\languages\bg"; DestName: "vvv.mo"
+Source: "..\translations\vvv-zh_CN.mo"; DestDir: "{app}\languages\zh_CN"; DestName: "vvv.mo"
 Source: "..\translations\vvv-zh_TW.mo"; DestDir: "{app}\languages\zh_TW"; DestName: "vvv.mo"
 Source: "..\translations\vvv-cs.mo"; DestDir: "{app}\languages\cs"; DestName: "vvv.mo"
 Source: "..\translations\cs\wxstd.mo"; DestDir: "{app}\languages\cs"
