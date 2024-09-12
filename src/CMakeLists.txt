@@ -209,19 +209,26 @@ if( UNIX )
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/uk RENAME vvv.mo )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-zh_TW.mo 
            DESTINATION ${RESOURCES_INTALL_PATH}/languages/zh_TW RENAME vvv.mo )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/vvv-zh_CN.mo 
+           DESTINATION ${RESOURCES_INTALL_PATH}/languages/zh_CN RENAME vvv.mo )
 # ... wxWidgets files
   install( FILES ${PROJECT_SOURCE_DIR}/translations/cs/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/cs )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/de/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/de )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/es/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/es )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/fr/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/fr )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/hr/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/hr )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/hu/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/hu )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/it/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/it )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/ja/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/ja )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/nl/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/nl )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/pl/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/pl )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/pt/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/pt )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/ro/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/ro )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/ru/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/ru )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/sr/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/sr )
   install( FILES ${PROJECT_SOURCE_DIR}/translations/uk/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/uk )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/zh_CN/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/zh_CN )
+  install( FILES ${PROJECT_SOURCE_DIR}/translations/zh_TW/wxstd.mo DESTINATION ${RESOURCES_INTALL_PATH}/languages/zh_TW )
 
 #  install( DIRECTORY ${PROJECT_SOURCE_DIR}/translations/ DESTINATION ${RESOURCES_INTALL_PATH}/languages 
 #           FILES_MATCHING PATTERN "*.mo"
