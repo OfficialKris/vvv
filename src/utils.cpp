@@ -89,7 +89,7 @@ wxString CUtils::UTF162wx( const char *strUTF16 ) {
 	int n = converter.MB2WC( uniChars, (const char *) strUTF16, 1000 );
 	wxString s( (wxChar*) uniChars );
 	retVal = s;
-	delete uniChars;
+	delete []uniChars;
 #endif
 	return retVal;
 }

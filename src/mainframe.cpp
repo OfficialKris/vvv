@@ -3702,7 +3702,7 @@ void CMainFrame::DeleteSelectedVirtualFiles() {
 bool CMainFrame::AreOnlyVirtualFilesSelected() {
 
 	if( !m_ListViewHasFocus ) return false;
-	if( !m_CurrentView == cvVirtual ) return false;
+	if( m_CurrentView != cvVirtual ) return false;
 
 	bool retVal = true;
 	long item = -1;
